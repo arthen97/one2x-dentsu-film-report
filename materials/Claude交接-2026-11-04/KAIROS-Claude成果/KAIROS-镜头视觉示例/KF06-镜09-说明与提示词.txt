@@ -1,0 +1,34 @@
+KF06｜镜09｜00:37–00:43
+同一份冬季新品素材，延展为持续的内容
+
+必须看懂的信息
+同一份素材持续延展成同品牌的多支内容，并能形成高品质横版主片。
+
+画面、光线与材质
+量产队列向横版主片过渡的关键帧。左侧保留一张小幅冬季饮品原图；同一道品牌紫细光向右分成四条，连接四张同品牌竖版作品，分别是杯身、拉花手部、窗边热气、店员递杯。最前方一格正在展开为较大的横版主片，内容是冬日窗边牛奶注入同一只灰褐色陶瓷杯。队列向画外延伸但不堆满全屏；冷暗图形底衬暖白窗光、奶泡与陶瓷肌理，50mm虚拟摄影机的浅透视。
+
+镜头运动
+快速后拉显出队列规模，再急推入一格；横版画面中递出杯子的手，接下一镜商品页上停住的拇指。
+
+参考片质感转译
+Adobe《The World Is Your Canvas》＋Microsoft《The Future of Work With AI》
+让一个需求直接改变可见画面；不同结果采用统一语法连续展开，最后把一件作品推到足够大的尺度观看。
+
+拟用日文／英文屏幕文案与中文解释
+38.6–41.0秒为低成本SNS文案；41.0–43.0秒为横版主片品质主张。
+JA：SNS動画を、大量に、低コストで。
+EN：Social videos — in volume, at low cost.
+中文解释：大量、低成本地制作社交视频。
+
+JA：テレビCM級の品質を。
+EN：TV-commercial quality.
+中文解释：电视广告级的品质。
+
+样张信息叠加文案
+JA：テレビCM級の品質を。
+EN：TV-commercial quality.
+
+生成英文提示词
+A premium motion-design keyframe: one winter cafe photograph becoming a coherent campaign. A small source photo at far left shows a taupe ceramic cup; four orderly portrait film panels recede through the center, featuring the same taupe cup and warm drink: ceramic detail, barista hands, window steam, a hand offering the cup. One larger landscape panel opens prominently in the foreground, showing milk pouring into that cup beside a winter window. Consistent restrained palette, natural warm highlights, convincing milk foam and ceramic texture, dark graphite graphic stage, slight violet edge light. Controlled 50mm virtual-camera perspective, strong visual hierarchy, space for connecting lines and copy in post. No text, logos, charts, pricing or software controls. --ar 16:9 --v 8.1 --raw --stylize 100 --hd
+
+样张为概念美术，用于镜头与视觉沟通；真实UI、文字与正式logo后期叠加，正式品质证明采用KAIROS实际输出。

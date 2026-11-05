@@ -1,0 +1,1482 @@
+{
+  "schemaVersion": 2,
+  "chunkSize": 4194304,
+  "files": [
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/move-mosaic.mp4",
+      "size": 5859313,
+      "sha256": "d0a4200c8a18a5e602aff895324b25088614f097102955cd1302fe7d7d4a1f6e",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "528460bd148462ff8dbb20c96435a625effd1c2501bde7c714d3936ef3c3832c",
+          "path": ".asset-chunks/d0a4200c8a18a5e602aff895324b25088614f097102955cd1302fe7d7d4a1f6e/0001.part.gz",
+          "size": 4189857,
+          "sha256": "957f191467efb284c9339a8e0a42841af5bafba5c5b55f3a038b45715d538ddb",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 1665009,
+          "decodedSha256": "54881da2516158cd676c4fa5e3f4c165f3d916594f7c884e52ae4c5cb9194042",
+          "path": ".asset-chunks/d0a4200c8a18a5e602aff895324b25088614f097102955cd1302fe7d7d4a1f6e/0002.part.gz",
+          "size": 1656234,
+          "sha256": "95253bf5edb9025f633e317843fbf60330312fdc7ecebaef5779c43518d86479",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/move-product.mp4",
+      "size": 5981568,
+      "sha256": "74ee5a3473f5d08eb19690a6c4e74de276a50ce3d299d2be4d73645d8d3e6d29",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "7fbbf559cb40771f0f4cf19c485cf51ee366cbdba17bd443cfb76cffba5a16ca",
+          "path": ".asset-chunks/74ee5a3473f5d08eb19690a6c4e74de276a50ce3d299d2be4d73645d8d3e6d29/0001.part.gz",
+          "size": 4158254,
+          "sha256": "761d4f650942a702ada2da166a13fa0e87d11277f00fe1c4ce9cbda42b3bcbcd",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 1787264,
+          "decodedSha256": "9a64afec4957aa64e2255535c790f879c2cf0929f3f1f09520f33b290efa3cab",
+          "path": ".asset-chunks/74ee5a3473f5d08eb19690a6c4e74de276a50ce3d299d2be4d73645d8d3e6d29/0002.part.gz",
+          "size": 1769548,
+          "sha256": "5404d212cb7aed5586f0146e9726f89d0bee2ae30bb1802061760c8e9193fee7",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "materials/iris资料/Iris · H5 原型（主要页面、组件与卡片、二级页面、代表性流程）-v12.html",
+      "size": 5320385,
+      "sha256": "51494f1f16d98ca9ed971dd5e2ec34d902e31c577040f0a176ebe8842a921904",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "2e9eb99dce8e31ee2a976c02145a8a71cb1679b78f82c3e84eac415e9c8e4c23",
+          "path": ".asset-chunks/51494f1f16d98ca9ed971dd5e2ec34d902e31c577040f0a176ebe8842a921904/0001.part.gz",
+          "size": 2283512,
+          "sha256": "2f888ddaa7c2dabc1f9b9f2fba451d3301891e2df5e0772bc51e1aafa1e0bb6a",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 1126081,
+          "decodedSha256": "b2fc12afe491ac8cfd6485f2606020bb754d8227a23472f635c0592ac0f0175e",
+          "path": ".asset-chunks/51494f1f16d98ca9ed971dd5e2ec34d902e31c577040f0a176ebe8842a921904/0002.part.gz",
+          "size": 565498,
+          "sha256": "05a585fc6e22d898ce6d7b8bde4face41349cc5a0a2ddc2d4878a599ab8ea6e4",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/playback/claude-duet.mp4",
+      "size": 15460142,
+      "sha256": "e97c00ab5e7cc00ab852d0550b8266c61ccb3d1f60fc550c035b88e800de5b72",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "eda2242ae5e1f6270b1c81a3d537f3fdd6c1ec720212b2f6918e6b4486bdf72a",
+          "path": ".asset-chunks/e97c00ab5e7cc00ab852d0550b8266c61ccb3d1f60fc550c035b88e800de5b72/0001.part.gz",
+          "size": 4145887,
+          "sha256": "0997a1427fe81867945f2971e19416c16b8d5cf13e6f20eba26d2397354cde03",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "d1c1fac5c5aebae4bc77ee06ce65dcaa33fbeb72c298dc4b19cfebf6f22f624e",
+          "path": ".asset-chunks/e97c00ab5e7cc00ab852d0550b8266c61ccb3d1f60fc550c035b88e800de5b72/0002.part.gz",
+          "size": 4192344,
+          "sha256": "522b3e906018dec058c60bbc6b26aa351ad8ccb803fab202952f9201e794419f",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "535280913a469ed4f8e2acdaa960b1e57a75489fe4480d2a31f5e88efb944d63",
+          "path": ".asset-chunks/e97c00ab5e7cc00ab852d0550b8266c61ccb3d1f60fc550c035b88e800de5b72/0003.part",
+          "size": 4194304,
+          "sha256": "535280913a469ed4f8e2acdaa960b1e57a75489fe4480d2a31f5e88efb944d63",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 2877230,
+          "decodedSha256": "93b2fc87891f39fa5a01d3ed4f53e20223fcea1f311e585940467e5ae571f53d",
+          "path": ".asset-chunks/e97c00ab5e7cc00ab852d0550b8266c61ccb3d1f60fc550c035b88e800de5b72/0004.part.gz",
+          "size": 2872487,
+          "sha256": "dd279a299d99f74ee2c30d45db97d7976a3cf66b9c1d6f5798caade09aebaf9c",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/playback/claude-motion.mp4",
+      "size": 11100387,
+      "sha256": "138d621c4526a8bcdc2e2aa0615d5812881b7f8fe0ab9cd94ff6842a7f4f584c",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "bb5cb7fe8f9a4afdd3c271be710b31358cb35a00999c2a1345569db24dff965c",
+          "path": ".asset-chunks/138d621c4526a8bcdc2e2aa0615d5812881b7f8fe0ab9cd94ff6842a7f4f584c/0001.part.gz",
+          "size": 4151189,
+          "sha256": "c07fd863ebd0637d98fc1165621a1e974c3ce6ed4cedaf69751949499d2fbbb9",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "1b36e5dcf1731f0e85971aa4958cbbc38d88030cdb6b17ab072a6b2cb601f8ad",
+          "path": ".asset-chunks/138d621c4526a8bcdc2e2aa0615d5812881b7f8fe0ab9cd94ff6842a7f4f584c/0002.part.gz",
+          "size": 4188280,
+          "sha256": "31179354fcb1e17b6b4c527e73620006f31b9d0decf96bbb3908e9da0e4a8d6c",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 2711779,
+          "decodedSha256": "b7cf92816fdb077b22c6c8d09f84a848887311324408bb3b9e4e9452ed444a61",
+          "path": ".asset-chunks/138d621c4526a8bcdc2e2aa0615d5812881b7f8fe0ab9cd94ff6842a7f4f584c/0003.part.gz",
+          "size": 2698660,
+          "sha256": "ff6e55ba560bafcef6fa95349ba73eb448b926452e45d17262a9f3ff355bfcdc",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/playback/copilot-new.mp4",
+      "size": 9773605,
+      "sha256": "a3d06510be1656a7e29c9fa09a8a7f293051cc4e1c38fc1cc33ec44ea1d1fb53",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "f15b05d9e59a1b07e44e91ba8d8dd8005245956ed4981c7fd2f875fbb68e6369",
+          "path": ".asset-chunks/a3d06510be1656a7e29c9fa09a8a7f293051cc4e1c38fc1cc33ec44ea1d1fb53/0001.part.gz",
+          "size": 4125032,
+          "sha256": "f3fe647fb85bf6919627bcaaa662b4c2a926f7c8d6ca802ddcb6e4f000418139",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "168af3311e8767f90cc7eab994841ca343e6abe334eff9c171d92c5b85422c23",
+          "path": ".asset-chunks/a3d06510be1656a7e29c9fa09a8a7f293051cc4e1c38fc1cc33ec44ea1d1fb53/0002.part.gz",
+          "size": 4177319,
+          "sha256": "f10bcace4a2bf1376b66a9f1f2fd03cd8f80d6b4626faab6c297e1ced992ac91",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 1384997,
+          "decodedSha256": "6f4aba966dc6b53c99d23ad139b2ab6484f48e448e467a5ec69e2d356c247b4d",
+          "path": ".asset-chunks/a3d06510be1656a7e29c9fa09a8a7f293051cc4e1c38fc1cc33ec44ea1d1fb53/0003.part",
+          "size": 1384997,
+          "sha256": "6f4aba966dc6b53c99d23ad139b2ab6484f48e448e467a5ec69e2d356c247b4d",
+          "encoding": "raw"
+        }
+      ]
+    },
+    {
+      "path": "references/playback/eleven-chimera.mp4",
+      "size": 9541992,
+      "sha256": "e34100d6d880427afd8d650c3a55597f102f6e7dda346c3a7407f6a1c41c5947",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "5a54f97b663a010c0878573df7eccdd89319a047aa9749870c64dfa8bf6f4780",
+          "path": ".asset-chunks/e34100d6d880427afd8d650c3a55597f102f6e7dda346c3a7407f6a1c41c5947/0001.part.gz",
+          "size": 4137144,
+          "sha256": "6ec101306de486736d5b4fc67cb008ff850f5942a796823f1b384b47ba573985",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "76090703b47cebeeb42a045cc447289928d11559600503c9d7424514360ae876",
+          "path": ".asset-chunks/e34100d6d880427afd8d650c3a55597f102f6e7dda346c3a7407f6a1c41c5947/0002.part.gz",
+          "size": 4189184,
+          "sha256": "5c0ffbed0618413d09ec82ca35d695dcacba6a2024625a77d7c34d04b837b710",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 1153384,
+          "decodedSha256": "c24e1c96e66e6b47aed85f9560e3dfe7b0370b051303ed247d1a2872e5971085",
+          "path": ".asset-chunks/e34100d6d880427afd8d650c3a55597f102f6e7dda346c3a7407f6a1c41c5947/0003.part.gz",
+          "size": 1149084,
+          "sha256": "ce709137a975480feb0719c399e6c06ddaf1b27056f4af0a3b74f6b36308ad5d",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/playback/framer-mcp.mp4",
+      "size": 6994904,
+      "sha256": "dea90a677816230a7a5a90f02482570cb27964dcb44e9ee56c8a4a57ae144c1e",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "7dcc6215264e0b63ebbd860c340a3dfbd96a01b64a1869f2d570ec1d2c868b80",
+          "path": ".asset-chunks/dea90a677816230a7a5a90f02482570cb27964dcb44e9ee56c8a4a57ae144c1e/0001.part.gz",
+          "size": 4175236,
+          "sha256": "a24b26562b6a3504d983f801210b01b0279fda7924a75c5175b61e1dac15e216",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 2800600,
+          "decodedSha256": "f04e26926ac05b995ba5dbf24ffa2c3f8152ea063cb817c34f9f8fab8bc74de6",
+          "path": ".asset-chunks/dea90a677816230a7a5a90f02482570cb27964dcb44e9ee56c8a4a57ae144c1e/0002.part.gz",
+          "size": 2797021,
+          "sha256": "028a2702cb3f6b0541059cc2475bd6f48aa596002128919c020d6083956354d0",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/playback/jp-bakuraku.mp4",
+      "size": 10512531,
+      "sha256": "817d1fe47603e7eda02980c65e8bed230e61d2abaae4d843f63d921d40e5b1a1",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "2b288b2fd73d368ad8d311c49f90079aa99c9f0d27bdaa2b210bbf89eb816662",
+          "path": ".asset-chunks/817d1fe47603e7eda02980c65e8bed230e61d2abaae4d843f63d921d40e5b1a1/0001.part.gz",
+          "size": 4168625,
+          "sha256": "3813c856da98c8b410c120abd3687e6f20a5229eca684190dd75b501f89a9af7",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "9fd241eebfe461a41dfbed6306d9741ce2d4bdd9e3b861a678fd191604a661c5",
+          "path": ".asset-chunks/817d1fe47603e7eda02980c65e8bed230e61d2abaae4d843f63d921d40e5b1a1/0002.part.gz",
+          "size": 4191339,
+          "sha256": "4c0740d7537153616f42ce8c7389945921d713a217f4506165089fad245c57bb",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 2123923,
+          "decodedSha256": "8193fb62207ddea3df70e6b4ed035a02ee63e7be78d0eb9bcbbb3b842d79c402",
+          "path": ".asset-chunks/817d1fe47603e7eda02980c65e8bed230e61d2abaae4d843f63d921d40e5b1a1/0003.part.gz",
+          "size": 2123388,
+          "sha256": "cc51932c54a1f8371a76dbb6e0bc76437ce9bd4fc57b8254e102d1bf167e86b9",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/playback/jp-kaonavi-kti.mp4",
+      "size": 11464914,
+      "sha256": "bd9578b5b3e44c0663a09c2975b0c15f403d6dce8e3d81f410c39bf8285d2d48",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "1d18bd71fc7c946b66fb6b0f9920862f27990a70ea291d35ba5bc9bf5826855b",
+          "path": ".asset-chunks/bd9578b5b3e44c0663a09c2975b0c15f403d6dce8e3d81f410c39bf8285d2d48/0001.part.gz",
+          "size": 4168039,
+          "sha256": "f6419ae6b98a1d098d470f6f81f0ccb0700ac0bd51095ace42552e8b1524a68a",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "5afe505e612253ad6aeaa74c28059f12761a028e0e92609880178b2117adb465",
+          "path": ".asset-chunks/bd9578b5b3e44c0663a09c2975b0c15f403d6dce8e3d81f410c39bf8285d2d48/0002.part.gz",
+          "size": 4192230,
+          "sha256": "f085002df33ff469d334e69a413fd23730d63695a1a2eda8b4c7bb674c3278d4",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 3076306,
+          "decodedSha256": "914caeecf089b36c83835d5d3f3f2a129aa266c9af5bfa98346192061cb5b5e4",
+          "path": ".asset-chunks/bd9578b5b3e44c0663a09c2975b0c15f403d6dce8e3d81f410c39bf8285d2d48/0003.part",
+          "size": 3076306,
+          "sha256": "914caeecf089b36c83835d5d3f3f2a129aa266c9af5bfa98346192061cb5b5e4",
+          "encoding": "raw"
+        }
+      ]
+    },
+    {
+      "path": "references/playback/jp-notepm.mp4",
+      "size": 7989494,
+      "sha256": "ccba0ad4e7c6d23cc3363be0f98a3ffbfb2df883ee49bb1dfe6d0c991e0c4631",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "a09c5586d25e55df968bad246b67caa334a8661f4118b21b7613ed0424195a11",
+          "path": ".asset-chunks/ccba0ad4e7c6d23cc3363be0f98a3ffbfb2df883ee49bb1dfe6d0c991e0c4631/0001.part.gz",
+          "size": 4181014,
+          "sha256": "27dd2dd78b1d6a78532f4c13c53b598f791629ba51f8abeef0d7ee2542ec382b",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 3795190,
+          "decodedSha256": "595370c1e483db6d7becc82121ad6043bdee0b0e05bdacd0ad342166009c0401",
+          "path": ".asset-chunks/ccba0ad4e7c6d23cc3363be0f98a3ffbfb2df883ee49bb1dfe6d0c991e0c4631/0002.part",
+          "size": 3795190,
+          "sha256": "595370c1e483db6d7becc82121ad6043bdee0b0e05bdacd0ad342166009c0401",
+          "encoding": "raw"
+        }
+      ]
+    },
+    {
+      "path": "references/playback/jp-notta-memo.mp4",
+      "size": 7021683,
+      "sha256": "98a7afb1488d846fc16b256193aeb1aa4c617d36516867f00e9e3875d382293c",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "f9dbbd3217dd10c5ee4da51b258931f7a8183ac1099facce224ad495e69ab3fe",
+          "path": ".asset-chunks/98a7afb1488d846fc16b256193aeb1aa4c617d36516867f00e9e3875d382293c/0001.part.gz",
+          "size": 4182449,
+          "sha256": "ed1b8fc3afaf047615173add2e0c245e3d9800e9fa1768666a229dabf96e6c3b",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 2827379,
+          "decodedSha256": "e3fb80575508f5e7bf0e8cd3160dcbca6171a4c89bcff59d1141e05b3f60c921",
+          "path": ".asset-chunks/98a7afb1488d846fc16b256193aeb1aa4c617d36516867f00e9e3875d382293c/0002.part",
+          "size": 2827379,
+          "sha256": "e3fb80575508f5e7bf0e8cd3160dcbca6171a4c89bcff59d1141e05b3f60c921",
+          "encoding": "raw"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/ant-ling.mp4",
+      "size": 39576984,
+      "sha256": "2ce5806e096e01086f1fce81f6e5535509e5d151fb2197842b1922b384d7b47d",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "ee4a8648cab6ac64c930179209888a4309019b316f3c83e095dc23d26510a628",
+          "path": ".asset-chunks/2ce5806e096e01086f1fce81f6e5535509e5d151fb2197842b1922b384d7b47d/0001.part.gz",
+          "size": 4125558,
+          "sha256": "db6e4213ae6caa13b5246b589e14d54598fd4189330385a963711393e01fdf8f",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "e2820ccf7bd13a2583fe5e9b0048f29097dd89bb028207eeffc0425aa42152eb",
+          "path": ".asset-chunks/2ce5806e096e01086f1fce81f6e5535509e5d151fb2197842b1922b384d7b47d/0002.part",
+          "size": 4194304,
+          "sha256": "e2820ccf7bd13a2583fe5e9b0048f29097dd89bb028207eeffc0425aa42152eb",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "d4e3017e97d80e9310b0bb17ffad03a99adfe02ede0e220027f109c265691b01",
+          "path": ".asset-chunks/2ce5806e096e01086f1fce81f6e5535509e5d151fb2197842b1922b384d7b47d/0003.part",
+          "size": 4194304,
+          "sha256": "d4e3017e97d80e9310b0bb17ffad03a99adfe02ede0e220027f109c265691b01",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "1e80a07588c0f8fa95c153637725ede01b3b5255f6f13d9819576e3a3e999f7f",
+          "path": ".asset-chunks/2ce5806e096e01086f1fce81f6e5535509e5d151fb2197842b1922b384d7b47d/0004.part",
+          "size": 4194304,
+          "sha256": "1e80a07588c0f8fa95c153637725ede01b3b5255f6f13d9819576e3a3e999f7f",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "94a855c602439c37c3d64044f593965fe87cb477312015ebe1472774c3e5e60f",
+          "path": ".asset-chunks/2ce5806e096e01086f1fce81f6e5535509e5d151fb2197842b1922b384d7b47d/0005.part",
+          "size": 4194304,
+          "sha256": "94a855c602439c37c3d64044f593965fe87cb477312015ebe1472774c3e5e60f",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "b031e9aab55ffe9750489540a988f9d16dab1a65a4645b1f78010e25934df7e0",
+          "path": ".asset-chunks/2ce5806e096e01086f1fce81f6e5535509e5d151fb2197842b1922b384d7b47d/0006.part",
+          "size": 4194304,
+          "sha256": "b031e9aab55ffe9750489540a988f9d16dab1a65a4645b1f78010e25934df7e0",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "1d72732e8cd166b621ca46d832b733b918f362bf98a6069b4dd9f245c8999f77",
+          "path": ".asset-chunks/2ce5806e096e01086f1fce81f6e5535509e5d151fb2197842b1922b384d7b47d/0007.part",
+          "size": 4194304,
+          "sha256": "1d72732e8cd166b621ca46d832b733b918f362bf98a6069b4dd9f245c8999f77",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "69a0c204a4b56b72661c972e855aef23181aa6dd5dedc40650d9f7805e6a8b70",
+          "path": ".asset-chunks/2ce5806e096e01086f1fce81f6e5535509e5d151fb2197842b1922b384d7b47d/0008.part",
+          "size": 4194304,
+          "sha256": "69a0c204a4b56b72661c972e855aef23181aa6dd5dedc40650d9f7805e6a8b70",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "1c0a50143a1efde05594eea40bf7f6222c56240fd868162fa2b29769935f2277",
+          "path": ".asset-chunks/2ce5806e096e01086f1fce81f6e5535509e5d151fb2197842b1922b384d7b47d/0009.part",
+          "size": 4194304,
+          "sha256": "1c0a50143a1efde05594eea40bf7f6222c56240fd868162fa2b29769935f2277",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 1828248,
+          "decodedSha256": "c443ed765e0543ee4f06850f235b6ec9ab6962ee0f58192cff98aaee2e88dfa4",
+          "path": ".asset-chunks/2ce5806e096e01086f1fce81f6e5535509e5d151fb2197842b1922b384d7b47d/0010.part.gz",
+          "size": 1804522,
+          "sha256": "0663443976890aee976b01c1ffb7566bd7894ceaa6dfcf7ef7b0751708847939",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/chatgpt-space.mp4",
+      "size": 11935451,
+      "sha256": "7e7a2772039fcdfccd9417349ef656fb999d3eb3f4c8dca7aa6433e1fcd2256e",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "d841b970a2768befd41b3287f25d18349e61f30e37af8f6f2437a748c08d4007",
+          "path": ".asset-chunks/7e7a2772039fcdfccd9417349ef656fb999d3eb3f4c8dca7aa6433e1fcd2256e/0001.part.gz",
+          "size": 4175589,
+          "sha256": "5b2e9b2fb6f94137845d169459ea754338387ddf7e5bbe8f11dda8e9c3f0c9a7",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "b2365aade8a2aef77b00b513a99296a52e5fb7cfa80c09f80d1b664b1e1317f4",
+          "path": ".asset-chunks/7e7a2772039fcdfccd9417349ef656fb999d3eb3f4c8dca7aa6433e1fcd2256e/0002.part",
+          "size": 4194304,
+          "sha256": "b2365aade8a2aef77b00b513a99296a52e5fb7cfa80c09f80d1b664b1e1317f4",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 3546843,
+          "decodedSha256": "da8cad849cb75963c93e78c75ae21c2d991718a48d5dc878db2a339f5071c94f",
+          "path": ".asset-chunks/7e7a2772039fcdfccd9417349ef656fb999d3eb3f4c8dca7aa6433e1fcd2256e/0003.part",
+          "size": 3546843,
+          "sha256": "da8cad849cb75963c93e78c75ae21c2d991718a48d5dc878db2a339f5071c94f",
+          "encoding": "raw"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/claude-duet.mp4",
+      "size": 10902801,
+      "sha256": "c66484b7e3ee58279cb5f7e622e853c5ff54837f6db283502e7ed6477138f717",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "213f580e5777e27e7ce35dc8b45d69fae8f8496d457d4a184ee56e0862f7cde1",
+          "path": ".asset-chunks/c66484b7e3ee58279cb5f7e622e853c5ff54837f6db283502e7ed6477138f717/0001.part.gz",
+          "size": 4169748,
+          "sha256": "f2de7fe6e798317f71aa59153a2ba5d2f78bd316638be65d6550bdf272b64297",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "33d4af8e5e17c9e80f8ea2d7fde096f30981c8e2ea72b372d2bc072e63d9901d",
+          "path": ".asset-chunks/c66484b7e3ee58279cb5f7e622e853c5ff54837f6db283502e7ed6477138f717/0002.part",
+          "size": 4194304,
+          "sha256": "33d4af8e5e17c9e80f8ea2d7fde096f30981c8e2ea72b372d2bc072e63d9901d",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 2514193,
+          "decodedSha256": "ea5bc6a2e55579cb534d3c93da469ca025bd235e4ac2b63b1ba9f0e546eb1da5",
+          "path": ".asset-chunks/c66484b7e3ee58279cb5f7e622e853c5ff54837f6db283502e7ed6477138f717/0003.part.gz",
+          "size": 2513750,
+          "sha256": "dd573b016e244c067293765efc83f14c87406f8cd6d94bda7f6ffa6871c0a0ec",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/claude-motion.mp4",
+      "size": 6700580,
+      "sha256": "902cd32d0635126ebac483e3fefd4d639662e14116ab9537372673e0e9a415e5",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "bfd7f2f743fbb4e86312231ed15ae22c31bbfbf90ca94b3a2df9775247ce32ba",
+          "path": ".asset-chunks/902cd32d0635126ebac483e3fefd4d639662e14116ab9537372673e0e9a415e5/0001.part.gz",
+          "size": 4172814,
+          "sha256": "1e1ce3c65c44bc21712e4c82446faf5ffb338564b927fa85e0eea8ea03472f31",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 2506276,
+          "decodedSha256": "bdeddd3382f69aef06500b524796c3e74bab026124d96f4a1cb3957772a3eb0c",
+          "path": ".asset-chunks/902cd32d0635126ebac483e3fefd4d639662e14116ab9537372673e0e9a415e5/0002.part.gz",
+          "size": 2503942,
+          "sha256": "51261931a4d9d4d9596c6d52e1de018b7faf42726d7bca665835f3615b1d6a15",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/comfy-agent.mp4",
+      "size": 14602416,
+      "sha256": "40a8cd2635b048a106605610f8667cffe7d7ddd27d878ed5984cccb1c7f736a8",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "28e506b54de97788f7fbff30298584729fbd7954869990c4c86a5a6d9cd9e5c0",
+          "path": ".asset-chunks/40a8cd2635b048a106605610f8667cffe7d7ddd27d878ed5984cccb1c7f736a8/0001.part.gz",
+          "size": 4158587,
+          "sha256": "a1de6dedcc2a74b25bd449fd762cded2b7dcc06dfdde90922400f7649fa78bae",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "b080f0672d2bc04b2e8dadc011e77c9c7a452af48a7d5664687a0b917b552fa6",
+          "path": ".asset-chunks/40a8cd2635b048a106605610f8667cffe7d7ddd27d878ed5984cccb1c7f736a8/0002.part.gz",
+          "size": 4191137,
+          "sha256": "a5f61388b57e951a07d71dbad6952320c2d666f36338af30a8ef65d1745454ac",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "2bf9c9ab62fb6187599ce3e305f272b63cadbf76c50fae67d7a2c27494f1d0f5",
+          "path": ".asset-chunks/40a8cd2635b048a106605610f8667cffe7d7ddd27d878ed5984cccb1c7f736a8/0003.part",
+          "size": 4194304,
+          "sha256": "2bf9c9ab62fb6187599ce3e305f272b63cadbf76c50fae67d7a2c27494f1d0f5",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 2019504,
+          "decodedSha256": "ae24514c62b210e411950c712639d74004d78f919cdd46196c2e7b2aea96312c",
+          "path": ".asset-chunks/40a8cd2635b048a106605610f8667cffe7d7ddd27d878ed5984cccb1c7f736a8/0004.part.gz",
+          "size": 2014652,
+          "sha256": "c9adf0e5e3b9b18b6904278937f92a83e48b5864841366dbe753cc68b50f24f6",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/copilot-new.mp4",
+      "size": 6174091,
+      "sha256": "10da578caebb1a64ec83619810c73a4c1331509330a98c7a4d7a7070236f43cb",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "e0a5db215194e1177db57fe06bdfbdf6a6cb6c69df1193880f01210e21034c6f",
+          "path": ".asset-chunks/10da578caebb1a64ec83619810c73a4c1331509330a98c7a4d7a7070236f43cb/0001.part.gz",
+          "size": 4153045,
+          "sha256": "b85bf46e9a30fba9fccde0a505b28aed1355749ceb87260e904e92bfdfb58aea",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 1979787,
+          "decodedSha256": "ccdf61e574880e75dce98b7e7def624c42bcadf109219553803ae590b86604a7",
+          "path": ".asset-chunks/10da578caebb1a64ec83619810c73a4c1331509330a98c7a4d7a7070236f43cb/0002.part.gz",
+          "size": 1976759,
+          "sha256": "b51a15e7c7a3f71a3dfdf0ec59dd9a505411743ec75104dbe045e478ce10e492",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/eleven-chimera.mp4",
+      "size": 7619330,
+      "sha256": "a1aadeb4f943dc9bd8c54a552e60847b6a902d2ee2a19cd8139ad5edd1315253",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "76c5e65d29e9c1c89e59de9808c51c57b4c1a502f090c9e4b49ec2bf720386e1",
+          "path": ".asset-chunks/a1aadeb4f943dc9bd8c54a552e60847b6a902d2ee2a19cd8139ad5edd1315253/0001.part.gz",
+          "size": 4159892,
+          "sha256": "b9c2273e2e9c5daa8be579cd8a219c245bfa19bf53cbd82aece81a9f1f75d09f",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 3425026,
+          "decodedSha256": "978347117fc94418f0f4cae0e6524041e035758e080907038f6507b31050d6d0",
+          "path": ".asset-chunks/a1aadeb4f943dc9bd8c54a552e60847b6a902d2ee2a19cd8139ad5edd1315253/0002.part.gz",
+          "size": 3418296,
+          "sha256": "3e8cb089a14acfad9aa39d2bf1bb151b157fa3cb5a4cced691c01dcec184c82a",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/gemini-skills.mp4",
+      "size": 21777146,
+      "sha256": "d36400047581cadbc441c65a4d67a9bbe300db7a2e61d5a8adf8031e10a6c419",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "7cdb7391fdbf8c936e0986587aa711ab50725a60bcf450d96ded9666e72ce72b",
+          "path": ".asset-chunks/d36400047581cadbc441c65a4d67a9bbe300db7a2e61d5a8adf8031e10a6c419/0001.part.gz",
+          "size": 4158828,
+          "sha256": "9574e06310c6aef36ad901bd6e93919beae844d24259460ac63d76422e81cba8",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "4d3150b24f9905cc121290f61e2c6f96ee5b74bd4f6d8599ff7bd996b0ac6f9f",
+          "path": ".asset-chunks/d36400047581cadbc441c65a4d67a9bbe300db7a2e61d5a8adf8031e10a6c419/0002.part.gz",
+          "size": 4192534,
+          "sha256": "acc18c4787a376ff439853d80d57bf063869f255744c9b09cf3e0e195bcb06de",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "2e43069e6fa13db05b05d46f5359016cbc59882272c1b616f730520ec0aed3fd",
+          "path": ".asset-chunks/d36400047581cadbc441c65a4d67a9bbe300db7a2e61d5a8adf8031e10a6c419/0003.part.gz",
+          "size": 4190277,
+          "sha256": "d5643694b57a75c9ee9d1f895744cd60e26d0c7e2c33500dbf9bcd7fb7bc8e96",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "7a4a8fd63de04b048eb8334af35cd720bb630b6677849a2a84d0def5d3e1f80b",
+          "path": ".asset-chunks/d36400047581cadbc441c65a4d67a9bbe300db7a2e61d5a8adf8031e10a6c419/0004.part",
+          "size": 4194304,
+          "sha256": "7a4a8fd63de04b048eb8334af35cd720bb630b6677849a2a84d0def5d3e1f80b",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "b43af60bd28dd16f6927ee7b0d918717436b16203dbc2e60c4e425a8a97bcfe0",
+          "path": ".asset-chunks/d36400047581cadbc441c65a4d67a9bbe300db7a2e61d5a8adf8031e10a6c419/0005.part.gz",
+          "size": 4185856,
+          "sha256": "a9d91eb89c03ece5b743bc4d6f3ff7e966a23de4e845ca3ac825037e73b1f9b6",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 805626,
+          "decodedSha256": "82e12c7f7f103c76d74804b53ad886901ee24a1ad1ff639da5276fcb4a5f4ffe",
+          "path": ".asset-chunks/d36400047581cadbc441c65a4d67a9bbe300db7a2e61d5a8adf8031e10a6c419/0006.part.gz",
+          "size": 800763,
+          "sha256": "f2e2b31ee0459aa50b7f151ed048742e29ce0501d164dce00c8520aed6a5bddd",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/gpt6-intelligent-ui.mp4",
+      "size": 34680688,
+      "sha256": "e1a498dff7f8d22f92354b8f11a01e6b4389070d9ba98f170749d54bf1b25c4a",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "6c01df3f8f336ed8ce8d670267d846cd926cf5fe16bfd3b8a0e64b4f30be2e58",
+          "path": ".asset-chunks/e1a498dff7f8d22f92354b8f11a01e6b4389070d9ba98f170749d54bf1b25c4a/0001.part.gz",
+          "size": 4164251,
+          "sha256": "796b1a4a8a5e10f6ee2ff0522ec05efe43c4a7407ba26e08072152939fe65423",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "487d6791a9fc75ada4f50631ad9ad4989444fcebd9ce58e12dd48cd8adc060ed",
+          "path": ".asset-chunks/e1a498dff7f8d22f92354b8f11a01e6b4389070d9ba98f170749d54bf1b25c4a/0002.part",
+          "size": 4194304,
+          "sha256": "487d6791a9fc75ada4f50631ad9ad4989444fcebd9ce58e12dd48cd8adc060ed",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "4b02985feabd581d2fa879bfbacda9e4f7f2f6baed496a7689e88194c708511e",
+          "path": ".asset-chunks/e1a498dff7f8d22f92354b8f11a01e6b4389070d9ba98f170749d54bf1b25c4a/0003.part",
+          "size": 4194304,
+          "sha256": "4b02985feabd581d2fa879bfbacda9e4f7f2f6baed496a7689e88194c708511e",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "1cc6718cb28a0d0c3c2d16e116b62d8f830bbd485c91e7fb4acd292462405077",
+          "path": ".asset-chunks/e1a498dff7f8d22f92354b8f11a01e6b4389070d9ba98f170749d54bf1b25c4a/0004.part",
+          "size": 4194304,
+          "sha256": "1cc6718cb28a0d0c3c2d16e116b62d8f830bbd485c91e7fb4acd292462405077",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "1f3be22d423cbad002476f0f22b4a76619c6a739e515e6da12299c705e00ef56",
+          "path": ".asset-chunks/e1a498dff7f8d22f92354b8f11a01e6b4389070d9ba98f170749d54bf1b25c4a/0005.part",
+          "size": 4194304,
+          "sha256": "1f3be22d423cbad002476f0f22b4a76619c6a739e515e6da12299c705e00ef56",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "05b624f3e7fb2438fa27b2a890be50c10dbea29d330497d5478214d4162a088c",
+          "path": ".asset-chunks/e1a498dff7f8d22f92354b8f11a01e6b4389070d9ba98f170749d54bf1b25c4a/0006.part",
+          "size": 4194304,
+          "sha256": "05b624f3e7fb2438fa27b2a890be50c10dbea29d330497d5478214d4162a088c",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "fa6b6f31fe6d0cc1079ff98280e704f2db5b99b18ba67cb69faebb5008898fc0",
+          "path": ".asset-chunks/e1a498dff7f8d22f92354b8f11a01e6b4389070d9ba98f170749d54bf1b25c4a/0007.part",
+          "size": 4194304,
+          "sha256": "fa6b6f31fe6d0cc1079ff98280e704f2db5b99b18ba67cb69faebb5008898fc0",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "cba7ce5ffd50d8c8dca12c63d74edadbc7927f78eb2da946b64eea1633ac70e2",
+          "path": ".asset-chunks/e1a498dff7f8d22f92354b8f11a01e6b4389070d9ba98f170749d54bf1b25c4a/0008.part",
+          "size": 4194304,
+          "sha256": "cba7ce5ffd50d8c8dca12c63d74edadbc7927f78eb2da946b64eea1633ac70e2",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 1126256,
+          "decodedSha256": "eaa43796cc6e4e9f9e32e6cec3914f11f3e67ce2cfc96043c261783402dc4cca",
+          "path": ".asset-chunks/e1a498dff7f8d22f92354b8f11a01e6b4389070d9ba98f170749d54bf1b25c4a/0009.part.gz",
+          "size": 1123108,
+          "sha256": "d14463f51e710d3b56b093e195a56e0f8280eb700580bfd26f55703b97c44320",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/higgsfield-motion.mp4",
+      "size": 27297872,
+      "sha256": "9361aae09b371b1fc7b9a70953db7c80958927cb153acc20e8aaf7eec14a7a3c",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "05d6518e8f336f3d5a86193e865d51d56b2f511bbba0850b34052f8a5f94e7a4",
+          "path": ".asset-chunks/9361aae09b371b1fc7b9a70953db7c80958927cb153acc20e8aaf7eec14a7a3c/0001.part.gz",
+          "size": 4137556,
+          "sha256": "2a9d85fb0b7c4db37675f514b7407d6cd6a0363f47fc6d73f800df13f695ca77",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "3e6b917fa3c802a3d26a80e55305e789c31c802daad28cd0fed0ad43ed8dacda",
+          "path": ".asset-chunks/9361aae09b371b1fc7b9a70953db7c80958927cb153acc20e8aaf7eec14a7a3c/0002.part.gz",
+          "size": 4193804,
+          "sha256": "1f7a27085ab41c9992ca52fd82301856c1ee3a5ca8b94dca4ccd631e5ae0ec5a",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "8124d7a7291f4a62d0474ea2b51b12a9cfe566ac970a6125f9a1bb23f8be800f",
+          "path": ".asset-chunks/9361aae09b371b1fc7b9a70953db7c80958927cb153acc20e8aaf7eec14a7a3c/0003.part",
+          "size": 4194304,
+          "sha256": "8124d7a7291f4a62d0474ea2b51b12a9cfe566ac970a6125f9a1bb23f8be800f",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "a4e64652aa331063a31c515f75db19c213b29dcd853fad314bc0c578dc0e4374",
+          "path": ".asset-chunks/9361aae09b371b1fc7b9a70953db7c80958927cb153acc20e8aaf7eec14a7a3c/0004.part",
+          "size": 4194304,
+          "sha256": "a4e64652aa331063a31c515f75db19c213b29dcd853fad314bc0c578dc0e4374",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "a93fdfde5c50269d049a58724aceb9f81c4acd124e3ee240883126e6450975d0",
+          "path": ".asset-chunks/9361aae09b371b1fc7b9a70953db7c80958927cb153acc20e8aaf7eec14a7a3c/0005.part.gz",
+          "size": 4194175,
+          "sha256": "53f83b84198388684bc1833cdd88fad1125bdc0d9b798dc200452aafa6eecd06",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "2684676ddb84edc8f391e16974db03f83dab4b64e97172d117cd7bc2fc4f5c04",
+          "path": ".asset-chunks/9361aae09b371b1fc7b9a70953db7c80958927cb153acc20e8aaf7eec14a7a3c/0006.part.gz",
+          "size": 4193996,
+          "sha256": "592ffa8c688bf9d23d8a5815484be1f1df17a9ad6ba076b6f119697d3eab5175",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 2132048,
+          "decodedSha256": "70fa3553ea98d00938c1aca13975363a1401c0cad881624c645bb528ba42cbb0",
+          "path": ".asset-chunks/9361aae09b371b1fc7b9a70953db7c80958927cb153acc20e8aaf7eec14a7a3c/0007.part.gz",
+          "size": 2127341,
+          "sha256": "355069d6f83b7b2702250d3457920d95cc1c0853e7237ea145f4322b10935df7",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/jp-bakuraku.mp4",
+      "size": 6296770,
+      "sha256": "b46b708a87529bfdda03e54fc28fd3a38df01e4295ce574b62dabd5fd8147a9d",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "c0fb519c97bec1d8b9f2359b42c913b3141d15e9900bb7af21e47886ec25e83f",
+          "path": ".asset-chunks/b46b708a87529bfdda03e54fc28fd3a38df01e4295ce574b62dabd5fd8147a9d/0001.part.gz",
+          "size": 4176912,
+          "sha256": "a4830fd96fa1b9b772866b0c20e0408eff78d594162802d17a8c747595af5ceb",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 2102466,
+          "decodedSha256": "9a0f49989ee35ba4f02c4adfe42febac0b11e37a9aef3237711e7bc987752d5a",
+          "path": ".asset-chunks/b46b708a87529bfdda03e54fc28fd3a38df01e4295ce574b62dabd5fd8147a9d/0002.part.gz",
+          "size": 2101030,
+          "sha256": "3696b842efc2756e01c2f688daf616318bfbcb50cdeb57fbb42ae4bb44c85f97",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/jp-flyle-nihonham.mp4",
+      "size": 4837537,
+      "sha256": "9ede6f52c018b037660fcc92fac5f4bdf5d17b6fd413bbde5c0c1204c7908797",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "a2f30fec508faa778a44ff9fa011e6077db47b8d5d27c916544dcad82ef7145c",
+          "path": ".asset-chunks/9ede6f52c018b037660fcc92fac5f4bdf5d17b6fd413bbde5c0c1204c7908797/0001.part.gz",
+          "size": 4184817,
+          "sha256": "08975cf17501f512c1497366b0d8082186f74d637d1332b1469d308d7cf605bb",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 643233,
+          "decodedSha256": "f23ff5c8129e447f5cea8bddcf8b0bdbeba70c0ec8fcb818ac406812ab23cda5",
+          "path": ".asset-chunks/9ede6f52c018b037660fcc92fac5f4bdf5d17b6fd413bbde5c0c1204c7908797/0002.part.gz",
+          "size": 642313,
+          "sha256": "c54e68fdc0b19161a85a694668477fadb49e91680fe4508932f4a93bf8ab85a7",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/jp-kaonavi-kti.mp4",
+      "size": 6219544,
+      "sha256": "537566a22f405ad52cdbc1ce8850673fe420f59b37cbcc1422c264b2bb49bb5a",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "76a9dc674e460d33732092183eb0f963db5929ed5d137cfda37daeb4883b9c4b",
+          "path": ".asset-chunks/537566a22f405ad52cdbc1ce8850673fe420f59b37cbcc1422c264b2bb49bb5a/0001.part.gz",
+          "size": 4177494,
+          "sha256": "c8b7fc0a7f4a86b2f9444c3e0047c51719024ee46ec07b0393f0c569349df585",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 2025240,
+          "decodedSha256": "e3bb7433ad4f521862880662a6b8d6f691883ec1cd2194f3b9fb711dd4d03bb4",
+          "path": ".asset-chunks/537566a22f405ad52cdbc1ce8850673fe420f59b37cbcc1422c264b2bb49bb5a/0002.part.gz",
+          "size": 2024238,
+          "sha256": "e582c6977cc70e40490a3044d11c234c0fe7dbd7d497ca3a27f32f0b5433e8b3",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/jp-notepm.mp4",
+      "size": 8498827,
+      "sha256": "94cfa9f7a8c389e02b492d68c800314e9d2e69caed98922dffedc9eba60a5b38",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "1ce9d624e041d188c9da26ed476926df906e75649a7028e83c785518d6672b69",
+          "path": ".asset-chunks/94cfa9f7a8c389e02b492d68c800314e9d2e69caed98922dffedc9eba60a5b38/0001.part.gz",
+          "size": 4185184,
+          "sha256": "bf27558010fad5df5edac73def8b239c61c73eb4bbe9df5953a969d5c30c1823",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "3b31bad7914481b61f00f45f31b9c3ba345e23a435ca190d58aea33823e83544",
+          "path": ".asset-chunks/94cfa9f7a8c389e02b492d68c800314e9d2e69caed98922dffedc9eba60a5b38/0002.part",
+          "size": 4194304,
+          "sha256": "3b31bad7914481b61f00f45f31b9c3ba345e23a435ca190d58aea33823e83544",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 110219,
+          "decodedSha256": "5e565f1d5d2bae8a1b7e1d049d84e4c4905b98001fd0f7b1b164220c2e9738d1",
+          "path": ".asset-chunks/94cfa9f7a8c389e02b492d68c800314e9d2e69caed98922dffedc9eba60a5b38/0003.part.gz",
+          "size": 110155,
+          "sha256": "830fb22473c7ba112cd2a730c097403f98ff46fe4c0e2b5c94d59ed74e42a069",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/jp-notta-memo.mp4",
+      "size": 9481281,
+      "sha256": "09d912f96883e216e115e360a36cb246f42a99fd0a6127c91809e63c4c186425",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "b2f9366cf7c500ad91af7bd0500260e0155add99383c30852ee6b4f08f935e01",
+          "path": ".asset-chunks/09d912f96883e216e115e360a36cb246f42a99fd0a6127c91809e63c4c186425/0001.part.gz",
+          "size": 4185321,
+          "sha256": "d96d6cc9b0133989b26aaad139d9bd4d9958710384e41fc2825e6c71b0cd99a1",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "560d8a5246a12615d41af87482fc95d4e6fec9d38711d21c5ee429e01cd30857",
+          "path": ".asset-chunks/09d912f96883e216e115e360a36cb246f42a99fd0a6127c91809e63c4c186425/0002.part",
+          "size": 4194304,
+          "sha256": "560d8a5246a12615d41af87482fc95d4e6fec9d38711d21c5ee429e01cd30857",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 1092673,
+          "decodedSha256": "bc0a778d53e5ff2772342ac0ce2653e75fe6144ba119eb4878b035e75a21cad8",
+          "path": ".asset-chunks/09d912f96883e216e115e360a36cb246f42a99fd0a6127c91809e63c4c186425/0003.part",
+          "size": 1092673,
+          "sha256": "bc0a778d53e5ff2772342ac0ce2653e75fe6144ba119eb4878b035e75a21cad8",
+          "encoding": "raw"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/jp-peoplex-interview.mp4",
+      "size": 5524810,
+      "sha256": "b1806cd254735cd8cf5b1f449f41476d7076c99bae5db3d2d9067a3ead9a0385",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "9cc1c35275da19664aeac752ca33ed97b8fbb2e79f3c2623165802bd7db2d7e6",
+          "path": ".asset-chunks/b1806cd254735cd8cf5b1f449f41476d7076c99bae5db3d2d9067a3ead9a0385/0001.part.gz",
+          "size": 4187189,
+          "sha256": "0241a499814ad5e98cdcb118d2a9fad43a1e9cf9b7a3b99fa1a48fe3e4f0d89a",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 1330506,
+          "decodedSha256": "a90b6c7f2d5956e61972c00b67a23341c074813032ed051970090a5597c76655",
+          "path": ".asset-chunks/b1806cd254735cd8cf5b1f449f41476d7076c99bae5db3d2d9067a3ead9a0385/0002.part",
+          "size": 1330506,
+          "sha256": "a90b6c7f2d5956e61972c00b67a23341c074813032ed051970090a5597c76655",
+          "encoding": "raw"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/jp-usonar-un.mp4",
+      "size": 13503513,
+      "sha256": "46904df4854ee44aa585e76728fd33db3cc543d333fbb9e96edee1a9141e620e",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "f2e4b28dc6b11121c1a6e736238810d03e1bf3465512d8baef925b38fde6fad7",
+          "path": ".asset-chunks/46904df4854ee44aa585e76728fd33db3cc543d333fbb9e96edee1a9141e620e/0001.part.gz",
+          "size": 4164941,
+          "sha256": "f719805d18a6af1f1db6968f08608c73210dea7e1f330cf604396601f3f36cd6",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "89b29ae25092a8cb70c6f0e835de2421e2f8ace7aa353551dc44982c2e9dd9dc",
+          "path": ".asset-chunks/46904df4854ee44aa585e76728fd33db3cc543d333fbb9e96edee1a9141e620e/0002.part",
+          "size": 4194304,
+          "sha256": "89b29ae25092a8cb70c6f0e835de2421e2f8ace7aa353551dc44982c2e9dd9dc",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "22ebea05070173f4ee78e9b3b01f4d91a02a191bb22b271a5a2bb9a423836be2",
+          "path": ".asset-chunks/46904df4854ee44aa585e76728fd33db3cc543d333fbb9e96edee1a9141e620e/0003.part",
+          "size": 4194304,
+          "sha256": "22ebea05070173f4ee78e9b3b01f4d91a02a191bb22b271a5a2bb9a423836be2",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 920601,
+          "decodedSha256": "5f9e166acbd1a58f7dc899b69a70cbb0ea66e66236725ef877236b0fa895dfe6",
+          "path": ".asset-chunks/46904df4854ee44aa585e76728fd33db3cc543d333fbb9e96edee1a9141e620e/0004.part.gz",
+          "size": 913417,
+          "sha256": "e12b951f20c6bffad8fe9b86a0d1ad3951844b08b8b726a255da6a19a2218ce5",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/kimi-3d-make.mp4",
+      "size": 28508984,
+      "sha256": "63ca48fa3099860890f56c46a2dd5cafed11964bb081ab46a4cd477ef12a7704",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "9e7c0b8aec976bf91bfa8f99bbfde7a4c67e81a45a346a6e1dccdf2950fba229",
+          "path": ".asset-chunks/63ca48fa3099860890f56c46a2dd5cafed11964bb081ab46a4cd477ef12a7704/0001.part.gz",
+          "size": 4163886,
+          "sha256": "e39057071c752bbdb87ed99c599236510377307f8799803ee1c32d91c84047c0",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "67bc0c1ed8865f6bec528421c04c09df82c4524b8461f66d027cee8f0a13facb",
+          "path": ".asset-chunks/63ca48fa3099860890f56c46a2dd5cafed11964bb081ab46a4cd477ef12a7704/0002.part",
+          "size": 4194304,
+          "sha256": "67bc0c1ed8865f6bec528421c04c09df82c4524b8461f66d027cee8f0a13facb",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "30f78cd57588958f7ae61f00145d16f7976c3b85628c94f5fbe4815e693c467e",
+          "path": ".asset-chunks/63ca48fa3099860890f56c46a2dd5cafed11964bb081ab46a4cd477ef12a7704/0003.part",
+          "size": 4194304,
+          "sha256": "30f78cd57588958f7ae61f00145d16f7976c3b85628c94f5fbe4815e693c467e",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "87aa85a111dd22f1f1fa892c0eec7d6d2ae7084faae9c9454699eb9ca58d8a56",
+          "path": ".asset-chunks/63ca48fa3099860890f56c46a2dd5cafed11964bb081ab46a4cd477ef12a7704/0004.part",
+          "size": 4194304,
+          "sha256": "87aa85a111dd22f1f1fa892c0eec7d6d2ae7084faae9c9454699eb9ca58d8a56",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "0af4236f807f73c8129a17796b06cb2091fbc1603357a289c0b5ac598544d84a",
+          "path": ".asset-chunks/63ca48fa3099860890f56c46a2dd5cafed11964bb081ab46a4cd477ef12a7704/0005.part.gz",
+          "size": 4192607,
+          "sha256": "cb2980d32e650c8e09c26cfaac0a17214135a0581d8bd0f5d5ddad6ea4be9664",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "2acf15d5ea3d32d6f32d0068e5ad9256c7e809191f8d096ad2b023b4007c5ad7",
+          "path": ".asset-chunks/63ca48fa3099860890f56c46a2dd5cafed11964bb081ab46a4cd477ef12a7704/0006.part",
+          "size": 4194304,
+          "sha256": "2acf15d5ea3d32d6f32d0068e5ad9256c7e809191f8d096ad2b023b4007c5ad7",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 3343160,
+          "decodedSha256": "955164c3ee78d04123d25c00057aae5f004cc487bd6780e4ad48c8378d6e8aa5",
+          "path": ".asset-chunks/63ca48fa3099860890f56c46a2dd5cafed11964bb081ab46a4cd477ef12a7704/0007.part.gz",
+          "size": 3331764,
+          "sha256": "37c3c3e3eda31ed10329f3373feb495337d98378f470ef043fb891546d78a33f",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/kimi-k31-pro.mp4",
+      "size": 58437336,
+      "sha256": "8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "cb6c65d58feb6ccfaf5d83af9b6a947e546a35a09b88a7061f7cbd8de31b8490",
+          "path": ".asset-chunks/8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423/0001.part.gz",
+          "size": 4156921,
+          "sha256": "5e078db8888b9c6098aab084b7eca9eddc5a6eaed038192e55d425126d40b879",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "88a1aa437bc7504614fea80669000750571f3843887f70e4c0e043629194a0a8",
+          "path": ".asset-chunks/8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423/0002.part",
+          "size": 4194304,
+          "sha256": "88a1aa437bc7504614fea80669000750571f3843887f70e4c0e043629194a0a8",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "a8171f60a57d4c992a2a6895a200bb66baa763ff37d63f8b5ecaef35c041ba96",
+          "path": ".asset-chunks/8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423/0003.part.gz",
+          "size": 4193542,
+          "sha256": "1eb5bffc06a8b9c46465882f0dc88898b08d6508e25c179f5fbb2259d2ac8d7f",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "5a1e936ba31f5934dde6dc1d517f200f9eafcfcf1136e25256241ca2e27afafd",
+          "path": ".asset-chunks/8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423/0004.part",
+          "size": 4194304,
+          "sha256": "5a1e936ba31f5934dde6dc1d517f200f9eafcfcf1136e25256241ca2e27afafd",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "75d10acd3b22e87342974f68f09ab04354d5a84bbd0d55c4dbb2ae147c1a9f1f",
+          "path": ".asset-chunks/8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423/0005.part",
+          "size": 4194304,
+          "sha256": "75d10acd3b22e87342974f68f09ab04354d5a84bbd0d55c4dbb2ae147c1a9f1f",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "936781ecc58d39ae8d0e8ba53188c478cbbe259500112a305330a61b34f2e17f",
+          "path": ".asset-chunks/8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423/0006.part",
+          "size": 4194304,
+          "sha256": "936781ecc58d39ae8d0e8ba53188c478cbbe259500112a305330a61b34f2e17f",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "83f2159bb70f3abb65af048d9637dd3b6cd1b6e0ed8bedbffc5e140d891193f3",
+          "path": ".asset-chunks/8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423/0007.part",
+          "size": 4194304,
+          "sha256": "83f2159bb70f3abb65af048d9637dd3b6cd1b6e0ed8bedbffc5e140d891193f3",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "e85c3a48df03d6644c226c22c96b367b32d87f126c399419b18cb7af1a457727",
+          "path": ".asset-chunks/8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423/0008.part",
+          "size": 4194304,
+          "sha256": "e85c3a48df03d6644c226c22c96b367b32d87f126c399419b18cb7af1a457727",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "5ccc3b70f5861cdf81824d336e67ae8112ba87ecde59a621b88a321d87872162",
+          "path": ".asset-chunks/8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423/0009.part",
+          "size": 4194304,
+          "sha256": "5ccc3b70f5861cdf81824d336e67ae8112ba87ecde59a621b88a321d87872162",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "e9a5e42af6579396d059843624578df85c23f8192fcaf2334bb022c337c19fa1",
+          "path": ".asset-chunks/8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423/0010.part",
+          "size": 4194304,
+          "sha256": "e9a5e42af6579396d059843624578df85c23f8192fcaf2334bb022c337c19fa1",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "196c6d67000be2400e5bb0e1fd13a2e8c23e88fc6822bbb6cffba924658d0e45",
+          "path": ".asset-chunks/8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423/0011.part",
+          "size": 4194304,
+          "sha256": "196c6d67000be2400e5bb0e1fd13a2e8c23e88fc6822bbb6cffba924658d0e45",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "810a419c3913e0ba2ee85a63a85be58a4435282fe92f74e6b9ccde9ae00d8324",
+          "path": ".asset-chunks/8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423/0012.part.gz",
+          "size": 4182806,
+          "sha256": "b59eca53574781a21b9e38369a4183498b90140cc71a159856e323a0da48c913",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "9219121fba08c97b7b1304290f698812b3574c2be7506777eef0547dadff600e",
+          "path": ".asset-chunks/8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423/0013.part",
+          "size": 4194304,
+          "sha256": "9219121fba08c97b7b1304290f698812b3574c2be7506777eef0547dadff600e",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 3911384,
+          "decodedSha256": "961cdac6d8138b575d5f16e52d47265663a8f49c20143b21dbd637dd2f48674f",
+          "path": ".asset-chunks/8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423/0014.part.gz",
+          "size": 3906716,
+          "sha256": "09b7fad6af383a0bead30a8ac686ca4e70d7b2baf45d38aa6402e28331f5dd2a",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/kimi-teaser.mp4",
+      "size": 24972820,
+      "sha256": "0e7b184354715efb5304a56b38e49bee0c6f9f860fcf3d8330926ab1d17101e2",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "94e00063a617251b9c983b39f02fafa9a3e7e69b29d2852d5da0e5a68d2f5ae3",
+          "path": ".asset-chunks/0e7b184354715efb5304a56b38e49bee0c6f9f860fcf3d8330926ab1d17101e2/0001.part.gz",
+          "size": 4178472,
+          "sha256": "5841f00b143dbb0221cfbdc4cb3e63134318133d22c65448f2184d4ceaf94c88",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "e57aae04ee07aced0f4e3c28b18b4402c9d51719e9cf7bc024901c53f6b6fb66",
+          "path": ".asset-chunks/0e7b184354715efb5304a56b38e49bee0c6f9f860fcf3d8330926ab1d17101e2/0002.part",
+          "size": 4194304,
+          "sha256": "e57aae04ee07aced0f4e3c28b18b4402c9d51719e9cf7bc024901c53f6b6fb66",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "5a4c7ad5dd8d33ae1e63e422ba87049b5cd5d8847b031840aa1f140b147fa54d",
+          "path": ".asset-chunks/0e7b184354715efb5304a56b38e49bee0c6f9f860fcf3d8330926ab1d17101e2/0003.part",
+          "size": 4194304,
+          "sha256": "5a4c7ad5dd8d33ae1e63e422ba87049b5cd5d8847b031840aa1f140b147fa54d",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "fdca5d1f69dc9a0db1ec0d4721245bb7637c3847b36253e45e7e48476a3682f4",
+          "path": ".asset-chunks/0e7b184354715efb5304a56b38e49bee0c6f9f860fcf3d8330926ab1d17101e2/0004.part",
+          "size": 4194304,
+          "sha256": "fdca5d1f69dc9a0db1ec0d4721245bb7637c3847b36253e45e7e48476a3682f4",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "2964e997c3f7af48368dbf69370a63a2610473554a5280ff165661dad39e1df5",
+          "path": ".asset-chunks/0e7b184354715efb5304a56b38e49bee0c6f9f860fcf3d8330926ab1d17101e2/0005.part",
+          "size": 4194304,
+          "sha256": "2964e997c3f7af48368dbf69370a63a2610473554a5280ff165661dad39e1df5",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4001300,
+          "decodedSha256": "98f99b0b1088d46ca760e59e228536adb93991c24c157b360558f81168985018",
+          "path": ".asset-chunks/0e7b184354715efb5304a56b38e49bee0c6f9f860fcf3d8330926ab1d17101e2/0006.part.gz",
+          "size": 3975207,
+          "sha256": "db2c7e8b47a1399384cc228430160befe5ae5749710ff15533881d08d18a23f6",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/krea-ad-studio.mp4",
+      "size": 4549817,
+      "sha256": "abc83f47046889dcb995a5816bf6e240a46e19a759f45508f9616410c5f205c6",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "6e88cd3b6dc9f3bddb6fb7bd2b4f85dc73cfc4d56d1afd8096e9cbca82814ffc",
+          "path": ".asset-chunks/abc83f47046889dcb995a5816bf6e240a46e19a759f45508f9616410c5f205c6/0001.part.gz",
+          "size": 4152674,
+          "sha256": "4424357196a10706d440ab1cb066a8a0ddb8c951f084000fa87c1a299af8be90",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 355513,
+          "decodedSha256": "c19f5481de5b2abbc72214eefaa164f0567b0e822d29f79cfc69c03954e6a3e0",
+          "path": ".asset-chunks/abc83f47046889dcb995a5816bf6e240a46e19a759f45508f9616410c5f205c6/0002.part.gz",
+          "size": 353896,
+          "sha256": "3b841ab0589349ca9609c32c4ec42f05c2a5fbea35d3a27ce27a144a4b7c8c43",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/openai-dots.mp4",
+      "size": 49942532,
+      "sha256": "9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "386be4df6ae9f9867f073e3c354a0bacc63940c0edb73663d2d96d935cc12721",
+          "path": ".asset-chunks/9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e/0001.part.gz",
+          "size": 4113717,
+          "sha256": "5c405280b0423ac49536615af6c12f94c7d7cfae5f1f28f490b6f2e5fea5f303",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "4c49d95e0d25fc5925c542df77f61397340387b7dcb50e7c588a2f746572f184",
+          "path": ".asset-chunks/9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e/0002.part",
+          "size": 4194304,
+          "sha256": "4c49d95e0d25fc5925c542df77f61397340387b7dcb50e7c588a2f746572f184",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "c97b767b29b96c3227b6d222d3d527901cebce92ad4ccb542759b95ac3a4df1c",
+          "path": ".asset-chunks/9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e/0003.part",
+          "size": 4194304,
+          "sha256": "c97b767b29b96c3227b6d222d3d527901cebce92ad4ccb542759b95ac3a4df1c",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "85104bd26626f4d99f9ee18e9302a5234953a169038835152dad0618b85b12c8",
+          "path": ".asset-chunks/9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e/0004.part",
+          "size": 4194304,
+          "sha256": "85104bd26626f4d99f9ee18e9302a5234953a169038835152dad0618b85b12c8",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "9c36eb99513716803a89ab43a181b88a8ddd2e6b8d2d59f5041c115a8c018a3e",
+          "path": ".asset-chunks/9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e/0005.part",
+          "size": 4194304,
+          "sha256": "9c36eb99513716803a89ab43a181b88a8ddd2e6b8d2d59f5041c115a8c018a3e",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "2504c5842e576b1f770ddd9b16f71cb4ddd949122cec865313ed9dd8dd582072",
+          "path": ".asset-chunks/9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e/0006.part",
+          "size": 4194304,
+          "sha256": "2504c5842e576b1f770ddd9b16f71cb4ddd949122cec865313ed9dd8dd582072",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "6ac7a0ee5ba8fbdfd4939dc634f57e41cf7fcb56f1d45f8b1add9e9cd33243ec",
+          "path": ".asset-chunks/9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e/0007.part",
+          "size": 4194304,
+          "sha256": "6ac7a0ee5ba8fbdfd4939dc634f57e41cf7fcb56f1d45f8b1add9e9cd33243ec",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "e6a480c7f0797c4a29de9d7288023bfa15a5a9b2a40c7480985a5b92e0fc8a0d",
+          "path": ".asset-chunks/9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e/0008.part",
+          "size": 4194304,
+          "sha256": "e6a480c7f0797c4a29de9d7288023bfa15a5a9b2a40c7480985a5b92e0fc8a0d",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "6fe764546ec247b8d7dae5f839d33cd5c43b724d171ce578da6ba320df7571ff",
+          "path": ".asset-chunks/9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e/0009.part",
+          "size": 4194304,
+          "sha256": "6fe764546ec247b8d7dae5f839d33cd5c43b724d171ce578da6ba320df7571ff",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "e4962287344834d0e29178852755d6ad6b0f2e284b9a8acfb0b38416ea3b2c4d",
+          "path": ".asset-chunks/9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e/0010.part",
+          "size": 4194304,
+          "sha256": "e4962287344834d0e29178852755d6ad6b0f2e284b9a8acfb0b38416ea3b2c4d",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "567aa85515e02bd113123039dc3940518026ea329ec1ad17a5ddf53da9c904b0",
+          "path": ".asset-chunks/9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e/0011.part",
+          "size": 4194304,
+          "sha256": "567aa85515e02bd113123039dc3940518026ea329ec1ad17a5ddf53da9c904b0",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 3805188,
+          "decodedSha256": "e4e7d55cd66478c2e04fc0aacc6ac65c66a6fc75c10ecab0c41b9df238c1ffe2",
+          "path": ".asset-chunks/9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e/0012.part",
+          "size": 3805188,
+          "sha256": "e4e7d55cd66478c2e04fc0aacc6ac65c66a6fc75c10ecab0c41b9df238c1ffe2",
+          "encoding": "raw"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/pause-video-editing.mp4",
+      "size": 10236004,
+      "sha256": "59d681ba580d39e3719ad7c0aa80a60c196ce04c28ec8094a4d4c17931938eca",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "7603c8f0ec17c792e6e7c6b982c1d6d0b1ac0f7b2d8b554bbb9fcb20310d424d",
+          "path": ".asset-chunks/59d681ba580d39e3719ad7c0aa80a60c196ce04c28ec8094a4d4c17931938eca/0001.part.gz",
+          "size": 4170140,
+          "sha256": "0556074d737dfd1e91b8923d6cfe61a5e22988d11ecfd8e432637931827eb39e",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "5a994f5a6599c5f226551b593406bb4969fb27015396da6ef525d53219422fcf",
+          "path": ".asset-chunks/59d681ba580d39e3719ad7c0aa80a60c196ce04c28ec8094a4d4c17931938eca/0002.part",
+          "size": 4194304,
+          "sha256": "5a994f5a6599c5f226551b593406bb4969fb27015396da6ef525d53219422fcf",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 1847396,
+          "decodedSha256": "10e2b2c8009fb463b648212ccd4b352ffdf72f412859590d824c914a82aee24c",
+          "path": ".asset-chunks/59d681ba580d39e3719ad7c0aa80a60c196ce04c28ec8094a4d4c17931938eca/0003.part.gz",
+          "size": 1839499,
+          "sha256": "7a50a10dccf4d31411aa9c965ec0a56994b1b1c38a8c2a466ac58380bfb9ac14",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/runway-app-studio.mp4",
+      "size": 20858600,
+      "sha256": "6b8843efb2cea3de6ab36de0b65354c06f7b829d3cca3ca7409f1ba8246ff3fa",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "e6df023406e312942de16a58bc69dd0246aec70fa03fdcc6c2b06a3efebdaef4",
+          "path": ".asset-chunks/6b8843efb2cea3de6ab36de0b65354c06f7b829d3cca3ca7409f1ba8246ff3fa/0001.part.gz",
+          "size": 4155817,
+          "sha256": "b047ef8d467144e5fa28530e56de402e8d3657612afdacabf48ea62745c72bb7",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "1dd835f084f3d9af7396c8c5f5a46d379e1493c1f73a9eb44a70b9e59c5fe9a7",
+          "path": ".asset-chunks/6b8843efb2cea3de6ab36de0b65354c06f7b829d3cca3ca7409f1ba8246ff3fa/0002.part",
+          "size": 4194304,
+          "sha256": "1dd835f084f3d9af7396c8c5f5a46d379e1493c1f73a9eb44a70b9e59c5fe9a7",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "52ce50a68e8ebe04ad9ebd303bab7c8ff08d206494033e57d8e617d125f58744",
+          "path": ".asset-chunks/6b8843efb2cea3de6ab36de0b65354c06f7b829d3cca3ca7409f1ba8246ff3fa/0003.part",
+          "size": 4194304,
+          "sha256": "52ce50a68e8ebe04ad9ebd303bab7c8ff08d206494033e57d8e617d125f58744",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "2d00b1be54507458d6942e2e27710544b6e80fe4c7b1627c21b788141fd6b01f",
+          "path": ".asset-chunks/6b8843efb2cea3de6ab36de0b65354c06f7b829d3cca3ca7409f1ba8246ff3fa/0004.part",
+          "size": 4194304,
+          "sha256": "2d00b1be54507458d6942e2e27710544b6e80fe4c7b1627c21b788141fd6b01f",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4081384,
+          "decodedSha256": "b5d723b2b419309d70157868943d8b12550dcb4ab808f463431f1abdb8459354",
+          "path": ".asset-chunks/6b8843efb2cea3de6ab36de0b65354c06f7b829d3cca3ca7409f1ba8246ff3fa/0005.part.gz",
+          "size": 4074357,
+          "sha256": "633d13f059324a7adaa627f22854ae91c63fd39f4db3309d6a55a77414458e6b",
+          "encoding": "gzip"
+        }
+      ]
+    },
+    {
+      "path": "references/videos/tencent-hy4.mp4",
+      "size": 20989886,
+      "sha256": "166b7c9dd6d67f86196450fed25da58013c6409ae01e9e209352d1d6e2c99490",
+      "parts": [
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "439f9af3aa759c597d04b31cfc60f698b985007b3db64f2dd82a9e1250dadb7e",
+          "path": ".asset-chunks/166b7c9dd6d67f86196450fed25da58013c6409ae01e9e209352d1d6e2c99490/0001.part.gz",
+          "size": 4165806,
+          "sha256": "dc223535926e72365db8a57811c95e5d65a4c4f059159f58fdaa47435e381133",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "cc760092408def0f06d4236c45e51d01dd5e89fd6241fbfd9664fd886923840b",
+          "path": ".asset-chunks/166b7c9dd6d67f86196450fed25da58013c6409ae01e9e209352d1d6e2c99490/0002.part",
+          "size": 4194304,
+          "sha256": "cc760092408def0f06d4236c45e51d01dd5e89fd6241fbfd9664fd886923840b",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "1eaff978df62a55c2b72d5978bd95f479dd563b6e3513adde8fd149828b5436d",
+          "path": ".asset-chunks/166b7c9dd6d67f86196450fed25da58013c6409ae01e9e209352d1d6e2c99490/0003.part",
+          "size": 4194304,
+          "sha256": "1eaff978df62a55c2b72d5978bd95f479dd563b6e3513adde8fd149828b5436d",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "af12a544987a344628e6f5ba20602802c94c906bc17825b2dd166e64cd1bdbf8",
+          "path": ".asset-chunks/166b7c9dd6d67f86196450fed25da58013c6409ae01e9e209352d1d6e2c99490/0004.part",
+          "size": 4194304,
+          "sha256": "af12a544987a344628e6f5ba20602802c94c906bc17825b2dd166e64cd1bdbf8",
+          "encoding": "raw"
+        },
+        {
+          "decodedSize": 4194304,
+          "decodedSha256": "978d0f530b3fd5ab0bde88e5018ded6823c1fc80050d39745636fedb39ae78df",
+          "path": ".asset-chunks/166b7c9dd6d67f86196450fed25da58013c6409ae01e9e209352d1d6e2c99490/0005.part.gz",
+          "size": 4170091,
+          "sha256": "3aae75c528a748825dbc96895f49daa50437aa4070119b4cd67549e5e7c5596e",
+          "encoding": "gzip"
+        },
+        {
+          "decodedSize": 18366,
+          "decodedSha256": "29a7f6730c13a7764777651cf2f7652f08af8b85aacba5057715f143bcdad590",
+          "path": ".asset-chunks/166b7c9dd6d67f86196450fed25da58013c6409ae01e9e209352d1d6e2c99490/0006.part.gz",
+          "size": 10487,
+          "sha256": "00653178291ff741d0cfc0bf24aab7991a53969e0f769a38366838956a4a9a8f",
+          "encoding": "gzip"
+        }
+      ]
+    }
+  ],
+  "compression": "Per-part lossless gzip only when smaller; size/sha256 describe stored bytes, decodedSize/decodedSha256 describe original part bytes."
+}

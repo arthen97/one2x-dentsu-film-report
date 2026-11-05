@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KAIROS 60s 群像版｜需求整合与本土细节版｜Brief＋分镜</title>
+<style>
+:root{--paper:#f7f5f1;--card:#fff;--ink:#1f1c22;--mute:#76707c;--line:#e3dfe6;--brand:#863dfb;--soft:#f1eafe;--warm:#a4502a;
+--jp:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;--sans:"Hiragino Sans","PingFang SC","Noto Sans CJK SC",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.75;font-size:16px}
+a{color:var(--brand)}.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+nav{position:sticky;top:0;z-index:5;background:rgba(247,245,241,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:12px;height:52px}nav img{height:20px}nav b{letter-spacing:.18em;font-size:13px}
+nav .links{margin-left:auto;display:flex;gap:18px;font-size:13px}nav .links a{color:var(--mute);text-decoration:none}
+nav button{background:none;border:1px solid var(--line);border-radius:6px;padding:3px 10px;font-size:12px;color:var(--mute);cursor:pointer}
+.hero{padding:70px 0 46px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.16em;color:var(--mute)}
+.hero h1{font-size:42px;margin:10px 0 4px}
+.hero .meta{color:var(--mute);font-size:14px}
+.claim{margin-top:26px;padding:20px 24px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:0 12px 12px 0}
+.claim .ja{font-family:var(--jp);font-size:26px}.claim .cn{color:var(--mute);font-size:14px}
+.tl{margin-top:26px;display:flex;height:40px;border-radius:8px;overflow:hidden;border:1px solid var(--line);font-size:12px}
+.tl a{display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--ink);border-right:1px solid #fff;white-space:nowrap;overflow:hidden}
+.t1{background:#ece8e2}.t2{background:#e2d6fb}.t3{background:#ece8e2}.t4{background:#d3c0fa}.t5{background:#ece8e2}.t6{background:#b99af7}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+h2{font-size:27px;margin:0 0 6px}h2 small{font-size:14px;color:var(--mute);font-weight:400;margin-left:10px}
+.lead{color:var(--mute);margin:0 0 22px;font-size:14.5px}
+.bgrid{display:grid;grid-template-columns:140px 1fr;border-top:1px solid var(--line)}
+.bgrid>div{padding:14px 0;border-bottom:1px solid var(--line)}.bgrid .k{color:var(--mute);font-size:13px;padding-top:17px}
+.four{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.four div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:13.5px}
+.four b{display:block;font-size:15px}.four .p{color:var(--mute);font-size:12px}
+table.v{width:100%;border-collapse:collapse;font-size:14px}
+table.v td{border-bottom:1px solid var(--line);padding:8px 6px;vertical-align:top}
+table.v td:first-child{width:34%;color:var(--mute)}table.v .jp{font-family:var(--jp)}
+.refs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.ref{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;font-size:14px}
+.ref .lv{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;color:#fff;background:var(--brand);border-radius:4px;padding:0 8px}
+.ref .lv.line{background:#06a54c}
+.ref h3{margin:6px 0 2px;font-size:16px}.ref .by{font-size:12px;color:var(--mute)}
+.ref p{margin:6px 0}.ref .no{color:var(--warm);font-size:13px}
+.ref .links a{font-size:12px;margin-right:10px}
+.act{margin:34px 0 10px;display:flex;align-items:baseline;gap:12px}
+.act .n{font-size:12px;letter-spacing:.16em;color:var(--brand);font-weight:700}.act h3{margin:0;font-size:19px}.act span{font-size:13px;color:var(--mute)}
+.shot{display:grid;grid-template-columns:100px 1fr 310px;background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.tc{padding:15px 13px;border-right:1px solid var(--line);background:#faf8f5}
+.tc .no{font-size:23px;font-weight:700;line-height:1}.tc .time{font-size:13px;color:var(--mute);margin-top:6px;font-variant-numeric:tabular-nums}
+.tc .dur{display:inline-block;margin-top:6px;font-size:12px;background:var(--ink);color:#fff;border-radius:4px;padding:0 7px}
+.tc .ui{display:inline-block;margin-top:6px;font-size:11px;background:var(--brand);color:#fff;border-radius:4px;padding:0 6px}
+.body{padding:14px 18px}.body h4{margin:0 0 2px;font-size:16px}
+.where{font-size:12px;color:var(--mute);margin-bottom:6px}.body p{margin:0 0 6px;font-size:14.5px}
+.detail{font-size:13px;background:#f3f8f3;border-left:3px solid #06a54c;padding:6px 10px;margin:6px 0;border-radius:0 6px 6px 0}
+.cam{font-size:13px;color:var(--mute)}.cam b{color:var(--ink);font-weight:600}
+.flag{font-size:12px;color:var(--warm)}
+.reftag{display:inline-block;font-size:11px;border:1px solid #d9c8fb;background:var(--soft);color:var(--brand);border-radius:999px;padding:0 8px;text-decoration:none;margin-right:4px}
+.vo{padding:14px 16px;border-left:1px solid var(--line);background:#fbfaf8}
+.vo .lab{font-size:11px;letter-spacing:.1em;color:var(--mute)}.vo .who{font-size:11.5px;color:var(--mute)}
+.vo .ja{font-family:var(--jp);font-size:17.5px;line-height:1.55;margin:1px 0 1px}
+.vo .cn{font-size:13px;color:var(--warm);margin-bottom:8px}
+.vo .card{font-family:var(--jp);font-size:15px;color:var(--brand)}
+.thumbs{display:flex;gap:6px;margin-top:6px}.thumbs figure{margin:0;flex:1}
+.thumbs img{width:100%;height:84px;object-fit:cover;border-radius:6px;border:1px solid var(--line);display:block}
+.thumbs figcaption{font-size:10.5px;color:var(--mute)}
+.sum{text-align:right;font-size:13px;color:var(--mute);margin-top:12px}
+.small{font-size:13px;color:var(--mute)}.small li{margin-bottom:4px}
+footer{padding:26px 0 56px;font-size:12px;color:var(--mute)}
+@media (max-width:900px){.shot{grid-template-columns:1fr}.tc{border-right:none;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center}.tc .time,.tc .dur,.tc .ui{margin-top:0}.vo{border-left:none;border-top:1px solid var(--line)}.four,.refs{grid-template-columns:1fr 1fr}.bgrid{grid-template-columns:1fr}.tl{font-size:10px}}
+@media print{nav{display:none}body{background:#fff;font-size:12px}.shot,.ref{break-inside:avoid}}
+</style>
+<link data-one2x-material="true" rel="stylesheet" href="../../../one2x-material.css"></head>
+<body class="one2x-editorial-material"><nav id="one2x-material-nav" aria-label="五片制作报告导航"><a class="one2x-brand" href="../../../index.html"><img src="../../../assets/one2x-wordmark.svg" alt="One2X"><span class="one2x-material-label">工作材料快照 · 供制作讨论</span></a><a class="one2x-back" href="../../../index.html">返回五片总览</a></nav>
+<nav><div class="wrap"><img src="../../KAIROS-60s-%E5%88%86%E9%95%9C%E8%A1%A8/%E5%AE%98%E7%BD%91%E5%AE%9E%E6%8B%8D/assets/kairos-logo.png" alt="KAIROS"><b>KAIROS</b>
+<div class="links"><a href="#brief">Brief</a><a href="#board">分镜</a><a href="#refs">参考片</a><a href="#notes">核验</a><button onclick="window.print()">打印 / 存PDF</button></div></div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="eyebrow">发布会宣传片 / 群像版 · 需求整合与本土细节版 · 2026-11-04</div>
+  <h1>每种生意，都有要讲清楚的事。</h1>
+  <div class="meta">60秒 · 16:9 · 12镜 · 日文旁白／对白＋中文 · 基准：12镜群像稿（结构保留，细节加强）</div>
+  <div class="claim"><div class="ja">商業のための、映像制作AI。</div><div class="cn">为商业而生的视频制作AI。</div></div>
+  <div class="tl">
+    <a class="t1" href="#s01" style="flex:4">开场</a>
+    <a class="t1" href="#s02" style="flex:5">商品</a>
+    <a class="t2" href="#s03" style="flex:5">真实UI①</a>
+    <a class="t3" href="#s04" style="flex:10">培训</a>
+    <a class="t3" href="#s06" style="flex:10">招聘</a>
+    <a class="t4" href="#s08" style="flex:6">安心</a>
+    <a class="t5" href="#s09" style="flex:4">门店</a>
+    <a class="t4" href="#s10" style="flex:6">真实UI②</a>
+    <a class="t5" href="#s11" style="flex:6">回到工作</a>
+    <a class="t6" href="#s12" style="flex:4">品牌</a>
+  </div>
+</div></header>
+
+<section id="brief"><div class="wrap">
+  <h2>Brief</h2>
+  <p class="lead">地点、时刻与人物均为<b>拟拍设定</b>，不是实地核验或访谈案例。绿色标注的“本土细节”为本版新增的生活/工作质感。</p>
+  <div class="bgrid">
+    <div class="k">传播目标</div><div>让日本企业看懂：KAIROS 能把日常经营里的具体问题，变成可用、可信、拿得出手的影像。</div>
+    <div class="k">受众</div><div>日本企业的品牌营销、电商、培训、人事与门店运营团队。</div>
+    <div class="k">叙事</div><div>同一天、不同岗位遇到的问题 → 进入真实 KAIROS → 影像回到各自的工作现场。</div>
+    <div class="k">四条业务线</div><div><div class="four">
+      <div><b>商品宣传</b><span class="p">日本桥本町 · 商品企划室</span><br>静态图片 → 看得见质感的商品片</div>
+      <div><b>现场培训</b><span class="p">大田区矢口 · 工坊</span><br>口头说明 → 能对照复现的步骤片</div>
+      <div><b>招聘介绍</b><span class="p">神田 · 企业说明会</span><br>职位文字 → 看得见第一天的职场片</div>
+      <div><b>门店更新</b><span class="p">新宿 · 咖啡门店</span><br>季节内容多 → 持续、低成本更新</div>
+    </div></div>
+    <div class="k">六项价值在片中的位置</div><div>
+      <table class="v">
+        <tr><td>商业定位</td><td>镜01 起题，镜12 主张 <span class="jp">商業のための、映像制作AI。</span></td></tr>
+        <tr><td>本地化（语言、习惯、审美、场景）</td><td>四个现场的工作细节；镜05 <span class="jp">日本語の手順を、そのまま映像に。</span></td></tr>
+        <tr><td>低AI感・高审美</td><td>镜03 <span class="jp">テレビCM級の品質を。AIらしさを、感じさせない。</span></td></tr>
+        <tr><td>主动提示表达风险</td><td>镜08 前半：「必ず」在进画面前被拦下</td></tr>
+        <tr><td>数据日本驻留，不用于公共模型训练</td><td>镜08 后半：两行片中文字</td></tr>
+        <tr><td>低成本持续制作高品质</td><td>镜10 <span class="jp">SNS動画を、大量に、低コストで。</span></td></tr>
+      </table>
+    </div>
+    <div class="k">发布会质感</div><div>开场用四个“手开始工作”的声音卡点；两段真实 UI 集中亮相（镜03 推入模板、镜10 模板接力），节奏明显提速；镜08 停半拍；最后在品牌画面稳定收束。</div>
+    <div class="k">产品展示口径</div><div>只使用已核验的公开页面：Template library、All/Ads/Car 分类、原文 “Choose a template → Add materials → Let AI create your video”、真实模板名与封面、正式 logo、kairos.video。素材放入、风险提示、数据承诺属于<b>创意示意或片中文字</b>，不伪装成登录后界面实拍。</div>
+  </div>
+</div></section>
+
+<section id="board"><div class="wrap">
+  <h2>分镜<small>问题出现 → 影像回应 → 回到生意 · 12镜 · 60秒</small></h2>
+
+  <div class="act"><span class="n">01–03</span><h3>同一天，商品先上场</h3><span>0:00–0:14</span></div>
+
+  <div class="shot" id="s01"><div class="tc"><div class="no">01</div><div class="time">0:00–0:04</div><span class="dur">4s</span></div>
+    <div class="body"><h4>同一天，不同工作</h4><div class="where">内／外景 · 东京多地 · 11月下旬工作日早晨</div>
+      <p>远景：街上人流开始移动。接四个手部近景，每个卡在一个声音上：裁纸刀划开商品纸箱；工具箱搭扣“咔”地打开；一叠募集要项放到会议桌上；粉笔在门店菜单板上写下“冬”字。</p>
+      <div class="detail">本土细节：四个声音（纸箱、搭扣、纸张、粉笔）就是节拍，不用配乐鼓点替代。</div>
+      <div class="cam"><b>衔接：</b>粉笔停住，切到商品企划室窗边的瓶身反光。</div></div>
+    <div class="vo"><div class="lab">日文旁白</div><div class="ja">伝える仕事は、ひとつじゃない。</div><div class="cn">需要讲清楚的事，不止一种。</div></div></div>
+
+  <div class="shot" id="s02"><div class="tc"><div class="no">02</div><div class="time">0:04–0:09</div><span class="dur">5s</span></div>
+    <div class="body"><h4>商品有质感，一张图还不够</h4><div class="where">内景 · 日本桥本町／商品企划室 · 10:00 · 岁末礼盒季</div>
+      <p>护肤礼盒、包装样稿和日文品牌规范摆在桌上。企划把瓶子举到窗光下，再低头看电脑上的静态照片，没说完的话停在半句。同事把包装上的「数量限定」贴纸对齐，看了一眼，点头。</p>
+      <div class="detail">本土细节：对照实物与包装文字；对白短，留一个停顿。</div>
+      <div class="cam"><b>衔接：</b>沿瓶身高光推进，接到屏幕里的模板卡片。</div></div>
+    <div class="vo"><div class="lab">对白</div>
+      <div class="who">企划</div><div class="ja">写真だと、この艶が…</div><div class="cn">拍成照片，这种光泽就……</div>
+      <div class="who">同事</div><div class="ja">…出ないですよね。</div><div class="cn">……出不来，是吧。</div></div></div>
+
+  <div class="shot" id="s03"><div class="tc"><div class="no">03</div><div class="time">0:09–0:14</div><span class="dur">5s</span><br><span class="ui">真实UI</span></div>
+    <div class="body"><h4>进入真实 KAIROS，看到成片质感</h4><div class="where">屏幕画面 · kairos.video 公开模板库（保留英文UI）</div>
+      <p>真实整页从斜角推入、转正，先完整看清 KAIROS 标志、左侧导航和 <b>Template library</b>，以及三步说明。指针点选 <b>Ads</b>，卡片重新排列；镜头追着 <b>Perfume Ad Reveal</b> 冲进卡片，香氛画面充满整个镜头。中途，企划桌上那张礼盒照片滑入，与卡片对位（创意示意），表示“自己的商品放进模板”。</p>
+      <div class="cam"><b>镜头：</b>3D 推入 → 点击光环 → zoom-through。全片节奏第一次提速。<b>衔接：</b>香氛画面里的旋转，接下一镜工坊里转动的工件。</div>
+      <div class="flag">※ 礼盒照片对位是创意示意，不代表登录后界面实拍。</div>
+      <div class="thumbs"><figure><img src="../../KAIROS-60s-%E5%88%86%E9%95%9C%E8%A1%A8/%E5%AE%98%E7%BD%91%E5%AE%9E%E6%8B%8D/01-template-library.jpg" alt=""><figcaption>真实整页</figcaption></figure><figure><img src="../../KAIROS-60s-%E5%88%86%E9%95%9C%E8%A1%A8/%E5%AE%98%E7%BD%91%E5%AE%9E%E6%8B%8D/02-ads-filter.jpg" alt=""><figcaption>Ads 分类</figcaption></figure><figure><img src="../../KAIROS-60s-%E5%88%86%E9%95%9C%E8%A1%A8/%E5%AE%98%E7%BD%91%E5%AE%9E%E6%8B%8D/assets/Perfume-Ad-Reveal.jpg" alt=""><figcaption>Perfume Ad Reveal</figcaption></figure></div>
+      <a class="reftag" href="#ref-adobe">Adobe 产品可视化</a></div>
+    <div class="vo"><div class="lab">日文旁白</div><div class="ja">商品のよさを、ブランドらしく。</div><div class="cn">把商品的好，拍出品牌的样子。</div>
+      <div class="lab">片中文字</div><div class="card">テレビCM級の品質を。<br>AIらしさを、感じさせない。</div><div class="cn">电视广告级的品质。<br>看不出AI的痕迹。</div></div></div>
+
+  <div class="act"><span class="n">04–07</span><h3>培训与招聘</h3><span>0:14–0:34</span></div>
+
+  <div class="shot" id="s04"><div class="tc"><div class="no">04</div><div class="time">0:14–0:19</div><span class="dur">5s</span></div>
+    <div class="body"><h4>一句“照着做”，不一定讲得清</h4><div class="where">内景 · 大田区矢口／工坊 · 08:35，朝礼后</div>
+      <p>前辈示范去毛刺的角度，新人跟着做，在同一个位置停住。前辈没责备，把工具放回起点：</p>
+      <div class="detail">本土细节：机床怠速声；新人那声小小的“…はい”；前辈的手放回原点。</div>
+      <div class="cam"><b>衔接：</b>停在手和工具的位置，下一镜保持同一构图。</div></div>
+    <div class="vo"><div class="lab">对白</div>
+      <div class="who">前辈</div><div class="ja">ここ、もう一回ね。</div><div class="cn">这里，再来一遍。</div>
+      <div class="who">新人</div><div class="ja">…はい。</div><div class="cn">……好。</div>
+      <div class="lab">日文旁白</div><div class="ja">言葉だけでは、伝わりにくい。</div><div class="cn">只靠语言，不容易讲清。</div></div></div>
+
+  <div class="shot" id="s05"><div class="tc"><div class="no">05</div><div class="time">0:19–0:24</div><span class="dur">5s</span></div>
+    <div class="body"><h4>把关键步骤，变成看得见的说明</h4><div class="where">内景 · 同一工坊 · 接上镜</div>
+      <p>同一构图。台边的平板播放步骤视频，在关键角度处停帧，旁边是日文字幕「角度は、ここまで」。新人用拇指暂停，对照着做对。前辈看了一眼：</p>
+      <div class="detail">本土细节：新人自己按暂停；前辈只说两个字就把下一件材料递过去。</div>
+      <div class="cam"><b>衔接：</b>递材料的手，接到说明会上递资料的手。</div></div>
+    <div class="vo"><div class="lab">对白</div><div class="who">前辈</div><div class="ja">うん、それ。</div><div class="cn">嗯，就是这样。</div>
+      <div class="lab">日文旁白</div><div class="ja">現場の手順を、わかりやすく。</div><div class="cn">把现场的操作流程，讲得明白。</div>
+      <div class="lab">片中文字</div><div class="card">日本語の手順を、そのまま映像に。</div><div class="cn">日语的作业步骤，直接变成影像。</div></div></div>
+
+  <div class="shot" id="s06"><div class="tc"><div class="no">06</div><div class="time">0:24–0:29</div><span class="dur">5s</span></div>
+    <div class="body"><h4>职位说明，讲不完工作的样子</h4><div class="where">内景 · 神田／企业说明会 · 14:00</div>
+      <p>几位候选人翻着募集要项。一位犹豫后举手，问了一个很具体的问题。招聘同事停了半拍，看了看手上的资料，转身打开屏幕。</p>
+      <div class="detail">本土细节：问题具体到“第一天”；听完后那半秒停顿，回应留给打开屏幕的动作。</div>
+      <div class="cam"><b>衔接：</b>从屏幕里的同事，切入真实工作现场。</div></div>
+    <div class="vo"><div class="lab">对白</div>
+      <div class="who">候选人</div><div class="ja">初日は、何をしますか。</div><div class="cn">第一天，都做些什么？</div></div></div>
+
+  <div class="shot" id="s07"><div class="tc"><div class="no">07</div><div class="time">0:29–0:34</div><span class="dur">5s</span></div>
+    <div class="body"><h4>让真实的第一天，成为企业介绍</h4><div class="where">内景 · 神田／办公区 · 同日 → 说明会</div>
+      <p>职场介绍片：前辈带新人认储物柜、挂上名牌，中午几位同事一起去附近的定食店。切回说明会，候选人看着屏幕，把注意到的细节记在笔记本上。</p>
+      <div class="detail">本土细节：名牌、储物柜、一起吃午饭，都是“第一天”能拍到的东西。</div>
+      <div class="cam"><b>衔接：</b>一份资料被递进画面，带出企业共同关心的表达与信息安全。</div></div>
+    <div class="vo"><div class="lab">日文旁白</div><div class="ja">職場の空気を、誠実に。</div><div class="cn">把工作的真实氛围，诚实地传达出去。</div></div></div>
+
+  <div class="act"><span class="n">08</span><h3>企业需要的，还有放心</h3><span>0:34–0:40 · 停半拍</span></div>
+
+  <div class="shot" id="s08"><div class="tc"><div class="no">08</div><div class="time">0:34–0:40</div><span class="dur">6s</span></div>
+    <div class="body"><h4>表达的风险，与重要的资料</h4><div class="where">画面排版＋内景 · 商品企划室 · 工作日下午</div>
+      <p><b>前2秒：</b>礼盒商品片里，广告文案「必ず、理想の肌へ。」正要落下，“必ず”在进入画面前被一条细线拦住，改为「毎日のケアに、心地よさを。」，音乐停半拍。<br>
+      <b>后4秒：</b>盖着「社外秘」章的未发布资料被合上，两行片中文字依次停留，每行约2秒。</p>
+      <div class="cam"><b>衔接：</b>资料合上的动作，接门店里翻过一页菜单。</div>
+      <div class="flag">※ 风险提示以图形表达，官网公开页未见对应界面。两行数据承诺的措辞上片前需 KAIROS 确认。</div>
+      <a class="reftag" href="#ref-apple">Apple 风险表达</a></div>
+    <div class="vo"><div class="lab">日文旁白</div><div class="ja">表現のリスクにも。大切な情報にも。</div><div class="cn">关注表达的风险，守护重要的信息。</div>
+      <div class="lab">片中文字</div><div class="card">表現リスクを、公開前に。<br>データは、日本国内で保管。<br>パブリックAIモデルの学習に、使用しません。</div>
+      <div class="cn">表达风险，在公开前处理。<br>数据保存在日本国内。<br>不用于公共AI模型训练。</div></div></div>
+
+  <div class="act"><span class="n">09–12</span><h3>门店、量产与回到生意</h3><span>0:40–1:00</span></div>
+
+  <div class="shot" id="s09"><div class="tc"><div class="no">09</div><div class="time">0:40–0:44</div><span class="dur">4s</span></div>
+    <div class="body"><h4>门店的内容，每个季节都在更新</h4><div class="where">内景 · 新宿／咖啡门店 · 11:00</div>
+      <p>店员在收银台旁贴上当日告知「本日より 冬季限定」，同事对照新菜单，抬头看了一眼店头屏，那里还在播秋季饮品。</p>
+      <div class="detail">本土细节：奶泡机的嘶声；当日告知的纸张；那声“あ”。</div>
+      <div class="cam"><b>衔接：</b>杯沿的圆形，接到官网饮品模板中的杯口。</div></div>
+    <div class="vo"><div class="lab">对白</div>
+      <div class="who">同事</div><div class="ja">…あ、まだ秋のままだ。</div><div class="cn">……啊，还是秋天的。</div></div></div>
+
+  <div class="shot" id="s10"><div class="tc"><div class="no">10</div><div class="time">0:44–0:50</div><span class="dur">6s</span><br><span class="ui">真实UI</span></div>
+    <div class="body"><h4>把一次制作，变成持续表达</h4><div class="where">屏幕画面 · kairos.video 真实模板与内容</div>
+      <p>从杯口进入 <b>Street Cup Vibes</b>，饮品、食品、美妆、汽车模板（Flavor Diorama Ad／Beauty Haul React J／Awakening the Beast）沿同一方向高速接力，每张短暂停在最好看的一帧，最后快速拉回完整模板库。保留真实图片、标题和分类。</p>
+      <div class="cam"><b>镜头：</b>同向横移，加速与停顿交替（全片最快的一段）→ 拉回整页。<b>衔接：</b>模板里的内容，分别接回四个现场的播放画面。</div>
+      <div class="thumbs"><figure><img src="../../KAIROS-60s-%E5%88%86%E9%95%9C%E8%A1%A8/%E5%AE%98%E7%BD%91%E5%AE%9E%E6%8B%8D/assets/Street-Cup-Vibes.jpg" alt=""><figcaption>Street Cup Vibes</figcaption></figure><figure><img src="../../KAIROS-60s-%E5%88%86%E9%95%9C%E8%A1%A8/%E5%AE%98%E7%BD%91%E5%AE%9E%E6%8B%8D/assets/Flavor-Diorama-Ad.jpg" alt=""><figcaption>Flavor Diorama Ad</figcaption></figure><figure><img src="../../KAIROS-60s-%E5%88%86%E9%95%9C%E8%A1%A8/%E5%AE%98%E7%BD%91%E5%AE%9E%E6%8B%8D/assets/Beauty-Haul-React-J.jpg" alt=""><figcaption>Beauty Haul React J</figcaption></figure><figure><img src="../../KAIROS-60s-%E5%88%86%E9%95%9C%E8%A1%A8/%E5%AE%98%E7%BD%91%E5%AE%9E%E6%8B%8D/assets/Awakening-the-Beast.jpg" alt=""><figcaption>Awakening the Beast</figcaption></figure></div>
+      <div class="flag">※ 批量生成界面未核验，此镜用真实模板接力作视觉，不出现数量或价格。</div>
+      <a class="reftag" href="#ref-adobe">Adobe 产品可视化</a></div>
+    <div class="vo"><div class="lab">日文旁白</div><div class="ja">季節ごとに、店舗ごとに。<br>必要な映像を、次々と。</div><div class="cn">每个季节，每家门店。<br>需要的影像，一支接一支。</div>
+      <div class="lab">片中文字</div><div class="card">SNS動画を、大量に、低コストで。</div><div class="cn">大量、低成本地制作社交视频。</div></div></div>
+
+  <div class="shot" id="s11"><div class="tc"><div class="no">11</div><div class="time">0:50–0:56</div><span class="dur">6s</span></div>
+    <div class="body"><h4>让内容，回到各自的工作里</h4><div class="where">内景 · 商品团队／工坊／说明会／门店 · 同日各时段</div>
+      <p>四处接力，各约1.2秒：礼盒商品片上线到展示页，企划把瓶子放回窗边；新人对照视频完成步骤，前辈递来下一件；候选人在笔记本上写下第二个问题；门店店头屏换上冬季新品，第一位客人指着屏幕点单。最后四个画面并成群像。</p>
+      <div class="detail">本土细节：每处只给一个小动作的回应，不演“成功”。</div>
+      <div class="cam"><b>衔接：</b>多个画面收拢，留出品牌位置。</div>
+      <a class="reftag" href="#ref-sq">Squarespace 商业落地</a></div>
+    <div class="vo"><div class="lab">日文旁白</div><div class="ja">つくる力を、あらゆるビジネスへ。</div><div class="cn">让创作的力量，走进每一种生意。</div>
+      <div class="lab">对白（门店客人）</div><div class="ja">これ、ひとつください。</div><div class="cn">这个，来一杯。</div></div></div>
+
+  <div class="shot" id="s12"><div class="tc"><div class="no">12</div><div class="time">0:56–1:00</div><span class="dur">4s</span></div>
+    <div class="body"><h4>留下 KAIROS 的名字</h4><div class="where">品牌画面 · 正式标志与网址</div>
+      <p>官网正式图形标志与 KAIROS 出现，主张落下，下方是 kairos.video。最后2秒稳定停留。</p>
+      <div class="cam"><b>声音：</b>门店环境声收尾，品牌音一记。</div></div>
+    <div class="vo"><div class="lab">日文旁白</div><div class="ja">商業のための、映像制作AI。KAIROS。</div><div class="cn">为商业而生的视频制作AI。KAIROS。</div></div></div>
+
+  <div class="sum">4+5+5+5+5+5+5+6+4+6+6+4 = <b style="color:var(--ink)">60 秒</b></div>
+</div></section>
+
+<section id="refs"><div class="wrap">
+  <h2>参考片<small>每支只借一个层面</small></h2>
+  <div class="refs">
+    <div class="ref" id="ref-adobe"><span class="lv">产品可视化</span><h3>Adobe Photoshop — The World Is Your Canvas（2021）</h3><div class="by">DVEIN／72andSunny／Mathematic</div>
+      <p>借：软件能力直接作用在画面上，让人看见因果。→ 镜03、镜10 真实模板推入和接力。</p><p class="no">不借：第一人称个人主线、迷幻风格。</p>
+      <div class="links"><a href="https://www.youtube.com/watch?v=RGSN4S5jn4o" target="_blank">原片</a><a href="https://www.isabellacaruso.com/work/adobephotoshop" target="_blank">创作说明</a></div></div>
+    <div class="ref" id="ref-apple"><span class="lv">风险表达</span><h3>Apple — Privacy on iPhone | Data Auction（2022）</h3><div class="by">Ivan Zachariáš／TBWA\Media Arts Lab／Smuggler</div>
+      <p>借：把抽象风险拍成一次看得见的动作。→ 镜08「必ず」被拦下、资料合上。</p><p class="no">不借：喜剧拍卖情节。原片不证明 KAIROS 的功能。</p>
+      <div class="links"><a href="https://www.youtube.com/watch?v=NOXK4EVFmJY" target="_blank">原片</a><a href="https://shots.net/news/view/apples-analytical-auction-house" target="_blank">shots 报道</a></div></div>
+    <div class="ref" id="ref-sq"><span class="lv">商业落地</span><h3>Squarespace — A Tale As Old As Websites（2025）</h3><div class="by">Steve Rogers／Barry Keoghan · 30秒</div>
+      <p>借：数字成果回到具体的经营者手里。→ 镜11 四个现场各自被回应。</p><p class="no">不借：年代喜剧、明星路线。</p>
+      <div class="links"><a href="https://newsroom.squarespace.com/blog/a-tale-as-old-as-websites-squarespace-and-barry-keoghan-2025-super-bowl-campaign" target="_blank">官方案例页</a></div></div>
+    <div class="ref" id="ref-line"><span class="lv line">生活质感</span><h3>LINE《家族のLINEがしんどいw》（2020）／《母のLINEが変な件》（2018）</h3><div class="by">LINE 官方短剧 · <b>借鉴生活质感，不借用故事结构</b></div>
+      <p>借：说话的分寸和省略、半秒的停顿、日常物件的用法、环境声，让人物像真实生活中的人。→ 镜02“艶が…／…出ないですよね”、镜04“…はい”、镜06提问后的半秒停顿、镜09“…あ”。</p><p class="no">不借：家庭群聊结构、告白情节、错字梗、慢叙事、品牌主张。</p>
+      <div class="links"><a href="https://youtu.be/pluchCCPHwA" target="_blank">家族のLINE 片源</a><a href="https://www.bilibili.com/video/BV1J94y1u7oC/" target="_blank">B站</a><a href="https://prtimes.jp/main/html/rd/p/000002795.000001594.html" target="_blank">官方说明</a><a href="https://youtu.be/xWHxFxmePjk" target="_blank">母のLINE 片源</a><a href="https://prtimes.jp/main/html/rd/p/000001068.000001594.html" target="_blank">官方说明</a></div></div>
+    <div class="ref"><span class="lv line">职场质感</span><h3>LINE WORKS《現場が動き出す・店舗篇》（2020，30秒）</h3><div class="by">Works Mobile Japan · <b>借鉴职场细节，不借用故事结构</b></div>
+      <p>借：把职场问题落到具体的物件和动作上（纸质通知、订货单、被询问时答不上来）。→ 镜04 工具回到原点、镜06 募集要项、镜09 当日告知与旧店头屏。</p><p class="no">不借：沟通工具的功能叙事。</p>
+      <div class="links"><a href="https://youtu.be/v3xbyhXc6tM" target="_blank">片源</a><a href="https://line-works.com/pr/20201124/" target="_blank">官方说明</a></div></div>
+  </div>
+</div></section>
+
+<section id="notes"><div class="wrap">
+  <h2>边界与核验<small>压缩在末尾</small></h2>
+  <ul class="small">
+    <li>真实 UI 仅限公开页（Template library、Ads 分类、三步说明、真实模板、logo、kairos.video）；素材放入、风险提示、数据承诺、批量制作均为创意示意或片中文字。</li>
+    <li>未使用“日本初”等绝对化表述；不出现时长、价格或增长数字。数据承诺措辞需 KAIROS 确认，不写“完全不学习”。</li>
+    <li>地点、时刻、对白为拟拍设定，开拍前需与取景地和从业者核对。</li>
+    <li>参考片均<b>未实际播放观看</b>。依据为官方或制作方文字：Isabella Caruso 作品页、shots、Squarespace 新闻页、LINE PR TIMES、LINE WORKS 官方页。Adobe 和 Apple 的 YouTube 标题与频道已通过 oEmbed 核实；LINE 三个 YouTube 链接 oEmbed 返回 403，无法据此判断当前是否可播放；B站入口沿用既有链接，本轮未重新核验。不写时间码。</li>
+    <li>Google Chrome × 初音ミク 仍可作为群像与日本创作者的辅助参考，本版不在主文档展开。</li>
+  </ul>
+</div></section>
+<footer><div class="wrap">KAIROS 60s 群像版 · 需求整合与本土细节版 · 2026-11-04 · 基准稿与此前所有版本均保留未改。图片相对引用 ../../KAIROS-60s-分镜表/官网实拍/。</div></footer>
+</body></html>

@@ -1,0 +1,591 @@
+- complementary:
+  - generic: KAIROS
+  - button "新建作品":
+    - generic: 新建作品
+  - navigation:
+    - link "模板库":
+      - /url: /explore
+      - generic: 模板库
+    - link "作品":
+      - /url: /projects
+      - generic: 作品
+    - link "网盘":
+      - /url: /drive
+      - generic: 网盘
+  - navigation:
+    - generic: 最近使用
+    - link "无限画布 作品 2026-11-04-22-21-51":
+      - /url: /project/25701e17-6648-4858-8dd6-8f9fde1f0cb7
+      - generic: 无限画布 作品 2026-11-04-22-21-51
+    - button "展开 无限画布 作品 2026-11-04-22-21-51 的会话":
+    - link "视频剪辑 作品 2026-11-04-22-13-37":
+      - /url: /project/1bd32a0b-aade-457b-a990-a71e44d56ab1
+      - generic: 视频剪辑 作品 2026-11-04-22-13-37
+    - button "展开 视频剪辑 作品 2026-11-04-22-13-37 的会话":
+    - link "冒烟检查消息确认":
+      - /url: /project/f53f7140-0c54-4a50-b54e-7d1da1b455d4
+      - generic: 冒烟检查消息确认
+    - button "展开 冒烟检查消息确认 的会话":
+    - link "冒烟检查消息确认":
+      - /url: /project/eef7d39a-845a-403e-853f-c741348f0d2f
+      - generic: 冒烟检查消息确认
+    - button "展开 冒烟检查消息确认 的会话":
+    - link "冒烟检查确认收到":
+      - /url: /project/ea69a800-9274-4cb6-aad1-71fad03288c2
+      - generic: 冒烟检查确认收到
+    - button "展开 冒烟检查确认收到 的会话":
+    - link "界面验证消息确认":
+      - /url: /project/83c5ab87-ab11-4edf-b47e-ebd797e09b98
+      - generic: 界面验证消息确认
+    - button "展开 界面验证消息确认 的会话":
+    - link "对话成片 作品 2026-10-31-13-05-21":
+      - /url: /project/c9c031cd-41c9-4e48-a47a-ca0eac6c0446
+      - generic: 对话成片 作品 2026-10-31-13-05-21
+    - button "展开 对话成片 作品 2026-10-31-13-05-21 的会话":
+    - link "复古商店广告宣传片":
+      - /url: /project/6da39a2f-100c-4087-913d-54c89455869c
+      - generic: 复古商店广告宣传片
+    - button "展开 复古商店广告宣传片 的会话":
+    - link "adcopy-e2e-20261029-k":
+      - /url: /project/a8cc6831-21d3-4414-a572-69e347f9abfd
+      - generic: adcopy-e2e-20261029-k
+    - button "展开 adcopy-e2e-20261029-k 的会话":
+    - link "七色彩虹":
+      - /url: /project/f9101e5f-2690-42d9-abd3-fe1225d5ca8d
+      - generic: 七色彩虹
+    - button "展开 七色彩虹 的会话":
+    - link "Retro Anime Advert":
+      - /url: /project/b3573887-b9e6-42e8-9ba6-86367fbe55a3
+      - generic: Retro Anime Advert
+    - button "展开 Retro Anime Advert 的会话":
+    - link "月夜电影":
+      - /url: /project/ef9ff84c-7bb9-4bf3-ac6e-4ea9519f0c21
+      - generic: 月夜电影
+    - button "展开 月夜电影 的会话":
+    - link "抒情钢琴曲推荐":
+      - /url: /project/3fd4b1aa-7f23-4560-b033-aa970e234df9
+      - generic: 抒情钢琴曲推荐
+    - button "展开 抒情钢琴曲推荐 的会话":
+    - link "对话成片 作品 2026-10-27-16-42-31":
+      - /url: /project/e30526a5-1437-467b-87ce-c34046dc5cd2
+      - generic: 对话成片 作品 2026-10-27-16-42-31
+    - button "展开 对话成片 作品 2026-10-27-16-42-31 的会话":
+    - link "对话成片 作品 2026-10-26-18-31-28":
+      - /url: /project/d89751b3-1507-4946-9f9f-0bd4607682d6
+      - generic: 对话成片 作品 2026-10-26-18-31-28
+    - button "展开 对话成片 作品 2026-10-26-18-31-28 的会话":
+    - link "手冲咖啡短片配乐选择":
+      - /url: /project/ffefbb58-bdef-44e4-a66c-2fcb187633a9
+      - generic: 手冲咖啡短片配乐选择
+    - button "展开 手冲咖啡短片配乐选择 的会话":
+    - link "Greeting":
+      - /url: /project/a7be858a-c449-4aa4-b24a-3647bcc65be0
+      - generic: Greeting
+    - button "展开 Greeting 的会话":
+    - link "Home Appliance Showcase":
+      - /url: /project/cfa3eebb-f0d9-4e75-832e-e77503b6bd17
+      - generic: Home Appliance Showcase
+    - button "展开 Home Appliance Showcase 的会话":
+    - link "无限画布 作品 2026-10-21-16-01-28":
+      - /url: /project/cc19828c-e8e0-49a2-8220-6f5600ad568c
+      - generic: 无限画布 作品 2026-10-21-16-01-28
+    - button "展开 无限画布 作品 2026-10-21-16-01-28 的会话":
+    - link "对话成片 作品 2026-10-21-16-01-23":
+      - /url: /project/e93bb453-be56-4bbb-9e3b-4e6f82343d41
+      - generic: 对话成片 作品 2026-10-21-16-01-23
+    - button "展开 对话成片 作品 2026-10-21-16-01-23 的会话":
+    - link "凑十法教学视频":
+      - /url: /project/9f7f2345-415e-43eb-ac06-4bf14db3be3c
+      - generic: 凑十法教学视频
+    - button "展开 凑十法教学视频 的会话":
+    - link "询问能力范围":
+      - /url: /project/d97e6495-aec6-4c0c-abb5-04eb2c3137d3
+      - generic: 询问能力范围
+    - button "展开 询问能力范围 的会话":
+    - link "Chat-to-Video 2026-10-15-16-24-33":
+      - /url: /project/1e0ac9d9-6b76-4bf9-aa52-c2ae7934ee55
+      - generic: Chat-to-Video 2026-10-15-16-24-33
+    - button "展开 Chat-to-Video 2026-10-15-16-24-33 的会话":
+    - link "Chat-to-Video 2026-10-15-15-25-14":
+      - /url: /project/8f6e68e1-4fef-41f8-bc86-c8ce93d74c39
+      - generic: Chat-to-Video 2026-10-15-15-25-14
+    - button "展开 Chat-to-Video 2026-10-15-15-25-14 的会话":
+    - link "Chat-to-Video 2026-10-15-10-09-21":
+      - /url: /project/e833a86e-d752-47c9-9711-9c6ea63f0dd6
+      - generic: Chat-to-Video 2026-10-15-10-09-21
+    - button "展开 Chat-to-Video 2026-10-15-10-09-21 的会话":
+    - link "Video Editor 2026-10-15-08-45-05":
+      - /url: /project/064c9abe-d754-4f5a-adbe-53bfbcf732f0
+      - generic: Video Editor 2026-10-15-08-45-05
+    - button "展开 Video Editor 2026-10-15-08-45-05 的会话":
+    - link "Infinite Canvas 2026-10-15-07-13-33":
+      - /url: /project/8e34a097-eb42-4fdd-8e84-f76063d393b7
+      - generic: Infinite Canvas 2026-10-15-07-13-33
+    - button "展开 Infinite Canvas 2026-10-15-07-13-33 的会话":
+    - link "Infinite Canvas 2026-10-15-07-11-50":
+      - /url: /project/4c960992-ee19-4e84-bfbf-fb6ea66dbec1
+      - generic: Infinite Canvas 2026-10-15-07-11-50
+    - button "展开 Infinite Canvas 2026-10-15-07-11-50 的会话":
+    - link "Chat-to-Video 2026-10-15-06-09-09":
+      - /url: /project/368367c4-b532-4b94-881c-c1afbac184cd
+      - generic: Chat-to-Video 2026-10-15-06-09-09
+    - button "展开 Chat-to-Video 2026-10-15-06-09-09 的会话":
+    - link "Retro Beach TVC":
+      - /url: /project/1382d04a-7738-4c32-9ec7-55f2be0398a7
+      - generic: Retro Beach TVC
+    - button "展开 Retro Beach TVC 的会话":
+    - link "Chat-to-Video 2026-10-15-04-38-35":
+      - /url: /project/e93da5ae-f113-43ca-ae57-0ed3dd2854ee
+      - generic: Chat-to-Video 2026-10-15-04-38-35
+    - button "展开 Chat-to-Video 2026-10-15-04-38-35 的会话":
+    - link "对话成片 2026-10-15-03-52-29":
+      - /url: /project/7587ee73-56de-4c4c-b5e2-32be0dbe9177
+      - generic: 对话成片 2026-10-15-03-52-29
+    - button "展开 对话成片 2026-10-15-03-52-29 的会话":
+    - link "Picbook video request":
+      - /url: /project/54686abc-2c32-47be-8d73-f7f82c7f39f6
+      - generic: Picbook video request
+    - button "展开 Picbook video request 的会话":
+    - link "询问身份":
+      - /url: /project/29293f21-6568-4994-ae53-2ee694cfa381
+      - generic: 询问身份
+    - button "展开 询问身份 的会话":
+    - link "Greeting":
+      - /url: /project/ff2d5a34-0670-4cdc-8c2e-70d231c027f4
+      - generic: Greeting
+    - button "展开 Greeting 的会话":
+    - link "询问身份":
+      - /url: /project/2586d318-2d2d-49f0-86ad-695a3a666d16
+      - generic: 询问身份
+    - button "展开 询问身份 的会话":
+    - link "Greeting":
+      - /url: /project/047c7c3b-833c-49b3-bc30-c28e34e499ce
+      - generic: Greeting
+    - button "展开 Greeting 的会话":
+    - link "询问身份":
+      - /url: /project/373030f8-9d62-4ea0-85d0-127ce972a09f
+      - generic: 询问身份
+    - button "展开 询问身份 的会话":
+    - link "询问身份":
+      - /url: /project/33b25c87-6929-4e6c-8924-19f7baac6a2a
+      - generic: 询问身份
+    - button "展开 询问身份 的会话":
+    - link "询问能做什么":
+      - /url: /project/4485116c-37b5-41f5-a47d-e24d1445b44a
+      - generic: 询问能做什么
+    - button "展开 询问能做什么 的会话":
+  - button "M Mesh Test User":
+    - generic: M
+    - generic: Mesh Test User
+- main:
+  - heading "模板库" [level=1]
+  - paragraph: 选模板 → 填素材 → AI 出片
+  - region "三步做出第一个视频":
+    - heading "三步做出第一个视频" [level=2]:
+      - generic: 三步做出第一个视频
+    - list:
+      - generic: "1"
+      - generic: 选一个模板
+      - generic: "2"
+      - generic: 填入素材
+      - generic: "3"
+      - generic: AI 出片
+    - button "关闭":
+  - button "全部":
+    - generic: 全部
+  - button "Ads":
+    - generic: Ads
+  - button "Car":
+    - generic: Car
+  - button "Animation":
+    - generic: Animation
+  - button "Manifestation":
+    - generic: Manifestation
+  - search:
+    - searchbox "搜索模板"
+  - article:
+    - img "Retro Beach TVC"
+    - generic: 模板
+    - generic "所需素材：Upload product image"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Retro Beach TVC" [level=2]
+  - article:
+    - img "Perfume Ad Reveal"
+    - generic: 模板
+    - generic "所需素材：填写原料、上传香水产品图片、填写品牌标志"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "香水广告揭晓" [level=2]
+  - article:
+    - img "Clean Demo UGC"
+    - generic: 模板
+    - generic "所需素材：上传产品照片"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "清洁演示 UGC" [level=2]
+  - article:
+    - img "Awakening the Beast"
+    - generic: 模板
+    - img "≈100 预计积分":
+      - generic: ≈100
+    - generic: 15秒
+    - generic "所需素材：Upload a car imgae、Upload a car logo imgae、Upload a picture of a small item"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Awakening the Beast" [level=2]
+  - article:
+    - img "Clock Of Bags"
+    - generic: 模板
+    - img "≈25 预计积分":
+      - generic: ≈25
+    - generic: 8秒
+    - generic "所需素材：Upload handbag photo 1 (12 o'clock position)、Upload handbag photo 2 (2 o'clock position)、Upload handbag photo 3 (4 o'clock position)、Upload handbag photo 4 (6 o'clock position)、Upload handbag photo 5 (8 o'clock position)、Upload handbag photo 6 (10 o'clock position)"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Clock Of Bags" [level=2]
+  - article:
+    - img "Flavor Diorama Ad"
+    - generic: 模板
+    - img "≈50 预计积分":
+      - generic: ≈50
+    - generic: 25秒
+    - generic "所需素材：Upload product photo、Input product type、Input flavor ingredients、Upload mascot character"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Flavor Diorama Ad" [level=2]
+  - article:
+    - img "Home Appliance Showcase"
+    - generic: 模板
+    - generic "所需素材：Upload product 1 image、Input product 1 category、Input product 1 interaction beat、Upload product 2 image、Input product 2 category、Input product 2 interaction beat、Upload product 3 image、Input product 3 category、Input product 3 interaction beat、Upload product 4 image、Input product 4 category、Input product 4 interaction beat"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Home Appliance Showcase" [level=2]
+  - article:
+    - img "Idol Snack Ad"
+    - generic: 模板
+    - generic "所需素材：Upload your product image"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Idol Snack Ad" [level=2]
+  - article:
+    - img "Sports Advertising"
+    - generic: 模板
+    - generic "所需素材：Write your brand name、Write a theme of concept for your brand"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Sports Advertising" [level=2]
+  - article:
+    - img "Product Display"
+    - generic: 模板
+    - generic "所需素材：Uploading the product reference image"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Product Display" [level=2]
+  - article:
+    - img "Sport Anime Athlete"
+    - generic: 模板
+    - generic "所需素材：Input sport type"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Sport Anime Athlete" [level=2]
+  - article:
+    - img "Storyboard Animation"
+    - generic: 模板
+    - generic "所需素材：Upload the battles Character 1、Upload the battles Character 2、Wrtite a battle scene"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Storyboard Animation" [level=2]
+  - article:
+    - img "Pop Art Product J"
+    - generic: 模板
+    - generic "所需素材：Upload product image、Input accent color、Input closing slogan"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Pop Art Product J" [level=2]
+  - article:
+    - img "Product Bullet Time J"
+    - generic: 模板
+    - generic "所需素材：Input product name and category、Input product appearance description、Input price or promotional slogan、Input selling-point tagline"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Product Bullet Time J" [level=2]
+  - article:
+    - img "Slow-motion fall J"
+    - generic: 模板
+    - generic "所需素材：Upload protagonist reference photo"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Slow-motion fall J" [level=2]
+  - article:
+    - img "Click To Dress J"
+    - generic: 模板
+    - generic "所需素材：Upload upper-body garment、Upload lower-body garment、Upload footwear、Upload accessory"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Click To Dress J" [level=2]
+  - article:
+    - img "ASMR Unboxing Reel"
+    - generic: 模板
+    - generic "所需素材：Input product name"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "ASMR Unboxing Reel" [level=2]
+  - article:
+    - img "Street Cup Vibes"
+    - generic: 模板
+    - generic "所需素材：Upload product image、Upload product logo"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Street Cup Vibes" [level=2]
+  - article:
+    - img "Skyfall Product Ad J"
+    - generic: 模板
+    - generic "所需素材：Upload product reference image、Upload brand logo"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Skyfall Product Ad J" [level=2]
+  - article:
+    - img "Shoe Hat Runway"
+    - generic: 模板
+    - generic "所需素材：Upload small animal photo、Upload shoe product image、Upload brand logo"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Shoe Hat Runway" [level=2]
+  - article:
+    - img "Luxury Cut Reveal"
+    - generic: 模板
+    - generic "所需素材：Upload product image、Input global color tone"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Luxury Cut Reveal" [level=2]
+  - article:
+    - img "La Dolce Vita Ad"
+    - generic: 模板
+    - generic "所需素材：Upload product image、Input typography text、Upload brand logo"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "La Dolce Vita Ad" [level=2]
+  - article:
+    - img "Heart Glow Reveal"
+    - generic: 模板
+    - generic "所需素材：Upload product 1 image、Upload product 2 image、Upload product 3 image、Input brand name"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Heart Glow Reveal" [level=2]
+  - article:
+    - img "Dolce Vita Sip"
+    - generic: 模板
+    - generic "所需素材：Upload Product 1 image、Upload Product 2 image、Upload Brand Logo image"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Dolce Vita Sip" [level=2]
+  - article:
+    - img "Cream Factory Ad"
+    - generic: 模板
+    - generic "所需素材：Upload product photo、Upload brand logo、Input fruit type"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Cream Factory Ad" [level=2]
+  - article:
+    - img "Studio Session MV J"
+    - generic: 模板
+    - generic "所需素材：Upload product one image、Upload product two image、Input brand logo text"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Studio Session MV J" [level=2]
+  - article:
+    - img "Beauty Haul React J"
+    - generic: 模板
+    - generic "所需素材：Upload lip makeup product image、Upload lotion or pump dispenser product image、Upload spray product image、Upload brand logo"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Beauty Haul React J" [level=2]
+  - article:
+    - img "Enchanted Product Ad J"
+    - generic: 模板
+    - generic "所需素材：Upload your product image、Upload your brand logo"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Enchanted Product Ad J" [level=2]
+  - article:
+    - img "Speed Glam Montage J"
+    - generic: 模板
+    - generic "所需素材：describe top garment、describe bottom garment、describe shoes、describe hand accessory、brand logo"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Speed Glam Montage J" [level=2]
+  - article:
+    - img "Invisible Force J"
+    - generic: 模板
+    - generic "所需素材：Upload a photo of the scene"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Invisible Force J" [level=2]
+  - article:
+    - img "Billboard Skate Chase"
+    - generic: 模板
+    - generic "所需素材：Upload top garment、Upload bottom garment、Upload footwear、Upload brand logo"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Billboard Skate Chase" [level=2]
+  - article:
+    - img "Billionaire Shopping Spree J"
+    - generic: 模板
+    - generic "所需素材：Input brand or app name"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Billionaire Shopping Spree J" [level=2]
+  - article:
+    - img "Sunnies Summer Film"
+    - generic: 模板
+    - generic "所需素材：上传眼镜产品 1 图片、上传眼镜产品 2 图片、上传眼镜产品 3 图片、上传品牌标志图片"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "Sunnies 夏日胶片" [level=2]
+  - article:
+    - img "Moonlit Night MV"
+    - generic: 模板
+    - generic: 4秒
+    - generic "所需素材：上传第一位主角的图片、上传第二位主角的图片、输入品牌名称、上传产品照片"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "月夜电影" [level=2]
+  - article:
+    - img "Golden Hour Family"
+    - generic: 模板
+    - generic: 4秒
+    - generic "所需素材：输入品牌名称和招牌产品、上传你的品牌标志、上传你的产品照片"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "黄金时刻家庭" [level=2]
+  - article:
+    - img "Hotel Girls Trip"
+    - generic: 模板
+    - generic: 4秒
+    - generic "所需素材：输入酒店品牌名称、选择您的数字人 1、选择您的数字人 2、选择您的数字人 3、选择您的酒店工作人员"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "酒店闺蜜之旅" [level=2]
+  - article:
+    - img "Red Float Head"
+    - generic: 模板
+    - generic: 4秒
+    - generic "所需素材：输入品牌名称、上传产品图片、输入品牌标语、选择数字人 A、选择数字人 B"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "红色漂浮头像" [level=2]
+  - article:
+    - img "Vintage Fragrance Reel"
+    - generic: 模板
+    - generic: 4秒
+    - generic "所需素材：输入您的品牌名称、上传您的香水产品图片"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "复古香氛短片" [level=2]
+  - article:
+    - img "Retro Tokusatsu Promo"
+    - generic: 模板
+    - generic: 4秒
+    - generic "所需素材：输入品牌名称、上传产品参考图、输入核心痛点"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "复古特摄宣传片" [level=2]
+  - article:
+    - img "Seven Color Burst"
+    - generic: 模板
+    - generic: 4秒
+    - generic "所需素材：输入品牌名称、上传产品照片、选择数字人一号、选择数字人二号、选择数字人三号、输入产品元素详情、选择数字人四号、选择数字人五号"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "七彩绽放" [level=2]
+  - article:
+    - img "Retro Store Campaign"
+    - generic: 模板
+    - generic: 4秒
+    - generic "所需素材：输入您的品牌名称、上传您的品牌标志"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "复古商店广告宣传片" [level=2]
+  - article:
+    - img "Retro Anime Advert"
+    - generic: 模板
+    - generic: 4秒
+    - generic "所需素材：产品信息、上传产品照片"
+    - button "用这个模板":
+      - generic: 用这个模板
+    - heading "复古动漫广告" [level=2]
+  - generic: 没有更多模板了
+  - generic "品牌与版权":
+    - strong: KAIROS
+    - paragraph: Turn every communication into video, with ease. From product URLs, manuals, and brand assets to business-grade video—securely orchestrated and continuously improved.
+    - paragraph: © 2026 WorldX. All rights reserved.
+    - heading "Product Overview" [level=3]
+    - link "URL to Video":
+      - /url: https://kairosai.top/
+    - link "Image to Video":
+      - /url: https://kairosai.top/
+    - link "Image to Image AI":
+      - /url: https://kairosai.top/
+    - link "Text to Video":
+      - /url: https://kairosai.top/
+    - link "AI Image Generator":
+      - /url: https://kairosai.top/
+    - heading "Legal" [level=3]
+    - link "Privacy Policy":
+      - /url: https://kairosai.top/privacy
+    - link "Terms of Service":
+      - /url: https://kairosai.top/terms
+    - heading "Social" [level=3]
+    - link "YouTube":
+      - /url: https://www.youtube.com/@Kairosaivideo
+    - link "X":
+      - /url: https://x.com/kairosaivideo
+    - heading "Company" [level=3]
+    - link "About":
+      - /url: https://www.worldx.co.jp/
+- iframe [id="intercom-frame"]
+- button "Open Intercom Messenger":
+- dialog "新建作品":
+  - heading "新建作品" [level=2]
+  - generic: 选一种编辑器开始。每个作品一种，创建后不能换。
+  - button "关闭":
+  - searchbox "搜索编辑器"
+  - radiogroup "编辑器":
+    - radio "对话气泡通过生成箭头连接视频成品 对话成片 通过对话把想法变成视频。描述你的创意，再用聊天逐步完善。":
+      - img "对话气泡通过生成箭头连接视频成品"
+      - strong: 对话成片
+      - generic: 通过对话把想法变成视频。描述你的创意，再用聊天逐步完善。
+    - radio "点阵画布上的图片与提示词卡片通过生成卡片连接视频结果 无限画布 连接提示词与参考素材，生成图片和视频，在开放画布上探索创意。":
+      - img "点阵画布上的图片与提示词卡片通过生成卡片连接视频结果"
+      - strong: 无限画布
+      - generic: 连接提示词与参考素材，生成图片和视频，在开放画布上探索创意。
+    - radio "素材与视频预览下方是带裁剪句柄和音频波形的多轨时间线 视频剪辑 测试版 在多轨时间线上裁剪、编排已有素材，精细调整每个剪辑点和音轨。":
+      - img "素材与视频预览下方是带裁剪句柄和音频波形的多轨时间线"
+      - strong: 视频剪辑
+      - generic: 测试版
+      - generic: 在多轨时间线上裁剪、编排已有素材，精细调整每个剪辑点和音轨。
+  - button "更多编辑器（5）" [expanded] [active]:
+    - generic: 更多编辑器（5）
+  - radiogroup "更多编辑器（5）":
+    - radio "文档 测试版 用块写给人读的长文。适合方案、说明和笔记。":
+      - strong: 文档
+      - generic: 测试版
+      - generic: 用块写给人读的长文。适合方案、说明和笔记。
+    - radio "表格 测试版 用带类型的列管一条条记录。适合清单和素材库。":
+      - strong: 表格
+      - generic: 测试版
+      - generic: 用带类型的列管一条条记录。适合清单和素材库。
+    - radio "白板 测试版 用图形和便签摊开画。适合讨论流程和关系。":
+      - strong: 白板
+      - generic: 测试版
+      - generic: 用图形和便签摊开画。适合讨论流程和关系。
+    - radio "网页 测试版 写 HTML/CSS/JS 并实时预览。适合落地页和小工具。":
+      - strong: 网页
+      - generic: 测试版
+      - generic: 写 HTML/CSS/JS 并实时预览。适合落地页和小工具。
+    - radio "脚本 测试版 写分场脚本。适合先把故事和人设写清楚。":
+      - strong: 脚本
+      - generic: 测试版
+      - generic: 写分场脚本。适合先把故事和人设写清楚。
+  - button "创建" [disabled]

@@ -1,0 +1,13 @@
+{
+  "name": "one2x-dentsu-menv-source",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Complete report with byte-exact reconstruction from 4 MiB media chunks",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "verify": "node scripts/verify-assets.mjs"
+  }
+}

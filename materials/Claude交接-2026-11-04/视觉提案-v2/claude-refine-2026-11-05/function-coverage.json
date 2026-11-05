@@ -1,0 +1,51 @@
+{
+  "compiled": "2026-11-05",
+  "basis": "site-audit-2026-11-05/ 00-findings.txt + 01–05 截图与DOM；旧官网实拍 ../../KAIROS-60s-分镜表/官网实拍/。未执行任何生成任务，未改账户。",
+  "levels": {
+    "visible": "界面截图/DOM 中可见的入口、字段或状态（已核验存在，不等于端到端可用）",
+    "visible_not_operated": "入口可见，但未操作或未取得操作后的界面",
+    "not_verified": "无证据；不得拍成现成功能"
+  },
+  "verified": [
+    {"feature": "模板库页面与三步引导（选模板→填素材→AI出片）", "level": "visible", "evidence": ["site-audit-2026-11-05/01-explore.png", "site-audit-2026-11-05/01-explore-dom.txt", "site-audit-2026-11-05/02-chrome-explore.png"], "shots": ["S02"]},
+    {"feature": "分类筛选 All/Ads/Car/Animation/Manifestation", "level": "visible", "evidence": ["01-explore-dom.txt", "assets/kairos-ads.jpg（Ads 选中状态）"], "shots": ["S02"]},
+    {"feature": "搜索模板输入框", "level": "visible_not_operated", "evidence": ["01-explore-dom.txt: searchbox \"Search Templates\"", "02-chrome-explore-dom.txt: searchbox \"搜索模板\""], "shots": ["S02"], "note": "只高亮输入框，不演示搜索结果"},
+    {"feature": "模板卡结构化所需素材字段", "level": "visible", "evidence": ["01-explore-dom.txt", "02-chrome-explore-dom.txt"], "examples": {"Perfume Ad Reveal / 香水广告揭晓": "填写原料、上传香水产品图片、填写品牌标志", "Home Appliance Showcase": "商品1–4 各：图片、品类、interaction beat", "Hotel Girls Trip": "酒店品牌名、数字人1–3、酒店员工", "Product Bullet Time J": "商品名与品类、外观描述、价格或促销语、卖点 tagline", "Pop Art Product J": "商品图、强调色、收尾标语", "Retro Tokusatsu Promo": "品牌名、商品参考图、核心痛点"}, "shots": ["S03", "S06"]},
+    {"feature": "部分模板显示片长与预计积分", "level": "visible", "evidence": ["01-explore-dom.txt: Clock Of Bags 8 sec ≈25；Flavor Diorama Ad 25 sec ≈50；Awakening the Beast 15 sec ≈100"], "shots": ["S03"], "note": "Perfume Ad Reveal 卡本身未显示积分，片中不得给香水模板编造积分"},
+    {"feature": "“用这个模板/Use this template”按钮", "level": "visible_not_operated", "evidence": ["01/02-explore-dom.txt"], "shots": ["S02"]},
+    {"feature": "侧栏：新建作品 / 模板库 / 作品 / 网盘 / 最近使用（含对话成片、视频剪辑、无限画布作品）", "level": "visible", "evidence": ["02-chrome-explore.png", "02-chrome-explore-dom.txt"], "shots": ["S07"], "note": "测试账号的最近使用含“冒烟检查”等测试项目名，正式录制需用干净账号"},
+    {"feature": "新建作品：对话成片 / 无限画布 / 视频剪辑（测试版）", "level": "visible", "evidence": ["03-create-modes.png", "03-create-modes-dom.txt"], "shots": ["S07"]},
+    {"feature": "更多编辑器(5)：文档/表格/白板/网页/脚本，均测试版", "level": "visible", "evidence": ["04-all-modes.png", "04-all-modes-dom.txt"], "shots": ["S07"], "note": "只以一行字段快闪，不展开"},
+    {"feature": "无限画布：文本/图片/视频/音乐/语音生成入口；双击画布创建生成卡片；从网盘导入（含本地上传）", "level": "visible_not_operated", "evidence": ["05-canvas.png", "05-canvas-dom.txt"], "shots": ["S08"], "note": "截图时会话过期弹窗覆盖中部，预演只裁用未遮挡区域"},
+    {"feature": "无限画布助手建议：文生图 / 先出图再出视频 / 搭建生成链路（文案→图片→视频）；生成模式“自动·成本优先”", "level": "visible_not_operated", "evidence": ["05-canvas-dom.txt"], "shots": ["S08"]},
+    {"feature": "正式 KAIROS 标志", "level": "visible", "evidence": ["../../KAIROS-60s-分镜表/官网实拍/assets/kairos-logo.png（官网 brand-kit logoIcon）"], "shots": ["S11"]}
+  ],
+  "shown_as_mock_pending_capture": [
+    {"feature": "点击“用这个模板”后的素材填写表单", "shots": ["S04"], "reason": "未取得表单界面截图；预演以“示意界面·待实录”标注，字段文字取自DOM"},
+    {"feature": "AI 出片结果", "shots": ["S05"], "reason": "未执行付费生成；播放器内先放官方模板封面（风格示意），再放 AI 关键帧（商品示意），均不冒称本次输出"},
+    {"feature": "无限画布 文案→图片→视频 链路实际运行", "shots": ["S08"], "reason": "只核验到入口与助手建议，链路卡片与连线为示意层"},
+    {"feature": "对话成片、视频剪辑内部界面", "shots": ["S07"], "reason": "仅见新建入口与说明文案，旁白只描述入口说明的能力"}
+  ],
+  "not_verified_not_filmed": [
+    "日语旁白/配音的编辑与字幕合成（语音生成入口存在，但未测试，不拍成字幕合成功能）",
+    "表达风险提示、品牌规范审阅、担当者确认流程",
+    "多尺寸/多用途批量输出",
+    "按意图修改并前后对照",
+    "自动分镜展开",
+    "URL to Video / Image to Video 等（仅页脚链接文案，指向 kairosai.top，未核验）",
+    "日文界面本地化（截图只有英文公开页与中文登录页）"
+  ],
+  "shot_map": {
+    "S01": "宣言（无功能）",
+    "S02": "模板库、三步引导、搜索框、Ads分类",
+    "S03": "所需素材字段、片长与预计积分",
+    "S04": "按字段填素材（示意界面）",
+    "S05": "AI出片结果观看（示意素材）",
+    "S06": "多模板字段广度：多商品/数字人/价格卖点/强调色标语/痛点",
+    "S07": "新建作品三模式＋更多编辑器",
+    "S08": "无限画布生成入口、网盘导入、生成链路建议",
+    "S09": "日本本土化（AI情景＋后期排版，非产品功能）",
+    "S10": "宣言再起（官方模板封面墙）",
+    "S11": "品牌落版"
+  }
+}

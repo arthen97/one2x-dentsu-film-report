@@ -1,0 +1,26 @@
+- banner:
+  - button "打开导航":
+    - generic: M
+  - strong: 无限画布 作品 2026-11-04-22-21-51
+  - generic: 无限画布
+  - button "作品菜单":
+  - text: 连接已断开
+  - button "撤销":
+  - button "重做":
+  - button "版本记录":
+  - button "积分":
+    - text: "558.63"
+  - button "帮助":
+  - button "分享":
+    - text: 分享
+  - button "取消固定助手面板" [pressed]:
+- main:
+  - iframe
+  - separator "调整面板大小"
+  - complementary:
+    - iframe
+- iframe [id="intercom-frame"]
+- dialog "无法打开这个编辑器":
+  - heading "无法打开这个编辑器" [level=2]
+  - button "重新加载" [active]
+  - button "复制详情"

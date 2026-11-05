@@ -1,0 +1,27 @@
+One2X 企业视觉依据与资产清单
+
+本包调整范围：仅材料副本的导航、共享企业样式与文字附件入口。原始提案正文、故事设定、日语文案、产品原型及内嵌脚本保留；Hollywood 页面仅标明“历史格式对照”，不作为当前主提案。
+
+企业官网视觉依据：
+/Users/arthen01/output/one2x-postproduction/brand-v4/design-notes.txt
+该文件记录参考 https://enterprise.one2x.ai/ 的核对日期为 2026-10-12；此包沿用该已落地本地依据，未声称重新核对现时官网。
+/Users/arthen01/output/one2x-postproduction/One2X-三大合作方向-官网风格-v4.html
+页面实际使用白底、#171717 主字、#6B6B6B 次字、#E7E7E7 分割线、#F6F6F6 浅灰表面；Manrope 英文字体、中文系统字体；黑色胶囊、细线、适度圆角与留白。
+
+真实资产（完整复制，未描画/重制）：
+assets/one2x-wordmark.svg ← /Users/arthen01/output/one2x-postproduction/brand-v4/one2x-wordmark.svg
+assets/Manrope.ttf ← /Users/arthen01/output/one2x-postproduction/brand-v4/Manrope.ttf
+assets/Manrope-SemiBold.ttf ← /Users/arthen01/output/one2x-postproduction/brand-v4/Manrope-SemiBold.ttf
+共享样式：one2x-material.css。中文回退为 PingFang SC / Hiragino Sans / Microsoft YaHei。
+
+补充品牌参考：
+/Users/arthen01/mesh-runtime-publish-fix/docs/design/one2x-design-system.md
+/Users/arthen01/mesh-runtime-publish-fix/tokens/tokens.css
+该规范偏产品界面，规定中性表面、默认主按钮黑色，最高强调才使用品牌紫 #863dfb。本报告采用企业官网的中性风格，未把 Medeo 产品紫色泛用为企业报告装饰色。
+/Users/arthen01/Desktop/dreamviews/One2X 品牌资产 250429.zip
+包含 One2X/transparent_bg/ 下原始黑/白 Logo；本包使用已整理成独立路径的真实 wordmark。
+
+已补入原始文字附件：
+materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版.txt
+materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案.txt
+materials/Claude交接-2026-11-04/IRIS-Claude成果/完整日语录音稿.txt

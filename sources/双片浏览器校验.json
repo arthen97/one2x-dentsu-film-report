@@ -1,0 +1,49 @@
+{
+  "main": {
+    "urls": [
+      "http://127.0.0.1:8848/materials/Claude%E4%BA%A4%E6%8E%A5-2026-11-04/%E8%A7%86%E8%A7%89%E6%8F%90%E6%A1%88-v2/KAIROS-60s-%E5%8A%A8%E6%95%88%E5%8F%82%E8%80%83-%E5%A4%A7%E5%9B%BE%E6%9B%B4%E6%96%B0%E7%89%88.html",
+      "http://127.0.0.1:8848/materials/Claude%E4%BA%A4%E6%8E%A5-2026-11-04/%E8%A7%86%E8%A7%89%E6%8F%90%E6%A1%88-v2/Iris-60s-%E7%BE%A4%E5%83%8F%E5%8F%99%E4%BA%8B-%E5%A4%A7%E5%9B%BE%E6%9B%B4%E6%96%B0%E7%89%88.html"
+    ],
+    "overflow": false,
+    "oldSingleStory": false
+  },
+  "pages": [
+    {
+      "title": "KAIROS 日本发布会宣传片 · 制作讨论稿 | One2X",
+      "overflow": false,
+      "images": [],
+      "videoCount": 3,
+      "shots": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "hasReturn": true,
+      "playback": [
+        true,
+        true,
+        true
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "title": "Iris｜群像叙事60秒｜大图提案",
+      "overflow": false,
+      "images": [],
+      "videoCount": 0,
+      "shots": 12,
+      "hasReturn": true,
+      "mobileOverflow": false
+    }
+  ],
+  "errors": []
+}

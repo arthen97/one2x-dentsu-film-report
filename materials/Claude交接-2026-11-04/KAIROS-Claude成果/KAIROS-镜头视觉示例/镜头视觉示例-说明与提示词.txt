@@ -1,0 +1,232 @@
+KAIROS｜镜头视觉附录
+6个代表镜头 · 16:9 · Midjourney v8.1
+六镜头视觉方案 · 图片待加入
+
+样张为概念美术，用于镜头与视觉沟通；真实UI、文字与正式logo后期叠加，正式品质证明采用KAIROS实际输出。
+
+
+
+KF01｜镜02｜00:03–00:08
+四个岗位，各自卡住的一瞬
+
+必须看懂的信息
+真实商品有光泽，静态照片却表达不出来——企业需要能用于商业的影像。
+
+画面、光线与材质
+日本桥本町的普通品牌企划室。近景拍两位同事的手：一人把无字护肤瓶举到窗光下，另一人将包装上的限定贴纸对齐；显示器只留一块可后期换成静态商品图的灰色屏幕。视线在实物与屏幕之间形成明确对照。50mm中近景，冷灰晨光、自然肤质、纸张纤维和玻璃高光；不做夸张失落表情。
+
+镜头运动
+手部与物件近景快剪，四个镜头视线方向一致；第三张字卡后，一个光标在黑场中闪动，引出需求行。
+
+参考片质感转译
+LINE WORKS《現場が動き出す・店舗篇》；LINE仅作生活质感辅助
+把问题放在具体工作器物和半途停住的手势上，保留真实办公室的空间尺度；动作轻、表情少。
+
+拟用日文／英文屏幕文案与中文解释
+03.4秒起为企划对白字幕；06.8–08.0秒另有三张痛点字卡。
+JA：作れない。待てない。任せられない。
+EN：Can't make it. Can't wait. Can't hand it over.
+中文解释：做不出来。等不起。不敢托付。
+
+样张信息叠加文案
+JA：写真だと、この艶が…
+EN：In photos, this shine just…
+
+生成英文提示词
+A premium Japanese commercial film still. A modest cosmetics planning office in Tokyo on a cool winter morning. Tight 50mm medium close-up across a real desk: one Japanese coworker holds a clear cylindrical serum bottle against window light, another aligns a small blank sticker on an ivory gift box. Pale champagne liquid, matte ivory cap, narrow blank cream label. An angled desktop monitor at the side has a plain gray screen for later compositing. Focus on the glass highlight and careful hands; restrained faces, natural skin texture, paper fibers, softly worn office objects. Cool daylight with gentle practical fill, controlled highlights, subtle film grain, believable lived-in proportions. No legible lettering, logos, HUD or fantasy office. --ar 16:9 --v 8.1 --raw --stylize 60 --hd
+
+样张为概念美术，用于镜头与视觉沟通；真实UI、文字与正式logo后期叠加，正式品质证明采用KAIROS实际输出。
+
+
+──────────────────────────────────────────────
+
+KF02｜镜04｜00:14–00:19
+成片完整亮相：给作品真正的观看时间
+
+必须看懂的信息
+让成片本身证明日系审美、高品质与低AI感。
+
+画面、光线与材质
+同一只玻璃护肤瓶的成熟商品广告画面，瓶身落在左中部，右侧三分之一干净留白。一只自然的手从画外轻托瓶身；窄窗形高光沿玻璃曲线掠过，台面有一滴精华的细微涟漪。85–100mm产品特写，浅景深但瓶口与握持关系清楚；柔和侧光、真实折射、可见皮肤纹理，暖白与浅香槟色。
+
+镜头运动
+全程只有一次缓推，无转场特效；停住的瓶身高光切到工坊工件上的金属反光。
+
+参考片质感转译
+Adobe《The World Is Your Canvas》的“结果直接成为画面”；日本审美以本片原设定执行
+从工具展示切到作品占满画面，给材质和构图完整观看时间；使用克制留白与可触摸的真实表面，不照搬原片超现实城市。
+
+拟用日文／英文屏幕文案与中文解释
+16.5–18.5秒为审美旁白字幕；18.0–19.0秒出现低AI感主张。
+JA：AIらしさを、感じさせない。
+EN：No AI look. Just the work.
+中文解释：看不出AI的痕迹。
+
+样张信息叠加文案
+JA：日本の美意識で、磨く。
+EN：Refined by a Japanese sense of beauty.
+
+生成英文提示词
+A refined Japanese cosmetics commercial, one exquisite material-focused product shot. A clear cylindrical serum bottle with pale champagne liquid, matte ivory cap and narrow blank cream label, left of center on pale limestone. A natural hand gently supports the bottle; accurate fingers, delicate skin texture. One long soft window reflection defines the glass curve; believable refraction, a tiny serum ripple. 100mm macro product photography, controlled shallow focus keeping bottle and fingers crisp, soft lateral daylight, warm ivory and champagne palette, subtle fine grain, beautiful quiet negative space across the right third. Understated luxury, physically credible surfaces. No words, logo, interface, flowers or magical glow. --ar 16:9 --v 8.1 --raw --stylize 80 --hd
+
+样张为概念美术，用于镜头与视觉沟通；真实UI、文字与正式logo后期叠加，正式品质证明采用KAIROS实际输出。
+
+
+──────────────────────────────────────────────
+
+KF03｜镜05｜00:19–00:23
+现场手顺，变成看得见的步骤片
+
+必须看懂的信息
+把企业已确认的操作素材整理成看得清、能对照的培训影片。
+
+画面、光线与材质
+大田区矢口工坊，前景平板占画幅约四成；新人一只拇指停在暂停位置，另一侧可见固定在台钳上的静止工件与前辈递来的下一件材料。屏幕留灰色换屏面，后期将已确认实操视频中的手部特写与真实现场匹配。50mm过肩近景，顶灯与侧窗混合光，磨损金属台面、棉质工服、哑光铝件，整洁但有使用痕迹。
+
+镜头运动
+真实手部与片中手部同一构图；前辈递出下一件材料的手，接说明会上递资料的手。
+
+参考片质感转译
+Squarespace《A Tale As Old As Websites》；LINE WORKS职场质感
+把数字成果落在一件真实工作被顺利接续的动作上；借具体器物与同事之间的轻微回应，而非教程式功能清单。
+
+拟用日文／英文屏幕文案与中文解释
+19.8–20.8秒呈现需求；20.8秒起呈现沿用已确认操作素材的步骤字幕。
+JA：この手順を、手元のアップで。
+EN：Use hand close-ups for these steps.
+中文解释：把这段操作整理为手部特写。
+
+JA：角度は、ここまで
+EN：Angle: up to here
+中文解释：关键角度沿用企业已确认的原步骤。
+
+样张信息叠加文案
+JA：角度は、ここまで
+EN：Angle: up to here
+
+生成英文提示词
+A premium Japanese workplace commercial still, a small precision workshop in Tokyo. Over-the-shoulder 50mm close view: a junior worker checks a tablet beside a stationary aluminum part secured in a bench vise; a senior coworker gently passes the next part into frame. Tablet fills about forty percent of the image, screen flat neutral dark gray for an approved training-video insert. Worn brushed metal bench, cotton workwear, organized everyday tools, tactile use marks. Soft side-window light mixed with practical overhead light, natural hand anatomy, restrained human response, subtle film grain, authentic small-workshop scale. Everything is stopped and safe. No operating machinery, technical measurements, words, logo or invented software UI. --ar 16:9 --v 8.1 --raw --stylize 55 --hd
+
+样张为概念美术，用于镜头与视觉沟通；真实UI、文字与正式logo后期叠加，正式品质证明采用KAIROS实际输出。
+
+
+──────────────────────────────────────────────
+
+KF04｜镜07｜00:27–00:32
+成片之前，先发现那一句
+
+必须看懂的信息
+风险表达在成片之前被主动发现，修正后由企业确认。
+
+画面、光线与材质
+独立广告图形空间。左侧是一块尚未完全展开的商品影片画框，内有同一护肤瓶；品牌紫细光沿下缘由左向右推进，在中央一道沉金色细框前明确停住。右侧仅留两块干净、无字的半透明文字承载面，分别用于风险原词与修正案；下角留人工确认按钮的位置。深灰底、克制紫光与沉金边缘，微弱玻璃反射；85mm透视感，近乎正视，避免花哨HUD。
+
+镜头运动
+近景特写停半拍；完成后企划合上桌边一份企画书，接入下一镜。
+
+参考片质感转译
+Apple《Data Auction》
+让抽象保护成为一个可见且有因果的动作：正在前进的东西被及时停住；用构图与停顿建立信任，不使用盾牌贴图。
+
+拟用日文／英文屏幕文案与中文解释
+27–32秒的生成中风险提示、修正与企业确认，采用独立广告图形。
+JA：表現リスクの可能性：断定的な表現
+修正案：毎日のケアに、心地よさを。［採用］
+EN：Possible risk: absolute claim / Suggestion: "Comfort for your daily care." [Use]
+中文解释：提示断定式表达的潜在风险，给出修正案，由企业选择采用。
+
+JA：表現リスクを、公開前に。
+EN：Risky wording, flagged before release.
+中文解释：表达风险，在公开前提示。
+
+样张信息叠加文案
+JA：表現リスクを、公開前に。
+EN：Risky wording, flagged before release.
+
+生成英文提示词
+A premium product-launch concept frame, precise physically lit motion-design set on dark graphite. At left an unfinished landscape film panel contains a clear champagne serum bottle with ivory cap. A single thin violet light line advances along the lower edge and stops at one clean muted-gold vertical bracket near center, visibly interrupting completion. At right two large unlettered translucent planes provide clear space for a risky phrase and its revised version, with one small empty confirmation area below. Frontal 85mm perspective, deep but legible blacks, restrained gold reflections, realistic glass thickness, disciplined proportions and negative space. A clear cause-and-effect composition. No words, software chrome, logo, locks, shields or busy sci-fi HUD. --ar 16:9 --v 8.1 --raw --stylize 90 --hd
+
+样张为概念美术，用于镜头与视觉沟通；真实UI、文字与正式logo后期叠加，正式品质证明采用KAIROS实际输出。
+
+
+──────────────────────────────────────────────
+
+KF05｜镜08｜00:32–00:37
+资料留在日本，留在自己的环境里
+
+必须看懂的信息
+企业资料留在日本境内的独立环境，不流向公共AI训练。
+
+画面、光线与材质
+比上一镜更稳的广告示意。一个半透明企业空间坐落在画面左中部，内部整齐放置企划书与少量安静流动的光点；外侧几束细光在边界处停住，内部光仍然流动。台面留足空间后期叠加准确日本轮廓，使企业空间明确位于日本内。缓慢拉远感的35mm俯斜视角，深石墨底、柔和沉金内光、低亮度品牌紫边线；不出现锁门、铁笼或数据机房奇观。
+
+镜头运动
+全片最稳的一次拉远，两行承诺全程稳定显示5秒；节点光点向右拉出细光，接门店。
+
+参考片质感转译
+Apple《Data Auction》的“信息去向可视化”方法
+用空间边界清楚区分内部资料与外部方向，把保护拍成发生中的事实关系；简洁、稳定，给两行承诺完整停留。
+
+拟用日文／英文屏幕文案与中文解释
+32.0–37.0秒，日本驻留与公共模型训练边界两行承诺同步稳定显示。
+JA：データは、日本国内で保管。
+EN：Your data is stored in Japan.
+中文解释：数据保存在日本国内。
+
+JA：パブリックAIモデルの学習に、使用しません。
+EN：Never used to train public AI models.
+中文解释：不用于公共AI模型训练。
+
+样张信息叠加文案
+JA：データは、日本国内で保管。
+EN：Your data is stored in Japan.
+JA：パブリックAIモデルの学習に、使用しません。
+EN：Never used to train public AI models.
+
+生成英文提示词
+A calm premium B2B launch-film concept image about a protected enterprise workspace. One small translucent architectural volume sits left of center on a dark graphite plane, holding a tidy stack of unlettered planning papers and a few softly circulating light points. External thin violet filaments stop at the glass boundary; warm interior light remains active. Leave the surrounding floor empty for an accurate Japan outline to be composited later, and reserve the right third for two clear text lines. Elevated oblique 35mm perspective, muted-gold interior, subtle violet edges, plausible glass and quiet reflections, controlled studio lighting. Trustworthy and composed. No generated map, words, logos, padlocks, shields or spectacular server room. --ar 16:9 --v 8.1 --raw --stylize 80 --hd
+
+样张为概念美术，用于镜头与视觉沟通；真实UI、文字与正式logo后期叠加，正式品质证明采用KAIROS实际输出。
+
+
+──────────────────────────────────────────────
+
+KF06｜镜09｜00:37–00:43
+同一份冬季新品素材，延展为持续的内容
+
+必须看懂的信息
+同一份素材持续延展成同品牌的多支内容，并能形成高品质横版主片。
+
+画面、光线与材质
+量产队列向横版主片过渡的关键帧。左侧保留一张小幅冬季饮品原图；同一道品牌紫细光向右分成四条，连接四张同品牌竖版作品，分别是杯身、拉花手部、窗边热气、店员递杯。最前方一格正在展开为较大的横版主片，内容是冬日窗边牛奶注入同一只灰褐色陶瓷杯。队列向画外延伸但不堆满全屏；冷暗图形底衬暖白窗光、奶泡与陶瓷肌理，50mm虚拟摄影机的浅透视。
+
+镜头运动
+快速后拉显出队列规模，再急推入一格；横版画面中递出杯子的手，接下一镜商品页上停住的拇指。
+
+参考片质感转译
+Adobe《The World Is Your Canvas》＋Microsoft《The Future of Work With AI》
+让一个需求直接改变可见画面；不同结果采用统一语法连续展开，最后把一件作品推到足够大的尺度观看。
+
+拟用日文／英文屏幕文案与中文解释
+38.6–41.0秒为低成本SNS文案；41.0–43.0秒为横版主片品质主张。
+JA：SNS動画を、大量に、低コストで。
+EN：Social videos — in volume, at low cost.
+中文解释：大量、低成本地制作社交视频。
+
+JA：テレビCM級の品質を。
+EN：TV-commercial quality.
+中文解释：电视广告级的品质。
+
+样张信息叠加文案
+JA：テレビCM級の品質を。
+EN：TV-commercial quality.
+
+生成英文提示词
+A premium motion-design keyframe: one winter cafe photograph becoming a coherent campaign. A small source photo at far left shows a taupe ceramic cup; four orderly portrait film panels recede through the center, featuring the same taupe cup and warm drink: ceramic detail, barista hands, window steam, a hand offering the cup. One larger landscape panel opens prominently in the foreground, showing milk pouring into that cup beside a winter window. Consistent restrained palette, natural warm highlights, convincing milk foam and ceramic texture, dark graphite graphic stage, slight violet edge light. Controlled 50mm virtual-camera perspective, strong visual hierarchy, space for connecting lines and copy in post. No text, logos, charts, pricing or software controls. --ar 16:9 --v 8.1 --raw --stylize 100 --hd
+
+样张为概念美术，用于镜头与视觉沟通；真实UI、文字与正式logo后期叠加，正式品质证明采用KAIROS实际输出。
+
+官方参数文档
+Version：https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version
+Aspect Ratio：https://docs.midjourney.com/hc/en-us/articles/31894244298125-Aspect-Ratio
+Stylize：https://docs.midjourney.com/hc/en-us/articles/32196176868109-Stylize

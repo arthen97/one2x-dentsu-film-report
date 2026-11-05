@@ -1,0 +1,2591 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-05T09:47:17.325205+00:00",
+  "chunkSize": 4194304,
+  "assets": [
+    {
+      "path": "assets/Manrope-SemiBold.ttf",
+      "size": 35640,
+      "sha256": "e6acbf89a2dc8876352f50eb6f40fd0fdcc3d976eb94c5abb5cb43d6c9f04a64",
+      "mime": "font/ttf",
+      "type": "font",
+      "storage": "file"
+    },
+    {
+      "path": "assets/Manrope.ttf",
+      "size": 35648,
+      "sha256": "19afea11dcd998fe76e48b7bf989a8184ca9913dea7e8f306d98fe2ada1678e5",
+      "mime": "font/ttf",
+      "type": "font",
+      "storage": "file"
+    },
+    {
+      "path": "assets/one2x-wordmark.svg",
+      "size": 3882,
+      "sha256": "b7927afc3ad9329657854c7eaf4599b83e89a802c4bca357ce362aaed79e4814",
+      "mime": "image/svg+xml",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "demos/dialogue.html",
+      "size": 3286,
+      "sha256": "29e59ca6d0cb0839d1345b73314d2ae17d38a8f9db2295195b5e461db78b56eb",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "demos/model-selection.html",
+      "size": 3327,
+      "sha256": "662a5e012901455367b004d99073541f643afe71c20dadbd57b2bd599802f8f5",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "demos/template.html",
+      "size": 3317,
+      "sha256": "fe4bc9df734f3331d6adb41e9d02baeb5321a100e74cce749c67ae3587ef65b5",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "index.html",
+      "size": 37756,
+      "sha256": "b463142554dd10caae6b01e1536bbde287d53b80d672ab65c3a5a39768627aad",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-hollywood-v3.html",
+      "size": 244510,
+      "sha256": "105627a39995cebd298f1922d01f52d40f7900b0eb66806aaf4f6827231571e7",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-未套用skill.html",
+      "size": 59344,
+      "sha256": "d711337cb29cab68545e538836197a3be25937ee7fba8f52644ac9ff2ae0c59d",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案.txt",
+      "size": 40344,
+      "sha256": "734ad9b4d10eedacb7e5a445033b0d0df685d6ae7a061b0045ea27df32ac5b4b",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-V5-日本本土共情版.html",
+      "size": 26916,
+      "sha256": "002f0c5cef16bce529ae638c6ed75639409881ef6d7b809da7b96ccc7e5d8096",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-V6-需求整合与本土细节版.html",
+      "size": 21918,
+      "sha256": "3a3d9df01525c415b0e70d3e6f2e0e77a6887ff19907249d3fadb8bf2c03653d",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/assets/iris-prototype/top-idle.webp",
+      "size": 2830,
+      "sha256": "158ceb1b83863afc8d72b3c2ec0747abfb555c82f0577ed2a614f6b431c87af4",
+      "mime": "image/webp",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/assets/iris-prototype/top-wait.webp",
+      "size": 3690,
+      "sha256": "957b60d704a90a16aa9fc97883168cd16c1cd19ba4c4fe72ebf727afe502c9f9",
+      "mime": "image/webp",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/完整日语录音稿.txt",
+      "size": 6174,
+      "sha256": "f7017e66d9af86f3cf3424e85030dfb33b6801a7bc153920a47fa47d2b5af1e9",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-日本本土共情版-Brief与分镜.html",
+      "size": 33750,
+      "sha256": "367525a768a46a1d84f19729b9565230ecb9817eabd609527b0f21cfa21b15aa",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "size": 3888838,
+      "sha256": "dea60025203632637e476e928ce76aa67de8aee04df6e87baf455b9f722c36e5",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-未套用skill.html",
+      "size": 65660,
+      "sha256": "73f5a76104e4eb5e521d33b7c50fa4fa2960a1e410e1433c89d4ada7fe94837e",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版.html",
+      "size": 65439,
+      "sha256": "80211d01cdd8521712a26b5e3b65c81a6e61bcc627e8dc0d23418f7ba8fbd736",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版.txt",
+      "size": 32727,
+      "sha256": "dee50bf06c070a9eae0d4d158eeac9f1c21aec88523f3db51db341640276f06e",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-需求整合与本土细节版.html",
+      "size": 32189,
+      "sha256": "b1268a72cdda020bf2b57a38d6456d9e36fd3b0895629ed22fc4628f0d8d595b",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF01-镜02-说明与提示词.txt",
+      "size": 2331,
+      "sha256": "b3971b916a5f5f180b138de2d3c430181ba0bbf6378c35e2de7755b4790c1210",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF02-镜04-说明与提示词.txt",
+      "size": 2276,
+      "sha256": "fd5a649173e0cd02b6036307780e4428799e2d2053f19d70221c0ffc01c4d2e7",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF03-镜05-说明与提示词.txt",
+      "size": 2414,
+      "sha256": "8c9c0b7470b21ec10d9d3fc6434880363d82dd5f0043ea121562a02229351f3c",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF04-镜07-说明与提示词.txt",
+      "size": 2618,
+      "sha256": "1d0a79619dc9221f158b7e12c3c614ab4130d99c59deeb454a9c089045a1cf49",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF05-镜08-说明与提示词.txt",
+      "size": 2616,
+      "sha256": "ed2b1dd9051d366b4dc99e900d252ca893d08c7f15a3bbaff73feddcd021ee7c",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF06-镜09-说明与提示词.txt",
+      "size": 2575,
+      "sha256": "4446b1dfdba3ca44eb5d4e18a9d2c8d22a2182ff412fe2af2e01e5aa2ee9e06e",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/index.html",
+      "size": 42062,
+      "sha256": "1a723360fd9ab5e82f0cdec2d68e424d35e77c61cfa2e6ba288def7e12f927e6",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/镜头视觉示例-说明与提示词.txt",
+      "size": 16069,
+      "sha256": "d8cff8b83dd31ed4bae044132a1460f24fd28ca9225d73dadd18ad7d87dd3d65",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/Iris-60s-群像叙事-大图更新版.html",
+      "size": 21896,
+      "sha256": "1eb5590333fb09e504b611d4c880602a135c26f9224f876d1d5452d4293f2880",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/Iris-60s-群像叙事-文字稿.txt",
+      "size": 15067,
+      "sha256": "8776cba5fd8b5e5d1162614caff943dd8473bee6883695f4dd1b2342cd5db781",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/Iris-60s-群像叙事-日语录音稿.txt",
+      "size": 3506,
+      "sha256": "8cdba8954097f4dba1ae65a159ddb27ea41347a0259bc5112b076db557636da0",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/KAIROS-60s-动效参考-大图更新版.html",
+      "size": 92845,
+      "sha256": "63d2c964865cb6f9ede2a9a46acf658004acaeb97649ab655adecdbe0fec3bf5",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/KAIROS-60s-动效参考-完整文字稿.txt",
+      "size": 50734,
+      "sha256": "443a10a4b1d86502786d46b4949ff1fc6c1cca4223e0701d319c763d9883c99e",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/KAIROS-Claude完善版-完整文字稿.txt",
+      "size": 22395,
+      "sha256": "d11f487ee8e1149450c3620bc443b55d4997de0f05268059fbb35775e1070cc8",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/KAIROS-Claude完善版.html",
+      "size": 49900,
+      "sha256": "259901eb09a7beaf3586e2b4febeb56caae569cb9d63d6bfcf914d6f48c3b4b3",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/duet-thumb.jpg",
+      "size": 25559,
+      "sha256": "bf3ebcfda376f8e49abaffd36bddbb9a4b0558277616574407cc0b415713faec",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/figma-specs.png",
+      "size": 257328,
+      "sha256": "d5ae7d1a73e9757eeae7024418e668f12e315802ec59ce46be112b19b9e5216b",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/iris-convention.jpg",
+      "size": 340579,
+      "sha256": "5e25a46d09241c622b495418ceae0af43f0826d26a53e2eeb5b61fb38da362db",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/iris-convention.png",
+      "size": 2188997,
+      "sha256": "b5797de603dc0339ec2fc79162b42a764f129132d77ee137fd8beeb42a9b0675",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/iris-couple.jpg",
+      "size": 336863,
+      "sha256": "7bd50c65975a411f2a1982d86ef29a3d8e224479749b67a7d4916e01973b659b",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/iris-couple.png",
+      "size": 2267936,
+      "sha256": "6aab1a264784a243ca67f091041491d514fecd42c5cd2bed34d9099dd4a777d6",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/iris-flight.jpg",
+      "size": 273326,
+      "sha256": "66979a10a509592b765d14576a6fee4d06a14773dbbb291e6abaf85383bd9b69",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/iris-flight.png",
+      "size": 1993932,
+      "sha256": "f2b2b71f89095041f50e03c2fe09d540b61e835c4d6baf5a9f85c0e57379ea85",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/iris-hotel.jpg",
+      "size": 504575,
+      "sha256": "f1611cf4d673f73df9d0bef2bd15e520e312f30acef2517620da18321f7da61f",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/iris-hotel.png",
+      "size": 2549415,
+      "sha256": "b79ecb1606354684a2e9e799b095b7954a3a1ccf6d66eeb2d0ecf5c67aa22873",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/iris-pet.jpg",
+      "size": 329522,
+      "sha256": "db91cd1ae50255e3f594e89a8789970eaddf2893807f65219218e08c25961ed8",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/iris-pet.png",
+      "size": 2158468,
+      "sha256": "d9508f6f82ca414e3ee09a11badd5eb9a789ee1e01af4c90b3c64b8a7eecc7e3",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/iris-rain.jpg",
+      "size": 508728,
+      "sha256": "1f9ff7c6851ee3ca5418105ec164990f3e014f56aa3b867825ed65108f9eb23c",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/iris-rain.png",
+      "size": 2726383,
+      "sha256": "b0246cb3c3e8fd697b0dea7bedf30b3735887facc23ffa3d7e90c55763a5084f",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/move-cover.jpg",
+      "size": 26869,
+      "sha256": "aeb15af6bfa6d56212cf002416e87fcc45a2db07055277cc70164dbc4a8f1698",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/move-mosaic-1.jpg",
+      "size": 267522,
+      "sha256": "8e750593ba06343fd28b7c6ed85bec36346efc9dc04d5539e46657ed61f13ed1",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/move-mosaic-2.jpg",
+      "size": 91696,
+      "sha256": "02b73f2c8289fce1c53b0ebbdba17a42e2aff421cf6975cd88c18590c618bb00",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/move-mosaic-3.jpg",
+      "size": 102372,
+      "sha256": "71e67ea3038e01bcfd41b6a1063de8d5780033762174be3644e4c5d0f2ba27cd",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/move-mosaic.mp4",
+      "size": 5859313,
+      "sha256": "d0a4200c8a18a5e602aff895324b25088614f097102955cd1302fe7d7d4a1f6e",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/move-product-1.jpg",
+      "size": 104560,
+      "sha256": "4e67d6f0f5ddbe8d7a342a74b17d6b4c753634f2e568068f1b4c710f653bd2e7",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/move-product-2.jpg",
+      "size": 143135,
+      "sha256": "31544228a92c5b3e84700e089de65c1ab47a34189e37fde1f7c394a22fe81a99",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/move-product-3.jpg",
+      "size": 58261,
+      "sha256": "8e1e7de483379590ec33c88f65b5a7b7b513484b52319c254541decbfc662095",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/move-product.mp4",
+      "size": 5981568,
+      "sha256": "74ee5a3473f5d08eb19690a6c4e74de276a50ce3d299d2be4d73645d8d3e6d29",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/move-transit-1.jpg",
+      "size": 74843,
+      "sha256": "b64f2adcbbf199ac585822ada36f75cf7d238b00d831f4842b053f554d62785a",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/move-transit-2.jpg",
+      "size": 92088,
+      "sha256": "ff1fadb05d9e1a037356bcda6ee4a550c109933a9f7bdffd6204d4304273bdf7",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/move-transit-3.jpg",
+      "size": 88129,
+      "sha256": "04f13f9380ea622094cc14fdf28b7252aa0e940a8cb78b0148a6a8bc0d69659b",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/move-transit.mp4",
+      "size": 2532944,
+      "sha256": "97ab8f736cf2794684fdf892b0b5d2e4d253121bce84cdb06423b39638d00532",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/assets/one2x-wordmark.svg",
+      "size": 3882,
+      "sha256": "b7927afc3ad9329657854c7eaf4599b83e89a802c4bca357ce362aaed79e4814",
+      "mime": "image/svg+xml",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/assets/KAIROS-企划室-关键帧-v1.png",
+      "size": 2151294,
+      "sha256": "0303c1f91f5c89ae8c7ed8f35f7f267fcc783ecf5a0b0deda13ae66db74b50a0",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/assets/KAIROS-商品微距-关键帧-v1.png",
+      "size": 1868101,
+      "sha256": "3d7b4c5fd79386f7d90882d2d663661c553866ad645b3407ab70bc9b866ef242",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/assets/kairos-ads.jpg",
+      "size": 106415,
+      "sha256": "7dfcbac5c4528f8a45631f3f3abda8a2aec9c10a21776b19a6f54bd24be33046",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/diagnosis.txt",
+      "size": 3049,
+      "sha256": "33135e82895be3f9856f9529d7d1708c0b905a11c7ea0ea872da8ca70101bbd6",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/function-coverage.json",
+      "size": 5967,
+      "sha256": "78edbfc9c787b969943322b8a3b2a0524412452614bcbd241b28434eb66a87d2",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/report-resource-mapping.json",
+      "size": 8547,
+      "sha256": "9b37ab0c5fcf442408bafd338e22fc51b1c44cee2711c4e22cf7986b16d3abc1",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/website/assets/Awakening-the-Beast.jpg",
+      "size": 16226,
+      "sha256": "ce5177fffdf491ba12bb80e7b0ff07ace6cdad7c717b0bf4db9aef4857b02597",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/website/assets/Beauty-Haul-React-J.jpg",
+      "size": 58538,
+      "sha256": "f1b2156505048d72b1d0d3d47b0f39dcb76686af37e2f6766b845b4f89fee338",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/website/assets/Clean-Demo-UGC.jpg",
+      "size": 47305,
+      "sha256": "5f3abd09fe19f6196c4a461cee082601f17053e6a17ee305e6c27a653bfbb74b",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/website/assets/Clock-Of-Bags.jpg",
+      "size": 39777,
+      "sha256": "8ba9bd6f69931665482feb4c2aa26bee992595047a17e2189928b6e8aab36dad",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/website/assets/Flavor-Diorama-Ad.jpg",
+      "size": 117184,
+      "sha256": "f212660a903a85396706283529e742389f5e0204cba3fa7041cdf2746766cedb",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/website/assets/Home-Appliance-Showcase.jpg",
+      "size": 15508,
+      "sha256": "cfed4476b8e8a2bcfc50fc96fef963905ace0e84a1c5275fb3b9bc2fabce7d83",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/website/assets/Luxury-Cut-Reveal.jpg",
+      "size": 45282,
+      "sha256": "5a90f0668f24cc7ec8f025b52442421c58db5e33baf3e612ffdb4873f3b885b1",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/website/assets/Perfume-Ad-Reveal.jpg",
+      "size": 50788,
+      "sha256": "4802da2fe0b4072c6e13bc0c4cc8a88dbce1fc877597dad0c9ab880351dc7994",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/website/assets/Product-Display.jpg",
+      "size": 6459,
+      "sha256": "e460e4a6376b94a0c9bed15d39582d9bf78bde411df9ee7f76e349253d8c175d",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/website/assets/Retro-Beach-TVC.jpg",
+      "size": 108845,
+      "sha256": "832a575b903bc6334f9aa21e74eeea72bd059fcd0b0729da3122ed7b911f9166",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/website/assets/Street-Cup-Vibes.jpg",
+      "size": 41269,
+      "sha256": "370ac8d226996632fd9925fb2ec4073c274bb22f9b2c790b2a70cbb2dbc0db51",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/claude-refine-2026-11-05/website/assets/kairos-logo.png",
+      "size": 2540969,
+      "sha256": "64e55100c4ac036f9b23bbceca5ef41d80eef3d49a9423aff184e9844240f35b",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/index.html",
+      "size": 3116,
+      "sha256": "a943969954d2d3c1ed3ca194146ec1407056edbf7962f4ffa8bfd9ef5cbe18e4",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/ant-ling-1.jpg",
+      "size": 25282,
+      "sha256": "146f48335a660afda819b2749cd6b8e86b6819a67d202676eb5ab22c217b25b0",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/ant-ling-2.jpg",
+      "size": 30753,
+      "sha256": "6b68420a6b8197ec611a3cb7a2786a3f233850a5043555ddfa43ba7111d379a8",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/ant-ling-3.jpg",
+      "size": 13915,
+      "sha256": "2627b0db3d55e6d39956c6d1155767bbd2eaab2cc28c556f2566af69c7512531",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/chatgpt-space-1.jpg",
+      "size": 53501,
+      "sha256": "f073de4c0ca3dce216e1372041cfe4738b364cf8210f9c42fe73a7e36ee1289d",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/chatgpt-space-2.jpg",
+      "size": 49057,
+      "sha256": "6b93d04d43c2ac8f679ea4f6d505da91c8a6773b8db572164b6a9e98cd587ab7",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/chatgpt-space-3.jpg",
+      "size": 47229,
+      "sha256": "4faef7925fb8ab92c7d36dfb3dfeae405eb0c8ddf4ae3ea57027bb429bf3f48c",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/claude-duet-1.jpg",
+      "size": 14626,
+      "sha256": "8673a15bf4c8ea3f8ca554edd85a64df633af199ea59b268cbe4d6a231132d20",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/claude-duet-2.jpg",
+      "size": 22895,
+      "sha256": "4624ec333385d7d6beddca0be440c981dd9ed0b7f7462d9b0f0772ef8ed638ce",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/claude-duet-3.jpg",
+      "size": 29180,
+      "sha256": "eb3ae7639472cf6db23047706ea6bbb1cd25464aa61ee5d07164069f0a994041",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/claude-motion-1.jpg",
+      "size": 13491,
+      "sha256": "ded3c1bdfe98b123db349e319c9d73ef2ba1faa4f495c2e6df69ad1d54ae18a3",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/claude-motion-2.jpg",
+      "size": 27362,
+      "sha256": "9716767a7f9382139e001b3d4edbd2bac41ebccb65e469c727c40789d2f98363",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/claude-motion-3.jpg",
+      "size": 36764,
+      "sha256": "bd119c880bbea64e780b693117a39a4c381e22b41cc3e69adf20dde5e4d801f3",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/comfy-agent-1.jpg",
+      "size": 6024,
+      "sha256": "0a28825be163997e054ef39194c557720cf6d55e78d2f7abbc98004cb83abfed",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/comfy-agent-2.jpg",
+      "size": 16864,
+      "sha256": "51dab2a2c0767972578c6eabc43d416c53e2a36cfc149224e821800180cad958",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/comfy-agent-3.jpg",
+      "size": 26658,
+      "sha256": "31a2a784bf71d750417db9e59e8bb6e07ef5d4bceb6960ba4bfcc63f5242a51f",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/copilot-new-1.jpg",
+      "size": 2204,
+      "sha256": "d9be3fe37c0de0e6495f55b89821e2e491f9a26c932cd3ded9305010f47b6cbe",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/copilot-new-2.jpg",
+      "size": 3907,
+      "sha256": "1931b84ed5e39025ee4a48c43db1e78b604daaa8f66554ed00e5c0f2c95aeac1",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/copilot-new-3.jpg",
+      "size": 21786,
+      "sha256": "06483a7edfcbb6f481cdaa504e7d469f1df54e6bf116345dda9cb078eb5d4367",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/eleven-chimera-1.jpg",
+      "size": 9240,
+      "sha256": "19168df908211f8683b2bced165455a52bba84678dc9d5aba4f2c50139e9c3cd",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/eleven-chimera-2.jpg",
+      "size": 7343,
+      "sha256": "43822ab1418484c5cc8d2a55cbe3906dba0f9704b705a6dd7a66b8a70d9c8c58",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/eleven-chimera-3.jpg",
+      "size": 24765,
+      "sha256": "5a71293e889394a6a9eddad5d1c40f2b2357786195140241a9732d12888b0692",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/framer-mcp-1.jpg",
+      "size": 13147,
+      "sha256": "65c2d2817dded67476db8be2dc9fa15596ff41f92354c1c847d63f5cff7ce8fc",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/framer-mcp-2.jpg",
+      "size": 23508,
+      "sha256": "c4677fc0810e63a8bddb5cd5abce0e036b5e8898d4ea3ae7c00567561ff53d2b",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/framer-mcp-3.jpg",
+      "size": 2623,
+      "sha256": "c54135ab39bad47696e2cfe40c67a16228d6bcbae3cbf825374f11ce053f1a78",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/gemini-skills-1.jpg",
+      "size": 3675,
+      "sha256": "59a76494e6e14241cd9ccd66a4682b3d6752befbf62ed661b2591d4700c5ee2f",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/gemini-skills-2.jpg",
+      "size": 14258,
+      "sha256": "930bcbad61140f51b0a13fb1f2a7266c9d84dd18f59faf0998fe4f7be8a7638e",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/gemini-skills-3.jpg",
+      "size": 6033,
+      "sha256": "deff56fa9a1d9386a035b9419dfdc133a89b719732c4f697b8bd1b46f141742c",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/gpt6-intelligent-ui-1.jpg",
+      "size": 51427,
+      "sha256": "15d4db67b2391f274b18ef58e369f425f328ee6c6367d33e7f72c8cb2755a53f",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/gpt6-intelligent-ui-2.jpg",
+      "size": 29463,
+      "sha256": "3cced325cbd67ecb3ffdd1befe96e88e2c1080c564eb600ac697d60e9170bdbf",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/gpt6-intelligent-ui-3.jpg",
+      "size": 26220,
+      "sha256": "5bc2891063f63b13309fc2495b340eb9c83d2139c51be5eb4643a3c454da1dcd",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/higgsfield-motion-1.jpg",
+      "size": 18561,
+      "sha256": "4aea6d0014f58c51d58a34d0ceed3b8d115953ca314c58def87de7b9279b8f23",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/higgsfield-motion-2.jpg",
+      "size": 35746,
+      "sha256": "4d7a9d1b1fef3439465132062cca4f1863e58dbb28d6aebd6a7e161ce348a8d2",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/higgsfield-motion-3.jpg",
+      "size": 23101,
+      "sha256": "f3a03aac90fafdf5686d46099234028b0214f63d8e76dc4197fef0196dc097d4",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-bakuraku-1.jpg",
+      "size": 29595,
+      "sha256": "0d07ec103d7efd026f6a9b9a01e31179c9ae0056a01dea80bc672334f6a78f4b",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-bakuraku-2.jpg",
+      "size": 31696,
+      "sha256": "3ed5a99e7f5b83633ffce2cd060d08d9189eb8804eebc128c223ead50fc48956",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-bakuraku-3.jpg",
+      "size": 35933,
+      "sha256": "72e5807ca52ca35bf6d2ea9279d2f06beb13e753350fba8ef3c318572514e0c3",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-kaonavi-kti-1.jpg",
+      "size": 17082,
+      "sha256": "80576a90bf3e80a962ff3f8cdfa57bb4f717fe57f528b6c2dbfc800bd97c82e5",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-kaonavi-kti-2.jpg",
+      "size": 20064,
+      "sha256": "8f9a287bfbea6f2095029af1562753869c647ac658304386d8983c6ebce4f29e",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-kaonavi-kti-3.jpg",
+      "size": 33945,
+      "sha256": "85a9d9a0b771d246dd41ef86cb6a89a78e6b4929412ee30c572f38c679f2b6dd",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-notepm-1.jpg",
+      "size": 20837,
+      "sha256": "eee2771468b0c161c9de5c0ad5723ae6a8b34b8128c6ad65dcb7bf2f5c430341",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-notepm-2.jpg",
+      "size": 27769,
+      "sha256": "cafc175b7af8985983d269ea08737de121dbeb5cab0309e15a346b66dd412276",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-notepm-3.jpg",
+      "size": 44210,
+      "sha256": "2c10a9df599861bdf983d55029df1d8e937b33fc9ad12b972df7c04c72932bf3",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-notta-memo-1.jpg",
+      "size": 34680,
+      "sha256": "e694aa3e7760a0e9104a1ff5938121a1284e26bcf920d54dcb56b19e1485305c",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-notta-memo-2.jpg",
+      "size": 47978,
+      "sha256": "a86da7a9cdfd0dd25fb8800c60c8e6278afd0b30a10a85c2a48e7dd6c83bccbe",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-notta-memo-3.jpg",
+      "size": 40413,
+      "sha256": "489dead651d60babf43f0fcf22885cfdce425b2b2b98f7bb6c4134dc2b05c802",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-peoplex-interview-1.jpg",
+      "size": 68494,
+      "sha256": "e5799a95ba4932556c01ebad8ccaa3884c280bdb42741ef1de3d19de960d0a30",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-peoplex-interview-2.jpg",
+      "size": 16761,
+      "sha256": "e1a2b01c6129bc9df1dbaa51e90723033b84c507972d8ccebf837c7edc1207d1",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-peoplex-interview-3.jpg",
+      "size": 19447,
+      "sha256": "1dc07a08f345c500ac829f684f7147df648dcd2acd10ab2ebe1c9e6019687cd4",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-robon-aizuchi-1.jpg",
+      "size": 32605,
+      "sha256": "0c6f849253cf58155890fb7ed2b4c24f3a6dac75e93139a6365d0da6a19be92c",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-robon-aizuchi-2.jpg",
+      "size": 31747,
+      "sha256": "ab70bcc048008d5655216b18d0136f1b4e48a092e615eded7c8c985eb8b426d3",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-robon-aizuchi-3.jpg",
+      "size": 16365,
+      "sha256": "9dda24cd9cea1bfeb62e8b1c52bf07edf1f7de8f0175020ee8a965c80527071d",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-robon-sorosoro-1.jpg",
+      "size": 28910,
+      "sha256": "630fbb5cb5ceed26bad0c91fae23a2f38ba8a0a9559f8ba12774f6509d32e9c1",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-robon-sorosoro-2.jpg",
+      "size": 28930,
+      "sha256": "97ebaaf5ef79eb081fd810d250dcdc5f9b06741b0da4c7fdc5010684e89a50ba",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-robon-sorosoro-3.jpg",
+      "size": 26292,
+      "sha256": "0e5ba9401da73b145dad16793ebbdc167dfd47501c6c288a14d93290e0dfffe4",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-usonar-un-1.jpg",
+      "size": 32046,
+      "sha256": "e3d44bc98d010d63d64c12330d0d941a178c96cf414e86462cb49614afb3f7f1",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-usonar-un-2.jpg",
+      "size": 11689,
+      "sha256": "43711abf712cffbde304094fa58f5c8ca1d1b4dc23fe08f4e44cf6e975694c22",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/jp-usonar-un-3.jpg",
+      "size": 27931,
+      "sha256": "26225a3d19f3671f8af8ae1f914e704700741500b44e3aa09ffd908ce3922d14",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/kimi-3d-make-1.jpg",
+      "size": 15051,
+      "sha256": "671d5f6a8a369a1d2a347e0b963e07722fe9c45d1b01ad2860e911bd60d84bc6",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/kimi-3d-make-2.jpg",
+      "size": 24012,
+      "sha256": "4bc00656469fb1af69c851892ca3dcec0f139ca4f29f48a7f47952b7cef4d151",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/kimi-3d-make-3.jpg",
+      "size": 38924,
+      "sha256": "c90884a988abfb03e19b70eadd81a7c3e13619115aefbe3d78b1732d9d3e0434",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/kimi-k31-pro-1.jpg",
+      "size": 17436,
+      "sha256": "fc0cae227b24b746d51dfce7f21c08a36c6721f79e6f24ea8dcd57185c3fa242",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/kimi-k31-pro-2.jpg",
+      "size": 45214,
+      "sha256": "ff19661f27ab9e140b88da30199ff078beb04863754a467a1d1b96c7124c914c",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/kimi-k31-pro-3.jpg",
+      "size": 1475,
+      "sha256": "82eb8be27c914fb367ea1d11e8bb4aaea17f59249009754a2f89a0b956413a20",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/kimi-teaser-1.jpg",
+      "size": 26987,
+      "sha256": "ee67fa24917af1c7baaaec1c788b8f8378b5dd07a668d41b83141b2ab733be30",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/kimi-teaser-2.jpg",
+      "size": 52008,
+      "sha256": "78c772527312f56951615405cb7b0976dcae4a6ed6b68570fc64bf1c5948125a",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/kimi-teaser-3.jpg",
+      "size": 20765,
+      "sha256": "68671d871213bcbe5cce771c03b926095e0eb20221aedf6a60033308a2c874ac",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/krea-ad-studio-1.jpg",
+      "size": 15329,
+      "sha256": "9a58a19c8533a32e74d1ff030e388a1eac08d69910837b1d6c5f42cbc237f03d",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/krea-ad-studio-2.jpg",
+      "size": 23949,
+      "sha256": "afaa4689250b62188435a827b09ab6895b600d4d91d44fa04fab25bf34b79f10",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/krea-ad-studio-3.jpg",
+      "size": 10418,
+      "sha256": "cf390b8cc69b31a5a12008af07592b324e204904b38b7543e50820ad8c289a38",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/minimax-space-bunny-1.jpg",
+      "size": 13359,
+      "sha256": "758988ec1cf1648628eca0ec2269e337546f04ee2fda9c4e897a297f7d2ae27f",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/minimax-space-bunny-2.jpg",
+      "size": 18763,
+      "sha256": "cc6f01693309238bef90a9951621153fc47bbd07cf1a05363b7f504aee1acbc4",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/minimax-space-bunny-3.jpg",
+      "size": 25976,
+      "sha256": "ccfd8725acd8178ce84c8629e734cd59e78ff724021f5cc271ce53ea6886968a",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/openai-dots-1.jpg",
+      "size": 26056,
+      "sha256": "0bbe632c39624bd4b125ba3ea196439b3741c4d6b43ded791ee9d312c84a9241",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/openai-dots-2.jpg",
+      "size": 17697,
+      "sha256": "4ec7a71df6530b2bc1bb14f08f62b52fbd566f5a520ca0a36c327752924933c6",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/openai-dots-3.jpg",
+      "size": 13899,
+      "sha256": "994a1ec732d93e3de25d8a81beba581f4deeb3d36a0f917ba783a45503d5e1e6",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/pause-video-editing-1.jpg",
+      "size": 7656,
+      "sha256": "01927fe26e98120dd3f83ad4b3eab1d40e92ac83bade286498a4e0804eaf4170",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/pause-video-editing-2.jpg",
+      "size": 6913,
+      "sha256": "de3ed624f2e4ef85b7a2b0bfb80cecd22d44f49942247b0228014019c58d5c58",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/pause-video-editing-3.jpg",
+      "size": 19018,
+      "sha256": "bc99f6971471d8e619db8573b7d6b2975e29f1303ea08a0ead850bd06c0d8c72",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/runway-app-studio-1.jpg",
+      "size": 5909,
+      "sha256": "465c1f09031b0623eb08dcfa1d4cec2203120d180652c5374b1862e79578cfab",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/runway-app-studio-2.jpg",
+      "size": 25877,
+      "sha256": "ea9d5256abf85ec5f14898a7312b19d1dfbaec87d99ac9c290eff8f1532b08b1",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/runway-app-studio-3.jpg",
+      "size": 35589,
+      "sha256": "11f26559cede5ae55cf427656bfae29a6fa402097da9946e4af6a3bdaea6ec6f",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/tencent-hy4-1.jpg",
+      "size": 18298,
+      "sha256": "bc1b2cd77b4c3d15d7fef5447fe24131187bb3bfcc49b006672ffad64fa83b6a",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/tencent-hy4-2.jpg",
+      "size": 22820,
+      "sha256": "7584118b1c62d82050b2967323d4a39d702b72c9158d161795ad36cb9aa74f8f",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/frames/tencent-hy4-3.jpg",
+      "size": 41174,
+      "sha256": "8f62a934c1aed74fcdcd2b8c6cd59c9005af67f1db0dec210bfba48f09220c23",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28/manifest.json",
+      "size": 19038,
+      "sha256": "88318337589feb663a83841d31026ebb87f473d7323d46f6b67f4df1212ee6e1",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/references-28.html",
+      "size": 49362,
+      "sha256": "908b4d7d942dd60ecf149f1dae9e2a3f08bb3c418ffe5107fe48fcd693e03c9b",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/site-audit-2026-11-05/00-findings.txt",
+      "size": 1934,
+      "sha256": "e1edb9e53b01cee1aeea62ebc3afdb6e4efb7eb960afd6a7739cc16023e92e01",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/site-audit-2026-11-05/01-explore-dom.txt",
+      "size": 15540,
+      "sha256": "e33b5d0b01d1591ef9a31cc2457ed9207db3ee49626f59622b1c396b37307bbb",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/site-audit-2026-11-05/01-explore.png",
+      "size": 107984,
+      "sha256": "579e83b39f3b5eb7b60d9a7a79b0511bc85cade8c60abc201032643de84aae63",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/site-audit-2026-11-05/02-chrome-explore-dom.txt",
+      "size": 22915,
+      "sha256": "86b0d74442c21934806e4eb6bd7abcd1306d811d1189ef9880f689a26e5b0a61",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/site-audit-2026-11-05/02-chrome-explore.png",
+      "size": 240884,
+      "sha256": "b27ff2d825f3cb99496b6733497a300ae1bd7951664c184d2bbb6b808cfc9f13",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/site-audit-2026-11-05/03-create-modes-dom.txt",
+      "size": 24505,
+      "sha256": "9366ee0b9eb5f5fa66561456f89b6f793ec5240f8a41a19f9532f2af39bb21a1",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/site-audit-2026-11-05/03-create-modes.png",
+      "size": 127387,
+      "sha256": "b44d94832c462c89c88d383438376bec955ff20562781ff11015b8ec46fab0bd",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/site-audit-2026-11-05/04-all-modes-dom.txt",
+      "size": 25682,
+      "sha256": "6153fae5c04748d22abe49f9733b1bb8c5a8cbead7d4189f32f7ef3bd29e2ab7",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/site-audit-2026-11-05/04-all-modes.png",
+      "size": 139499,
+      "sha256": "2216e37985c8a883d113e86337de7665828c411c2f9e774346f2d02e3283cf1f",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/site-audit-2026-11-05/05-canvas-dom.txt",
+      "size": 2717,
+      "sha256": "cfe1c1bc7d6ecaf47ef71dc2bb0625595d56af9c85cdf69961c3caf34d60c412",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/site-audit-2026-11-05/05-canvas.png",
+      "size": 67786,
+      "sha256": "4ace8ca229db8312006413529776ab44aae47371fc7b8a8e72ceaa74127ea565",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/site-audit-2026-11-05/06-canvas-current-dom.txt",
+      "size": 675,
+      "sha256": "d57292cdd80f168870536c238710ac3c5a4187d5f1e68f7fb1e94b5a7fad1b10",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/site-audit-2026-11-05/06-canvas-current.png",
+      "size": 27438,
+      "sha256": "38ad474fea47bcf8107831419429c3ebbe06e13503b40162ea9fdbdae747ad9f",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/Claude交接-2026-11-04/视觉提案-v2/sources/provenance.json",
+      "size": 1875,
+      "sha256": "dc3ff360a8565d2943ca63a965e441180e64e6e4f9e8e87f7991c0ef7ef3da2f",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "materials/KAIROS-60s-分镜表/KAIROS-60s-群像版-Brief与分镜.html",
+      "size": 3551720,
+      "sha256": "b621a5aa95a4ac0151932f5e3aea482b5bd04f1c352c23d9efe5b105114efce7",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/01-template-library.jpg",
+      "size": 107952,
+      "sha256": "9de0df1aedf9a4c16bd363cba546cae7e91fc6e217c46abf92836b4b2422b0f2",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/02-ads-filter.jpg",
+      "size": 106415,
+      "sha256": "7dfcbac5c4528f8a45631f3f3abda8a2aec9c10a21776b19a6f54bd24be33046",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/assets/Awakening-the-Beast.jpg",
+      "size": 16226,
+      "sha256": "ce5177fffdf491ba12bb80e7b0ff07ace6cdad7c717b0bf4db9aef4857b02597",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/assets/Beauty-Haul-React-J.jpg",
+      "size": 58538,
+      "sha256": "f1b2156505048d72b1d0d3d47b0f39dcb76686af37e2f6766b845b4f89fee338",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/assets/Flavor-Diorama-Ad.jpg",
+      "size": 117184,
+      "sha256": "f212660a903a85396706283529e742389f5e0204cba3fa7041cdf2746766cedb",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/assets/Perfume-Ad-Reveal.jpg",
+      "size": 50788,
+      "sha256": "4802da2fe0b4072c6e13bc0c4cc8a88dbce1fc877597dad0c9ab880351dc7994",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/assets/Product-Display.jpg",
+      "size": 6459,
+      "sha256": "e460e4a6376b94a0c9bed15d39582d9bf78bde411df9ee7f76e349253d8c175d",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/assets/Street-Cup-Vibes.jpg",
+      "size": 41269,
+      "sha256": "370ac8d226996632fd9925fb2ec4073c274bb22f9b2c790b2a70cbb2dbc0db51",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/assets/kairos-logo.png",
+      "size": 2540969,
+      "sha256": "64e55100c4ac036f9b23bbceca5ef41d80eef3d49a9423aff184e9844240f35b",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/KAIROS-60s-分镜表/视觉静帧/KAIROS-企划室-关键帧-v1.png",
+      "size": 2151294,
+      "sha256": "0303c1f91f5c89ae8c7ed8f35f7f267fcc783ecf5a0b0deda13ae66db74b50a0",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/KAIROS-60s-分镜表/视觉静帧/KAIROS-商品微距-关键帧-v1.png",
+      "size": 1868101,
+      "sha256": "3d7b4c5fd79386f7d90882d2d663661c553866ad645b3407ab70bc9b866ef242",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/iris Japan V2/assets/iris-brand/logo.png",
+      "size": 16180,
+      "sha256": "7a2cf64da337fe423cdec99f22d406bbc4d03353a5bafef56f1c89ca3e325281",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/iris Japan V2/assets/iris-brand/salon-source-frame.jpg",
+      "size": 87173,
+      "sha256": "f5edef11705aa3e587d4ad03f51f3ce11c1e31e6658d338218abe9c156a9b97b",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/iris Japan V2/imagegen/01-Opening-Family-Pressure-V3.png",
+      "size": 1938403,
+      "sha256": "853c7ae35cc941c31a9d02ac89e58367263e4aa1f5597a4223d9accff9168c31",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/iris Japan V2/imagegen/02-Nail-Booking-Loop.png",
+      "size": 2017925,
+      "sha256": "5cef4374b178b6715eab0f9718bddb20e56c1d5da73705a572c763775d344891",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/iris Japan V2/imagegen/03-Work-Restaurant-Ending.png",
+      "size": 1986732,
+      "sha256": "c9894e46378118ae63fa8de7b67817ce8b65296781418386bf9ede8ddb24c1a3",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/iris Japan V2/imagegen/04-Family-Callback-V3.png",
+      "size": 2005609,
+      "sha256": "8f35282fd19d9a8bbc7ef578f40d71c4ea29a35712d8e097fb1f3df6cd474f74",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "materials/iris资料/Iris · H5 原型（主要页面、组件与卡片、二级页面、代表性流程）-v12.html",
+      "size": 5320385,
+      "sha256": "51494f1f16d98ca9ed971dd5e2ec34d902e31c577040f0a176ebe8842a921904",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "chunks"
+    },
+    {
+      "path": "materials/iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "size": 249603,
+      "sha256": "ba7abcb851985142d15c6e8ce34f8cacb5ce761e81e57118cc28c620c4168661",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "one2x-material.css",
+      "size": 7880,
+      "sha256": "393a2e3acad573a6e647aaeff5990af300a5f958c5bae0e7ebdb70a882bd9b7a",
+      "mime": "text/css",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "references/playback/claude-duet.mp4",
+      "size": 15460142,
+      "sha256": "e97c00ab5e7cc00ab852d0550b8266c61ccb3d1f60fc550c035b88e800de5b72",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/playback/claude-motion.mp4",
+      "size": 11100387,
+      "sha256": "138d621c4526a8bcdc2e2aa0615d5812881b7f8fe0ab9cd94ff6842a7f4f584c",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/playback/copilot-new.mp4",
+      "size": 9773605,
+      "sha256": "a3d06510be1656a7e29c9fa09a8a7f293051cc4e1c38fc1cc33ec44ea1d1fb53",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/playback/eleven-chimera.mp4",
+      "size": 9541992,
+      "sha256": "e34100d6d880427afd8d650c3a55597f102f6e7dda346c3a7407f6a1c41c5947",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/playback/framer-mcp.mp4",
+      "size": 6994904,
+      "sha256": "dea90a677816230a7a5a90f02482570cb27964dcb44e9ee56c8a4a57ae144c1e",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/playback/jp-bakuraku.mp4",
+      "size": 10512531,
+      "sha256": "817d1fe47603e7eda02980c65e8bed230e61d2abaae4d843f63d921d40e5b1a1",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/playback/jp-flyle-nihonham.mp4",
+      "size": 1999588,
+      "sha256": "d84b69269b5174fa14a5b0103aaa4ea3736b7ccb84c719a62e519afe9509bd95",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "file"
+    },
+    {
+      "path": "references/playback/jp-kaonavi-kti.mp4",
+      "size": 11464914,
+      "sha256": "bd9578b5b3e44c0663a09c2975b0c15f403d6dce8e3d81f410c39bf8285d2d48",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/playback/jp-notepm.mp4",
+      "size": 7989494,
+      "sha256": "ccba0ad4e7c6d23cc3363be0f98a3ffbfb2df883ee49bb1dfe6d0c991e0c4631",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/playback/jp-notta-memo.mp4",
+      "size": 7021683,
+      "sha256": "98a7afb1488d846fc16b256193aeb1aa4c617d36516867f00e9e3875d382293c",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/playback/jp-peoplex-interview.mp4",
+      "size": 3811142,
+      "sha256": "50310b36ab503fc6b4ec540e676a9219cf17cd7cc954137f254b0bf073b52f28",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "file"
+    },
+    {
+      "path": "references/playback/jp-robon-aizuchi.mp4",
+      "size": 1200071,
+      "sha256": "ea794df19c4d20f5c2a09a00ab88f68c72f4ca1805cdb9dd3c248a5524338a37",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "file"
+    },
+    {
+      "path": "references/playback/jp-robon-sorosoro.mp4",
+      "size": 3378258,
+      "sha256": "af1c9d25ba3c16fce5bda9fd2faa7670368776cb37547271dc8ab025a8b9054d",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/ant-ling.jpg",
+      "size": 27623,
+      "sha256": "adb07626856695c58d404dcf0800abe3fa0d8c714b2c1edd47ac239b5bdf4d37",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/chatgpt-space.jpg",
+      "size": 59026,
+      "sha256": "f092271172fedee256214b0af70bf2bd50e5c5957269390aa5d5bca65dc95702",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/claude-duet.jpg",
+      "size": 19682,
+      "sha256": "38b0e2352ad22457373003fc900a9d367a73938f40a1baca59c79f1bc8eecf6a",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/claude-motion-contact.jpg",
+      "size": 49845,
+      "sha256": "2fc2fcbf60617d4d312cf6863ce4354c8cdd250b8d9f87069a53efb71b95f38d",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/claude-motion.jpg",
+      "size": 28435,
+      "sha256": "f4c36e418cb98c0f3a98ec2efdd27b3e2524138d5f6376c7e0adfc30443da36c",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/comfy-agent.jpg",
+      "size": 14087,
+      "sha256": "5408111ea4266dccb7d9bd60cf63c045f7340b535abf7be66307c88b122fb1bc",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/copilot-new-contact.jpg",
+      "size": 44664,
+      "sha256": "c78a40a5cb68223d934beae677d0f213c0b3ed2a673dc58b5691162f58059dcd",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/copilot-new.jpg",
+      "size": 19524,
+      "sha256": "17e6f14120767a0e26d7819a030decf1ccaac59c9e88d5a1caa3553f9a17056f",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/eleven-chimera.jpg",
+      "size": 9682,
+      "sha256": "6a14740b663645ea2e98626d0862a2cd3d862f68e35c686c49e550dc8efd80de",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/framer-mcp.jpg",
+      "size": 23943,
+      "sha256": "c96ad90ee28fb5c6103042b7ad13b234b074cde626ad9583b88ed222cde26433",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/gemini-skills.jpg",
+      "size": 31628,
+      "sha256": "ea298609a0d66398e9e998bb1d1938f5de32e7c1e5d51786221ef115a45e5ba6",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/gpt6-intelligent-ui.jpg",
+      "size": 55814,
+      "sha256": "a079d59f64410f71f239e274ba5f0c6681c6ccdb28466df8be7cac77c5cc2a29",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/higgsfield-motion.jpg",
+      "size": 20863,
+      "sha256": "8563386d37155a2caa2f3e302639249521f62784781f8543801ba9bb79bb3e76",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-bakuraku-contact.jpg",
+      "size": 76423,
+      "sha256": "d9a7e2c460b2605977bfda0541b5024d5e5c8b64e3010ce308de68df69b32982",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-bakuraku.jpg",
+      "size": 24581,
+      "sha256": "feaed6d5ceebd4c4d6e1b28d6b4d88c74a7f593120c852826181e9a58b300089",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-flyle-nihonham-contact.jpg",
+      "size": 47399,
+      "sha256": "d4fb84147e02879da54016bdc23d259f9b93491d95ed1331fb1b0387c6528382",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-flyle-nihonham.jpg",
+      "size": 35154,
+      "sha256": "56946c8da0002801c7c0dddca933dd7c6b8ca1d012ffd4e935ea7e72fd4afd72",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-kaonavi-kti-contact.jpg",
+      "size": 60117,
+      "sha256": "c4fc68978c17e1da503841f43ce0c9fd95e3e30d1a0865f00dffae8802eb973c",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-kaonavi-kti.jpg",
+      "size": 15633,
+      "sha256": "f63660bd46a2a7ea568d5a39dba73630f879b06a68ff6a4b0d23af12e1bc7580",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-notepm-contact.jpg",
+      "size": 86440,
+      "sha256": "b3bf3ffc81e5804d39ea6e102d36fb8fa2f5ff26995805d3da254124fae88392",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-notepm.jpg",
+      "size": 43175,
+      "sha256": "a3c0a8c3749a4843f3d4da1d74b3732e3816bbb8769068a77a94e5560b48a2c4",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-notta-memo-contact.jpg",
+      "size": 81783,
+      "sha256": "30281fd45d357eac7d48bd89a657555c303cf31a94d3a6f01b375aeede495147",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-notta-memo.jpg",
+      "size": 29883,
+      "sha256": "b3fd9de9904311f638ba4c9b299f498fe749d9ae520ee246caddbd38e03a1198",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-peoplex-interview-contact.jpg",
+      "size": 95189,
+      "sha256": "5a7d611f0c3b8049c794f7736ded684a19f29ab6b80c14958e46d02402debce4",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-peoplex-interview.jpg",
+      "size": 76216,
+      "sha256": "a521e17d324277eaaeb9c4e11e077118da4e990382ec41d2ac93cbd844e6ad0a",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-robon-aizuchi-contact.jpg",
+      "size": 90777,
+      "sha256": "43118a88f422500b65c917bd52c8cf65fd43d0aa718ab28fa20d895a40a6a7f0",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-robon-aizuchi.jpg",
+      "size": 34860,
+      "sha256": "6cbfd673d042ae52a1a1726283e9b765fbd2759c63ab691c6d5f05a74432c3cb",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-robon-sorosoro-contact.jpg",
+      "size": 79548,
+      "sha256": "f5528c7a868b511f5adcd56979de4dcbce1160334b3260e201af1fcddbbc84bd",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-robon-sorosoro.jpg",
+      "size": 35467,
+      "sha256": "8718f4023ae84bcb3cec44a9626d3e98f8f8c2d7b2bc36b36d87395904313da7",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-usonar-un-contact.jpg",
+      "size": 53950,
+      "sha256": "e9edfb60cbecb31f97db8fcef285cbdf1e36238ae079959fa9cd95636f5e50d2",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/jp-usonar-un.jpg",
+      "size": 21442,
+      "sha256": "5e998fbe95dd9f9eb960b4cc145103b4eed2e503e7584062bdaee6256bbbae03",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/kimi-3d-make.jpg",
+      "size": 26280,
+      "sha256": "01da00cf3c76dbf5a9eb57dc70e233cf480a8e2a6a4de4a0898698a4d681d597",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/kimi-k31-pro.jpg",
+      "size": 1601,
+      "sha256": "d956f664233a63ca43fe3ea9da2e2507acb4251a5caa67cc3541cd8a1edac130",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/kimi-teaser-contact.jpg",
+      "size": 64302,
+      "sha256": "6ed78d5d30ce7a2a567f9a26e8e1e6763d7fa8b784604cc9dacd899700332272",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/kimi-teaser.jpg",
+      "size": 47939,
+      "sha256": "0218bf0c82e768a37363010d3844c709192f561327a0dd8540660e06b7cc26be",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/krea-ad-studio.jpg",
+      "size": 27953,
+      "sha256": "39a282db51669eb95a4bc31ef728ada76ca0460c7e93a6d925d6330b4cca3367",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/minimax-space-bunny.jpg",
+      "size": 8545,
+      "sha256": "abaff1aa96d958d5f734cc66d0f7f14bda4d36f52831239821c2d245aeb08240",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/openai-dots.jpg",
+      "size": 12870,
+      "sha256": "41cfe7d0e39c7c841382d38f4bbc6905bee2a5d0b68cd508644451cdb7b947fa",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/pause-video-editing.jpg",
+      "size": 6053,
+      "sha256": "2b1733a8eb27e4902141dbe04bfcfa9cb4246151b8562221d6e851c7b649873a",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/runway-app-studio.jpg",
+      "size": 5871,
+      "sha256": "aed488e20679c433f39a8f711217a2cc0ed47707344275fc8a553ad905822e34",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/posters/tencent-hy4.jpg",
+      "size": 55267,
+      "sha256": "6f226cd1ccca5cc1d61e5cef292c9a19b1894795a6024238a20e611fb71f6ec7",
+      "mime": "image/jpeg",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "references/sources/00_使用说明与日本差异化.txt",
+      "size": 3144,
+      "sha256": "ce08c6ec5fcb66acefbce65f1c70303eb2640b44d248de6f65754da4878f4f27",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "references/sources/all-downloads.json",
+      "size": 35933,
+      "sha256": "f937db6c6faf8254c9689f0413b3f7581b04487c4e13a36753f62a02c822ff10",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "references/sources/collection.json",
+      "size": 47449,
+      "sha256": "2655d5bfaf2aecdc2fadc197c71164c12733339bd90928d15ce023d509802fa2",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "references/sources/download-manifest.json",
+      "size": 24420,
+      "sha256": "0c4993e2f665518bd70dfb677728263ab1448eab8b726472162e10253dfd501f",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "references/sources/japan-collection.json",
+      "size": 27088,
+      "sha256": "9d1fb00e3ac17565d0e917bcc45d89d702e4c1598ea8cc7c8a9cccccf914f539",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "references/videos/ant-ling.mp4",
+      "size": 39576984,
+      "sha256": "2ce5806e096e01086f1fce81f6e5535509e5d151fb2197842b1922b384d7b47d",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/chatgpt-space.mp4",
+      "size": 11935451,
+      "sha256": "7e7a2772039fcdfccd9417349ef656fb999d3eb3f4c8dca7aa6433e1fcd2256e",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/claude-duet.mp4",
+      "size": 10902801,
+      "sha256": "c66484b7e3ee58279cb5f7e622e853c5ff54837f6db283502e7ed6477138f717",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/claude-motion.mp4",
+      "size": 6700580,
+      "sha256": "902cd32d0635126ebac483e3fefd4d639662e14116ab9537372673e0e9a415e5",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/comfy-agent.mp4",
+      "size": 14602416,
+      "sha256": "40a8cd2635b048a106605610f8667cffe7d7ddd27d878ed5984cccb1c7f736a8",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/copilot-new.mp4",
+      "size": 6174091,
+      "sha256": "10da578caebb1a64ec83619810c73a4c1331509330a98c7a4d7a7070236f43cb",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/eleven-chimera.mp4",
+      "size": 7619330,
+      "sha256": "a1aadeb4f943dc9bd8c54a552e60847b6a902d2ee2a19cd8139ad5edd1315253",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/framer-mcp.mp4",
+      "size": 3978880,
+      "sha256": "eca787581b854ca6b432bdb2ca7793c557d2e719a63e80ca1bf57a5d708fede3",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "file"
+    },
+    {
+      "path": "references/videos/gemini-skills.mp4",
+      "size": 21777146,
+      "sha256": "d36400047581cadbc441c65a4d67a9bbe300db7a2e61d5a8adf8031e10a6c419",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/gpt6-intelligent-ui.mp4",
+      "size": 34680688,
+      "sha256": "e1a498dff7f8d22f92354b8f11a01e6b4389070d9ba98f170749d54bf1b25c4a",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/higgsfield-motion.mp4",
+      "size": 27297872,
+      "sha256": "9361aae09b371b1fc7b9a70953db7c80958927cb153acc20e8aaf7eec14a7a3c",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/jp-bakuraku.mp4",
+      "size": 6296770,
+      "sha256": "b46b708a87529bfdda03e54fc28fd3a38df01e4295ce574b62dabd5fd8147a9d",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/jp-flyle-nihonham.mp4",
+      "size": 4837537,
+      "sha256": "9ede6f52c018b037660fcc92fac5f4bdf5d17b6fd413bbde5c0c1204c7908797",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/jp-kaonavi-kti.mp4",
+      "size": 6219544,
+      "sha256": "537566a22f405ad52cdbc1ce8850673fe420f59b37cbcc1422c264b2bb49bb5a",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/jp-notepm.mp4",
+      "size": 8498827,
+      "sha256": "94cfa9f7a8c389e02b492d68c800314e9d2e69caed98922dffedc9eba60a5b38",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/jp-notta-memo.mp4",
+      "size": 9481281,
+      "sha256": "09d912f96883e216e115e360a36cb246f42a99fd0a6127c91809e63c4c186425",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/jp-peoplex-interview.mp4",
+      "size": 5524810,
+      "sha256": "b1806cd254735cd8cf5b1f449f41476d7076c99bae5db3d2d9067a3ead9a0385",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/jp-robon-aizuchi.mp4",
+      "size": 905840,
+      "sha256": "3b95a0106332abed83c04d61cc0ff661a066e0911b8931baedaf9ad9b74f3e93",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "file"
+    },
+    {
+      "path": "references/videos/jp-robon-sorosoro.mp4",
+      "size": 1895207,
+      "sha256": "d8a1ae11180b89b94efb02b261d12200b102968ba3c8b4ce0d167befce8feb8b",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "file"
+    },
+    {
+      "path": "references/videos/jp-usonar-un.mp4",
+      "size": 13503513,
+      "sha256": "46904df4854ee44aa585e76728fd33db3cc543d333fbb9e96edee1a9141e620e",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/kimi-3d-make.mp4",
+      "size": 28508984,
+      "sha256": "63ca48fa3099860890f56c46a2dd5cafed11964bb081ab46a4cd477ef12a7704",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/kimi-k31-pro.mp4",
+      "size": 58437336,
+      "sha256": "8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/kimi-teaser.mp4",
+      "size": 24972820,
+      "sha256": "0e7b184354715efb5304a56b38e49bee0c6f9f860fcf3d8330926ab1d17101e2",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/krea-ad-studio.mp4",
+      "size": 4549817,
+      "sha256": "abc83f47046889dcb995a5816bf6e240a46e19a759f45508f9616410c5f205c6",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/minimax-space-bunny.mp4",
+      "size": 1337316,
+      "sha256": "a9deaae58736fc4854b11c518a39d43a0179f7e07b014a0b163183580f553204",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "file"
+    },
+    {
+      "path": "references/videos/openai-dots.mp4",
+      "size": 49942532,
+      "sha256": "9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/pause-video-editing.mp4",
+      "size": 10236004,
+      "sha256": "59d681ba580d39e3719ad7c0aa80a60c196ce04c28ec8094a4d4c17931938eca",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/runway-app-studio.mp4",
+      "size": 20858600,
+      "sha256": "6b8843efb2cea3de6ab36de0b65354c06f7b829d3cca3ca7409f1ba8246ff3fa",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references/videos/tencent-hy4.mp4",
+      "size": 20989886,
+      "sha256": "166b7c9dd6d67f86196450fed25da58013c6409ae01e9e209352d1d6e2c99490",
+      "mime": "video/mp4",
+      "type": "video",
+      "storage": "chunks"
+    },
+    {
+      "path": "references-summary.json",
+      "size": 26402,
+      "sha256": "1a1fa6e4eaf46844662fbb605a0467696c66cefaf7f012a1e71533a4258186f0",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "references.css",
+      "size": 9005,
+      "sha256": "bcbf4f2a5ff7094cb087e7a19785950176aa97766a311396cda067aff1f0676c",
+      "mime": "text/css",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "references.html",
+      "size": 70667,
+      "sha256": "652420bc82677ac3eddcbd7ce97ee6c911878b891e29b5f0264e01aac18e18b2",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "references.js",
+      "size": 1593,
+      "sha256": "add4348491ddf8fc404f8f821969f12e48cb03b85d1285149382da6c9caa2052",
+      "mime": "text/javascript",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "report.css",
+      "size": 36833,
+      "sha256": "4823b3aaf9ed081948cb0765e111e679bac676abdbdd9fb6094b3b0b7ff5a9a0",
+      "mime": "text/css",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "report.js",
+      "size": 3624,
+      "sha256": "87511d06c762cec399ecddcc8fd11fa4e5620c5e909ef4d08ca232f300af3306",
+      "mime": "text/javascript",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/One2X 项目进度看板/app.jsx",
+      "size": 12293,
+      "sha256": "61051bd61c54a7041838599cff6380861e5f0a892485adc8c905eb462ed00475",
+      "mime": "application/octet-stream",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/One2X 项目进度看板/components/board.jsx",
+      "size": 4444,
+      "sha256": "66002865a91781224d3f6534052f3e978e89d21b5e36aae59cd969316718f0b2",
+      "mime": "application/octet-stream",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/One2X 项目进度看板/components/drawer.jsx",
+      "size": 6763,
+      "sha256": "00ae2661402e76fe7328260fcaaa0f27378e55816c3cb74bef1be984a44c5fb8",
+      "mime": "application/octet-stream",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/One2X 项目进度看板/components/icons.jsx",
+      "size": 1718,
+      "sha256": "5dc06be36faddf882416f222cb804f0e5602e63107806f08b97ccbabd2fac5e6",
+      "mime": "application/octet-stream",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/One2X 项目进度看板/components/meetings.jsx",
+      "size": 2270,
+      "sha256": "356ab92ffcd7a224659962d1de0f0123ba993dd61543c587768b6e859f2e9516",
+      "mime": "application/octet-stream",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/One2X 项目进度看板/components/timeline.jsx",
+      "size": 5857,
+      "sha256": "db0a179fbaf2b5aa66604eb4ae127cf9baf6f04e49c5f4ef2e87ac746cfea5eb",
+      "mime": "application/octet-stream",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/One2X 项目进度看板/components/tweaks-panel.jsx",
+      "size": 36245,
+      "sha256": "6bb9f2131e1cc61f26fb02ad5b8346c87d3849f6cfe9ea792f18ed27f061e599",
+      "mime": "application/octet-stream",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/One2X 项目进度看板/data.js",
+      "size": 5661,
+      "sha256": "e82381839146c7e833bfa88068e6b2b6790e7bc2c431cab13901a55285ca8bdb",
+      "mime": "text/javascript",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/One2X 项目进度看板/index.html",
+      "size": 2559,
+      "sha256": "eead49fb2909c6c38e7dbd85a3385ad300c3459f88c4cd7ba77f58c2b3b98b9c",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "sources/One2X 项目进度看板/package-lock.json",
+      "size": 207,
+      "sha256": "7d0da43362521100a40c33c2bc6a03019a346cc673ed01231c3fdd19b0af11bd",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/One2X 项目进度看板/package.json",
+      "size": 100,
+      "sha256": "01c6f47bcda371404d40c4d004c012b1d62371a4c3a68f1470091ad0195e930d",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/One2X 项目进度看板/styles.css",
+      "size": 30242,
+      "sha256": "6e0d4a49de70a9ece0724569cd406ac658fb70c4cab029a33df7dce1ae88be18",
+      "mime": "text/css",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/交付校验.json",
+      "size": 4682,
+      "sha256": "53b1693ea2d813f9c523e43cc7ea4929877c86a5533f747403719b3b4dc8da32",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/原始看板-data.js",
+      "size": 5661,
+      "sha256": "e82381839146c7e833bfa88068e6b2b6790e7bc2c431cab13901a55285ca8bdb",
+      "mime": "text/javascript",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/双片更新记录.json",
+      "size": 681,
+      "sha256": "9ee1cc0bc38661f67011e03674441e4fbafc9a9dd30eca067be42cfb81a3ce19",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/双片浏览器校验.json",
+      "size": 1242,
+      "sha256": "2e122ad0e56bac636a2d7ef4fd97ec5bcaf43fd55224d45c72358d0659b1d550",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/双片静态校验.json",
+      "size": 51,
+      "sha256": "6905749a4e3216aea9fb7c720f26b1c642b143374382aa6d81bc1a1f8f749047",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/品牌依据.txt",
+      "size": 2149,
+      "sha256": "ea049bed9d8e8e94b03bd1a7a535bf8b3365a0b371fa26093fb1b493ab06c314",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/报告预览.png",
+      "size": 558132,
+      "sha256": "4dad08f07c4fc44658202175075a6a042c37aafd2742382fde8d4b5037faafc7",
+      "mime": "image/png",
+      "type": "image",
+      "storage": "file"
+    },
+    {
+      "path": "sources/最新交付索引.json",
+      "size": 1835,
+      "sha256": "04c7b1e4dff3236cf90d2fea82f1da0e51ed7b2345fd3dda88bb3c8699a1f5cd",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "sources/材料引用缺失说明.html",
+      "size": 8076,
+      "sha256": "7340f011e6db3cb94c3001201627129afda59a1143d6b86ae3d2f0b317295f69",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "sources/进度看板-便携版.html",
+      "size": 4683,
+      "sha256": "fcff3bb0f29b232dc265dbab143e7cdf8fea243158a0f999220483ec70717862",
+      "mime": "text/html",
+      "type": "html",
+      "storage": "file"
+    },
+    {
+      "path": "交付入口.json",
+      "size": 1418,
+      "sha256": "ac0511bdef713fe89ad41c8cd3532e81f79d2fe35f2dc65c3dd944a047b17fc5",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "打包清单.json",
+      "size": 51420,
+      "sha256": "f93f0ea26ce0f64e6fc886d3ffb32a660b614a62f579be2932016abf3e463cae",
+      "mime": "application/json",
+      "type": "document",
+      "storage": "file"
+    },
+    {
+      "path": "阅读说明.txt",
+      "size": 758,
+      "sha256": "2303fb9e3961d533fde8326f23b77cd46b824036b5a37a34bfda88df80a40ce4",
+      "mime": "text/plain",
+      "type": "document",
+      "storage": "file"
+    }
+  ]
+}

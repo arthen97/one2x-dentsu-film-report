@@ -1,0 +1,36 @@
+KF05｜镜08｜00:32–00:37
+资料留在日本，留在自己的环境里
+
+必须看懂的信息
+企业资料留在日本境内的独立环境，不流向公共AI训练。
+
+画面、光线与材质
+比上一镜更稳的广告示意。一个半透明企业空间坐落在画面左中部，内部整齐放置企划书与少量安静流动的光点；外侧几束细光在边界处停住，内部光仍然流动。台面留足空间后期叠加准确日本轮廓，使企业空间明确位于日本内。缓慢拉远感的35mm俯斜视角，深石墨底、柔和沉金内光、低亮度品牌紫边线；不出现锁门、铁笼或数据机房奇观。
+
+镜头运动
+全片最稳的一次拉远，两行承诺全程稳定显示5秒；节点光点向右拉出细光，接门店。
+
+参考片质感转译
+Apple《Data Auction》的“信息去向可视化”方法
+用空间边界清楚区分内部资料与外部方向，把保护拍成发生中的事实关系；简洁、稳定，给两行承诺完整停留。
+
+拟用日文／英文屏幕文案与中文解释
+32.0–37.0秒，日本驻留与公共模型训练边界两行承诺同步稳定显示。
+JA：データは、日本国内で保管。
+EN：Your data is stored in Japan.
+中文解释：数据保存在日本国内。
+
+JA：パブリックAIモデルの学習に、使用しません。
+EN：Never used to train public AI models.
+中文解释：不用于公共AI模型训练。
+
+样张信息叠加文案
+JA：データは、日本国内で保管。
+EN：Your data is stored in Japan.
+JA：パブリックAIモデルの学習に、使用しません。
+EN：Never used to train public AI models.
+
+生成英文提示词
+A calm premium B2B launch-film concept image about a protected enterprise workspace. One small translucent architectural volume sits left of center on a dark graphite plane, holding a tidy stack of unlettered planning papers and a few softly circulating light points. External thin violet filaments stop at the glass boundary; warm interior light remains active. Leave the surrounding floor empty for an accurate Japan outline to be composited later, and reserve the right third for two clear text lines. Elevated oblique 35mm perspective, muted-gold interior, subtle violet edges, plausible glass and quiet reflections, controlled studio lighting. Trustworthy and composed. No generated map, words, logos, padlocks, shields or spectacular server room. --ar 16:9 --v 8.1 --raw --stylize 80 --hd
+
+样张为概念美术，用于镜头与视觉沟通；真实UI、文字与正式logo后期叠加，正式品质证明采用KAIROS实际输出。

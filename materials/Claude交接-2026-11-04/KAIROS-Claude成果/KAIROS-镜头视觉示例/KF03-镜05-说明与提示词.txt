@@ -1,0 +1,34 @@
+KF03｜镜05｜00:19–00:23
+现场手顺，变成看得见的步骤片
+
+必须看懂的信息
+把企业已确认的操作素材整理成看得清、能对照的培训影片。
+
+画面、光线与材质
+大田区矢口工坊，前景平板占画幅约四成；新人一只拇指停在暂停位置，另一侧可见固定在台钳上的静止工件与前辈递来的下一件材料。屏幕留灰色换屏面，后期将已确认实操视频中的手部特写与真实现场匹配。50mm过肩近景，顶灯与侧窗混合光，磨损金属台面、棉质工服、哑光铝件，整洁但有使用痕迹。
+
+镜头运动
+真实手部与片中手部同一构图；前辈递出下一件材料的手，接说明会上递资料的手。
+
+参考片质感转译
+Squarespace《A Tale As Old As Websites》；LINE WORKS职场质感
+把数字成果落在一件真实工作被顺利接续的动作上；借具体器物与同事之间的轻微回应，而非教程式功能清单。
+
+拟用日文／英文屏幕文案与中文解释
+19.8–20.8秒呈现需求；20.8秒起呈现沿用已确认操作素材的步骤字幕。
+JA：この手順を、手元のアップで。
+EN：Use hand close-ups for these steps.
+中文解释：把这段操作整理为手部特写。
+
+JA：角度は、ここまで
+EN：Angle: up to here
+中文解释：关键角度沿用企业已确认的原步骤。
+
+样张信息叠加文案
+JA：角度は、ここまで
+EN：Angle: up to here
+
+生成英文提示词
+A premium Japanese workplace commercial still, a small precision workshop in Tokyo. Over-the-shoulder 50mm close view: a junior worker checks a tablet beside a stationary aluminum part secured in a bench vise; a senior coworker gently passes the next part into frame. Tablet fills about forty percent of the image, screen flat neutral dark gray for an approved training-video insert. Worn brushed metal bench, cotton workwear, organized everyday tools, tactile use marks. Soft side-window light mixed with practical overhead light, natural hand anatomy, restrained human response, subtle film grain, authentic small-workshop scale. Everything is stopped and safe. No operating machinery, technical measurements, words, logo or invented software UI. --ar 16:9 --v 8.1 --raw --stylize 55 --hd
+
+样张为概念美术，用于镜头与视觉沟通；真实UI、文字与正式logo后期叠加，正式品质证明采用KAIROS实际输出。

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="zh-CN" data-overlays="on"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KAIROS｜镜头视觉附录｜六镜头信息与提示词</title><style>
+:root{--paper:#f7f5f1;--card:#fff;--ink:#1f1c22;--mute:#76707c;--line:#e3dfe6;--brand:#863dfb;--soft:#f1eafe;--warm:#a4502a;--gold:#9a7b2f;
+--jp:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;--sans:"Hiragino Sans","PingFang SC","Noto Sans CJK SC",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.75;font-size:16px}
+a{color:var(--brand)}.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+nav{position:sticky;top:0;z-index:5;background:rgba(247,245,241,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:12px;height:52px}nav img{height:20px}nav b{letter-spacing:.18em;font-size:13px}
+nav .links{margin-left:auto;display:flex;gap:16px;font-size:13px}nav .links a{color:var(--mute);text-decoration:none}
+nav button{background:none;border:1px solid var(--line);border-radius:6px;padding:3px 10px;font-size:12px;color:var(--mute);cursor:pointer}
+.hero{padding:70px 0 46px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.16em;color:var(--mute)}
+.hero h1{font-family:var(--jp);font-size:46px;font-weight:600;margin:12px 0 2px;letter-spacing:.04em}
+.hero .en{font-size:16px;color:var(--mute);margin-bottom:14px}
+.hero .meta{color:var(--mute);font-size:14px}
+.soul{margin-top:26px;padding:20px 24px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:0 12px 12px 0;font-size:15.5px}
+.soul b{font-size:17px}
+.tl{margin-top:24px;display:flex;height:44px;border-radius:8px;overflow:hidden;border:1px solid var(--line);font-size:11.5px}
+.tl a{display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;color:var(--ink);border-right:1px solid #fff;white-space:nowrap;overflow:hidden;line-height:1.25}
+.tl a small{font-size:10px;color:var(--mute)}
+.p1{background:#d9d4de}.p2{background:#e6e2dc}.p3{background:#e2d6fb}.p4{background:#ece3cc}.p5{background:#c9b2fa}.p6{background:#b99af7}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+h2{font-size:27px;margin:0 0 6px}h2 small{font-size:14px;color:var(--mute);font-weight:400;margin-left:10px}
+h3.sub{font-size:18px;margin:34px 0 10px}
+.lead{color:var(--mute);margin:0 0 22px;font-size:14.5px}
+.bgrid{display:grid;grid-template-columns:140px 1fr;border-top:1px solid var(--line)}
+.bgrid>div{padding:14px 0;border-bottom:1px solid var(--line)}.bgrid .k{color:var(--mute);font-size:13px;padding-top:17px}
+.jp{font-family:var(--jp)}
+.refs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.ref{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;font-size:14px}
+.ref .lv{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;color:#fff;background:var(--brand);border-radius:4px;padding:0 8px}
+.ref .lv.line{background:#06a54c}.ref .lv.keynote{background:#2f6fd6}
+.ref h3{margin:6px 0 2px;font-size:16px}.ref .by{font-size:12px;color:var(--mute)}
+.ref p{margin:6px 0}.ref .no{color:var(--warm);font-size:13px}
+.ref .links a{font-size:12px;margin-right:10px}
+table.map{width:100%;border-collapse:collapse;font-size:13.2px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+table.map th{background:#f1edf6;text-align:left;font-weight:600;font-size:12px;color:var(--mute);padding:9px 10px;border-bottom:1px solid var(--line)}
+table.map td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+table.map td.u{width:118px;font-weight:700}
+table.map td.u span{display:block;font-weight:400;font-size:11.5px;color:var(--mute)}
+table.map td.t{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--brand);font-weight:600}
+table.map .ja{font-family:var(--jp);font-size:14px}
+table.map .en{font-size:11.5px;color:var(--mute)}
+table.map tr.grp td{background:#faf8f5;font-size:12px;color:var(--mute);font-weight:700;letter-spacing:.06em;padding:6px 10px}
+.four{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.four div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:13px}
+.four b{display:block;font-size:15px;margin-bottom:4px}.four .p{color:var(--mute);font-size:11.5px;display:block;margin-bottom:6px}
+.four ol{margin:0;padding-left:16px}.four li{margin-bottom:3px}
+.phase{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.phase div{border-radius:10px;padding:12px;font-size:12.8px;border:1px solid var(--line)}
+.phase b{display:block;font-size:14px}.phase .t{font-size:11.5px;color:var(--mute)}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;font-size:14px}
+.box h4{margin:0 0 8px;font-size:15px}.box ul{margin:0;padding-left:18px}.box li{margin-bottom:5px}
+.ind{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.ind div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:12.5px}
+.ind b{font-family:var(--jp);font-size:15px;display:block}.ind .en{font-size:11px;color:var(--mute)}.ind .v{color:var(--brand);font-size:11.5px;margin-top:4px;display:block}
+.act{margin:34px 0 10px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.act .n{font-size:12px;letter-spacing:.16em;color:var(--brand);font-weight:700}.act h3{margin:0;font-size:19px}.act span{font-size:13px;color:var(--mute)}
+.shot{display:grid;grid-template-columns:104px 1fr 330px;background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.tc{padding:15px 13px;border-right:1px solid var(--line);background:#faf8f5}
+.tc .no{font-size:23px;font-weight:700;line-height:1}.tc .time{font-size:13px;color:var(--mute);margin-top:6px;font-variant-numeric:tabular-nums}
+.tc .dur{display:inline-block;margin-top:6px;font-size:12px;background:var(--ink);color:#fff;border-radius:4px;padding:0 7px}
+.tc .tag{display:block;margin-top:6px;font-size:10.5px;color:var(--brand);line-height:1.4}
+.body{padding:14px 18px}.body h4{margin:0 0 2px;font-size:16px}
+.where{font-size:12px;color:var(--mute);margin-bottom:6px}.body p{margin:0 0 6px;font-size:14.2px}
+.beats{margin:4px 0 8px;padding:0;list-style:none;font-size:13.8px}
+.beats li{padding:3px 0 3px 74px;position:relative;border-bottom:1px dashed #eee}
+.beats li i{position:absolute;left:0;top:3px;font-style:normal;font-size:12px;color:var(--brand);font-variant-numeric:tabular-nums}
+.row{font-size:13px;color:var(--mute);margin-top:3px}.row b{color:var(--ink);font-weight:600}
+.ui-real{display:inline-block;font-size:10.5px;background:var(--brand);color:#fff;border-radius:3px;padding:0 5px;margin-right:4px}
+.ui-ad{display:inline-block;font-size:10.5px;background:#fff;color:var(--brand);border:1px solid var(--brand);border-radius:3px;padding:0 5px;margin-right:4px}
+.units{margin-top:6px}.units span{display:inline-block;font-size:11px;background:var(--soft);color:var(--brand);border-radius:999px;padding:0 8px;margin:0 4px 4px 0}
+.reftag{display:inline-block;font-size:11px;border:1px solid #d9c8fb;color:var(--brand);border-radius:999px;padding:0 8px;text-decoration:none;margin-right:4px}
+.vo{padding:14px 16px;border-left:1px solid var(--line);background:#fbfaf8}
+.vo .lab{font-size:11px;letter-spacing:.1em;color:var(--mute);margin-top:4px}.vo .who{font-size:11.5px;color:var(--mute)}
+.vo .ja{font-family:var(--jp);font-size:17px;line-height:1.55;margin:1px 0 0}
+.vo .cn{font-size:13px;color:var(--warm)}
+.vo .en{font-size:12px;color:var(--mute);margin-bottom:8px}
+.vo .card{font-family:var(--jp);font-size:15px;color:var(--brand);margin-top:1px}
+.thumbs{display:flex;gap:6px;margin-top:6px}.thumbs figure{margin:0;flex:1}
+.thumbs img{width:100%;height:84px;object-fit:cover;border-radius:6px;border:1px solid var(--line);display:block}
+.thumbs figcaption{font-size:10.5px;color:var(--mute)}
+.indlist{margin:4px 0 6px;border-collapse:collapse;width:100%;font-size:13px}
+.indlist td{border-bottom:1px dashed #eee;padding:4px 6px;vertical-align:top}
+.indlist td:first-child{white-space:nowrap;color:var(--brand);font-variant-numeric:tabular-nums;width:92px}
+.indlist td:nth-child(2){white-space:nowrap;font-family:var(--jp);width:118px}
+.sum{text-align:right;font-size:13px;color:var(--mute);margin-top:12px}
+.small{font-size:13.5px}.small li{margin-bottom:6px}
+footer{padding:26px 0 56px;font-size:12px;color:var(--mute)}
+@media (max-width:960px){.shot{grid-template-columns:1fr}.tc{border-right:none;border-bottom:1px solid var(--line)}.vo{border-left:none;border-top:1px solid var(--line)}.four,.refs,.cols2{grid-template-columns:1fr 1fr}.phase,.ind{grid-template-columns:repeat(3,1fr)}.bgrid{grid-template-columns:1fr}table.map{font-size:12px}}
+@media print{nav{display:none}body{background:#fff;font-size:12px}.shot,.ref,.box,table.map tr{break-inside:avoid}}
+
+
+.appendix-hero{padding:62px 0 34px}.appendix-hero h1{font-size:clamp(28px,4.4vw,44px)}
+.appendix-hero .meta{margin-top:12px}.appendix-nav{height:auto;min-height:52px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.appendix-nav .links{flex-wrap:wrap;gap:12px;align-items:center}button{font:inherit}
+.appendix-note{margin:20px 0 0;padding:14px 18px;border-left:3px solid var(--brand);background:var(--soft);font-size:13px}
+.frame-jump{display:flex;flex-wrap:wrap;gap:7px;margin-top:22px}.frame-jump a{border:1px solid var(--line);border-radius:5px;padding:5px 12px;font-size:12px;text-decoration:none;color:var(--ink);background:#fff}
+.appendix-main{padding-top:30px}.frame-card{scroll-margin-top:80px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:32px}
+.frame-heading{display:grid;grid-template-columns:105px 1fr;gap:22px;padding:24px}.frame-number{font-size:35px;font-weight:700;line-height:1.1;color:var(--brand)}
+.frame-number small{display:block;font-size:11px;font-weight:400;color:var(--mute);margin-top:9px}.frame-heading h2{font-size:clamp(19px,2.6vw,26px);line-height:1.5;margin:0 0 4px}.frame-heading .eyebrow{margin-bottom:7px;font-size:11px}
+.frame-heading p{margin:0;font-size:12px;color:var(--mute)}.design-only{margin:0 24px 22px;padding:10px 14px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:12px;color:var(--mute)}
+.actual-frame{position:relative;margin:0;background:#17141c;isolation:isolate}.generated-image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
+.information-overlay{position:absolute;inset:0;pointer-events:none;color:#fff}.overlay-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,7,15,.3),transparent 38%,rgba(10,7,15,.64))}
+.overlay-brand{position:absolute;top:5%;left:5%;display:flex;gap:10px;align-items:center;font-size:clamp(11px,1.6vw,18px);letter-spacing:.14em;font-weight:700;text-shadow:0 1px 6px #181020}
+.overlay-brand img{width:clamp(22px,3.6vw,38px);height:auto;max-height:40px;object-fit:contain}.overlay-kind{position:absolute;right:5%;top:5%;font-size:clamp(9px,1.05vw,12px);border:1px solid #ffffff80;border-radius:3px;padding:2px 7px;background:#18102066}
+.overlay-copy{position:absolute;left:5%;right:5%;bottom:8%;max-width:80%;text-shadow:0 2px 12px #08050d99}.overlay-unit+.overlay-unit{margin-top:18px}
+.overlay-ja{font-family:var(--jp);font-size:clamp(19px,3.4vw,38px);line-height:1.5;white-space:pre-line}.overlay-en{font-size:clamp(10px,1.45vw,17px);line-height:1.55;margin-top:7px;max-width:740px;white-space:pre-line}
+.overlay-right .overlay-shade{background:linear-gradient(90deg,transparent 34%,rgba(12,8,18,.5))}.overlay-right .overlay-copy{left:61%;right:5%;bottom:auto;top:32%;max-width:none}
+.overlay-right .overlay-ja{font-size:clamp(16px,2.6vw,29px)}.overlay-right .overlay-en{font-size:clamp(9px,1.2vw,14px)}
+.image-footer{display:flex;justify-content:space-between;gap:12px;padding:8px 24px;border-bottom:1px solid var(--line);font-size:11px;color:var(--mute)}.image-footer a{text-decoration:none}
+[data-overlays="off"] .information-overlay{display:none}
+.frame-content{padding:0 24px 24px}.frame-cols{display:grid;grid-template-columns:1.1fr 1fr;gap:28px}.frame-block{padding:18px 0 16px;border-bottom:1px solid var(--line)}
+.frame-block h3{margin:0 0 7px;font-size:11px;letter-spacing:.1em;color:var(--mute);font-weight:500}.frame-block p{margin:0;font-size:13px;line-height:1.8}.frame-block .case{font-weight:600;margin-bottom:6px}
+.film-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:9px}.film-links a{font-size:11px;text-decoration:none}.screen-heading{margin:22px 0 4px;font-size:15px}.screen-note{font-size:11px;color:var(--mute);margin:0 0 10px}
+.copy-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.copy-unit{padding:14px 16px;background:#fbfaf8;border:1px solid var(--line);border-radius:7px;overflow-wrap:anywhere}
+.copy-unit .ja{font-family:var(--jp);font-size:17px;line-height:1.7;white-space:pre-line}.copy-unit .en{font-size:12px;line-height:1.7;color:var(--mute);white-space:pre-line;margin-top:5px}.copy-unit .zh{font-size:12px;color:var(--warm);margin-top:5px;white-space:pre-line}
+.prompt-fold{margin-top:20px;border:1px solid var(--line);border-radius:7px;overflow:hidden}.prompt-fold summary{padding:12px 15px;font-size:12px;cursor:pointer}.prompt-fold summary span{float:right;color:var(--mute);font-variant-numeric:tabular-nums}
+.copy-tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:0 15px 12px}.copy-tools button,.appendix-nav button{border:1px solid var(--line);border-radius:5px;padding:5px 10px;background:#fff;color:var(--ink);font-size:12px;cursor:pointer}
+button:disabled{cursor:default;opacity:.55}.copy-tools a{font-size:12px;text-decoration:none}.prompt-fold pre{margin:0;padding:18px;background:#24202a;color:#f4eff8;font:12px/1.9 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere}
+.appendix-resources{padding:26px 0 48px}.appendix-resources h2{font-size:18px}.appendix-resources p{font-size:12px;color:var(--mute)}.resource-links{display:flex;flex-wrap:wrap;gap:14px;font-size:12px}.resource-links a{text-decoration:none}
+#copy-status{position:fixed;right:20px;bottom:20px;z-index:20;padding:10px 16px;background:var(--ink);color:#fff;border-radius:5px;font-size:12px;display:none}#copy-status.visible{display:block}
+@media(max-width:700px){.appendix-nav .links{margin-left:0}.frame-heading{grid-template-columns:62px 1fr;gap:12px;padding:20px}.frame-number{font-size:27px}.frame-cols,.copy-grid{grid-template-columns:1fr}.frame-cols{gap:0}.frame-content{padding:0 20px 20px}.actual-frame .overlay-right .overlay-copy{left:55%;right:4%;top:27%}.overlay-unit+.overlay-unit{margin-top:9px}.overlay-copy{bottom:6%}.overlay-ja{font-size:clamp(14px,3.8vw,23px)}.overlay-en{font-size:clamp(9px,2vw,13px)}.image-footer{padding:8px 20px;flex-wrap:wrap}.design-only{margin:0 20px 16px}}
+@media print{.frame-card{break-inside:auto;margin-bottom:20px}.actual-frame,.frame-heading,.copy-unit{break-inside:avoid}.prompt-fold,.copy-tools,.frame-jump,#copy-status{display:none}.frame-content{padding-top:0}.appendix-hero{padding-top:15px}.frame-heading h2{font-size:20px}.generated-image{max-height:140mm;object-fit:contain}.overlay-ja{font-size:26px}.overlay-en{font-size:13px}.wrap{max-width:100%;padding:0}}
+</style><link data-one2x-material="true" rel="stylesheet" href="../../../../one2x-material.css"></head>
+<body class="one2x-editorial-material"><nav id="one2x-material-nav" aria-label="五片制作报告导航"><a class="one2x-brand" href="../../../../index.html"><img src="../../../../assets/one2x-wordmark.svg" alt="One2X"><span class="one2x-material-label">工作材料快照 · 供制作讨论</span></a><a class="one2x-back" href="../../../../index.html">返回五片总览</a></nav><nav><div class="wrap appendix-nav"><img src="../../../KAIROS-60s-%E5%88%86%E9%95%9C%E8%A1%A8/%E5%AE%98%E7%BD%91%E5%AE%9E%E6%8B%8D/assets/kairos-logo.png" alt="KAIROS"><b>KAIROS</b><div class="links"><a href="../KAIROS-60s-%E6%AD%A3%E5%BC%8F%E6%8F%90%E6%A1%88-%E4%BA%A7%E5%93%81%E7%90%86%E5%BF%B5%E8%AF%A6%E8%A7%A3%E7%89%88.html">正式提案 ↗</a><a href="#KF01">六镜头方案</a><a href="%E9%95%9C%E5%A4%B4%E8%A7%86%E8%A7%89%E7%A4%BA%E4%BE%8B-%E8%AF%B4%E6%98%8E%E4%B8%8E%E6%8F%90%E7%A4%BA%E8%AF%8D.txt" download>下载完整提示词</a><button type="button" id="overlay-toggle" aria-pressed="true" disabled>信息叠加 · 待样张</button><button type="button" id="print-button">打印 / 存PDF</button></div></div></nav>
+<header class="hero appendix-hero"><div class="wrap"><div class="eyebrow">KAIROS · VISUAL APPENDIX</div><h1>六个镜头，把信息拍清楚。</h1><div class="en">Shot directions &amp; generation prompts.</div><div class="meta">16:9 · Merouter / Midjourney v8.1 · 六镜头视觉方案 · 图片待加入</div><div class="appendix-note">样张为概念美术，用于镜头与视觉沟通；真实UI、文字与正式logo后期叠加，正式品质证明采用KAIROS实际输出。</div><div class="frame-jump"><a href="#KF01">镜02 · 00:03–00:08</a><a href="#KF02">镜04 · 00:14–00:19</a><a href="#KF03">镜05 · 00:19–00:23</a><a href="#KF04">镜07 · 00:27–00:32</a><a href="#KF05">镜08 · 00:32–00:37</a><a href="#KF06">镜09 · 00:37–00:43</a></div></div></header>
+<main class="wrap appendix-main"><article class="frame-card" id="KF01">
+<header class="frame-heading"><div class="frame-number">02<small>00:03–00:08<br>KF01</small></div><div><div class="eyebrow">镜02 · 四个岗位，各自卡住的一瞬</div><h2>真实商品有光泽，静态照片却表达不出来——企业需要能用于商业的影像。</h2><p><a href="../KAIROS-60s-%E6%AD%A3%E5%BC%8F%E6%8F%90%E6%A1%88-%E4%BA%A7%E5%93%81%E7%90%86%E5%BF%B5%E8%AF%A6%E8%A7%A3%E7%89%88.html#s02">查看正式提案本镜 ↗</a></p></div></header>
+<div class="design-only">镜头设计 · 图片待加入</div>
+<div class="frame-content"><div class="frame-cols"><div><div class="frame-block"><h3>画面 / 光线 / 材质</h3><p>日本桥本町的普通品牌企划室。近景拍两位同事的手：一人把无字护肤瓶举到窗光下，另一人将包装上的限定贴纸对齐；显示器只留一块可后期换成静态商品图的灰色屏幕。视线在实物与屏幕之间形成明确对照。50mm中近景，冷灰晨光、自然肤质、纸张纤维和玻璃高光；不做夸张失落表情。</p></div><div class="frame-block"><h3>镜头运动</h3><p>手部与物件近景快剪，四个镜头视线方向一致；第三张字卡后，一个光标在黑场中闪动，引出需求行。</p></div></div><div><div class="frame-block"><h3>参考片质感转译</h3><p class="case">LINE WORKS《現場が動き出す・店舗篇》；LINE仅作生活质感辅助</p><p>把问题放在具体工作器物和半途停住的手势上，保留真实办公室的空间尺度；动作轻、表情少。</p><div class="film-links"><a href="https://youtu.be/pluchCCPHwA" target="_blank" rel="noopener">LINE · 参考影片 ↗</a><a href="https://youtu.be/v3xbyhXc6tM" target="_blank" rel="noopener">LINE WORKS · 参考影片 ↗</a></div></div></div></div>
+<h3 class="screen-heading">拟用屏幕文案 · 后期叠加</h3><p class="screen-note">03.4秒起为企划对白字幕；06.8–08.0秒另有三张痛点字卡。</p><div class="copy-grid"><div class="copy-unit"><div class="ja">作れない。待てない。任せられない。</div><div class="en">Can&#x27;t make it. Can&#x27;t wait. Can&#x27;t hand it over.</div><div class="zh">中文解释：做不出来。等不起。不敢托付。</div></div></div>
+<details class="prompt-fold"><summary>英文生成提示词<span>792 字符</span></summary><div class="copy-tools"><button type="button" data-copy-id="prompt-KF01">复制完整提示词</button><a href="KF01-%E9%95%9C02-%E8%AF%B4%E6%98%8E%E4%B8%8E%E6%8F%90%E7%A4%BA%E8%AF%8D.txt" download>下载本镜说明与提示词</a></div><pre id="prompt-KF01">A premium Japanese commercial film still. A modest cosmetics planning office in Tokyo on a cool winter morning. Tight 50mm medium close-up across a real desk: one Japanese coworker holds a clear cylindrical serum bottle against window light, another aligns a small blank sticker on an ivory gift box. Pale champagne liquid, matte ivory cap, narrow blank cream label. An angled desktop monitor at the side has a plain gray screen for later compositing. Focus on the glass highlight and careful hands; restrained faces, natural skin texture, paper fibers, softly worn office objects. Cool daylight with gentle practical fill, controlled highlights, subtle film grain, believable lived-in proportions. No legible lettering, logos, HUD or fantasy office. --ar 16:9 --v 8.1 --raw --stylize 60 --hd</pre></details></div></article>
+<article class="frame-card" id="KF02">
+<header class="frame-heading"><div class="frame-number">04<small>00:14–00:19<br>KF02</small></div><div><div class="eyebrow">镜04 · 成片完整亮相：给作品真正的观看时间</div><h2>让成片本身证明日系审美、高品质与低AI感。</h2><p><a href="../KAIROS-60s-%E6%AD%A3%E5%BC%8F%E6%8F%90%E6%A1%88-%E4%BA%A7%E5%93%81%E7%90%86%E5%BF%B5%E8%AF%A6%E8%A7%A3%E7%89%88.html#s04">查看正式提案本镜 ↗</a></p></div></header>
+<div class="design-only">镜头设计 · 图片待加入</div>
+<div class="frame-content"><div class="frame-cols"><div><div class="frame-block"><h3>画面 / 光线 / 材质</h3><p>同一只玻璃护肤瓶的成熟商品广告画面，瓶身落在左中部，右侧三分之一干净留白。一只自然的手从画外轻托瓶身；窄窗形高光沿玻璃曲线掠过，台面有一滴精华的细微涟漪。85–100mm产品特写，浅景深但瓶口与握持关系清楚；柔和侧光、真实折射、可见皮肤纹理，暖白与浅香槟色。</p></div><div class="frame-block"><h3>镜头运动</h3><p>全程只有一次缓推，无转场特效；停住的瓶身高光切到工坊工件上的金属反光。</p></div></div><div><div class="frame-block"><h3>参考片质感转译</h3><p class="case">Adobe《The World Is Your Canvas》的“结果直接成为画面”；日本审美以本片原设定执行</p><p>从工具展示切到作品占满画面，给材质和构图完整观看时间；使用克制留白与可触摸的真实表面，不照搬原片超现实城市。</p><div class="film-links"><a href="https://www.youtube.com/watch?v=RGSN4S5jn4o" target="_blank" rel="noopener">Adobe · 参考影片 ↗</a></div></div></div></div>
+<h3 class="screen-heading">拟用屏幕文案 · 后期叠加</h3><p class="screen-note">16.5–18.5秒为审美旁白字幕；18.0–19.0秒出现低AI感主张。</p><div class="copy-grid"><div class="copy-unit"><div class="ja">AIらしさを、感じさせない。</div><div class="en">No AI look. Just the work.</div><div class="zh">中文解释：看不出AI的痕迹。</div></div></div>
+<details class="prompt-fold"><summary>英文生成提示词<span>778 字符</span></summary><div class="copy-tools"><button type="button" data-copy-id="prompt-KF02">复制完整提示词</button><a href="KF02-%E9%95%9C04-%E8%AF%B4%E6%98%8E%E4%B8%8E%E6%8F%90%E7%A4%BA%E8%AF%8D.txt" download>下载本镜说明与提示词</a></div><pre id="prompt-KF02">A refined Japanese cosmetics commercial, one exquisite material-focused product shot. A clear cylindrical serum bottle with pale champagne liquid, matte ivory cap and narrow blank cream label, left of center on pale limestone. A natural hand gently supports the bottle; accurate fingers, delicate skin texture. One long soft window reflection defines the glass curve; believable refraction, a tiny serum ripple. 100mm macro product photography, controlled shallow focus keeping bottle and fingers crisp, soft lateral daylight, warm ivory and champagne palette, subtle fine grain, beautiful quiet negative space across the right third. Understated luxury, physically credible surfaces. No words, logo, interface, flowers or magical glow. --ar 16:9 --v 8.1 --raw --stylize 80 --hd</pre></details></div></article>
+<article class="frame-card" id="KF03">
+<header class="frame-heading"><div class="frame-number">05<small>00:19–00:23<br>KF03</small></div><div><div class="eyebrow">镜05 · 现场手顺，变成看得见的步骤片</div><h2>把企业已确认的操作素材整理成看得清、能对照的培训影片。</h2><p><a href="../KAIROS-60s-%E6%AD%A3%E5%BC%8F%E6%8F%90%E6%A1%88-%E4%BA%A7%E5%93%81%E7%90%86%E5%BF%B5%E8%AF%A6%E8%A7%A3%E7%89%88.html#s05">查看正式提案本镜 ↗</a></p></div></header>
+<div class="design-only">镜头设计 · 图片待加入</div>
+<div class="frame-content"><div class="frame-cols"><div><div class="frame-block"><h3>画面 / 光线 / 材质</h3><p>大田区矢口工坊，前景平板占画幅约四成；新人一只拇指停在暂停位置，另一侧可见固定在台钳上的静止工件与前辈递来的下一件材料。屏幕留灰色换屏面，后期将已确认实操视频中的手部特写与真实现场匹配。50mm过肩近景，顶灯与侧窗混合光，磨损金属台面、棉质工服、哑光铝件，整洁但有使用痕迹。</p></div><div class="frame-block"><h3>镜头运动</h3><p>真实手部与片中手部同一构图；前辈递出下一件材料的手，接说明会上递资料的手。</p></div></div><div><div class="frame-block"><h3>参考片质感转译</h3><p class="case">Squarespace《A Tale As Old As Websites》；LINE WORKS职场质感</p><p>把数字成果落在一件真实工作被顺利接续的动作上；借具体器物与同事之间的轻微回应，而非教程式功能清单。</p><div class="film-links"><a href="https://newsroom.squarespace.com/blog/a-tale-as-old-as-websites-squarespace-and-barry-keoghan-2025-super-bowl-campaign" target="_blank" rel="noopener">Squarespace · 参考影片 ↗</a><a href="https://youtu.be/pluchCCPHwA" target="_blank" rel="noopener">LINE · 参考影片 ↗</a></div></div></div></div>
+<h3 class="screen-heading">拟用屏幕文案 · 后期叠加</h3><p class="screen-note">19.8–20.8秒呈现需求；20.8秒起呈现沿用已确认操作素材的步骤字幕。</p><div class="copy-grid"><div class="copy-unit"><div class="ja">この手順を、手元のアップで。</div><div class="en">Use hand close-ups for these steps.</div><div class="zh">中文解释：把这段操作整理为手部特写。</div></div><div class="copy-unit"><div class="ja">角度は、ここまで</div><div class="en">Angle: up to here</div><div class="zh">中文解释：关键角度沿用企业已确认的原步骤。</div></div></div>
+<details class="prompt-fold"><summary>英文生成提示词<span>790 字符</span></summary><div class="copy-tools"><button type="button" data-copy-id="prompt-KF03">复制完整提示词</button><a href="KF03-%E9%95%9C05-%E8%AF%B4%E6%98%8E%E4%B8%8E%E6%8F%90%E7%A4%BA%E8%AF%8D.txt" download>下载本镜说明与提示词</a></div><pre id="prompt-KF03">A premium Japanese workplace commercial still, a small precision workshop in Tokyo. Over-the-shoulder 50mm close view: a junior worker checks a tablet beside a stationary aluminum part secured in a bench vise; a senior coworker gently passes the next part into frame. Tablet fills about forty percent of the image, screen flat neutral dark gray for an approved training-video insert. Worn brushed metal bench, cotton workwear, organized everyday tools, tactile use marks. Soft side-window light mixed with practical overhead light, natural hand anatomy, restrained human response, subtle film grain, authentic small-workshop scale. Everything is stopped and safe. No operating machinery, technical measurements, words, logo or invented software UI. --ar 16:9 --v 8.1 --raw --stylize 55 --hd</pre></details></div></article>
+<article class="frame-card" id="KF04">
+<header class="frame-heading"><div class="frame-number">07<small>00:27–00:32<br>KF04</small></div><div><div class="eyebrow">镜07 · 成片之前，先发现那一句</div><h2>风险表达在成片之前被主动发现，修正后由企业确认。</h2><p><a href="../KAIROS-60s-%E6%AD%A3%E5%BC%8F%E6%8F%90%E6%A1%88-%E4%BA%A7%E5%93%81%E7%90%86%E5%BF%B5%E8%AF%A6%E8%A7%A3%E7%89%88.html#s07">查看正式提案本镜 ↗</a></p></div></header>
+<div class="design-only">镜头设计 · 图片待加入</div>
+<div class="frame-content"><div class="frame-cols"><div><div class="frame-block"><h3>画面 / 光线 / 材质</h3><p>独立广告图形空间。左侧是一块尚未完全展开的商品影片画框，内有同一护肤瓶；品牌紫细光沿下缘由左向右推进，在中央一道沉金色细框前明确停住。右侧仅留两块干净、无字的半透明文字承载面，分别用于风险原词与修正案；下角留人工确认按钮的位置。深灰底、克制紫光与沉金边缘，微弱玻璃反射；85mm透视感，近乎正视，避免花哨HUD。</p></div><div class="frame-block"><h3>镜头运动</h3><p>近景特写停半拍；完成后企划合上桌边一份企画书，接入下一镜。</p></div></div><div><div class="frame-block"><h3>参考片质感转译</h3><p class="case">Apple《Data Auction》</p><p>让抽象保护成为一个可见且有因果的动作：正在前进的东西被及时停住；用构图与停顿建立信任，不使用盾牌贴图。</p><div class="film-links"><a href="https://www.youtube.com/watch?v=NOXK4EVFmJY" target="_blank" rel="noopener">Apple · 参考影片 ↗</a></div></div></div></div>
+<h3 class="screen-heading">拟用屏幕文案 · 后期叠加</h3><p class="screen-note">27–32秒的生成中风险提示、修正与企业确认，采用独立广告图形。</p><div class="copy-grid"><div class="copy-unit"><div class="ja">表現リスクの可能性：断定的な表現
+修正案：毎日のケアに、心地よさを。［採用］</div><div class="en">Possible risk: absolute claim / Suggestion: &quot;Comfort for your daily care.&quot; [Use]</div><div class="zh">中文解释：提示断定式表达的潜在风险，给出修正案，由企业选择采用。</div></div><div class="copy-unit"><div class="ja">表現リスクを、公開前に。</div><div class="en">Risky wording, flagged before release.</div><div class="zh">中文解释：表达风险，在公开前提示。</div></div></div>
+<details class="prompt-fold"><summary>英文生成提示词<span>814 字符</span></summary><div class="copy-tools"><button type="button" data-copy-id="prompt-KF04">复制完整提示词</button><a href="KF04-%E9%95%9C07-%E8%AF%B4%E6%98%8E%E4%B8%8E%E6%8F%90%E7%A4%BA%E8%AF%8D.txt" download>下载本镜说明与提示词</a></div><pre id="prompt-KF04">A premium product-launch concept frame, precise physically lit motion-design set on dark graphite. At left an unfinished landscape film panel contains a clear champagne serum bottle with ivory cap. A single thin violet light line advances along the lower edge and stops at one clean muted-gold vertical bracket near center, visibly interrupting completion. At right two large unlettered translucent planes provide clear space for a risky phrase and its revised version, with one small empty confirmation area below. Frontal 85mm perspective, deep but legible blacks, restrained gold reflections, realistic glass thickness, disciplined proportions and negative space. A clear cause-and-effect composition. No words, software chrome, logo, locks, shields or busy sci-fi HUD. --ar 16:9 --v 8.1 --raw --stylize 90 --hd</pre></details></div></article>
+<article class="frame-card" id="KF05">
+<header class="frame-heading"><div class="frame-number">08<small>00:32–00:37<br>KF05</small></div><div><div class="eyebrow">镜08 · 资料留在日本，留在自己的环境里</div><h2>企业资料留在日本境内的独立环境，不流向公共AI训练。</h2><p><a href="../KAIROS-60s-%E6%AD%A3%E5%BC%8F%E6%8F%90%E6%A1%88-%E4%BA%A7%E5%93%81%E7%90%86%E5%BF%B5%E8%AF%A6%E8%A7%A3%E7%89%88.html#s08">查看正式提案本镜 ↗</a></p></div></header>
+<div class="design-only">镜头设计 · 图片待加入</div>
+<div class="frame-content"><div class="frame-cols"><div><div class="frame-block"><h3>画面 / 光线 / 材质</h3><p>比上一镜更稳的广告示意。一个半透明企业空间坐落在画面左中部，内部整齐放置企划书与少量安静流动的光点；外侧几束细光在边界处停住，内部光仍然流动。台面留足空间后期叠加准确日本轮廓，使企业空间明确位于日本内。缓慢拉远感的35mm俯斜视角，深石墨底、柔和沉金内光、低亮度品牌紫边线；不出现锁门、铁笼或数据机房奇观。</p></div><div class="frame-block"><h3>镜头运动</h3><p>全片最稳的一次拉远，两行承诺全程稳定显示5秒；节点光点向右拉出细光，接门店。</p></div></div><div><div class="frame-block"><h3>参考片质感转译</h3><p class="case">Apple《Data Auction》的“信息去向可视化”方法</p><p>用空间边界清楚区分内部资料与外部方向，把保护拍成发生中的事实关系；简洁、稳定，给两行承诺完整停留。</p><div class="film-links"><a href="https://www.youtube.com/watch?v=NOXK4EVFmJY" target="_blank" rel="noopener">Apple · 参考影片 ↗</a></div></div></div></div>
+<h3 class="screen-heading">拟用屏幕文案 · 后期叠加</h3><p class="screen-note">32.0–37.0秒，日本驻留与公共模型训练边界两行承诺同步稳定显示。</p><div class="copy-grid"><div class="copy-unit"><div class="ja">データは、日本国内で保管。</div><div class="en">Your data is stored in Japan.</div><div class="zh">中文解释：数据保存在日本国内。</div></div><div class="copy-unit"><div class="ja">パブリックAIモデルの学習に、使用しません。</div><div class="en">Never used to train public AI models.</div><div class="zh">中文解释：不用于公共AI模型训练。</div></div></div>
+<details class="prompt-fold"><summary>英文生成提示词<span>794 字符</span></summary><div class="copy-tools"><button type="button" data-copy-id="prompt-KF05">复制完整提示词</button><a href="KF05-%E9%95%9C08-%E8%AF%B4%E6%98%8E%E4%B8%8E%E6%8F%90%E7%A4%BA%E8%AF%8D.txt" download>下载本镜说明与提示词</a></div><pre id="prompt-KF05">A calm premium B2B launch-film concept image about a protected enterprise workspace. One small translucent architectural volume sits left of center on a dark graphite plane, holding a tidy stack of unlettered planning papers and a few softly circulating light points. External thin violet filaments stop at the glass boundary; warm interior light remains active. Leave the surrounding floor empty for an accurate Japan outline to be composited later, and reserve the right third for two clear text lines. Elevated oblique 35mm perspective, muted-gold interior, subtle violet edges, plausible glass and quiet reflections, controlled studio lighting. Trustworthy and composed. No generated map, words, logos, padlocks, shields or spectacular server room. --ar 16:9 --v 8.1 --raw --stylize 80 --hd</pre></details></div></article>
+<article class="frame-card" id="KF06">
+<header class="frame-heading"><div class="frame-number">09<small>00:37–00:43<br>KF06</small></div><div><div class="eyebrow">镜09 · 同一份冬季新品素材，延展为持续的内容</div><h2>同一份素材持续延展成同品牌的多支内容，并能形成高品质横版主片。</h2><p><a href="../KAIROS-60s-%E6%AD%A3%E5%BC%8F%E6%8F%90%E6%A1%88-%E4%BA%A7%E5%93%81%E7%90%86%E5%BF%B5%E8%AF%A6%E8%A7%A3%E7%89%88.html#s09">查看正式提案本镜 ↗</a></p></div></header>
+<div class="design-only">镜头设计 · 图片待加入</div>
+<div class="frame-content"><div class="frame-cols"><div><div class="frame-block"><h3>画面 / 光线 / 材质</h3><p>量产队列向横版主片过渡的关键帧。左侧保留一张小幅冬季饮品原图；同一道品牌紫细光向右分成四条，连接四张同品牌竖版作品，分别是杯身、拉花手部、窗边热气、店员递杯。最前方一格正在展开为较大的横版主片，内容是冬日窗边牛奶注入同一只灰褐色陶瓷杯。队列向画外延伸但不堆满全屏；冷暗图形底衬暖白窗光、奶泡与陶瓷肌理，50mm虚拟摄影机的浅透视。</p></div><div class="frame-block"><h3>镜头运动</h3><p>快速后拉显出队列规模，再急推入一格；横版画面中递出杯子的手，接下一镜商品页上停住的拇指。</p></div></div><div><div class="frame-block"><h3>参考片质感转译</h3><p class="case">Adobe《The World Is Your Canvas》＋Microsoft《The Future of Work With AI》</p><p>让一个需求直接改变可见画面；不同结果采用统一语法连续展开，最后把一件作品推到足够大的尺度观看。</p><div class="film-links"><a href="https://www.youtube.com/watch?v=RGSN4S5jn4o" target="_blank" rel="noopener">Adobe · 参考影片 ↗</a><a href="https://www.youtube.com/watch?v=Bf-dbS9CcRU" target="_blank" rel="noopener">Microsoft · 参考影片 ↗</a></div></div></div></div>
+<h3 class="screen-heading">拟用屏幕文案 · 后期叠加</h3><p class="screen-note">38.6–41.0秒为低成本SNS文案；41.0–43.0秒为横版主片品质主张。</p><div class="copy-grid"><div class="copy-unit"><div class="ja">SNS動画を、大量に、低コストで。</div><div class="en">Social videos — in volume, at low cost.</div><div class="zh">中文解释：大量、低成本地制作社交视频。</div></div><div class="copy-unit"><div class="ja">テレビCM級の品質を。</div><div class="en">TV-commercial quality.</div><div class="zh">中文解释：电视广告级的品质。</div></div></div>
+<details class="prompt-fold"><summary>英文生成提示词<span>813 字符</span></summary><div class="copy-tools"><button type="button" data-copy-id="prompt-KF06">复制完整提示词</button><a href="KF06-%E9%95%9C09-%E8%AF%B4%E6%98%8E%E4%B8%8E%E6%8F%90%E7%A4%BA%E8%AF%8D.txt" download>下载本镜说明与提示词</a></div><pre id="prompt-KF06">A premium motion-design keyframe: one winter cafe photograph becoming a coherent campaign. A small source photo at far left shows a taupe ceramic cup; four orderly portrait film panels recede through the center, featuring the same taupe cup and warm drink: ceramic detail, barista hands, window steam, a hand offering the cup. One larger landscape panel opens prominently in the foreground, showing milk pouring into that cup beside a winter window. Consistent restrained palette, natural warm highlights, convincing milk foam and ceramic texture, dark graphite graphic stage, slight violet edge light. Controlled 50mm virtual-camera perspective, strong visual hierarchy, space for connecting lines and copy in post. No text, logos, charts, pricing or software controls. --ar 16:9 --v 8.1 --raw --stylize 100 --hd</pre></details></div></article></main><section class="appendix-resources" id="parameters"><div class="wrap"><h2>参数与提示词参考</h2><p>完整生成提示词保留所选版本、画幅与风格参数。日文、英文与品牌信息采用正式提案文案后期叠加。</p><div class="resource-links"><a href="https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version" target="_blank" rel="noopener">Midjourney · Version ↗</a><a href="https://docs.midjourney.com/hc/en-us/articles/31894244298125-Aspect-Ratio" target="_blank" rel="noopener">Midjourney · Aspect Ratio ↗</a><a href="https://docs.midjourney.com/hc/en-us/articles/32196176868109-Stylize" target="_blank" rel="noopener">Midjourney · Stylize ↗</a></div></div></section>
+<footer><div class="wrap">KAIROS · 镜头视觉附录 · 6个代表镜头 · 16:9</div></footer><div id="copy-status" role="status" aria-live="polite"></div><script>
+(() => {
+  const toggle = document.getElementById('overlay-toggle');
+  if (toggle) toggle.addEventListener('click', () => {
+    const on = document.documentElement.dataset.overlays !== 'off';
+    document.documentElement.dataset.overlays = on ? 'off' : 'on';
+    toggle.setAttribute('aria-pressed', String(!on));
+    toggle.textContent = '信息叠加：' + (on ? '关' : '开');
+  });
+  document.getElementById('print-button').addEventListener('click', () => window.print());
+  let statusTimer;
+  function status(text) {
+    const box = document.getElementById('copy-status');
+    box.textContent = text;
+    box.classList.add('visible');
+    clearTimeout(statusTimer);
+    statusTimer = setTimeout(() => box.classList.remove('visible'), 2200);
+  }
+  async function copy(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      try { await navigator.clipboard.writeText(text); return true; } catch (_) {}
+    }
+    const area = document.createElement('textarea');
+    area.value = text;
+    area.style.cssText = 'position:fixed;top:0;left:-9999px';
+    document.body.appendChild(area);
+    area.select();
+    let copied = false;
+    try { copied = document.execCommand('copy'); } catch (_) {}
+    area.remove();
+    return copied;
+  }
+  document.addEventListener('click', async event => {
+    const button = event.target.closest('[data-copy-id]');
+    if (!button) return;
+    const prompt = document.getElementById(button.dataset.copyId);
+    if (!prompt) return;
+    const copied = await copy(prompt.textContent);
+    if (!copied) {
+      const selection = window.getSelection();
+      const range = document.createRange();
+      range.selectNodeContents(prompt);
+      selection.removeAllRanges();
+      selection.addRange(range);
+    }
+    status(copied ? '提示词已复制' : '提示词已选中，可按 ⌘C / Ctrl+C 复制');
+  });
+})();
+</script></body></html>

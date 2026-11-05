@@ -1,0 +1,2162 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="一句话：在日本以&quot;替用户执行&quot;取胜。首发以机酒与在日居民餐饮（预約困難店、多人聚餐两个小切口）为 P0（U25）；发现页为与对话并列的主线模块（U26）；MVP 同时带上邮箱观察项和一组勾子（含跨境游客餐饮），先验证用户愿不愿意把事交出去。">
+<title>日本 Personal Agent 战略</title>
+<style>
+:root{--paper:#f7f7f2;--card:#fff;--ink:#172f32;--muted:#5d7073;--line:#d9e1db;--soft:#edf1eb;--accent:#176c57;--accent-ink:#fff;--lime:#d6eb9c;--side:#143c38;--side-ink:#e6efe3;--side-muted:#a9c2b3;--side-hover:#28554b;--quote:#eaf3dc;
+--c-main:#176c57;--c-main-bg:#dcefe6;--c-second:#2f6491;--c-second-bg:#e1ebf5;--c-hook:#8a4b9c;--c-hook-bg:#f1e5f4;--c-support:#56707a;--c-support-bg:#e6ecee;--c-later:#93621a;--c-later-bg:#f6ebd8;--c-hold:#8b3a3a;--c-hold-bg:#f5e1df;--c-special:#5b5f9c;--c-special-bg:#e6e7f5;
+--sidebar:272px;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#111a19;--card:#17221f;--ink:#e3ebe5;--muted:#9fb0aa;--line:#2b3b37;--soft:#1d2a27;--accent:#7fcfae;--accent-ink:#0f1d19;--lime:#c8e08a;--side:#0c1513;--side-ink:#dbe7df;--side-muted:#86a093;--side-hover:#1d3530;--quote:#1d2c22;
+--c-main:#8fd8b8;--c-main-bg:#173229;--c-second:#9cc4ea;--c-second-bg:#18283a;--c-hook:#d6a8e3;--c-hook-bg:#2e1f34;--c-support:#a9bcc3;--c-support-bg:#222c30;--c-later:#e4bb7a;--c-later-bg:#33281a;--c-hold:#eda5a0;--c-hold-bg:#3a2120;--c-special:#b5b8ee;--c-special-bg:#25263d;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#111a19;--card:#17221f;--ink:#e3ebe5;--muted:#9fb0aa;--line:#2b3b37;--soft:#1d2a27;--accent:#7fcfae;--accent-ink:#0f1d19;--lime:#c8e08a;--side:#0c1513;--side-ink:#dbe7df;--side-muted:#86a093;--side-hover:#1d3530;--quote:#1d2c22;
+--c-main:#8fd8b8;--c-main-bg:#173229;--c-second:#9cc4ea;--c-second-bg:#18283a;--c-hook:#d6a8e3;--c-hook-bg:#2e1f34;--c-support:#a9bcc3;--c-support-bg:#222c30;--c-later:#e4bb7a;--c-later-bg:#33281a;--c-hold:#eda5a0;--c-hold-bg:#3a2120;--c-special:#b5b8ee;--c-special-bg:#25263d;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--paper);color:var(--ink);font:15.5px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Hiragino Sans","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid #3e87a8;outline-offset:2px}
+.progress{position:fixed;top:0;left:var(--sidebar);right:0;height:3px;z-index:60}.progress i{display:block;height:100%;width:0;background:var(--accent)}
+.sidebar{position:fixed;inset:0 auto 0 0;width:var(--sidebar);background:var(--side);color:var(--side-ink);display:flex;flex-direction:column;padding:26px 16px 16px;z-index:50}
+.brand{display:flex;align-items:center;gap:10px;font-size:21px;letter-spacing:3px;font-weight:650;padding:0 8px}
+.brand i{width:24px;height:24px;border:1px solid #cee5ac;border-radius:7px;transform:rotate(45deg);display:grid;place-items:center}.brand i:after{content:"";width:9px;height:9px;border-radius:50%;background:var(--lime)}
+.side-title{font-size:13px;line-height:1.6;color:var(--side-muted);margin:14px 8px 18px}
+.nav{overflow:auto;flex:1;scrollbar-width:thin}
+.nav-item{display:flex;gap:8px;text-decoration:none;color:var(--side-ink);border-radius:6px;padding:6px 8px;line-height:1.5}
+.nav-item span:first-child{flex:0 0 auto;min-width:22px;color:var(--side-muted);font-variant-numeric:tabular-nums}
+.nav-item.l2{font-size:13px;font-weight:550;margin-top:8px}.nav-item.l3{font-size:12px;padding-left:20px;opacity:.86}
+.nav-item:hover{background:var(--side-hover)}.nav-item.active{background:var(--lime);color:#163d35;opacity:1}.nav-item.active span:first-child{color:#345c37}
+.side-foot{display:flex;gap:8px;padding:12px 8px 0;border-top:1px solid #ffffff1f}
+.side-foot button{flex:1;background:transparent;border:1px solid #ffffff33;color:var(--side-ink);border-radius:7px;padding:7px;font:inherit;font-size:12px;cursor:pointer}.side-foot button:hover{background:var(--side-hover)}
+.menu-btn{display:none}
+main{margin-left:var(--sidebar);padding:56px 56px 96px}
+.page{max-width:900px;margin:0 auto}
+.hero{border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:8px}
+.eyebrow{font-size:12px;letter-spacing:2px;color:var(--accent);font-weight:600}
+h1{font-size:34px;line-height:1.3;margin:8px 0 12px;letter-spacing:.5px}
+.meta{color:var(--muted);font-size:13.5px}
+.chapter{padding-top:12px}
+h2{font-size:24px;line-height:1.4;margin:48px 0 14px;padding-top:8px;border-top:2px solid var(--ink)}
+h3{font-size:18px;line-height:1.5;margin:34px 0 10px}
+.hn{display:inline-block;min-width:2.2em;margin-right:8px;color:var(--accent);font-variant-numeric:tabular-nums}
+p,li{margin:.6em 0}ul,ol{padding-left:1.4em}
+strong{font-weight:650}
+.verdict{margin:18px 0 26px;padding:22px 26px;background:var(--quote);border-left:5px solid var(--accent);border-radius:0 12px 12px 0;font-size:18px;line-height:1.75}
+.verdict p{margin:0}
+.leadin{margin:6px 0 18px;padding:12px 16px;background:var(--soft);border-left:3px solid var(--accent);border-radius:0 10px 10px 0}
+.key-tag{display:inline-block;margin-left:6px;padding:0 7px;border-radius:999px;background:var(--lime);color:#163d35;font-size:11px;font-style:normal;font-weight:650;line-height:18px;vertical-align:1px;white-space:nowrap}
+.nav-item.key{opacity:1;font-weight:600}
+.nav-item.active .key-tag{background:#163d35;color:var(--lime)}
+.leadin-tag{display:inline-block;margin-right:8px;padding:0 8px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-size:12px;font-weight:650;vertical-align:2px}
+.minihead{margin:26px 0 8px;font-size:16px;font-weight:650;color:var(--ink)}
+li>ul,li>ol{margin:.35em 0}
+ul>li::marker{color:var(--accent)}
+#s0 ~ ol,ol.cards{counter-reset:f;list-style:none;padding:0;display:grid;gap:10px}
+#s0 ~ ol>li,ol.cards>li{counter-increment:f;position:relative;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px 12px 52px;margin:0}
+#s0 ~ ol>li:before,ol.cards>li:before{content:counter(f);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-size:13px;font-weight:650;display:grid;place-items:center;line-height:1}
+ol.cards>li>strong{display:block;margin-bottom:2px}
+.note{margin:16px 0;padding:12px 16px;background:var(--soft);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;font-size:14px}.note p{margin:.3em 0}
+ul.spec>li{margin:.45em 0}ul.spec>li>strong{color:var(--accent)}
+.arch{margin:18px 0;display:grid;gap:8px;font-size:13.5px;line-height:1.5}
+.arch .row{display:grid;gap:8px}.arch .r3{grid-template-columns:repeat(3,1fr)}
+.arch .box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.arch .box b{display:block;font-size:14px;margin-bottom:3px}.arch .box small{color:var(--muted);display:block}
+.arch .in{border-style:dashed;background:transparent}.arch .core{border:2px solid var(--accent);background:var(--quote)}
+.arch .gate{background:var(--soft)}.arch .out{background:var(--c-main-bg);border-color:var(--c-main)}
+.arch .arrow{text-align:center;color:var(--accent);font-size:18px;line-height:1;margin:-2px 0}
+.arch .lbl{font-size:12px;color:var(--muted);letter-spacing:1px}
+@media (max-width:700px){.arch .r3{grid-template-columns:1fr}}
+figure.tbl{margin:22px 0}
+figcaption{font-size:13.5px;font-weight:600;margin-bottom:8px}.tn{color:var(--accent);margin-right:10px;font-variant-numeric:tabular-nums}
+.tw{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+figure .tw{margin:0}
+figure.wide{width:min(1680px,calc(100vw - var(--sidebar) - 48px));position:relative;left:50%;transform:translateX(-50%)}
+table.fixed{table-layout:fixed;width:100%}td[rowspan]{background:var(--card);border-right:1px solid var(--line)}figure.wide th{white-space:normal}table.merged td:first-child{font-weight:inherit;min-width:0}table.merged td.lead{font-weight:550}td .sub{display:block;margin-top:4px;font-weight:400;font-size:.92em;color:var(--muted)}figure.wide th:first-child,figure.wide table:not(.merged) td:first-child,figure.wide td.c0{position:sticky;left:0;z-index:1;background:var(--card);box-shadow:1px 0 0 var(--line)}
+figure.wide th:first-child{background:var(--soft)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;line-height:1.65}
+th{background:var(--soft);text-align:left;font-weight:600;white-space:nowrap}
+th,td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:550;min-width:6.5em}
+tbody tr:hover{background:var(--soft)}
+tr:target{animation:flash 2s ease}@keyframes flash{0%,40%{background:var(--lime);color:#163d35}100%{background:transparent}}
+pre{margin:16px 0;padding:14px 16px;background:var(--soft);border:1px solid var(--line);border-radius:10px;overflow-x:auto;font-size:12.5px;line-height:1.5}pre code{background:none;padding:0}
+.chip{display:inline-block;padding:1px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.c-main{color:var(--c-main);background:var(--c-main-bg)}.c-second{color:var(--c-second);background:var(--c-second-bg)}.c-hook{color:var(--c-hook);background:var(--c-hook-bg)}.c-support{color:var(--c-support);background:var(--c-support-bg)}.c-later{color:var(--c-later);background:var(--c-later-bg)}.c-hold{color:var(--c-hold);background:var(--c-hold-bg)}.c-special{color:var(--c-special);background:var(--c-special-bg)}
+.c-na{color:var(--muted);background:var(--soft);border:1px solid var(--line)}.tier-note{display:block;margin-top:4px;font-size:12.5px;line-height:1.5;color:var(--muted)}.tier-inline{font-size:12.5px;color:var(--muted);margin:0 3px}.c-p0{color:var(--accent-ink);background:var(--accent)}.c-p1{color:var(--c-second);background:var(--c-second-bg);border:1px solid var(--c-second)}.c-p2{color:var(--c-support);background:var(--c-support-bg);border:1px solid var(--line)}
+.meta blockquote{margin:0;padding:0;border:0;font-size:13.5px}.meta p{margin:.3em 0}
+h4{font-size:15.5px;margin:22px 0 6px}
+.c-e0{color:var(--c-hold);background:var(--c-hold-bg)}.c-e1{color:var(--c-later);background:var(--c-later-bg)}.c-e2{color:var(--c-second);background:var(--c-second-bg)}.c-e3{color:var(--c-main);background:var(--c-main-bg)}
+.tag{display:inline-block;font-size:11.5px;padding:0 7px;margin:0 2px;border:1px solid var(--line);border-radius:5px;color:var(--muted);vertical-align:1px;line-height:1.6}
+a.ref{font-size:.82em;font-weight:600;text-decoration:none;padding:0 3px;border-radius:4px;background:var(--soft);font-variant-numeric:tabular-nums}a.ref:hover{background:var(--lime);color:#163d35}
+a.xref{text-decoration-style:dotted}
+code{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:.88em;background:var(--soft);padding:1px 5px;border-radius:4px}
+code.formula{display:block;width:fit-content;max-width:100%;overflow-x:auto;margin:14px 0;padding:12px 18px;font-size:14px;border:1px solid var(--line);background:var(--card);border-radius:8px}
+p>code.formula{display:block}
+.tip{position:fixed;z-index:100;max-width:340px;background:var(--ink);color:var(--paper);font-size:12.5px;line-height:1.55;padding:8px 11px;border-radius:7px;pointer-events:none;opacity:0;transition:opacity .12s}
+.tip.on{opacity:1}
+.top{position:fixed;right:22px;bottom:22px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:18px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s}.top.on{opacity:1;pointer-events:auto}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
+.backdrop{display:none}
+@media (max-width:960px){
+:root{--sidebar:0px}html{scroll-padding-top:64px}
+.sidebar{width:min(300px,86vw);transform:translateX(-100%);transition:transform .2s}
+body.nav-open .sidebar{transform:none}
+body.nav-open .backdrop{display:block;position:fixed;inset:0;background:#0007;z-index:40}
+.menu-btn{display:inline-flex;position:fixed;left:12px;top:10px;z-index:45;align-items:center;gap:6px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}
+main{padding:56px 16px 80px}
+h1{font-size:26px}h2{font-size:21px}h3{font-size:17px}
+.verdict{font-size:16px;padding:16px 18px}
+#s0 ~ ol>li,ol.cards>li{padding:10px 12px 10px 46px}
+}
+@media print{.sidebar,.progress,.menu-btn,.top,.tip,.backdrop{display:none!important}main{margin:0;padding:0}.tw{overflow:visible;border:0}table{font-size:11px}figure,tr,.verdict{break-inside:avoid}h2{break-after:avoid}a.ref{background:none}figure.wide{width:auto;left:0;transform:none}figure.wide td:first-child{position:static}}
+</style>
+<link data-one2x-material="true" rel="stylesheet" href="../../one2x-material.css"></head>
+<body class="one2x-editorial-material"><nav id="one2x-material-nav" aria-label="五片制作报告导航"><a class="one2x-brand" href="../../index.html"><img src="../../assets/one2x-wordmark.svg" alt="One2X"><span class="one2x-material-label">工作材料快照 · 供制作讨论</span></a><a class="one2x-back" href="../../index.html">返回五片总览</a></nav>
+<div class="progress"><i></i></div>
+<button class="menu-btn" type="button" aria-label="打开目录">☰ 目录</button>
+<div class="backdrop"></div>
+<aside class="sidebar" aria-label="目录">
+  <div class="brand"><i></i>IRIS</div>
+  <div class="side-title">日本 Personal Agent<br>场景深度战略研究</div>
+  <nav class="nav"><a class="nav-item l2" href="#s0"><span>0</span><span>结论</span></a>
+<a class="nav-item l3" href="#s0-1"><span>0.1</span><span>章节导读</span></a>
+<a class="nav-item l2" href="#s1"><span>1</span><span>战略选择总览</span></a>
+<a class="nav-item l2" href="#s2"><span>2</span><span>市场约束与竞争格局</span></a>
+<a class="nav-item l3" href="#s2-1"><span>2.1</span><span>六条约束</span></a>
+<a class="nav-item l3" href="#s2-2"><span>2.2</span><span>竞争格局</span></a>
+<a class="nav-item l2" href="#s3"><span>3</span><span>在哪里竞争：场景树</span></a>
+<a class="nav-item l3" href="#s3-1"><span>3.1</span><span>拆分原则</span></a>
+<a class="nav-item l3 key" href="#s3-2"><span>3.2</span><span>场景树<em class="key-tag">重点</em></span></a>
+<a class="nav-item l3" href="#s3-3"><span>3.3</span><span>对照竞品已验证场景的取舍</span></a>
+<a class="nav-item l2" href="#s4"><span>4</span><span>在哪里竞争：优先级</span></a>
+<a class="nav-item l3" href="#s4-1"><span>4.1</span><span>评估框架：agent 做这件事的优劣势</span></a>
+<a class="nav-item l3 key" href="#s4-2"><span>4.2</span><span>评估总表<em class="key-tag">重点</em></span></a>
+<a class="nav-item l3" href="#s4-3"><span>4.3</span><span>综合结论</span></a>
+<a class="nav-item l2" href="#s5"><span>5</span><span>如何取胜：Aha 时刻与价值主张</span></a>
+<a class="nav-item l3 key" href="#s5-1"><span>5.1</span><span>Aha 时刻与授权阶梯<em class="key-tag">重点</em></span></a>
+<a class="nav-item l3" href="#s5-2"><span>5.2</span><span>A1 餐饮·跨境游客（第二梯队末位）</span></a>
+<a class="nav-item l3" href="#s5-3"><span>5.3</span><span>A1 餐饮·在日居民（两个小切口，P0 主线）</span></a>
+<a class="nav-item l3" href="#s5-4"><span>5.4</span><span>A2 机票酒店比价与盯价（价值证明）</span></a>
+<a class="nav-item l3" href="#s5-5"><span>5.5</span><span>A3 线上购物（品牌独立站）</span></a>
+<a class="nav-item l3" href="#s5-6"><span>5.6</span><span>A4 线下购物</span></a>
+<a class="nav-item l3" href="#s5-7"><span>5.7</span><span>A5 美容沙龙预约与复约</span></a>
+<a class="nav-item l3" href="#s5-8"><span>5.8</span><span>C1 闲置订阅发现与解约（勾子，兼作观察项）</span></a>
+<a class="nav-item l3" href="#s5-9"><span>5.9</span><span>A6 演唱会与限量品抽选（二次元获客勾子）</span></a>
+<a class="nav-item l3" href="#s5-10"><span>5.10</span><span>A5 夜间娱乐（电话能力获客勾子）</span></a>
+<a class="nav-item l3" href="#s5-11"><span>5.11</span><span>B1 婚恋辅助（获客勾子）</span></a>
+<a class="nav-item l3" href="#s5-12"><span>5.12</span><span>配套与 P2 场景的处理</span></a>
+<a class="nav-item l2" href="#s6"><span>6</span><span>商业模式与单位经济</span></a>
+<a class="nav-item l3" href="#s6-1"><span>6.1</span><span>谁付钱：按阶段演进</span></a>
+<a class="nav-item l3" href="#s6-2"><span>6.2</span><span>任务贡献</span></a>
+<a class="nav-item l3" href="#s6-3"><span>6.3</span><span>市场规模</span></a>
+<a class="nav-item l2" href="#s7"><span>7</span><span>取胜需要的能力</span></a>
+<a class="nav-item l3" href="#s7-1"><span>7.1</span><span>执行层：通用能力底座与三条执行路径</span></a>
+<a class="nav-item l3" href="#s7-2"><span>7.2</span><span>年龄与身份风险管理</span></a>
+<a class="nav-item l3" href="#s7-3"><span>7.3</span><span>授权与责任</span></a>
+<a class="nav-item l3" href="#s7-4"><span>7.4</span><span>商户标准与金融分工</span></a>
+<a class="nav-item l2" href="#s8"><span>8</span><span>管理系统：90 天验证与切换条件</span></a>
+<a class="nav-item l3" href="#s8-1"><span>8.1</span><span>一票否决项（第 1–15 天）</span></a>
+<a class="nav-item l3" href="#s8-2"><span>8.2</span><span>里程碑</span></a>
+<a class="nav-item l3" href="#s8-3"><span>8.3</span><span>判定门槛</span></a>
+<a class="nav-item l3" href="#s8-4"><span>8.4</span><span>切换条件</span></a>
+<a class="nav-item l2" href="#s9"><span>9</span><span>反对意见与风险</span></a>
+<a class="nav-item l3" href="#s9-1"><span>9.1</span><span>反对意见与回应</span></a>
+<a class="nav-item l3" href="#s9-2"><span>9.2</span><span>风险</span></a>
+<a class="nav-item l2" href="#appendix-a"><span>附A</span><span>方法与证据</span></a>
+<a class="nav-item l3" href="#appendix-a-1"><span>A.1</span><span>决策方法</span></a>
+<a class="nav-item l3" href="#appendix-a-2"><span>A.2</span><span>方法选型</span></a>
+<a class="nav-item l3" href="#appendix-a-3"><span>A.3</span><span>评估维度</span></a>
+<a class="nav-item l3" href="#appendix-a-4"><span>A.4</span><span>证据分级</span></a>
+<a class="nav-item l3" href="#appendix-a-5"><span>A.5</span><span>框架盲区</span></a>
+<a class="nav-item l2" href="#refs"><span>源</span><span>参考资料</span></a></nav>
+  <div class="side-foot"><button id="theme" type="button">切换深浅</button><button id="print" type="button">打印</button></div>
+</aside>
+<main>
+  <div class="page">
+    <header class="hero">
+      <div class="eyebrow">IRIS · JAPAN STRATEGY</div>
+      <h1>日本 Personal Agent 场景深度战略研究</h1>
+      <div class="meta"><p>2026-10-20 · 决策对象：Iris 在日本的首发场景、MVP 范围、取胜方式、能力建设与 90 天验证 · 约 2.3 万字（含表格），通读约 45 分钟；只看 §0 约 3 分钟。</p></div>
+    </header>
+    <section class="chapter"><h2 id="s0"><span class="hn">0</span>结论</h2>
+<blockquote class="verdict">
+<p><strong>一句话：在日本以"替用户执行"取胜。首发以机酒与在日居民餐饮（预約困難店、多人聚餐两个小切口）为 P0（<a class="ref" href="#src-U25" data-tip="产品决定 2026-10-21 — 在日居民餐饮（预約困難店盯位与抽选、多人聚餐协调）升为 P0 主线，与机酒并列；投入深度不变（轻量接入）；跨境游客餐饮仍为勾子。理由：餐饮高频，是记忆与常设规则最能发挥的场景；原判断保留为 &#167;8.4 的切换条件">U25</a>）；发现页为与对话并列的主线模块（<a class="ref" href="#src-U26" data-tip="产品决定 2026-10-26 — 产品由对话、发现、agent 设置三块组成，发现页由观察项升为与对话并列的主线模块，引发交办与推测被否定的比例设门槛；写入日历与出发提醒、跟到当天、盯到免费取消截止、下月核验等需要新权限或持续盯守的后续动作，首次在回执里给选项、之后同类自动，不默认做；向商家透露本人基本信息随任务授权，他人信息与健康类信息单独确认、不自动入记忆">U26</a>）；MVP 同时带上邮箱观察项和一组勾子（含跨境游客餐饮），先验证用户愿不愿意把事交出去。</strong></p>
+</blockquote>
+<p>Iris 在日本有本地渠道、企业背书和本土合规，但多数生活任务已被成熟平台覆盖。本报告回答一个问题：在哪些任务里，这些资产能变成用户感知得到的增量和可收费的商户权益。</p>
+<figure class="tbl" id="t0-1"><figcaption><span class="tn">表 0-1</span>场景分层与 MVP 范围<span class="tag">详见 <a class="xref" href="#s4-3">&#167;4.3</a></span></figcaption><div class="tw"><table class="merged">
+<thead>
+<tr>
+<th>分层</th>
+<th>场景</th>
+<th>进 MVP</th>
+<th>一句话理由</th>
+</tr>
+</thead>
+<tbody><tr><td class="c0 lead"><span class="chip c-p0">P0 主线</span></td><td>机票酒店比价与盯价</td><td>是</td><td>唯一执行增量高、省下的钱以日元可见、确认邮件就在邮箱里的场景</td></tr>
+<tr><td rowspan="2" class="c0 lead"><span class="chip c-p0">P0 主线</span><span class="tier-note"><a class="ref" href="#src-U25" data-tip="产品决定 2026-10-21 — 在日居民餐饮（预約困難店盯位与抽选、多人聚餐协调）升为 P0 主线，与机酒并列；投入深度不变（轻量接入）；跨境游客餐饮仍为勾子。理由：餐饮高频，是记忆与常设规则最能发挥的场景；原判断保留为 &#167;8.4 的切换条件">U25</a></span></td><td>预約困難店盯位与抽选</td><td>是</td><td>本地人真正花力气的订位：反复打电话、盯放位、抽选；高频，记忆与常设规则最能发挥</td></tr>
+<tr><td>多人聚餐协调</td><td>是</td><td>幹事最头疼选店与调日程，agent 在群里一次办完</td></tr>
+<tr><td rowspan="3" class="c0 lead"><span class="chip c-p1">P1 第二梯队</span></td><td>美容沙龙复约</td><td>否，机酒过门槛后</td><td>复发高、上下文好拿，但用户在现有平台上自己就能约</td></tr>
+<tr><td>线上购物选型与比价</td><td>否，机酒过门槛后</td><td>伙伴多，但增量有限</td></tr>
+<tr><td>跨境游客餐饮</td><td>是，勾子形态</td><td>增量最高、故事好讲；但旅游低频，完整接入排末位</td></tr>
+<tr><td class="c0 lead"><span class="chip c-na">观察项</span></td><td>邮箱里的订单、账单、订阅与预约确认</td><td>是</td><td>高频入口的候选，先测采纳率；上线以 Gmail 受限权限审核通过为前提</td></tr>
+<tr><td class="c0 lead">主线模块</td><td>发现页：按私人上下文猜你想做、需要的事</td><td>是</td><td>与对话、agent 设置并列的核心模块（<a class="ref" href="#src-U26" data-tip="产品决定 2026-10-26 — 产品由对话、发现、agent 设置三块组成，发现页由观察项升为与对话并列的主线模块，引发交办与推测被否定的比例设门槛；写入日历与出发提醒、跟到当天、盯到免费取消截止、下月核验等需要新权限或持续盯守的后续动作，首次在回执里给选项、之后同类自动，不默认做；向商家透露本人基本信息随任务授权，他人信息与健康类信息单独确认、不自动入记忆">U26</a>）；用户自己打开、不推送；引发交办的比例与推测被否定的比例设门槛（<a class="xref" href="#s8-3">&#167;8.3</a>）</td></tr>
+<tr><td class="c0 lead"><span class="chip c-p1">P1 勾子</span></td><td>闲置订阅解约、抽选、美容优惠、夜间娱乐电话、婚恋资料</td><td>是</td><td>各展示一种能力，由通用能力跑通，不做针对性优化</td></tr>
+<tr><td class="c0 lead"><span class="chip c-p2">P2</span></td><td>普通餐厅预约、退税、行政搬家、医疗与资金等</td><td>不做针对性投入</td><td>现成工具已够，或受专业资格限制，由通用能力承接</td></tr></tbody>
+</table></div></figure>
+<p class="minihead">用户心智与收费</p>
+<ul>
+<li><strong>用户心智</strong>：替你省钱、省事、体验更好生活。省钱：机酒盯价、降价重订、闲置订阅；省事：聚餐协调、改约取消、邮箱跟进、行程变动；体验更好生活：预約困難店、演唱会与限量品抽选，Iris 替你守着、替你报上，拿不到时说明停在哪一步，不承诺结果（<a class="xref" href="#s5-1">&#167;5.1</a> 原则 7）。每个任务结束时给出前后对照和回执。</li>
+<li><strong>收费</strong>：短期只收低价用户订阅、不向商户收费、接受可控补贴（<a class="ref" href="#src-U21" data-tip="战略讨论 2026-10-19 — 短期不可能向商户收钱，只收低价用户订阅；前期补贴可以接受，只要不离谱">U21</a>）；短中期按结果收费（成交抽佣、节省分成）；长期只向商户抽佣、用户免费；联盟分成在任何阶段都不可用（<a class="ref" href="#src-S02" data-tip="楽天 Affiliate 规则">S02</a>、<a class="ref" href="#src-S30" data-tip="Recruit HOT PEPPER Web 服务指南">S30</a>，<a class="xref" href="#s6">&#167;6</a>）。</li>
+</ul>
+<p class="minihead">核心发现</p>
+<p>以下均为本文判断，证据等级见<a class="xref" href="#appendix-a">附录 A</a>。</p>
+<ol class="cards">
+<li><strong>差异化在执行层，不在推荐层。</strong> 推荐已被食べログ、価格.com、Google Maps 占满；能打电话、持续盯价并锁单、订完后替用户跟进变化，才是用户感知得到的增量（<a class="ref" href="#src-S31" data-tip="HOT PEPPER API 参考">S31</a>、<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>）。</li>
+<li><strong>用户能看见前后对照的任务更早成立。</strong> 省了多少、退回多少、订没订到，用户能自己判断，也才能按结果收费；机酒盯价和取消闲置订阅都属此类（<a class="ref" href="#src-U04" data-tip="战略讨论补充 2026-10-16 — 用户心智为省钱省时间；前后对照清晰的任务更早成立；按结果收费含成交抽佣与节省分成；收费按短期订阅、短中期按结果、长期商户抽佣三阶段演进">U04</a>）。</li>
+<li><strong>在日居民的普通餐厅预约没有增量。</strong> 本地人一两分钟就能订到；值得做的只有预約困難店和幹事式聚餐协调两个小切口（<a class="ref" href="#src-U12" data-tip="战略讨论 2026-10-19 — 对本地人，电话预约和网约成本都不高，餐饮预约的增量价值低，不该作 P0；只保留预約困難店盯位抽选与多人聚餐协调两个小切口；机酒作 P0 价值证明；邮箱订单与账单持续跟进作 90 天观察项">U12</a>、<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>）。</li>
+<li><strong>跨境游客餐饮增量最高，但只做日本时是低频交易。</strong> 记忆、主动性和本地渠道都发挥不出来；因为故事好讲，先以勾子形态进 MVP，完整接入排第二梯队末位（<a class="ref" href="#src-U14" data-tip="战略讨论 2026-10-19 — 场景评估先拆 agent 做这件事的优劣势；跨境游客的常驻平台在国内且不在意合规，本土渠道优势发挥不出；旅游对单个用户低频，只做日本时主动性与长期记忆无回报">U14</a>、<a class="ref" href="#src-U15" data-tip="战略讨论 2026-10-19 — 旅游是公认的低频需求，除非做全球旅游市场；只做日本时跨境游客的长期记忆、主动性与本地渠道价值都不高；跨境餐饮保留第二梯队，排末位">U15</a>、<a class="ref" href="#src-U20" data-tip="战略讨论 2026-10-19 — 跨境游客餐饮也进 MVP：故事好讲，是好的勾子">U20</a>）。</li>
+<li><strong>P0 为机酒加在日居民餐饮，按周发生的入口仍待验证。</strong> 机酒一年几次；餐饮两个小切口按事件与按月发生，是记忆与常设规则最能发挥的场景，所以升为 P0（<a class="ref" href="#src-U25" data-tip="产品决定 2026-10-21 — 在日居民餐饮（预約困難店盯位与抽选、多人聚餐协调）升为 P0 主线，与机酒并列；投入深度不变（轻量接入）；跨境游客餐饮仍为勾子。理由：餐饮高频，是记忆与常设规则最能发挥的场景；原判断保留为 &#167;8.4 的切换条件">U25</a>）；订完后的航班变动跟进能多几个接触点；但都补不上按周发生的需求，所以把邮箱持续跟进列为 90 天观察项（<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>）；发现页由观察项升为与对话并列的主线模块（<a class="ref" href="#src-U23" data-tip="战略讨论 2026-10-20 — Iris 的增量是按偏好推测任务意图并完成，不是推荐；发现页回答&quot;猜你想做、猜你需要&quot;，呈现新手规则卡、信息、想法与备好的任务，用户自己打开、不推送；用户可把同类任务设为常设规则，之后由 Iris 直接办、事后通知">U23</a>、<a class="ref" href="#src-U26" data-tip="产品决定 2026-10-26 — 产品由对话、发现、agent 设置三块组成，发现页由观察项升为与对话并列的主线模块，引发交办与推测被否定的比例设门槛；写入日历与出发提醒、跟到当天、盯到免费取消截止、下月核验等需要新权限或持续盯守的后续动作，首次在回执里给选项、之后同类自动，不默认做；向商家透露本人基本信息随任务授权，他人信息与健康类信息单独确认、不自动入记忆">U26</a>），按记忆、邮箱、日历与收藏推测用户想做、需要什么，给出信息、想法或备好的任务，引发交办的比例设门槛；现有平台看不到这些私人上下文，只能按兴趣推荐（<a class="xref" href="#s2-2">&#167;2.2</a>）。</li>
+<li><strong>两条硬约束不随伙伴背书消失。</strong> 医疗、税务、资金执行受专业资格限制，只能汇总、预填与协调；夜间娱乐、婚恋、含酒精餐饮有年龄门槛，产品必须掌握用户年龄（<a class="ref" href="#src-S11" data-tip="厚劳省：保険医療機関及び保険医療養担当規則">S11</a>、<a class="ref" href="#src-S23" data-tip="国税厅 No.9204">S23</a>、<a class="ref" href="#src-S41" data-tip="e-Gov：風俗営業等の規制及び業務の適正化等に関する法律">S41</a>、<a class="ref" href="#src-S24" data-tip="Pairs 安全措施">S24</a>）。</li>
+</ol>
+<p class="minihead">阅读须知</p>
+<ul>
+<li><strong>支持什么决定</strong>：按 <a class="xref" href="#s4-3">&#167;4.3</a> 分配针对性投入、确定 MVP 范围；按 <a class="xref" href="#s5">&#167;5</a> 的 Aha 顺序启动；按 <a class="xref" href="#s7">&#167;7</a> 建设能力；按 <a class="xref" href="#s8">&#167;8</a> 执行 90 天验证。</li>
+<li><strong>不支持</strong>：全国市场规模承诺、任何场景的成功概率、与特定伙伴已签约的表述。</li>
+<li><strong>证据怎么标</strong>：证据分 E0 至 E3（<a class="xref" href="#appendix-a">附录 A</a>）。所有场景的用户需求、执行许可和单位经济性均为 E0，外部流程与规则为 E1；团队输入（U 编号）是管理决策，不是市场证据。</li>
+<li><strong>不覆盖</strong>：日本相对其他国家的首发优劣、模型与技术架构选型、伙伴合同条款、医疗税务金融的合规细则。</li>
+<li><strong>立场与资料</strong>：为 Iris 管理团队的首发决策服务，作者是项目方；资料为公开法规与平台规则、公司披露、伙伴材料、内部研究与团队讨论，没有一手用户数据，截至 2026-10-20；执行层面的申请、审批与能力清单见 <a class="ref" href="#src-D04" data-tip="Iris 日本能力储备与前置审批清单（2026-10-15）">D04</a>。</li>
+</ul>
+<h3 id="s0-1"><span class="hn">0.1</span>章节导读</h3>
+<p class="leadin"><span class="leadin-tag">重点阅读</span><a class="xref" href="#s3-2">&#167;3.2</a> 场景树、<a class="xref" href="#s4-2">&#167;4.2</a> 评估总表、<a class="xref" href="#s5-1">&#167;5.1</a> 表 5-1 Aha 地图。三张表是全文判断的落点：拆出了哪些任务，每个场景为什么排在这一层，每一层给用户什么 Aha。</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>章</th>
+<th>回答什么</th>
+<th>关键资产</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="#s0">&#167;0</a></td>
+<td>一句话结论、场景分层与 MVP、核心发现</td>
+<td>表 0-1 场景分层与 MVP 范围</td>
+</tr>
+<tr>
+<td><a class="xref" href="#s1">&#167;1</a></td>
+<td>赢什么、在哪竞争、如何取胜的一页总览</td>
+<td>战略五问表</td>
+</tr>
+<tr>
+<td><a class="xref" href="#s2">&#167;2</a></td>
+<td>市场为什么长成这样，谁已经在做</td>
+<td>表 2-1 约束表、表 2-2 竞争格局</td>
+</tr>
+<tr>
+<td><a class="xref" href="#s3">&#167;3</a></td>
+<td>在哪里竞争：场景怎么拆</td>
+<td>表 3-1 场景树<em class="key-tag">重点阅读</em></td>
+</tr>
+<tr>
+<td><a class="xref" href="#s4">&#167;4</a></td>
+<td>在哪里竞争：先做哪些</td>
+<td>表 4-1 评估维度、表 4-2 评估总表<em class="key-tag">重点阅读</em>、<a class="xref" href="#s4-3">&#167;4.3</a> 分层</td>
+</tr>
+<tr>
+<td><a class="xref" href="#s5">&#167;5</a></td>
+<td>如何取胜：Aha 时刻与授权阶梯，每条主线的客群、任务、差异化</td>
+<td>表 5-1 Aha 地图<em class="key-tag">重点阅读</em>、场景卡</td>
+</tr>
+<tr>
+<td><a class="xref" href="#s6">&#167;6</a></td>
+<td>谁付钱、收费怎么演进、每个任务留下多少</td>
+<td>表 6-1 收费阶段、任务贡献公式</td>
+</tr>
+<tr>
+<td><a class="xref" href="#s7">&#167;7</a></td>
+<td>取胜需要什么能力</td>
+<td>执行层、年龄与身份、授权与责任、商户标准</td>
+</tr>
+<tr>
+<td><a class="xref" href="#s8">&#167;8</a></td>
+<td>怎么验证、何时切换</td>
+<td>一票否决项、里程碑、门槛、切换条件</td>
+</tr>
+<tr>
+<td><a class="xref" href="#s9">&#167;9</a></td>
+<td>哪里最可能错</td>
+<td>最脆弱的一条</td>
+</tr>
+<tr>
+<td><a class="xref" href="#appendix-a">附录 A</a></td>
+<td>决策方法、评估维度、证据分级、框架盲区</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="chapter"><h2 id="s1"><span class="hn">1</span>战略选择总览</h2>
+<p class="leadin"><span class="leadin-tag">先说结论</span>赢的目标是成为日本用户默认授权的生活执行层。首发以机酒与在日居民餐饮两个小切口为 P0（<a class="ref" href="#src-U25" data-tip="产品决定 2026-10-21 — 在日居民餐饮（预約困難店盯位与抽选、多人聚餐协调）升为 P0 主线，与机酒并列；投入深度不变（轻量接入）；跨境游客餐饮仍为勾子。理由：餐饮高频，是记忆与常设规则最能发挥的场景；原判断保留为 &#167;8.4 的切换条件">U25</a>），发现页为主线模块（<a class="ref" href="#src-U26" data-tip="产品决定 2026-10-26 — 产品由对话、发现、agent 设置三块组成，发现页由观察项升为与对话并列的主线模块，引发交办与推测被否定的比例设门槛；写入日历与出发提醒、跟到当天、盯到免费取消截止、下月核验等需要新权限或持续盯守的后续动作，首次在回执里给选项、之后同类自动，不默认做；向商家透露本人基本信息随任务授权，他人信息与健康类信息单独确认、不自动入记忆">U26</a>），MVP 再带上邮箱观察项与勾子；收费从订阅起步，过渡到只向商户抽佣。</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>本报告的回答</th>
+<th>章节</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>赢的目标</td>
+<td>成为日本用户默认授权的生活执行层，而不是第 N 个 AI 推荐入口</td>
+<td><a class="xref" href="#s0">&#167;0</a>、<a class="xref" href="#s2-2">&#167;2.2</a></td>
+</tr>
+<tr>
+<td>用户心智</td>
+<td>替你省钱、省事、体验更好生活；每个任务结束时给出前后对照和回执</td>
+<td><a class="xref" href="#s5">&#167;5</a>、<a class="xref" href="#s8-3">&#167;8.3</a></td>
+</tr>
+<tr>
+<td>在哪里竞争</td>
+<td>P0 是在日居民的机酒；MVP 加两个餐饮小切口、发现页主线模块、邮箱观察项与勾子，跨境游客餐饮以勾子形态进入（表 0-1）</td>
+<td><a class="xref" href="#s3">&#167;3</a>、<a class="xref" href="#s4">&#167;4</a></td>
+</tr>
+<tr>
+<td>如何取胜</td>
+<td>持续责任＋跨平台执行＋个人上下文的组合，跨语言是跨境场景的附加能力；伙伴权益转化为用户可感知的利益；收费按订阅、按结果、商户抽佣三阶段演进</td>
+<td><a class="xref" href="#s5">&#167;5</a>、<a class="xref" href="#s6">&#167;6</a></td>
+</tr>
+<tr>
+<td>需要什么能力</td>
+<td>API＋深链＋电话的执行层；年龄与身份管理；授权与责任设计；商户标准</td>
+<td><a class="xref" href="#s7">&#167;7</a></td>
+</tr>
+<tr>
+<td>管理系统</td>
+<td>假设驱动的 90 天验证、一票否决项、切换条件</td>
+<td><a class="xref" href="#s8">&#167;8</a></td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="chapter"><h2 id="s2"><span class="hn">2</span>市场约束与竞争格局<span class="tag">本文判断</span></h2>
+<p class="leadin"><span class="leadin-tag">先说结论</span>六条约束决定首发只能落在"有执行增量、有直接商户关系、不碰专业资格"的交易场景；现有玩家分别占住了推荐、电话执行和生态入口，没有一家同时做到跨平台执行、持续责任与个人上下文。</p>
+<h3 id="s2-1"><span class="hn">2.1</span>六条约束</h3>
+<p><strong>约束一：库存碎片化，执行要走三条路径。</strong> 平台公开 API 只给查询、不给预约写入（<a class="ref" href="#src-S31" data-tip="HOT PEPPER API 参考">S31</a>）；聚合平台对外部 Agent 封闭，只能走官方深链；独立站（名店、温泉旅馆、品牌与沙龙官网）可由云端电脑直接操作。高端餐厅集中在 TableCheck 与 OMAKASE，大量独立餐厅只接电话（<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>、<a class="ref" href="#src-P07" data-tip="日本预订网站清单（2026-10-14）">P07</a>）。<strong>结论：</strong>执行层要同时支持 API、官方深链和 AI 电话，电话是日本特有的差异化（<a class="ref" href="#src-D01" data-tip="Iris 日本 AI 电话方案（2026-10-13）">D01</a>）。</p>
+<p><strong>约束二：平台收费模式排斥私密 Agent 媒介。</strong> 食べログ按到店人数向商户收费（<a class="ref" href="#src-S03" data-tip="食べログ商户网络预约">S03</a>），HOT PEPPER 限制向餐厅收取对价的网站使用其服务（<a class="ref" href="#src-S30" data-tip="Recruit HOT PEPPER Web 服务指南">S30</a>），楽天联盟禁止私密消息与自动工具（<a class="ref" href="#src-S02" data-tip="楽天 Affiliate 规则">S02</a>）。<strong>结论：</strong>联盟变现不可用，收入只能来自用户付费、直接商户合同或机构采购。</p>
+<p><strong>约束三：专业资格与牌照边界。</strong> 保险诊疗禁止患者介绍对价（<a class="ref" href="#src-S11" data-tip="厚劳省：保険医療機関及び保険医療養担当規則">S11</a>），税务文书限于税理士（<a class="ref" href="#src-S23" data-tip="国税厅 No.9204">S23</a>），资金执行与投资业务各有注册框架（<a class="ref" href="#src-S08" data-tip="金融厅：電子決済等代行業">S08</a>、<a class="ref" href="#src-S27" data-tip="金融厅：金融业务注册指南">S27</a>），个人信息跨境提供有法定路径（<a class="ref" href="#src-S36" data-tip="PPC：外国第三方提供指南">S36</a>）。<strong>结论：</strong>医疗、税务、资金执行、介护只能做协调，不能抽佣，不能自主执行资金。</p>
+<p><strong>约束四：请求不等于成立，责任要有归属。</strong> 请求预约要餐厅接受才成立（<a class="ref" href="#src-S04" data-tip="HOT PEPPER 请求预约指南">S04</a>），健诊仮预约后要等邮件确认（<a class="ref" href="#src-S19" data-tip="住商連合健保 KENKOBOX">S19</a>），車検从估价到到店分两步（<a class="ref" href="#src-S20" data-tip="楽天Car 車検">S20</a>）。<strong>结论：</strong>回执必须区分"已提交"和"已成立"，人工兜底成本进入单位经济（<a class="xref" href="#s6-2">&#167;6.2</a>）。</p>
+<p><strong>约束五：身份与年龄是硬门槛。</strong> 夜间娱乐有法定年龄限制（<a class="ref" href="#src-S41" data-tip="e-Gov：風俗営業等の規制及び業務の適正化等に関する法律">S41</a>，<span class="tag">需复核</span>具体条文），婚恋平台要求 18 岁以上并做本人确认（<a class="ref" href="#src-S24" data-tip="Pairs 安全措施">S24</a>），应用商店限制促成性服务（<a class="ref" href="#src-S42" data-tip="Apple App Store Review Guidelines">S42</a>，<span class="tag">需复核</span>具体条款）。<strong>结论：</strong>产品必须掌握用户年龄，年龄敏感场景启用前做身份验证（<a class="xref" href="#s7-2">&#167;7.2</a>），性風俗関連特殊営業不进入产品范围。</p>
+<p><strong>约束六：用户已有工具足够好。</strong> Google Maps、食べログ、PayPay（<a class="ref" href="#src-S07" data-tip="PayPay 账单支付">S07</a>）、各 OTA 已覆盖一键能完成的任务。<strong>结论：</strong>只有多约束协调、跨语言、持续盯价、跨平台抽选这类用户自己做不好的任务才值得针对性投入；店铺筛选交给通用能力操作 Google Maps（<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>、<a class="ref" href="#src-U05" data-tip="战略讨论补充 2026-10-16 — 通用 Agent 能力是底座，分层只表示针对性投入级别；P0／P1／P2 标签；Aha 设计归战略文档；场景任务按 JTBD 润色">U05</a>）。</p>
+<figure class="tbl" id="t2-1"><figcaption><span class="tn">表 2-1</span>约束表</figcaption><div class="tw"><table>
+<thead>
+<tr>
+<th>约束</th>
+<th>决定了什么</th>
+<th>对首发的含义</th>
+<th>未来是否可能松动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>库存碎片化</td>
+<td>执行层必须 API＋深链＋电话；聚合平台封闭、独立站开放</td>
+<td>电话能力是差异化；独立站与 TableCheck、OMAKASE 是预約困難店与跨境餐饮的主战场</td>
+<td>ぐるなび已把与外部 Agent 的连接写成方向（<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>），可能部分松动</td>
+</tr>
+<tr>
+<td>平台收费排斥私密媒介</td>
+<td>联盟变现不可用</td>
+<td>短期用户付费，中期按结果收费，长期商户抽佣</td>
+<td>法人例外须逐一确认（<a class="ref" href="#src-S02" data-tip="楽天 Affiliate 规则">S02</a>）</td>
+</tr>
+<tr>
+<td>专业资格边界</td>
+<td>医疗、税务、资金执行只能协调</td>
+<td>首发避开；健诊仅在有机构买方时走独立路径</td>
+<td>不会松动</td>
+</tr>
+<tr>
+<td>请求≠成立</td>
+<td>产品要有回执与异常处理</td>
+<td>人工兜底成本进入单位经济</td>
+<td>随 API 接入比例上升而改善</td>
+</tr>
+<tr>
+<td>身份与年龄</td>
+<td>年龄敏感场景需验证</td>
+<td>掌握用户年龄；18 禁场景做身份验证</td>
+<td>不会松动</td>
+</tr>
+<tr>
+<td>现有工具足够好</td>
+<td>只有复杂任务值得针对性投入</td>
+<td>线下筛选、一次性比价、单纯提醒由通用能力承接</td>
+<td>不会松动</td>
+</tr>
+</tbody>
+</table></div></figure>
+<h3 id="s2-2"><span class="hn">2.2</span>竞争格局</h3>
+<p>聚焦三股有张力的力：替代品（现有平台与 Agent）、买方（用户已有工具）、供应商（商户与库存系统）。</p>
+<figure class="tbl" id="t2-2"><figcaption><span class="tn">表 2-2</span>现有玩家覆盖了什么、留下了什么</figcaption><div class="tw"><table>
+<thead>
+<tr>
+<th>玩家</th>
+<th>已覆盖</th>
+<th>未覆盖（Iris 的切口）</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AutoReserve（Hello）</td>
+<td>AI 电话预约餐厅，覆盖无线上预约的店；2025 年处理量超 100 万件；曾有商家侧对 AI 来电的争议报道</td>
+<td>国内外用户都有，Hello 称其正成为"访日前应该装的服务"，台湾、香港注册用户各超 10 万（<a class="ref" href="#src-S53" data-tip="ASCII：AutoReserve 台湾、香港注册用户各超 10 万（2025-06-09）">S53</a>）；日本用户数未披露；未见面向游客的多语言店内点餐，Hello 推出过面向商户的 Mobile Order（<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>）；长期个人上下文不是公开核心</td>
+<td><a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>、<a class="ref" href="#src-S52" data-tip="ASCII：AutoReserve 注册用户覆盖 100 国（2024-10-04）">S52</a>、<a class="ref" href="#src-S53" data-tip="ASCII：AutoReserve 台湾、香港注册用户各超 10 万（2025-06-09）">S53</a><span class="tag">厂商</span></td>
+</tr>
+<tr>
+<td>UMAME!</td>
+<td>个人偏好数据＋网络预约</td>
+<td>电话长尾；跨平台执行</td>
+<td><a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a><span class="tag">厂商</span></td>
+</tr>
+<tr>
+<td>食べログ、HOT PEPPER、ぐるなび</td>
+<td>餐厅发现与平台内预约；ぐるなび有空位 API</td>
+<td>没有面向通用 Agent 的预约写入；收费模式排斥外部代理</td>
+<td><a class="ref" href="#src-S03" data-tip="食べログ商户网络预约">S03</a>、<a class="ref" href="#src-S31" data-tip="HOT PEPPER API 参考">S31</a>、<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a></td>
+</tr>
+<tr>
+<td>TableCheck、OMAKASE、预约台账系统</td>
+<td>高端餐厅的结构化实时库存，TableCheck 有伙伴级 API，已有 AI 调用先例</td>
+<td>需逐系统集成；顶级店仍是电话或介绍制</td>
+<td><a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>、<a class="ref" href="#src-P07" data-tip="日本预订网站清单（2026-10-14）">P07</a></td>
+</tr>
+<tr>
+<td>独立站（名店、温泉旅馆、品牌与沙龙官网）</td>
+<td>自带预订或购买流程，对外部操作无平台级限制</td>
+<td>没有统一接口；靠云端电脑逐站操作</td>
+<td><a class="ref" href="#src-P07" data-tip="日本预订网站清单（2026-10-14）">P07</a></td>
+</tr>
+<tr>
+<td>Rakuten AI、LINEヤフー Agent i</td>
+<td>账户、支付、购物、旅行入口；宣布向预约到售后串联</td>
+<td>未见跨第三方平台自动订餐、订酒店的公开证据</td>
+<td><a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a></td>
+</tr>
+<tr>
+<td>Trip.com TripGenie</td>
+<td>生态内酒店执行强</td>
+<td>日本餐厅电话长尾与本地碎片库存</td>
+<td><a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a></td>
+</tr>
+<tr>
+<td>価格.com</td>
+<td>家电等品类比价</td>
+<td>社媒口碑调研、品牌独立站</td>
+<td><a class="ref" href="#src-S43" data-tip="価格.com 家电">S43</a></td>
+</tr>
+<tr>
+<td>Google Maps</td>
+<td>线下店铺筛选</td>
+<td>无明显缺口；由通用能力直接操作</td>
+<td><a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>、<a class="ref" href="#src-U05" data-tip="战略讨论补充 2026-10-16 — 通用 Agent 能力是底座，分层只表示针对性投入级别；P0／P1／P2 标签；Aha 设计归战略文档；场景任务按 JTBD 润色">U05</a></td>
+</tr>
+</tbody>
+</table></div></figure>
+<p>结论：推荐层已饱和，执行层被 AutoReserve 占了电话、被 TableCheck 占了结构化库存，生态入口被 Rakuten 与 LINEヤフー占住。留给 Iris 的位置是"跨平台执行＋持续责任＋个人上下文"的组合，跨语言是跨境场景的附加能力。这也是"赢的目标"的依据：真正值得抢的不是第 N 个 AI 餐厅搜索，而是用户默认授权的执行层（<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>）。</p>
+<p>推荐层饱和，不等于发现需求不存在。有目的的检索在 Google Maps 与食べログ；闲逛种草在 Instagram 与 TikTok，日本 Z 世代找店最常用 Instagram（<a class="ref" href="#src-S122" data-tip="DIME：Z 世代的飲食店探し（Utakata 调查）">S122</a>）；按时间、地点与场合推荐一家店的 AI 有 ぐるなび 的 UMAME!（<a class="ref" href="#src-S123" data-tip="ケータイ Watch：UMAME! 正式版（2026-01）">S123</a>）。它们看不到用户的邮箱、日历与行程，只能按兴趣推荐。Iris 从这些私人上下文推测用户想做、需要什么，再把事办成，这是发现页作为主线模块的依据（<a class="xref" href="#s4-3">&#167;4.3</a>、<a class="xref" href="#s5-1">&#167;5.1</a> 原则 9、<a class="ref" href="#src-U26" data-tip="产品决定 2026-10-26 — 产品由对话、发现、agent 设置三块组成，发现页由观察项升为与对话并列的主线模块，引发交办与推测被否定的比例设门槛；写入日历与出发提醒、跟到当天、盯到免费取消截止、下月核验等需要新权限或持续盯守的后续动作，首次在回执里给选项、之后同类自动，不默认做；向商家透露本人基本信息随任务授权，他人信息与健康类信息单独确认、不自动入记忆">U26</a>）；不做找店检索，店铺筛选仍归通用能力（J14）。</p>
+</section><section class="chapter"><h2 id="s3"><span class="hn">3</span>在哪里竞争：场景树</h2>
+<h3 id="s3-1"><span class="hn">3.1</span>拆分原则</h3>
+<p class="leadin"><span class="leadin-tag">先说结论</span>用 JTBD 定义单元，一行一条任务，写成"在什么情境下，用户想完成什么，以得到什么结果"；发生在不同时点或依赖不同能力的任务不合并；一级按"是否发生商户交易、是否受专业资格约束"切，二级按行业切，客群（跨境游客／在日居民）作横切维度。</p>
+<p>一级四类互斥且覆盖全部候选：A 消费交易（找、订、付、售后，Iris 可执行并可从商户侧收费）；B 关系与社交（无商户交易，价值在用户侧）；C 生活事务（无交易或交易由用户自助完成，Iris 做提醒与代填）；D 受监管专业服务（执行受资格限制，只能协调）。</p>
+<p>二级在 A 下按行业分，因为执行路径、商户类型、变现方式随行业变化。</p>
+<p>分层的含义：通用 Agent 能力（云端电脑的网页操作、AI 电话）是底座，任何官方网站与商户都可按用户授权尝试完成任务；场景树与优先级回答的是"哪些场景值得针对性投入"，不回答"能不能做"。未获针对性投入的场景仍由通用能力承接（<a class="ref" href="#src-U05" data-tip="战略讨论补充 2026-10-16 — 通用 Agent 能力是底座，分层只表示针对性投入级别；P0／P1／P2 标签；Aha 设计归战略文档；场景任务按 JTBD 润色">U05</a>）。跨境游客的行程成形与紧急求助属于横切任务，由通用能力与电话承接，不单列场景。</p>
+<p>归并规则：共享同一笔订单的任务（优惠券、积分、送礼、物流）并入所属交易，作为触发或配套环节；共享同一支付动作的任务（缴费、账单、NHK、积分到期、记账）合并为 C1；受同一牌照约束的任务（移动支付、转账、资产执行）合并为 D3；预约按是否受医疗资格约束拆入 A1、A5、D1。</p>
+<h3 id="s3-2"><span class="hn">3.2</span>场景树</h3>
+<p>一行一条任务（J 编号）。同一个二级场景里，发生在不同时点、依赖不同能力的任务分开写：跨境游客"订到店"靠电话与回电接听，"到店点对菜"靠扫码菜单，是两条任务；机酒的"一次比价"与"持续盯价"也是两条。表 5-1 的 Aha 与 <a class="ref" href="#src-D04" data-tip="Iris 日本能力储备与前置审批清单（2026-10-15）">D04</a> 的能力都按 J 编号对应。投入列只表示针对性投入级别（<a class="xref" href="#s4-3">&#167;4.3</a>），不表示能否完成。</p>
+<figure class="tbl wide" id="t3-1"><figcaption><span class="tn">表 3-1</span>场景树与任务清单〔<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>、<a class="ref" href="#src-U05" data-tip="战略讨论补充 2026-10-16 — 通用 Agent 能力是底座，分层只表示针对性投入级别；P0／P1／P2 标签；Aha 设计归战略文档；场景任务按 JTBD 润色">U05</a>、<a class="ref" href="#src-U07" data-tip="战略讨论补充 2026-10-16 — 关键场景清单：餐饮按跨境（替代 AutoReserve）与本地（筛选，替代食べログ）分开，店内二维码点餐；机酒以比价筛选加持续盯价自动锁单为主，机酒餐饮经 Agent 渠道给优惠或礼品；电商做推荐与比价，社媒调研按 Instagram、X、TikTok 顺序，YouTube 需用户登录态；线下店铺筛选无增量、店内 SKU 推荐；抽选搜索代填并经邮箱通知下一轮；美容与夜间娱乐走独立站或电话；婚恋大站填表，不做站内信跟踪。JTBD 按一行一条任务拆分">U07</a>〕</figcaption><div class="tw"><table class="merged fixed"><colgroup><col style="width:10.8em"><col style="width:8em"><col style="width:10.8em"><col style="width:5.0em"><col style="width:28em"><col style="width:8em"><col style="width:8em"></colgroup>
+<thead>
+<tr>
+<th>一级</th>
+<th>二级</th>
+<th>客群</th>
+<th>J</th>
+<th>情境 → 动机 → 结果</th>
+<th>投入</th>
+<th>伙伴（<a class="ref" href="#src-P06" data-tip="四市场场景清单（2026-10-13）.md)">P06</a>）</th>
+</tr>
+</thead>
+<tbody><tr><td rowspan="27" class="c0 lead">A 消费交易</td><td rowspan="8" class="lead">A1 餐饮</td><td rowspan="2">跨境游客</td><td>J01</td><td>想去的店只接电话或只有日文预约页，自己打不了电话、看不懂表单，店家的确认回电也接不到 → 不被语言挡在门外 → 预约成立并拿到回执；店家来电由 Iris 接听并转述</td><td><span class="chip c-p1">P1 第二梯队</span><span class="tier-note">末位；MVP 先以勾子形态上线</span></td><td rowspan="6">7 的餐厅部分</td></tr>
+<tr><td>J02</td><td>到店后菜单只有日文、店员不会外语，不知道哪些能吃、怎么点 → 吃到想吃的，避开过敏与禁忌 → 扫店内二维码看到本语言菜单与推荐，点单以日文送达店员端</td><td><span class="chip c-p1">P1 第二梯队</span><span class="tier-note">末位；MVP 先以勾子形态上线</span></td></tr>
+<tr><td>在日居民＋跨境游客</td><td>J03</td><td>想去的店是预約困難店：要反复打电话、盯取消放位、参加抽选，或是介绍制 → 不白等、不空手 → 代拨打与盯放位，用用户自己的会员身份代报抽选；拿不到时说明停在哪一步，给同档可订替代</td><td><span class="chip c-p0">P0 主线</span><span class="tier-note">小切口（<a class="ref" href="#src-U25" data-tip="产品决定 2026-10-21 — 在日居民餐饮（预約困難店盯位与抽选、多人聚餐协调）升为 P0 主线，与机酒并列；投入深度不变（轻量接入）；跨境游客餐饮仍为勾子。理由：餐饮高频，是记忆与常设规则最能发挥的场景；原判断保留为 &#167;8.4 的切换条件">U25</a>）</span></td></tr>
+<tr><td rowspan="4">在日居民</td><td>J04</td><td>当幹事：要收集每个人的空闲、忌口、预算，在群里来回确认，再去订 → 用最少来回定下一桌 → 拉进 LINE 群后收集约束，给两个带理由的方案，投票后直接订并同步给所有人</td><td><span class="chip c-p0">P0 主线</span><span class="tier-note">小切口（<a class="ref" href="#src-U25" data-tip="产品决定 2026-10-21 — 在日居民餐饮（预約困難店盯位与抽选、多人聚餐协调）升为 P0 主线，与机酒并列；投入深度不变（轻量接入）；跨境游客餐饮仍为勾子。理由：餐饮高频，是记忆与常设规则最能发挥的场景；原判断保留为 &#167;8.4 的切换条件">U25</a>）</span></td></tr>
+<tr><td>—</td><td>一两个人订一家能网约或接电话的店：本地人自己一两分钟能完成，没有语言门槛，agent 无增量（<a class="ref" href="#src-U12" data-tip="战略讨论 2026-10-19 — 对本地人，电话预约和网约成本都不高，餐饮预约的增量价值低，不该作 P0；只保留预約困難店盯位抽选与多人聚餐协调两个小切口；机酒作 P0 价值证明；邮箱订单与账单持续跟进作 90 天观察项">U12</a>）；由通用能力承接</td><td><span class="chip c-p2">P2 通用</span></td></tr>
+<tr><td>J05</td><td>订好后时间、人数变了或要取消，店家确认散落在邮件与 LINE 里 → 不吃取消费、不来回打电话 → 一句话完成改约或取消，已写进日历的一并改，取消截止前提醒</td><td><span class="chip c-p1">P1 配套</span><span class="tier-note">随任何预约任务</span></td></tr>
+<tr><td>J06</td><td>常去的店、同行者偏好、上次体验，每次都要重新说明 → 下次不用再解释 → 第二次预约直接带入上次的偏好与同行人</td><td><span class="chip c-p1">P1 配套</span><span class="tier-note">随任何预约任务</span></td><td>—</td></tr>
+<tr><td>两类</td><td>—</td><td>外卖：由通用能力承接，不单列</td><td><span class="chip c-p2">P2 通用</span></td><td>—</td></tr>
+<tr><td rowspan="6" class="lead">A2 机酒与出行</td><td rowspan="4">在日居民</td><td>J07</td><td>行程确定，候选分散在 OTA、航司与旅馆官网，总价、取消条款、含早各不相同 → 不多付、不选错 → 一张对比卡片，含总价、取消条款、付款方式，一次确认下单</td><td><span class="chip c-p0">P0 主线</span></td><td rowspan="4">14、9</td></tr>
+<tr><td>J08</td><td>价格会变，没时间反复查 → 到价就锁定，不错过 → 设定条件后持续监测，到价在限额内自动下单并通知</td><td><span class="chip c-p0">P0 主线</span></td></tr>
+<tr><td>J09</td><td>已订的房间或机票后来降价 → 不吃亏 → 免费取消期内取消重订，差价以日元展示</td><td><span class="chip c-p0">P0 主线</span></td></tr>
+<tr><td>J31</td><td>订好之后航班延误或欠航、要改签或退款、值机临近、积分或航空额度快过期 → 行程不被打乱、不白丢钱 → 从确认邮件与航班状态主动发现变化，给出改签或退款方案，确认后执行，并提醒值机与到期</td><td><span class="chip c-p0">P0 主线</span></td></tr>
+<tr><td>两类</td><td>J10</td><td>同样的房、同样的桌，想知道经 Iris 订有没有更划算 → 用 Iris 订比自己订多拿到一点 → 预约时自动套用 Agent 渠道专属优惠或礼品，回执中标明；机酒与餐饮共用</td><td><span class="chip c-p0">P0 主线</span><span class="tier-note">权益登记后启用</span></td><td>14、7</td></tr>
+<tr><td>跨境游客</td><td>—</td><td>落地当天行程成形、打车与铁路衔接、紧急求助：横切任务，由通用能力与电话承接</td><td><span class="chip c-p2">P2 通用</span></td><td>—</td></tr>
+<tr><td rowspan="4" class="lead">A3 线上购物</td><td rowspan="4">在日居民</td><td>J11</td><td>想买家电、美妆等有品牌独立站的高单价品，不知道选哪款 → 按需求与预算选对型号 → 两三款带理由的候选</td><td><span class="chip c-p1">P1 第二梯队</span></td><td rowspan="4">5、11、22、6</td></tr>
+<tr><td>J12</td><td>同一型号在平台与品牌官网的价格、延保、积分不同 → 不买贵 → 最低总价渠道与差额，官网专属权益一并列出；替代 価格.com</td><td><span class="chip c-p1">P1 第二梯队</span></td></tr>
+<tr><td>J13</td><td>想知道真实使用反馈，自己刷社媒太花时间 → 避坑 → 按 Instagram、X、TikTok 顺序汇总同款的主要抱怨与好评；YouTube 需用户提供登录态，技术成本高，后做</td><td><span class="chip c-p1">P1 第二梯队</span></td></tr>
+<tr><td>—</td><td>送礼提醒、优惠券、积分、物流：同一订单的环节，并入 J11–J13</td><td><span class="chip c-p1">P1 配套</span></td></tr>
+<tr><td rowspan="2" class="lead">A4 线下购物</td><td rowspan="2">两类</td><td>J14</td><td>想找附近合适的店 → 快速定位 → 通用能力操作 Google Maps；尚无比 Google Maps 更多的增量，不做针对性投入</td><td><span class="chip c-p2">P2 通用</span></td><td>无</td></tr>
+<tr><td>J15</td><td>在合作门店面对大量商品，不知道哪款适合自己 → 选对、不多买 → 扫码或拍货架后按肤质、预算、免税条件推荐店内商品；游客侧附免税与店员沟通</td><td><span class="chip c-p1">P1 配套</span></td><td>无</td></tr>
+<tr><td rowspan="4" class="lead">A5 服务预约</td><td rowspan="4">在日居民</td><td>J16</td><td>沙龙只有独立站或电话预约，复约要再来一遍 → 省掉来回、不忘复约 → 代订并返回确认；到期提醒并一句话约上次那家</td><td><span class="chip c-p1">P1 第二梯队</span></td><td rowspan="2">7 的美容部分</td></tr>
+<tr><td>J17</td><td>想试新店但不想花冤枉钱 → 用免费体验或首次优惠试 → 聚合沙龙的免费与优惠信息，选中即约好</td><td><span class="chip c-p1">P1 勾子</span></td></tr>
+<tr><td>J18</td><td>夜间娱乐店只接电话，自己不想开口 → 不用自己打 → Iris 用日语电话确认并返回店方要求；年龄验证前置，限定風営法接待饮食类</td><td><span class="chip c-p1">P1 勾子</span></td><td>16</td></tr>
+<tr><td>—</td><td>車検：估价后仍需到店，由通用能力承接</td><td><span class="chip c-p2">P2 通用</span></td><td>18</td></tr>
+<tr><td rowspan="3" class="lead">A6 抽选与票务</td><td rowspan="3">在日居民</td><td>J19</td><td>演唱会与限量品的抽选分散在 FC、票务平台、品牌官网，各有会员墙与応募条件 → 不漏报 → 搜到相关抽选，用用户自己的会员身份代填，提交前给用户过目</td><td><span class="chip c-p1">P1 勾子</span></td><td rowspan="2">23、15</td></tr>
+<tr><td>J20</td><td>当落结果靠邮件通知，多轮次、多平台，容易错过下一轮与付款期限 → 不错过 → 从转发或连接的邮箱读取当落通知，进入下一轮或中签时主动通知并提醒付款取票；不需要平台接口</td><td><span class="chip c-p1">P1 勾子</span></td></tr>
+<tr><td>—</td><td>先着順一般购票：由通用能力承接</td><td><span class="chip c-p2">P2 通用</span></td><td>15</td></tr>
+<tr><td rowspan="2" class="c0 lead">B 关系与社交</td><td class="lead">B1 婚恋辅助</td><td>在日居民</td><td>J21</td><td>在几家大型婚恋网站注册要填同样的资料 → 一次填好 → 按用户资料代填并初筛，确认后提交；站内信与 IM 不做主动监控</td><td><span class="chip c-p1">P1 勾子</span></td><td>24</td></tr>
+<tr><td class="lead">B2 情绪陪伴</td><td>在日居民</td><td>J22</td><td>需要倾诉时有稳定、私密的对话对象；非诊疗</td><td><span class="chip c-p2">P2 通用</span></td><td>8</td></tr>
+<tr><td rowspan="5" class="c0 lead">C 生活事务</td><td rowspan="2" class="lead">C1 账单与支付事务</td><td rowspan="2">在日居民</td><td>J23</td><td>账单到期、快递待再配达、退款未到账散落各处 → 不漏缴、不重复缴 → 提醒或在限额内代付</td><td><span class="chip c-p1">P1 配套</span></td><td rowspan="2">1、12、19、4、3</td></tr>
+<tr><td>J24</td><td>免费试用后忘了取消、几乎不用的订阅和定期购入每月照扣 → 不白付钱 → 从邮箱收据与转发的信用卡明细找出闲置订阅，列出每月金额，确认后在官网或电话替用户解约</td><td><span class="chip c-p1">P1 勾子</span><span class="tier-note">兼作邮箱持续跟进观察项</span></td></tr>
+<tr><td class="lead">C2 行政与搬家</td><td>在日居民</td><td>J25</td><td>搬家、垃圾分类、补助申请、行政文书这类多方手续 → 一次办齐 → 清单、材料与进度协调；本人到场不可替代</td><td><span class="chip c-p2">P2 通用</span></td><td>27、30、10、25</td></tr>
+<tr><td rowspan="2" class="lead">C3 退税、报销与资产事务</td><td rowspan="2">在日居民</td><td>J26</td><td>收据分散、易漏报 → 把能退的钱拿回来 → 汇总、计算、预填医療費控除与还付申告，本人提交</td><td><span class="chip c-p2">P2 通用</span></td><td rowspan="2">21、20、28 的资料部分</td></tr>
+<tr><td>J27</td><td>iDeCo／NISA 与故乡纳税的资料准备 → 不错过期限 → 资料整理与提醒；执行受资格约束</td><td><span class="chip c-p2">P2 通用</span></td></tr>
+<tr><td rowspan="3" class="c0 lead">D 受监管专业服务</td><td class="lead">D1 医疗预约</td><td>在日居民</td><td>J28</td><td>初诊、复诊、牙科、美容医疗、健诊 → 约上且资格无误 → 预约协调与资格核对；不涉诊疗判断</td><td><span class="chip c-p2">P2 法规限定</span></td><td>7 的医院部分、17</td></tr>
+<tr><td class="lead">D2 用药与介护</td><td>在日居民</td><td>J29</td><td>用药记录与提醒；家属为长辈办介护认定 → 不漏、不乱 → 记录、提醒、材料与进度协调</td><td><span class="chip c-p2">P2 法规限定</span></td><td>26、29</td></tr>
+<tr><td class="lead">D3 资金执行</td><td>在日居民</td><td>J30</td><td>转账、钱包、资产配置的执行 → 省事 → 只做准备与本人确认引导</td><td><span class="chip c-p2">P2 法规限定</span></td><td>13、2、28 的执行部分</td></tr></tbody>
+</table></div></figure>
+<p>MECE 检验：伙伴候选清单（<a class="ref" href="#src-P06" data-tip="四市场场景清单（2026-10-13）.md)">P06</a>）的每一项恰好进入一个二级场景；每条 J 只属于一个二级场景，J10 的渠道权益由机酒与餐饮共用，归 A2 管理。A4 为团队补充（<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>），外卖、游客行程与紧急求助为本文补充，归入 A1、A2 或横切。一级之间以"有无商户交易"和"有无专业资格约束"两个二值条件划分，不存在同时属于两类的任务。</p>
+<h3 id="s3-3"><span class="hn">3.3</span>对照竞品已验证场景的取舍</h3>
+<p class="leadin"><span class="leadin-tag">先说结论</span>竞品用户研究里被验证的十类场景（<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>），只有"旅行后勤与异常跟进"值得新增为任务，并入机酒主线；"承诺与事务持续跟进"已是 90 天观察项，补上闲置订阅解约作为第一个具体任务；其余或已覆盖，或在日本缺少对应需求与变现，不新增。按节省分成倒推、缺少用户痛点依据的候选不纳入（<a class="ref" href="#src-U13" data-tip="战略讨论 2026-10-19 — 场景并非越多越好；依据竞品已验证场景增补或调整，标准是对产品设计与市场推广有真实价值；通信与电力套餐优化、退税与保险理赔须说明来源，不能按变现模式倒推">U13</a>）。取舍标准是能否对产品设计或市场推广产生真实价值，场景并非越多越好。</p>
+<figure class="tbl" id="t3-2"><figcaption><span class="tn">表 3-2</span>竞品已验证场景的取舍〔<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a> 四项评分依次为证据、收益、重复、可控〕</figcaption><div class="tw"><table>
+<thead>
+<tr>
+<th>竞品已验证场景</th>
+<th><a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a> 评分</th>
+<th>日本对应</th>
+<th>处理</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>承诺与事务持续跟进</td>
+<td>4、4、5、4</td>
+<td>邮箱里的订单、账单、订阅、预约确认与退款</td>
+<td>保持 90 天观察项；闲置订阅解约（J24）作第一个具体任务</td>
+<td>竞品案例多是北美的工作邮件；日本居民的私人沟通在 LINE，邮箱里主要是确认类邮件，先测采纳率再决定是否投入</td>
+</tr>
+<tr>
+<td>预约、改期与取消</td>
+<td>4、4、4、3</td>
+<td>机酒、预約困難店、聚餐协调、美容复约</td>
+<td>已覆盖</td>
+<td>撑起高分的案例都是难订或难办的事，普通预约没有增量（<a class="ref" href="#src-U12" data-tip="战略讨论 2026-10-19 — 对本地人，电话预约和网约成本都不高，餐饮预约的增量价值低，不该作 P0；只保留预約困難店盯位抽选与多人聚餐协调两个小切口；机酒作 P0 价值证明；邮箱订单与账单持续跟进作 90 天观察项">U12</a>）</td>
+</tr>
+<tr>
+<td>电话客服与来电筛选</td>
+<td>4、5、3、3</td>
+<td>解约、客服查询</td>
+<td>不单列；电话代打作为通用能力，用于订阅解约等任务；来电筛选不做</td>
+<td>客服代打在日本没有本地证据；来电筛选的竞品案例是二手交易，日本没有对应场景</td>
+</tr>
+<tr>
+<td>家庭信息归集与日历</td>
+<td>4、4、5、4</td>
+<td>学校通知、家庭日程</td>
+<td>不做；列为高频入口的备选</td>
+<td>TimeTree 全球注册超 6,700 万，家庭是最大用户群（<a class="ref" href="#src-S65" data-tip="THE BRIDGE：TimeTree 完成 F 轮融资（2025-11）">S65</a>）；没有商户变现，Iris 的本地资产用不上</td>
+</tr>
+<tr>
+<td>有明确条件的持续监控</td>
+<td>4、3、5、4</td>
+<td>盯价、盯放位、当落、订阅续费</td>
+<td>不单列，作为跨场景的共享能力</td>
+<td>产品设计上是一套监控规则加一次授权持续有效（<a class="xref" href="#s5-1">&#167;5.1</a> 原则 6），不必按场景重复建设</td>
+</tr>
+<tr>
+<td>旅行后勤与异常跟进</td>
+<td>4、4、3、3</td>
+<td>航班延误与欠航、改签退款、值机、积分与额度到期</td>
+<td>新增 J31，并入机酒 P0 主线</td>
+<td>补机酒的频次短板，一次出行有多个接触点；推广上从"订完不管"变成"订完还替你盯着"</td>
+</tr>
+<tr>
+<td>明确需求的购物与补货</td>
+<td>4、4、4、2</td>
+<td>日用品补货</td>
+<td>不做</td>
+<td>电商平台的定期购已覆盖；执行可控性只有 2 分，商家阻塞最多</td>
+</tr>
+<tr>
+<td>个人资料移除与复查</td>
+<td>3、4、3、3</td>
+<td>无</td>
+<td>不做</td>
+<td>日本没有对应的人员搜索数据商产业</td>
+</tr>
+<tr>
+<td>兴趣学习、多代理管理</td>
+<td>3、3、4、4；2、3、3、2</td>
+<td>无</td>
+<td>不做</td>
+<td>与"替用户执行"的定位无关；多代理的额外收益未被证实</td>
+</tr>
+</tbody>
+</table></div></figure>
+<p>不纳入的两项：通信与电力套餐优化，伙伴清单的原意是账单提醒与异常涨价预警（<a class="ref" href="#src-P06" data-tip="四市场场景清单（2026-10-13）.md)">P06</a>），切换一年最多一次，还要运营商与电力代理店合同，C1 的针对性投入因此放在闲置订阅解约；保险理赔没有任何输入来源，退税归通用覆盖（<a class="xref" href="#s5-12">&#167;5.12</a>）。</p>
+</section><section class="chapter"><h2 id="s4"><span class="hn">4</span>在哪里竞争：优先级</h2>
+<p class="leadin"><span class="leadin-tag">先说结论</span>先评"这件事交给 agent 做，agent 相对现成工具有没有优势"，用七个维度逐一评，再分层。结果：P0 为机酒，加在日居民餐饮的预約困難店与多人聚餐协调两个小切口（<a class="ref" href="#src-U12" data-tip="战略讨论 2026-10-19 — 对本地人，电话预约和网约成本都不高，餐饮预约的增量价值低，不该作 P0；只保留预約困難店盯位抽选与多人聚餐协调两个小切口；机酒作 P0 价值证明；邮箱订单与账单持续跟进作 90 天观察项">U12</a>、<a class="ref" href="#src-U25" data-tip="产品决定 2026-10-21 — 在日居民餐饮（预約困難店盯位与抽选、多人聚餐协调）升为 P0 主线，与机酒并列；投入深度不变（轻量接入）；跨境游客餐饮仍为勾子。理由：餐饮高频，是记忆与常设规则最能发挥的场景；原判断保留为 &#167;8.4 的切换条件">U25</a>）；跨境游客餐饮完整接入排第二梯队末位，先以勾子形态进 MVP（<a class="ref" href="#src-U14" data-tip="战略讨论 2026-10-19 — 场景评估先拆 agent 做这件事的优劣势；跨境游客的常驻平台在国内且不在意合规，本土渠道优势发挥不出；旅游对单个用户低频，只做日本时主动性与长期记忆无回报">U14</a>、<a class="ref" href="#src-U15" data-tip="战略讨论 2026-10-19 — 旅游是公认的低频需求，除非做全球旅游市场；只做日本时跨境游客的长期记忆、主动性与本地渠道价值都不高；跨境餐饮保留第二梯队，排末位">U15</a>、<a class="ref" href="#src-U20" data-tip="战略讨论 2026-10-19 — 跨境游客餐饮也进 MVP：故事好讲，是好的勾子">U20</a>）；高频入口空缺，邮箱跟进列为 90 天观察项。MVP 范围见 <a class="xref" href="#s4-3">&#167;4.3</a>。</p>
+<h3 id="s4-1"><span class="hn">4.1</span>评估框架：agent 做这件事的优劣势</h3>
+<p>一个 agent 相对平台与工具，只多出四样东西：替用户跨平台、跨语言执行；跨时段持续负责；积累用户上下文并主动行动；把 Iris 的本地资产变成用户权益。一个场景若让其中大部分发挥不出来，即便用户痛点很强、交易增量很高，它也只是一次性交易产品，不是 agent 的切入场景。七个维度分三组：前四个看 agent 的优势能否发挥（执行增量–资产兑现），两个看能否形成信任与收入（可核验–变现），一个是门槛（可控）。</p>
+<figure class="tbl" id="t4-1"><figcaption><span class="tn">表 4-1</span>评估维度</figcaption><div class="tw"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>回答什么</th>
+<th>评"高"</th>
+<th>评"低"</th>
+<th>性质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>执行增量</td>
+<td>agent 比现成工具多做了什么</td>
+<td>打电话、跨平台、跨语言、持续盯，用户自己做不到或做不好</td>
+<td>现成工具一键完成</td>
+<td>计分</td>
+</tr>
+<tr>
+<td>频次与持续责任</td>
+<td>同一用户多久再遇到这件事；任务本身是否跨时段</td>
+<td>周或月复发，或任务需要持续盯着</td>
+<td>年一次或一生一次，单次完成</td>
+<td>计分；决定主动性与记忆有没有回报</td>
+</tr>
+<tr>
+<td>上下文可得与积累</td>
+<td>agent 需要的上下文在不在我们能接的地方；用一次之后记忆下次有没有用</td>
+<td>在 Gmail、LINE、日历、位置里；偏好可复用</td>
+<td>在我们接不到的平台里；任务结束上下文归零</td>
+<td>计分</td>
+</tr>
+<tr>
+<td>Iris 资产兑现</td>
+<td>本土渠道、企业背书、合规、商户签约，对该客群的获客和对商户的接入有没有用</td>
+<td>获客与商户两端都用得上</td>
+<td>获客在别处，用户不在意合规</td>
+<td>计分</td>
+</tr>
+<tr>
+<td>结果可核验</td>
+<td>用户能否自己判断"帮到了"</td>
+<td>二值或日元</td>
+<td>省时难感知</td>
+<td>计分；决定信任与按结果收费</td>
+</tr>
+<tr>
+<td>变现与商户关系</td>
+<td>谁付钱，路径是否可用</td>
+<td>直接商户合同或节省分成</td>
+<td>只有联盟或无付费方</td>
+<td>计分</td>
+</tr>
+<tr>
+<td>可控与风险</td>
+<td>失败代价、可逆性、平台阻塞、法规与年龄</td>
+<td>可撤销、无资格约束</td>
+<td>不可逆、资格或年龄门槛</td>
+<td>门槛：低则不进主线</td>
+</tr>
+</tbody>
+</table></div></figure>
+<p>评分为高、中、低三档序数，不加权求和。分层规则：</p>
+<ul>
+<li><strong>先拆任务再评</strong>：同一场景里用户自己做的成本差别很大的任务分开评；执行增量为低的直接归通用覆盖。</li>
+<li><strong>优先切入（P0）</strong>：执行增量至少中高，且频次、上下文、资产兑现至少两项为高、可控不为低。目前没有场景满足，高频入口空缺；美容三项全高，但执行增量只有中，用户在现有平台上自己就能约，所以不进 P0（<a class="ref" href="#src-U19" data-tip="战略讨论 2026-10-19 — 美容保持 P1；MVP 为 P0 加若干 P1，餐饮必做；勾子随 MVP 上线，由通用能力（browser use、computer use）跑通即可，不作重点优化；AI 电话基本确定要做，风险备注即可">U19</a>）。</li>
+<li><strong>价值证明（P0）</strong>：执行增量与可核验都高，服务在日居民、上下文可得，让用户和商户看见钱。</li>
+<li><strong>第二梯队（P1）</strong>：未进 P0、变现不为低；内部按新增投入排序，复用已建能力越多、新签约与新能力越少的越先接。</li>
+<li><strong>勾子（P1）</strong>：变现为低、只展示一种能力；随 MVP 上线，由通用能力（云端电脑与浏览器操作、AI 电话）跑通即可，不做针对性优化。</li>
+<li><strong>配套（P1）</strong>：不单独构成用户任务，依附主线或商户合作。</li>
+<li><strong>通用覆盖（P2）</strong>：执行增量低，或可控为低，由通用能力承接。</li>
+</ul>
+<p>被评对象是表 3-1 中有针对性投入候选的 11 个场景；P2 不逐项评（<a class="xref" href="#s4-3">&#167;4.3</a>）。</p>
+<h3 id="s4-2"><span class="hn">4.2</span>评估总表</h3>
+<p>七个维度的关键判断：</p>
+<ul>
+<li><strong>执行增量</strong>：只有用户自己做不到或不想做的事才算；一次性比价、筛选和一两个人的餐厅预约，现成工具和本地人自己已做好（<a class="ref" href="#src-U12" data-tip="战略讨论 2026-10-19 — 对本地人，电话预约和网约成本都不高，餐饮预约的增量价值低，不该作 P0；只保留预約困難店盯位抽选与多人聚餐协调两个小切口；机酒作 P0 价值证明；邮箱订单与账单持续跟进作 90 天观察项">U12</a>）。</li>
+<li><strong>频次</strong>：跨境游客一年一次、两周就走（<a class="ref" href="#src-U14" data-tip="战略讨论 2026-10-19 — 场景评估先拆 agent 做这件事的优劣势；跨境游客的常驻平台在国内且不在意合规，本土渠道优势发挥不出；旅游对单个用户低频，只做日本时主动性与长期记忆无回报">U14</a>）；在日居民餐饮按周月复发，但多数预约无增量；美容按 4 至 8 周复发；机酒与抽选事件驱动，但任务跨时段。</li>
+<li><strong>上下文</strong>：游客的行程、社交、发现分别在携程、微信、小红书，都接不到；居民的预约、订单、账单都在 Gmail 与 LINE 里（<a class="ref" href="#src-D04" data-tip="Iris 日本能力储备与前置审批清单（2026-10-15）">D04</a>）。</li>
+<li><strong>资产兑现</strong>：对居民，渠道、背书、合规都能变成获客与权益；对游客只有商户签约一端有用（<a class="ref" href="#src-U14" data-tip="战略讨论 2026-10-19 — 场景评估先拆 agent 做这件事的优劣势；跨境游客的常驻平台在国内且不在意合规，本土渠道优势发挥不出；旅游对单个用户低频，只做日本时主动性与长期记忆无回报">U14</a>）。</li>
+<li><strong>可核验与变现</strong>：多人聚餐协调最难让用户看见效果；联盟变现不可用（<a class="ref" href="#src-S02" data-tip="楽天 Affiliate 规则">S02</a>、<a class="ref" href="#src-S30" data-tip="Recruit HOT PEPPER Web 服务指南">S30</a>）；可控是门槛。</li>
+</ul>
+<p>"日本 Top 1 竞品"列写的是日本用户今天完成这件事最常用的产品，多数不是 agent，而是传统互联网产品；规模数字的性质分别标为<span class="tag">调查</span><span class="tag">官方</span><span class="tag">厂商</span>，没有可靠排名数据的写明未核实。</p>
+<figure class="tbl wide" id="t4-2"><figcaption><span class="tn">表 4-2</span>评估总表〔本文判断；先看分层与角色，再看每个维度的评级与依据，最后一列是日本 Top 1 竞品；分层规则见 <a class="xref" href="#s4-1">&#167;4.1</a>〕</figcaption><div class="tw"><table class="fixed"><colgroup><col style="width:9.5em"><col style="width:10.8em"><col style="width:28em"><col style="width:12.6em"><col style="width:13.9em"><col style="width:14.0em"><col style="width:14.8em"><col style="width:8em"><col style="width:11.6em"><col style="width:10.7em"><col style="width:28em"></colgroup>
+<thead>
+<tr>
+<th>场景</th>
+<th>分层</th>
+<th>角色</th>
+<th>执行增量</th>
+<th>频次与持续责任</th>
+<th>上下文可得与积累</th>
+<th>Iris 资产兑现</th>
+<th>结果可核验</th>
+<th>变现与商户关系</th>
+<th>可控与风险</th>
+<th>日本 Top 1 竞品</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A2 机票酒店比价与盯价</td>
+<td><span class="chip c-p0">P0</span></td>
+<td>价值证明：持续责任与日元结果；含订完之后的行程变动与售后跟进（J31）</td>
+<td>高：持续盯价、到价锁单、取消重订无人做（<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>、<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>）</td>
+<td>中：出行年数次，差旅更高；盯价本身是周级持续责任，一次出行从订票到回程还有多个跟进节点（<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>）</td>
+<td>高：确认邮件在 Gmail；差旅习惯、常住酒店可复用</td>
+<td>中高：差旅背书可走企业渠道；供给伙伴未确认</td>
+<td>高：差价以日元可见</td>
+<td>中：成交抽佣、节省分成；旅行业法待确认（F2）</td>
+<td>中低：自动下单赔付；旅行业法；接口稳定性</td>
+<td>楽天トラベル：在线订旅行的人中 64.9% 用过，排第一；じゃらんnet 41.3% 第二（MMD 2025-11，n=247）<span class="tag">调查</span>（<a class="ref" href="#src-S51" data-tip="DIME：MMD 研究所在线旅行预约服务利用调查（2025-11）">S51</a>）。只做一次性比价，不替用户盯价</td>
+</tr>
+<tr>
+<td>A1 预約困難店盯位与抽选·在日居民</td>
+<td><span class="chip c-p0">P0 主线</span></td>
+<td>产品决定升为主线（<a class="ref" href="#src-U25" data-tip="产品决定 2026-10-21 — 在日居民餐饮（预約困難店盯位与抽选、多人聚餐协调）升为 P0 主线，与机酒并列；投入深度不变（轻量接入）；跨境游客餐饮仍为勾子。理由：餐饮高频，是记忆与常设规则最能发挥的场景；原判断保留为 &#167;8.4 的切换条件">U25</a>）：agent 原生的持续责任；复用电话、抽选代填与名店接入</td>
+<td>高：反复拨打、盯放位、多轮抽选，本地人做得到但费力（<a class="ref" href="#src-U12" data-tip="战略讨论 2026-10-19 — 对本地人，电话预约和网约成本都不高，餐饮预约的增量价值低，不该作 P0；只保留预約困難店盯位抽选与多人聚餐协调两个小切口；机酒作 P0 价值证明；邮箱订单与账单持续跟进作 90 天观察项">U12</a>）</td>
+<td>中：事件驱动，一次任务跨数天到数周</td>
+<td>中：想去的店与会员身份须用户提供；成功后的偏好可复用</td>
+<td>中：TableCheck、OMAKASE 接入与名店关系可借力（<a class="ref" href="#src-P07" data-tip="日本预订网站清单（2026-10-14）">P07</a>）</td>
+<td>高：订到没订到二值可见</td>
+<td>中：用户按任务付费意愿强；商户侧无</td>
+<td>中：单账号规则、抽选条件；介绍制不承诺</td>
+<td>OMAKASE：预約困難店专门预约平台，导入约 1,000 家，米其林东京 2025 三星 12 家中 9 家使用<span class="tag">厂商</span>（<a class="ref" href="#src-S54" data-tip="HERP：GMO OMAKASE 公司介绍">S54</a>）。只覆盖自家导入的店</td>
+</tr>
+<tr>
+<td>A1 多人聚餐协调·在日居民</td>
+<td><span class="chip c-p0">P0 主线</span></td>
+<td>产品决定升为主线（<a class="ref" href="#src-U25" data-tip="产品决定 2026-10-21 — 在日居民餐饮（预約困難店盯位与抽选、多人聚餐协调）升为 P0 主线，与机酒并列；投入深度不变（轻量接入）；跨境游客餐饮仍为勾子。理由：餐饮高频，是记忆与常设规则最能发挥的场景；原判断保留为 &#167;8.4 的切换条件">U25</a>）：幹事的协调负担真实；复用 LINE 群与电话；正面对上 ぐるなび Sync Vibes</td>
+<td>中高：收集空闲、忌口、预算并来回确认，用户能做但费时（<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>）</td>
+<td>中：幹事是部分人，按月发生</td>
+<td>中：需被拉进 LINE 群，群成员偏好不在我们的上下文里；自己的常去店可复用</td>
+<td>高：LINE 渠道与本地商户签约都用得上（<a class="ref" href="#src-U01" data-tip="团队输入 2026-10-15 — 本地渠道、企业背书、本土合规为优势；开发与先发不是">U01</a>、<a class="ref" href="#src-U02" data-tip="团队输入 2026-10-15 — 餐饮可触达，伙伴在谈">U02</a>）</td>
+<td>低中：少来回可感知，无日元</td>
+<td>中：订阅；商户接入费与渠道权益</td>
+<td>中高：预约可撤销；群隐私与成员同意（E6）</td>
+<td>調整さん：免登录的日程调整工具，月均约 800 万人使用（2024-08）<span class="tag">厂商口径</span>（<a class="ref" href="#src-S55" data-tip="アイミツ SaaS：調整さん">S55</a>）。只管日程，选店订位仍在ホットペッパーグルメ等平台</td>
+</tr>
+<tr>
+<td>A5 美容沙龙预约与复约</td>
+<td><span class="chip c-p1">P1 第二梯队</span></td>
+<td>第三位：agent 属性强、痛点中；需签沙龙伙伴</td>
+<td>中：独立站或电话代订、到期复约，用户能做但嫌烦</td>
+<td>高：4–8 周复发，复约是天然的跨时段任务</td>
+<td>高：周期、发型师、上次项目天然可记</td>
+<td>高：美妆候选较多（<a class="ref" href="#src-P03" data-tip="官网合作企业候选清单（2026-10-13）.md)">P03</a>）</td>
+<td>中：优惠金额可见，复约省事难感知</td>
+<td>中：商户接入费</td>
+<td>高：取消规则明确（<a class="ref" href="#src-S05" data-tip="HOT PEPPER Beauty：Smart Payment">S05</a>）</td>
+<td>ホットペッパービューティー：发廊 6.4 万家、放松与美容沙龙 10.1 万家，年网约 1.8 亿件以上（2025-04）<span class="tag">二手</span>（<a class="ref" href="#src-S56" data-tip="Square：ホットペッパービューティー的优势（2026-03 更新）">S56</a>）</td>
+</tr>
+<tr>
+<td>A3 线上购物选型与比价</td>
+<td><span class="chip c-p1">P1 第二梯队</span></td>
+<td>第四位：伙伴多、agent 属性中；需新建社媒调研</td>
+<td>中：価格.com 已做比价（<a class="ref" href="#src-S43" data-tip="価格.com 家电">S43</a>），增量在社媒口碑与品牌官网比对</td>
+<td>中：高单价购买年数次；送礼与补货触发可提频</td>
+<td>中：订单邮件可接；品类偏好可复用，社媒登录态需用户提供</td>
+<td>高：零售与品牌候选较多（<a class="ref" href="#src-P03" data-tip="官网合作企业候选清单（2026-10-13）.md)">P03</a>）</td>
+<td>中：差价可见，口碑价值模糊</td>
+<td>低中：品牌直接合同；联盟受限</td>
+<td>高：到付款前可撤销</td>
+<td>価格.com：月访问 5,000 万人以上（2024-06）<span class="tag">厂商</span>（<a class="ref" href="#src-S58" data-tip="価格.com：店铺入驻说明">S58</a>）</td>
+</tr>
+<tr>
+<td>A1 餐饮预约与点餐·跨境游客</td>
+<td><span class="chip c-p1">P1 第二梯队</span></td>
+<td>第五位：执行增量最高、有商户侧变现，所以不作勾子；但旅游是公认的低频需求，只做日本时 agent 的长期记忆、主动性与本地渠道都价值不高；电话与名店接入复用预約困難店，新增在用户侧入口与合规；经酒店免安装触达；做全球旅游市场时重评；MVP 先以勾子形态上线（<a class="ref" href="#src-U20" data-tip="战略讨论 2026-10-19 — 跨境游客餐饮也进 MVP：故事好讲，是好的勾子">U20</a>）</td>
+<td>高：日语电话、接回电、跨语言点餐，游客完全做不到（<a class="ref" href="#src-D01" data-tip="Iris 日本 AI 电话方案（2026-10-13）">D01</a>、<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>）</td>
+<td>低：年一次、两周结束；只做日本时无法用第二次旅行续上</td>
+<td>低：上下文在携程、微信、小红书，接不到；两周后归零（<a class="ref" href="#src-D04" data-tip="Iris 日本能力储备与前置审批清单（2026-10-15）">D04</a> 2.3）</td>
+<td>中：商户侧有用，餐厅接受 AI 电话与扫码靠本地签约；用户侧无用，获客在中国侧，只有酒店分发可借力（<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>）</td>
+<td>高：订到没订到二值可见</td>
+<td>中：商户接入费、渠道权益；用户侧订阅难收</td>
+<td>中：商户对 AI 来电的接受度（<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>）；请求≠成立（<a class="ref" href="#src-S04" data-tip="HOT PEPPER 请求预约指南">S04</a>）</td>
+<td>AutoReserve：AI 电话代订，可订店 225 万家以上（2024-09）；台湾、香港注册用户各超 10 万（2025-06），自称"访日前应该装的服务"<span class="tag">厂商</span>（<a class="ref" href="#src-S52" data-tip="ASCII：AutoReserve 注册用户覆盖 100 国（2024-10-04）">S52</a>、<a class="ref" href="#src-S53" data-tip="ASCII：AutoReserve 台湾、香港注册用户各超 10 万（2025-06-09）">S53</a>）。未见面向游客的多语言店内点餐（Hello 推出过面向商户的 Mobile Order，<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>）</td>
+</tr>
+<tr>
+<td>A6 演唱会与限量品抽选</td>
+<td><span class="chip c-p1">P1 勾子</span></td>
+<td>展示代填与主动通知</td>
+<td>高：多平台多轮次代填与当落跟进，易漏（<a class="ref" href="#src-P07" data-tip="日本预订网站清单（2026-10-14）">P07</a>）</td>
+<td>中：事件驱动，但一次抽选跨数周多轮</td>
+<td>中：当落邮件可接；会员身份须用户提供</td>
+<td>低：无伙伴</td>
+<td>高：中签与否可见</td>
+<td>低：不计营收</td>
+<td>中：单账号规则、代填授权边界</td>
+<td>チケットぴあ（プレリザーブ）：ぴあ 2026 年 3 月期取扱高超 3,000 亿日元、创新高<span class="tag">厂商</span>（<a class="ref" href="#src-S60" data-tip="gamebiz：ぴあ 2026 年 3 月期决算（2026-05-14）">S60</a>）；排名未核实。FC 先行与限量品在各自官网，没有聚合平台</td>
+</tr>
+<tr>
+<td>A4 门店内选品推荐</td>
+<td><span class="chip c-p1">P1 配套</span></td>
+<td>随商户合作</td>
+<td>中：店内个人化推荐无现成工具，但依赖门店数据</td>
+<td>低：到合作门店才发生</td>
+<td>中：肤质与预算来自自述；门店数据来自商户</td>
+<td>高：合作门店即渠道（<a class="ref" href="#src-P03" data-tip="官网合作企业候选清单（2026-10-13）.md)">P03</a>）</td>
+<td>低：选对与否难核验</td>
+<td>中：门店付费</td>
+<td>高：无执行风险</td>
+<td>@cosme：化妆品口碑站，月访问约 1,780 万人，累计口碑 2,080 万件（2024-06）<span class="tag">厂商</span>（<a class="ref" href="#src-S61" data-tip="コマースピック：@cosme 规模（2024-12）">S61</a>）</td>
+</tr>
+<tr>
+<td>A5 夜间娱乐电话预约</td>
+<td><span class="chip c-p1">P1 勾子</span><span class="tier-note">有条件</span></td>
+<td>展示电话能力</td>
+<td>高：只能电话，用户不想自己打</td>
+<td>低：偶发</td>
+<td>低：不宜记录</td>
+<td>低：无伙伴，且伙伴清单站点均属性風俗（<a class="ref" href="#src-P07" data-tip="日本预订网站清单（2026-10-14）">P07</a>）</td>
+<td>低</td>
+<td>低：不计营收</td>
+<td>低：風営法、商店政策、年龄（<a class="ref" href="#src-S41" data-tip="e-Gov：風俗営業等の規制及び業務の適正化等に関する法律">S41</a>、<a class="ref" href="#src-S42" data-tip="Apple App Store Review Guidelines">S42</a>）</td>
+<td>ポケパラ：キャバクラ、ガールズバー、スナック信息站（<a class="ref" href="#src-S62" data-tip="en 转职：ポケパラ运营公司介绍">S62</a>）；规模与排名未核实</td>
+</tr>
+<tr>
+<td>B1 婚恋网站资料代填</td>
+<td><span class="chip c-p1">P1 勾子</span></td>
+<td>展示代填</td>
+<td>中：多站填表省事，但一次性</td>
+<td>低：注册一次</td>
+<td>低：资料一次性</td>
+<td>低：无伙伴</td>
+<td>低</td>
+<td>低：不计营收</td>
+<td>中：18 岁与本人确认（<a class="ref" href="#src-S24" data-tip="Pairs 安全措施">S24</a>）</td>
+<td>Pairs：用过婚恋 App 的人中 42.8% 用过，排第一；with 27.7% 第二（MMD 2025-09，n=30,000）<span class="tag">调查</span>（<a class="ref" href="#src-S63" data-tip="Web 担当者 Forum：MMD 研究所 2025 婚恋 App 调查（2025-10-20）">S63</a>）</td>
+</tr>
+<tr>
+<td>C1 闲置订阅发现与解约·在日居民</td>
+<td><span class="chip c-p1">P1 勾子</span></td>
+<td>展示读邮箱并替你解约；兼作邮箱持续跟进观察项的第一个具体任务</td>
+<td>中：找出并取消闲置订阅，用户做得到但常忘，部分只能电话解约（<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>）</td>
+<td>中：订阅按月扣费，月度检查即可发现</td>
+<td>高：收据与续费通知在 Gmail，转发信用卡明细即可</td>
+<td>低：商户不会为解约付费</td>
+<td>高：每月少扣的日元可见</td>
+<td>低：单个用户的浪费多在每月 500 至 1,000 日元，节省分成很薄（<a class="ref" href="#src-S64" data-tip="オカネコ：订阅&quot;积少成多浪费&quot;实态调查（2025-12 调查，2026-04 发布）">S64</a>）</td>
+<td>中：解约不可逆，每次本人确认；只转达解约意思，不代为交涉</td>
+<td>マネーフォワード ME：家计簿与资产管理，用户 1,730 万（2025-10）<span class="tag">厂商</span>（<a class="ref" href="#src-S66" data-tip="AppBank：マネーフォワード ME（2025-10-02）">S66</a>）；只记账，不替用户解约</td>
+</tr>
+</tbody>
+</table></div></figure>
+<h3 id="s4-3"><span class="hn">4.3</span>综合结论</h3>
+<p>总表读法：</p>
+<ul>
+<li><strong>在日居民餐饮预约拆开后，只有两个小切口有增量。</strong> 一两个人订一家店，本地人一两分钟就能完成，按 <a class="xref" href="#s8-3">&#167;8.3</a> 的门槛也不可能再降 30% 投入时间，所以归通用覆盖（<a class="ref" href="#src-U12" data-tip="战略讨论 2026-10-19 — 对本地人，电话预约和网约成本都不高，餐饮预约的增量价值低，不该作 P0；只保留预約困難店盯位抽选与多人聚餐协调两个小切口；机酒作 P0 价值证明；邮箱订单与账单持续跟进作 90 天观察项">U12</a>）。预約困難店的反复拨打、盯放位与抽选，以及幹事式的多人聚餐协调，才是本地人真正花力气的地方。本报告原判断前者小众、后者按月发生且正面对上 ぐるなび Sync Vibes（<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>），作第二梯队；2026-10-21 产品决定升为 P0 主线，理由是餐饮高频、是记忆与常设规则最能发挥的场景（<a class="ref" href="#src-U25" data-tip="产品决定 2026-10-21 — 在日居民餐饮（预約困難店盯位与抽选、多人聚餐协调）升为 P0 主线，与机酒并列；投入深度不变（轻量接入）；跨境游客餐饮仍为勾子。理由：餐饮高频，是记忆与常设规则最能发挥的场景；原判断保留为 &#167;8.4 的切换条件">U25</a>）；投入深度仍为轻量接入，原判断保留为 <a class="xref" href="#s8-4">&#167;8.4</a> 的切换条件（再委托率不高于普通预约则退为通用覆盖）。</li>
+<li><strong>A2 机票酒店比价与盯价是唯一执行增量、可核验全高且上下文高的场景</strong>，是 P0 唯一的主线：盯价是 agent 原生的持续责任，差价以日元可见，确认邮件就在 Gmail 里。它有两个短板：可控，即自动下单的赔付与旅行业法，所以首次必须确认、先做免费取消价位；频次，出行年数次，无法单独养成习惯。订完之后的航班变动、改签退款、值机与积分到期跟进（J31）并入主线，是竞品已验证的旅行后勤任务（<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>），让一次出行有多个接触点，部分补上频次短板。</li>
+<li><strong>跨境游客餐饮：增量最高，但不是同一批用户。</strong> 执行增量与可核验都高、有商户侧变现，所以留在第二梯队（<a class="ref" href="#src-U09" data-tip="战略讨论 2026-10-19 — 跨境游客餐饮重要，只是到不了 P0；它的需求在在日居民餐饮的技术基建上较容易满足，不应作勾子">U09</a>）；但频次、上下文为低，资产兑现只有商户一端，只做日本时记忆与主动性没有回报（<a class="ref" href="#src-U14" data-tip="战略讨论 2026-10-19 — 场景评估先拆 agent 做这件事的优劣势；跨境游客的常驻平台在国内且不在意合规，本土渠道优势发挥不出；旅游对单个用户低频，只做日本时主动性与长期记忆无回报">U14</a>）。完整接入排末位，因为要为一次性用户新建中国入口、微信通知、PIPL 合规与国区备案（<a class="ref" href="#src-D04" data-tip="Iris 日本能力储备与前置审批清单（2026-10-15）">D04</a> 2.3、<a class="ref" href="#src-U15" data-tip="战略讨论 2026-10-19 — 旅游是公认的低频需求，除非做全球旅游市场；只做日本时跨境游客的长期记忆、主动性与本地渠道价值都不高；跨境餐饮保留第二梯队，排末位">U15</a>）。故事好讲、传播性强，所以先以勾子形态进 MVP：通用能力跑通 H13 日语电话与回电接听、H14 拍菜单点单，经合作酒店免安装触达，考核完成率、首次价值与传播效果，不考核留存（<a class="ref" href="#src-U20" data-tip="战略讨论 2026-10-19 — 跨境游客餐饮也进 MVP：故事好讲，是好的勾子">U20</a>）。做全球旅游市场时再按频次、上下文重评。</li>
+<li><strong>美容沙龙复约（A5）的 agent 属性强于线上购物（A3）</strong>：频次、上下文、资产兑现三项全高，但执行增量只有中，用户在现有平台上自己就能约，按 <a class="xref" href="#s4-1">&#167;4.1</a> 的门槛不进 P0（<a class="ref" href="#src-U19" data-tip="战略讨论 2026-10-19 — 美容保持 P1；MVP 为 P0 加若干 P1，餐饮必做；勾子随 MVP 上线，由通用能力（browser use、computer use）跑通即可，不作重点优化；AI 电话基本确定要做，风险备注即可">U19</a>）；排在两个餐饮小切口之后、线上购物之前。</li>
+<li><strong>按周发生的入口仍待验证，列观察项而不硬补。</strong> 机酒一年几次，餐饮两个小切口按事件与按月发生，都不是按周发生的任务。竞品研究里重复潜力最高的是承诺与事务的持续跟进（<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>），对应在日居民邮箱里的订单、账单、订阅与预约确认（J23、J24、H5、H6）。日本本地缺少证据，90 天内只看连接邮箱的用户中提醒被采纳和主动追问的比例（<a class="xref" href="#s8-2">&#167;8.2</a>、<a class="xref" href="#s8-4">&#167;8.4</a>）。其中闲置订阅有本地数据：50.5% 遇到过首月免费后被自动扣费，19.1% 有忘了取消的订阅（<a class="ref" href="#src-S64" data-tip="オカネコ：订阅&quot;积少成多浪费&quot;实态调查（2025-12 调查，2026-04 发布）">S64</a>）。发现页（<a class="ref" href="#src-U23" data-tip="战略讨论 2026-10-20 — Iris 的增量是按偏好推测任务意图并完成，不是推荐；发现页回答&quot;猜你想做、猜你需要&quot;，呈现新手规则卡、信息、想法与备好的任务，用户自己打开、不推送；用户可把同类任务设为常设规则，之后由 Iris 直接办、事后通知">U23</a>）原列第二个候选，2026-10-26 产品决定升为与对话并列的主线模块（<a class="ref" href="#src-U26" data-tip="产品决定 2026-10-26 — 产品由对话、发现、agent 设置三块组成，发现页由观察项升为与对话并列的主线模块，引发交办与推测被否定的比例设门槛；写入日历与出发提醒、跟到当天、盯到免费取消截止、下月核验等需要新权限或持续盯守的后续动作，首次在回执里给选项、之后同类自动，不默认做；向商家透露本人基本信息随任务授权，他人信息与健康类信息单独确认、不自动入记忆">U26</a>）：按记忆、邮箱、日历与用户分享的收藏，猜用户想做、需要什么，给出信息、想法或备好的任务，用户自己打开、不推送；90 天内看发现页引发交办的比例、每周打开率与推测被否定的比例，设门槛（<a class="xref" href="#s8-2">&#167;8.2</a>、<a class="xref" href="#s8-3">&#167;8.3</a>）。基于泛兴趣的信息与种草在机酒过 <a class="xref" href="#s8-3">&#167;8.3</a> 门槛后再做，因为最容易变成噪音（<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>、<a class="ref" href="#src-S124" data-tip="Futurism：Muse 评测汇总">S124</a>）。</li>
+<li><strong>勾子与第二梯队的分界是变现</strong>：抽选、夜间娱乐、婚恋的执行增量也高，但变现为低，只展示一种能力，不计营收，预算按传播效果评价；跨境餐饮有商户侧变现，所以进第二梯队而不是勾子。闲置订阅解约同理：结果以日元可见、传播性强，但单个用户每月只省几百到一千日元，商户也不会为解约付费（<a class="ref" href="#src-S64" data-tip="オカネコ：订阅&quot;积少成多浪费&quot;实态调查（2025-12 调查，2026-04 发布）">S64</a>），所以是勾子。</li>
+</ul>
+<p>分层含义与 <a class="xref" href="#s4-1">&#167;4.1</a> 一致：<strong>P0</strong> 针对性建设专用接入、商户合作与责任设计，验证商业闭环；<strong>P1</strong> 轻量针对性接入；<strong>P2</strong> 不做针对性投入，由通用能力承接。</p>
+<ul>
+<li><strong>P0 价值证明：A2 机票酒店比价与盯价。</strong> 含订完之后的行程变动与售后跟进（J31）；90 天内先限定在免费取消价位、首次确认的范围内验证用户价值。</li>
+<li><strong>P0 主线还包括 A1 预約困難店盯位与抽选、A1 多人聚餐协调（<a class="ref" href="#src-U25" data-tip="产品决定 2026-10-21 — 在日居民餐饮（预約困難店盯位与抽选、多人聚餐协调）升为 P0 主线，与机酒并列；投入深度不变（轻量接入）；跨境游客餐饮仍为勾子。理由：餐饮高频，是记忆与常设规则最能发挥的场景；原判断保留为 &#167;8.4 的切换条件">U25</a>）。</strong> 两个餐饮小切口共用电话、名店接入与 LINE 能力，90 天内与机酒并行小规模试点；投入深度为轻量接入。</li>
+<li><strong>P1 第二梯队（按新增投入排序）：A5 美容沙龙预约与复约、A3 线上购物选型与比价、A1 餐饮预约与点餐·跨境游客。</strong> 在机酒通过 <a class="xref" href="#s8-3">&#167;8.3</a> 用户价值门槛后接入；跨境餐饮的完整接入排末位，因为旅游低频（<a class="ref" href="#src-U15" data-tip="战略讨论 2026-10-19 — 旅游是公认的低频需求，除非做全球旅游市场；只做日本时跨境游客的长期记忆、主动性与本地渠道价值都不高；跨境餐饮保留第二梯队，排末位">U15</a>），但先以勾子形态进 MVP（<a class="ref" href="#src-U20" data-tip="战略讨论 2026-10-19 — 跨境游客餐饮也进 MVP：故事好讲，是好的勾子">U20</a>）。</li>
+<li><strong>P1 勾子（传播叙事，不计营收）：A6 演唱会与限量品抽选、A5 美容优惠、A5 夜间娱乐电话预约、B1 婚恋网站资料代填、C1 闲置订阅发现与解约（兼作邮箱持续跟进观察项）。</strong> 随 MVP 上线，由通用能力（云端电脑与浏览器操作、AI 电话）跑通即可，不做针对性优化。</li>
+<li><strong>P1 配套（随主线建设）：A1 的改约取消与截止提醒（J05）、常去店与同行者记忆（J06），随任何预约任务出现；A4 门店内选品推荐、A3 中的优惠券／积分／送礼触发／物流；C1 账单缴费提醒，兼作 90 天观察项。</strong></li>
+<li><strong>P2 通用覆盖：A1 一两个人的普通餐厅预约、A4 店铺筛选、A5 車検、B2 情绪陪伴、C2 行政搬家、C3 退税、报销与资产事务。</strong> 不逐项评：执行增量低（现成工具足够或本人到场不可替代），由通用能力承接；出现具体买方或伙伴时升为 P1。</li>
+<li><strong>MVP 范围：</strong> MVP 是 P0 加若干 P1：机酒，两个餐饮小切口，发现页主线模块（<a class="ref" href="#src-U26" data-tip="产品决定 2026-10-26 — 产品由对话、发现、agent 设置三块组成，发现页由观察项升为与对话并列的主线模块，引发交办与推测被否定的比例设门槛；写入日历与出发提醒、跟到当天、盯到免费取消截止、下月核验等需要新权限或持续盯守的后续动作，首次在回执里给选项、之后同类自动，不默认做；向商家透露本人基本信息随任务授权，他人信息与健康类信息单独确认、不自动入记忆">U26</a>），邮箱观察项（含闲置订阅解约），勾子，以勾子形态上线的跨境游客餐饮，配套随预约任务出现；美容复约、线上购物比价与跨境餐饮的完整接入在机酒通过 <a class="xref" href="#s8-3">&#167;8.3</a> 用户价值门槛后进行（<a class="ref" href="#src-U19" data-tip="战略讨论 2026-10-19 — 美容保持 P1；MVP 为 P0 加若干 P1，餐饮必做；勾子随 MVP 上线，由通用能力（browser use、computer use）跑通即可，不作重点优化；AI 电话基本确定要做，风险备注即可">U19</a>）。</li>
+<li><strong>P2 法规限定：D1 医疗预约、D2 用药与介护、D3 资金执行。</strong>可控为低，只做汇总、预填与协调，本人提交；健诊在出现机构买方时走机构路径升为 P1。</li>
+</ul>
+</section><section class="chapter"><h2 id="s5"><span class="hn">5</span>如何取胜：Aha 时刻与价值主张</h2>
+<p class="leadin"><span class="leadin-tag">先说结论</span>取胜靠两件事。一是让用户登录后，在首次对话 120 秒内经历第一个 Aha，并用每个 Aha 换下一层授权；二是每条主线的价值主张都有明确的客群、替代对象与差异化。场景卡字段固定：客群与任务、替代对象、差异化、Aha、执行路径、变现与伙伴权益、获客勾子、待验证假设、风险、90 天指标。各场景的聚合平台、独立站、预订系统与电话路径名单，以及 agent benchmark 的基准任务，见 <a class="ref" href="#src-D04" data-tip="Iris 日本能力储备与前置审批清单（2026-10-15）">D04</a> 第 2.4 节；本文的执行路径只写类型。</p>
+<h3 id="s5-1"><span class="hn">5.1</span>Aha 时刻与授权阶梯</h3>
+<p>Aha 是用户第一次明显感到"Iris 解决了一件重要、而且我原来很难解决的事"的时刻（<a class="ref" href="#src-D03" data-tip="日本市场 C 端 Personal AI Agent 与 Onboarding 深度研究（2026-10-15）">D03</a> 称首次有意义价值时间）。它决定用户是否给出下一层授权，所以 Aha 的顺序就是授权的顺序，也是产品建设的顺序。表 5-1 按建设顺序排列，每个 Aha 写明真实情境、用户看到的回执，以及之后只问的那一句话。设计依据是场景调研（<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>、<a class="ref" href="#src-U07" data-tip="战略讨论补充 2026-10-16 — 关键场景清单：餐饮按跨境（替代 AutoReserve）与本地（筛选，替代食べログ）分开，店内二维码点餐；机酒以比价筛选加持续盯价自动锁单为主，机酒餐饮经 Agent 渠道给优惠或礼品；电商做推荐与比价，社媒调研按 Instagram、X、TikTok 顺序，YouTube 需用户登录态；线下店铺筛选无增量、店内 SKU 推荐；抽选搜索代填并经邮箱通知下一轮；美容与夜间娱乐走独立站或电话；婚恋大站填表，不做站内信跟踪。JTBD 按一行一条任务拆分">U07</a>）与日本本地的官方规则、调查、媒体和用户自述；竞品用户声音（<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>）作参考。十一条原则：</p>
+<ol class="cards">
+<li><strong>在精不在多。</strong> Aha 在精不在多：每个场景 1 至 2 个，P0 主线 4 个。只收同时满足三点的时刻：用户自己做不到或做起来很费力的事被办成了；结果肉眼可见，即订到了、省下或拿回了日元；之后能自然换来下一层授权。功能细节、防错规则与合规要求写进执行要求，不算 Aha（<a class="ref" href="#src-U18" data-tip="战略讨论 2026-10-19 — Aha 在精不在多；这里设计的是 Aha，不是 agent 评测 golden set">U18</a>）。</li>
+<li><strong>第一个 Aha 只需登录。</strong> 不做免登录：用户先以 Google、Apple 或 LINE 登录，Gmail 是用户上下文的主路径，跨境游客同样经 Gmail（<a class="ref" href="#src-U22" data-tip="战略讨论 2026-10-19 — 不做免登录，用户以 Google、Apple 或 LINE 登录；公开上线等 Gmail 受限权限审核通过；跨境游客同样经 Gmail；限额钱包设默认额度，用户可调整">U22</a>）。第一个 Aha 在首次对话 120 秒内发生：在日居民是 H1 机酒比价卡片；跨境游客是 H13 日语电话。注册时不连 Gmail，在第一个需要邮件的任务里请求；不用 Gmail 的用户经每人一个转发地址覆盖（<a class="ref" href="#src-U27" data-tip="产品决定 2026-10-27 — 首次进入不请求位置与 Gmail，除登录外只问名字（含フリガナ）、出生日期、称呼与生活圈（家与公司附近的车站，可跳过），一页一问；位置在用户提到附近、现在、末班车时于任务内请求，默认使用期间加大致位置，被拒后改问车站；Gmail 在第一个需要邮件的任务里请求，不用 Gmail 的用户经每人一个转发地址覆盖。理由：本地生活任务靠生活圈即可定出发地与区域，日本用户对给出位置的抵触高（Iris 日本本地生活的 onboarding 与界面侧重研究，2026-10-27）">U27</a>）。待定：120 秒从登录完成还是从连接 Gmail 起算。</li>
+<li><strong>回执可核验。</strong> 每个 Aha 有可核验回执（预约编号、商家回复、通话摘要），回执区分"已查到、已申请、已确认、还需你做"四种状态，不把"查到有位"说成"已订好"；完成定义不清是竞品用户反馈里最常见的失败（<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>）。</li>
+<li><strong>不依赖平台 API。</strong> 首发的 Aha 不依赖平台 API。</li>
+<li><strong>每次只问一句。</strong> 每个 Aha 之后只问一个问题，用它换下一层授权；同一任务内的授权按动作递进：盯价先通知并一键确认，首次确认后才开放限额内自动锁定，而且只锁可免费取消的价位（H2）。</li>
+<li><strong>授权按动作分。</strong> 授权按动作分，不按场景分：盯价、盯放位、当落这类重复查询授权一次持续有效；付款、发消息、对外承诺每次出卡片或在限额内自动（<a class="xref" href="#s7-3">&#167;7.3</a>）。用户确认过一次同类任务后，可以把它设为常设规则，写明条件、限额与只订可免费取消的，例如"连休前比好机酒，限额 5 万日元"；之后 Iris 在规则内直接办、事后给回执，规则随时可暂停或取消（<a class="ref" href="#src-U23" data-tip="战略讨论 2026-10-20 — Iris 的增量是按偏好推测任务意图并完成，不是推荐；发现页回答&quot;猜你想做、猜你需要&quot;，呈现新手规则卡、信息、想法与备好的任务，用户自己打开、不推送；用户可把同类任务设为常设规则，之后由 Iris 直接办、事后通知">U23</a>）。需要新权限、持续盯守或推送的后续动作（写入日历与出发提醒、跟到当天、盯到免费取消截止、下月核验）不默认做：首次在回执里给选项、之后同类自动、设置里可关，不占 Aha 之后的那一句（<a class="ref" href="#src-U26" data-tip="产品决定 2026-10-26 — 产品由对话、发现、agent 设置三块组成，发现页由观察项升为与对话并列的主线模块，引发交办与推测被否定的比例设门槛；写入日历与出发提醒、跟到当天、盯到免费取消截止、下月核验等需要新权限或持续盯守的后续动作，首次在回执里给选项、之后同类自动，不默认做；向商家透露本人基本信息随任务授权，他人信息与健康类信息单独确认、不自动入记忆">U26</a>）。竞品用户既因频繁审批放弃任务，也因未经确认发送而收回授权（<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>）。</li>
+<li><strong>做不到也要有 Aha。</strong> 做不到也要有 Aha：说明停在哪一步、保留可接手状态、给替代（H8）。同一类任务在不同商户结果不同，不承诺"都能自动完成"（<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>）。</li>
+<li><strong>跨时段的第二次。</strong> P0 与每个第二梯队场景至少一个跨时段的 Aha（机酒 H3、H4，预約困難店 H7，聚餐 H10，美容 H11，邮箱观察项 H6，配套 H15）：首次 Aha 靠新鲜感，留存靠下一次真实需求出现时 Iris 记得上次、少让用户重复解释（<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>）。</li>
+<li><strong>主动的边界。</strong> 主动联系用户（推送、在对话里开口）只针对用户已交办、或邮箱里已存在的事：变化、到期、截止；已交办包括用户确认过的常设规则（原则 6）。用户自己打开的发现页可以给信息与想法，但每张卡写明推测依据，不推送，不卖排序，不在其中请求授权（<a class="ref" href="#src-U23" data-tip="战略讨论 2026-10-20 — Iris 的增量是按偏好推测任务意图并完成，不是推荐；发现页回答&quot;猜你想做、猜你需要&quot;，呈现新手规则卡、信息、想法与备好的任务，用户自己打开、不推送；用户可把同类任务设为常设规则，之后由 Iris 直接办、事后通知">U23</a>）。不推销商品：发现页里的店铺与活动只来自用户自己的上下文，商户不能付费换位置；优惠类 Aha（H18）须用户先开启。竞品用户对不需要的商品推荐明确反感（<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>）；Muse 的建议被评测者认为在诱导用户交出更多个人数据（<a class="ref" href="#src-S124" data-tip="Futurism：Muse 评测汇总">S124</a>）。</li>
+<li><strong>勾子与 P2。</strong> 勾子的 Aha，以及以勾子形态进 MVP 的跨境游客餐饮（H13、H14），随 MVP 上线，由通用能力（云端电脑与浏览器操作、AI 电话）跑通即可，不做针对性优化。P2 场景不设计专门 Aha：普通餐厅预约、退税、健诊、游客落地行程与紧急求助由通用能力完成，照常给回执。机酒与餐饮的渠道礼遇（J10）不单列 Aha，伙伴权益登记后在回执中标明。</li>
+<li><strong>电话的礼仪。</strong> 电话类 Aha 一律开场披露 AI 身份与委托人，只在店方营业或开放窗口内拨打，重拨有上限；店方表示拒绝后标为"仅本人致电"，不再拨打。已有店主公开抱怨 AI 订位电话反复来电（<a class="ref" href="#src-S88" data-tip="サカナス商店（X，2026-10-18）">S88</a>、<a class="ref" href="#src-S121" data-tip="ITmedia：AutoReserve 来电与店家反应（2023-05）">S121</a>）。</li>
+</ol>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>授权层</th>
+<th>用户给出什么</th>
+<th>换来的 Aha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 登录与自述</td>
+<td>登录、生活圈（家与公司附近的车站，可跳过）、一句话任务</td>
+<td>H1、H8、H12、H13、H14、H16、H18</td>
+</tr>
+<tr>
+<td>1 低门槛</td>
+<td>通知、转发与分享、扫码、位置（使用期间，在任务里请求）</td>
+<td>H2</td>
+</tr>
+<tr>
+<td>2 核心上下文</td>
+<td>日历（读；写入为回执里的选项，单独授权）、邮箱或转发地址</td>
+<td>H4、H5、H6、H7、H11、H15</td>
+</tr>
+<tr>
+<td>3 关系</td>
+<td>联系人、群聊、以用户名义联系对方</td>
+<td>H9、H10</td>
+</tr>
+<tr>
+<td>4 高敏</td>
+<td>支付限额、账户与会员身份、身份验证</td>
+<td>H3、H17、H19、H20</td>
+</tr>
+</tbody>
+</table></div>
+<figure class="tbl wide" id="t5-1"><figcaption><span class="tn">表 5-1</span>Aha 地图〔产品设计，<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>、<a class="ref" href="#src-U05" data-tip="战略讨论补充 2026-10-16 — 通用 Agent 能力是底座，分层只表示针对性投入级别；P0／P1／P2 标签；Aha 设计归战略文档；场景任务按 JTBD 润色">U05</a>、<a class="ref" href="#src-U07" data-tip="战略讨论补充 2026-10-16 — 关键场景清单：餐饮按跨境（替代 AutoReserve）与本地（筛选，替代食べログ）分开，店内二维码点餐；机酒以比价筛选加持续盯价自动锁单为主，机酒餐饮经 Agent 渠道给优惠或礼品；电商做推荐与比价，社媒调研按 Instagram、X、TikTok 顺序，YouTube 需用户登录态；线下店铺筛选无增量、店内 SKU 推荐；抽选搜索代填并经邮箱通知下一轮；美容与夜间娱乐走独立站或电话；婚恋大站填表，不做站内信跟踪。JTBD 按一行一条任务拆分">U07</a>、<a class="ref" href="#src-U16" data-tip="战略讨论 2026-10-19 — 基于定稿场景 review Aha：去冗余、补遗漏、按建设顺序排列，对 agent 与产品设计验证都有价值">U16</a>、<a class="ref" href="#src-U18" data-tip="战略讨论 2026-10-19 — Aha 在精不在多；这里设计的是 Aha，不是 agent 评测 golden set">U18</a>；按建设顺序排列；授权层"1→4"表示首次在前一层发生、之后升到后一层；到能力的映射见 <a class="ref" href="#src-D04" data-tip="Iris 日本能力储备与前置审批清单（2026-10-15）">D04</a>〕</figcaption><div class="tw"><table class="merged fixed"><colgroup><col style="width:9.5em"><col style="width:8.0em"><col style="width:5.0em"><col style="width:8em"><col style="width:11.4em"><col style="width:27.3em"><col style="width:28em"><col style="width:9.5em"><col style="width:5.0em"><col style="width:8em"><col style="width:9.5em"></colgroup>
+<thead>
+<tr>
+<th>分层</th>
+<th>场景</th>
+<th>#</th>
+<th>任务</th>
+<th>Aha 时刻</th>
+<th>真实情境</th>
+<th>用户看到的回执</th>
+<th>之后只问一句</th>
+<th>授权层</th>
+<th>阶段</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody><tr><td rowspan="4" class="c0 lead"><span class="chip c-p0">P0 主线</span></td><td rowspan="4" class="lead">A2 机票酒店比价与盯价</td><td>H1</td><td>J07</td><td>一句话出比价卡，连我不知道的官网早订价也找到了</td><td>同一旅馆楽天价 ¥58,823，官网早订加事前付款只要 ¥47,020，用户偶然才发现；在线订旅行的人 57.2% 觉得比较难</td><td>"官网早订价 ¥47,020，比楽天便宜 ¥11,803；但需事前付款，8/26 后取消收 30%。要订吗？"</td><td>要我盯着这条路线，降价就告诉你吗？</td><td>0</td><td>首发</td><td><a class="ref" href="#src-S67" data-tip="リベシティ：楽天トラベルと旅館公式の価格差（用户自述）">S67</a>、<a class="ref" href="#src-S51" data-tip="DIME：MMD 研究所在线旅行预约服务利用调查（2025-11）">S51</a>、<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a> C43</td></tr>
+<tr><td>H2</td><td>J08</td><td>我没盯着，它在降价时替我订到了</td><td>价格每天在变，自己反复查太累，45.6% 希望 AI 帮忙预测价格；LCC 订错日期马上取消仍收 100%，所以自动锁定只用于可免费取消的价位</td><td>首次："降到 ¥23,800，比你的目标低 ¥1,200，一键确认就订"；第二次起："又降到 ¥23,800，已在限额内订好，免费取消到 12/18"</td><td>下次同类降价，在限额内直接替你锁定吗？</td><td>1→4</td><td>首发</td><td><a class="ref" href="#src-S51" data-tip="DIME：MMD 研究所在线旅行预约服务利用调查（2025-11）">S51</a>、<a class="ref" href="#src-S68" data-tip="マネーポスト：LCC 订错日期取消收 100%">S68</a>、<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a> C79</td></tr>
+<tr><td>H3</td><td>J09</td><td>订好的房降价了，它已帮我换成便宜的</td><td>同一订单几天后从 ¥83,476 降到 ¥71,669，每天人工去查太累；旅馆 21 天前起收 30% 取消费</td><td>"同房型降了 ¥11,807，已先订新单（免费取消到 9/18），再免费取消旧单"</td><td>以后订的酒店都替你盯到免费取消截止吗？</td><td>4</td><td>主线跑通后</td><td><a class="ref" href="#src-S69" data-tip="リベシティ：订后降价与 Tra-bell（用户自述）">S69</a>、<a class="ref" href="#src-S70" data-tip="楽天トラベル：某酒店取消规定">S70</a></td></tr>
+<tr><td>H4</td><td>J31</td><td>航班出事，改签和酒店它都先处理好了</td><td>大雪停飞时改签最早只能排到数天后，柜台排队超 1 小时；日本酒店常见条款是不联系且当天 20:00 未到视为取消</td><td>"明早航班因天气欠航。已为你保留今晚 19:30 那班的座位，确认就换；已致电酒店说明 22:30 到，不收费"</td><td>以后机票确认邮件交给我，航班一有变化就先处理吗？</td><td>2→4</td><td>首发</td><td><a class="ref" href="#src-S71" data-tip="ANA：天候等影响时免手续费变更">S71</a>、<a class="ref" href="#src-S72" data-tip="北海道新闻：新千歳大雪改签（2019-01）">S72</a>、<a class="ref" href="#src-S73" data-tip="Prince Hotels：取消规定">S73</a></td></tr>
+<tr><td rowspan="2" class="c0 lead"><span class="chip c-na">观察项</span></td><td class="lead">邮箱持续跟进</td><td>H5</td><td>J23、J24、J31</td><td>连上邮箱，它先告诉我快要错过的事</td><td>お試し解约截止、包裹保管期限、退款逾期、资费调整、积分与里程到期同时堆在邮箱里，事后说不清看过什么；46.9% 的人有过里程失效</td><td>"共 5 件：○○乳霜 10/21 前要电话解约；ヤマト包裹保管到 10/22；Booking 退款已逾期 3 天；3,000 里程 1/31 过期……"</td><td>这几件要我逐一处理吗？</td><td>2</td><td>首发</td><td><a class="ref" href="#src-S76" data-tip="国民生活センター：定期购入注意喚起（2026-04-28）">S76</a>、<a class="ref" href="#src-S75" data-tip="神戸新聞：里程失效调查（2021，n=1,236）">S75</a>、<a class="ref" href="#src-S83" data-tip="ケータイ Watch：docomo 旧方案月费调整（2026-09）">S83</a>、<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a> C38</td></tr>
+<tr><td class="lead">C1 闲置订阅与定期购入（P1 勾子）</td><td>H6</td><td>J24</td><td>找出白付的订阅，它替我退掉，下个月还核验停扣</td><td>订阅契约者 50.5% 遇到过首月免费后被自动扣费，19.1% 有忘了取消的订阅；有人只能电话解约，第 8 天才打通被拒；有人收到解约完成邮件后仍被扣款</td><td>"找到 3 个近 3 个月没用过的订阅，每月共 ¥2,180。已解约 2 项，△△只接电话已打完；11/5 我会核对是否停扣"</td><td>以后每月扣款前替你看一眼吗？</td><td>2→4</td><td>首发</td><td><a class="ref" href="#src-S64" data-tip="オカネコ：订阅&quot;积少成多浪费&quot;实态调查（2025-12 调查，2026-04 发布）">S64</a>、<a class="ref" href="#src-S77" data-tip="Yahoo!知恵袋：只能电话解约、需提前 10 天">S77</a>、<a class="ref" href="#src-S78" data-tip="熊本日日新聞：服装订阅相关咨询">S78</a>、<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a> C11</td></tr>
+<tr><td rowspan="4" class="c0 lead"><span class="chip c-p0">P0 主线</span><span class="tier-note"><a class="ref" href="#src-U25" data-tip="产品决定 2026-10-21 — 在日居民餐饮（预約困難店盯位与抽选、多人聚餐协调）升为 P0 主线，与机酒并列；投入深度不变（轻量接入）；跨境游客餐饮仍为勾子。理由：餐饮高频，是记忆与常设规则最能发挥的场景；原判断保留为 &#167;8.4 的切换条件">U25</a></span></td><td rowspan="2" class="lead">A1 预約困難店盯位与抽选</td><td>H7</td><td>J03</td><td>我没守着，名店的位子它替我订到了</td><td>名店按固定日时开放、几分钟就满；TableCheck 候补只发邮件、不自动确定，先操作的人得位</td><td>"候补通知 20:41 到，20:42 已用你的账号订下 11/22 18:30 两位"</td><td>还有想去的店吗？我一起盯着</td><td>2</td><td>首发</td><td><a class="ref" href="#src-S85" data-tip="Sushi Walker：予約困難店预约指南">S85</a>、<a class="ref" href="#src-S86" data-tip="アゴラ：名店预约体验（2022-05）">S86</a>、<a class="ref" href="#src-S87" data-tip="TableCheck：キャンセル待ち说明">S87</a></td></tr>
+<tr><td>H8</td><td>J03</td><td>没订到，它告诉我卡在哪，还给了今晚就能订的同档店</td><td>介绍制或满席时常订不到；同一 agent 在不同平台结果不同，用户需要知道停在哪一步</td><td>"○○只接熟客介绍，没订成；下次开放 12/1 10:00。同档 A 店 19:00、B 店 20:00 已核实有位，要订哪家？"</td><td>12/1 开放时替你提交吗？</td><td>0</td><td>首发</td><td><a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a> C75、<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a> C52、<a class="ref" href="#src-S85" data-tip="Sushi Walker：予約困難店预约指南">S85</a></td></tr>
+<tr><td rowspan="2" class="lead">A1 多人聚餐协调</td><td>H9</td><td>J04</td><td>把 Iris 拉进群，聚餐从收集到订好一次完成</td><td>幹事最头疼的是选店与调日程，约四分之三的人不愿当幹事；过敏会让一顿饭泡汤</td><td>"8 人里 7 人已回复，12/12 全员可以。两案投票 A 店 6 票，已订 19:00 八位 ¥5,500 套餐，店方确认可去掉甲壳类"</td><td>下次聚餐还拉我进群吗？</td><td>3</td><td>首发</td><td><a class="ref" href="#src-S89" data-tip="Forbes JAPAN：幹事调查（2025-12，n=310）">S89</a>、<a class="ref" href="#src-S90" data-tip="ECのミカタ：ホットペッパーグルメ幹事调查（2014）">S90</a>、<a class="ref" href="#src-S91" data-tip="Forbes JAPAN：食物过敏与会食（2024-12）">S91</a>、<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a> C13</td></tr>
+<tr><td>H10</td><td>J04</td><td>有人临时退出，人数和会费它在截止前改好了</td><td>人数一变就要和店方重新调整，部分店不能在线改人数；无故不到每年约 2000 亿日元损失</td><td>"B 退出了。已在免费截止前改为 7 位，前一天向店方锁定人数；会费改为每人 ¥5,500"</td><td>以后订的聚餐都替你跟到当天吗？</td><td>3</td><td>首发</td><td><a class="ref" href="#src-S92" data-tip="TableCheck：预约变更说明">S92</a>、<a class="ref" href="#src-S93" data-tip="マネーポスト：No-show 损失（2019）">S93</a></td></tr>
+<tr><td rowspan="4" class="c0 lead"><span class="chip c-p1">P1 第二梯队</span></td><td class="lead">A5 美容沙龙预约与复约</td><td>H11</td><td>J16</td><td>又该剪了，它约上了上次那位美容师</td><td>每 4 至 8 周复约，热门美容师周末早满；有店要求改电话预约，而本人怕打电话</td><td>"距上次 6 周。佐藤さん周六满了，已盯到 11/2 16:00 的取消空位；店方只收电话，已替你打电话订好"</td><td>以后到期都这样替你约吗？</td><td>2</td><td>第二梯队接入后</td><td><a class="ref" href="#src-S95" data-tip="note：美容师自述（2021）">S95</a>、<a class="ref" href="#src-S96" data-tip="Yahoo!知恵袋：店家要求下次改电话预约（2026-01）">S96</a>、<a class="ref" href="#src-S94" data-tip="ホットペッパービューティーアカデミー：美容サロン顧客満足調査 2023">S94</a></td></tr>
+<tr><td class="lead">A3 线上购物选型与比价</td><td>H12</td><td>J12、J13</td><td>买之前一次看清：谁到手最便宜，SNS 上主要吐槽什么</td><td>积分倍率有上限、限时积分次月底失效、部分活动须当天报名；隐瞒广告身份受规制，话题护肤品买后不合肤的比例 59.8%；竞品曾推荐了更贵的渠道</td><td>"按你实际满足的积分条件，Amazon 到手最便宜；去掉 12 条 PR 帖后，主要吐槽是集尘盒小"</td><td>要我在它降到 ¥xx 以下时告诉你吗？</td><td>0</td><td>第二梯队接入后</td><td><a class="ref" href="#src-S98" data-tip="楽天市場：SPU 规则">S98</a>、<a class="ref" href="#src-S99" data-tip="Yahoo!ショッピング：5のつく日">S99</a>、<a class="ref" href="#src-S102" data-tip="消費者庁：ステルスマーケティング规制">S102</a>、<a class="ref" href="#src-S103" data-tip="ECのミカタ：化妆品购买调查（2026-06，n=1,014）">S103</a>、<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a> C24</td></tr>
+<tr><td rowspan="2" class="lead">A1 餐饮预约与点餐·跨境游客</td><td>H13</td><td>J01</td><td>只收日语电话的店，它替我订上，店家回电也替我接</td><td>老店只接本地电话预约，访日客直接打电话订位的只有 10.5%；店家回电联系不上，预约可能作废</td><td>"已用日语订好 鳥茂 10/25 19:00 两位。店家刚回电说 19:00 满了，可改 19:30，要接受吗？"</td><td>到店后要我帮你点菜吗？</td><td>0→1</td><td>MVP，勾子形态，通用能力跑通</td><td><a class="ref" href="#src-S106" data-tip="Wanderlog：东京老店店铺页">S106</a>、<a class="ref" href="#src-S107" data-tip="nippon.com：访日客的餐厅预约方式">S107</a>、<a class="ref" href="#src-S108" data-tip="TripZilla：日本号码与餐厅回电">S108</a>、<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a> C08</td></tr>
+<tr><td>H14</td><td>J02</td><td>拍一下菜单就是中文，过敏也替我问清了</td><td>访日客沟通困难最多发生在餐厅，其中点菜时占 65.8%；过敏孩子的家长说在日本很难把过敏原讲全讲对</td><td>"点单卡已生成：親子丼×1、ビール中×2。冷奴：店员确认不含蛋，但与蛋料理共用锅"</td><td>要保存你的过敏档案，下次直接用吗？</td><td>0</td><td>MVP，勾子形态，通用能力跑通</td><td><a class="ref" href="#src-S112" data-tip="トラベルボイス：観光庁访日客困扰调查（2018）">S112</a>、<a class="ref" href="#src-S113" data-tip="Allergy &amp; Anaphylaxis Australia：在日本点餐的过敏卡">S113</a></td></tr>
+<tr><td rowspan="2" class="c0 lead"><span class="chip c-p1">P1 配套</span></td><td class="lead">常去店与同行者记忆</td><td>H15</td><td>J06</td><td>"照上次那样再订一次"，它都记得</td><td>常去的店、同行人和忌口每次都要重新说明</td><td>"还是上次那家靠窗位、○○さん同行、不要甲壳类，确认就订"</td><td>以后都默认这样吗？</td><td>2</td><td>随预约任务</td><td><a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a> C69、<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a> C01</td></tr>
+<tr><td class="lead">A4 门店内选品推荐</td><td>H16</td><td>J15</td><td>站在货架前拍一张，它只在这排里挑适合我的</td><td>SNS 与杂志话题护肤品买后不合肤的比例 59.8%</td><td>"推荐①②；③含你标记过的乙醇，跳过"</td><td>要把肤质和忌用成分存下吗？</td><td>0</td><td>主线跑通后</td><td><a class="ref" href="#src-S103" data-tip="ECのミカタ：化妆品购买调查（2026-06，n=1,014）">S103</a></td></tr>
+<tr><td rowspan="4" class="c0 lead"><span class="chip c-p1">P1 勾子</span></td><td class="lead">A6 演唱会与限量品抽选</td><td>H17</td><td>J19、J20</td><td>每一轮抽选它都替我报上，当选了提醒我付款</td><td>同一场演出按会员层级分轮受理，同行者须为会员；限量品每轮条件变化且须重新申请；过付款期限申请即无效</td><td>"FC 先行已用你的会员号预填 2 场，确认就提交。……当选！8/23 21:00 前到便利店付款"</td><td>这位艺人以后的抽选都替你盯吗？</td><td>4</td><td>MVP，通用能力跑通</td><td><a class="ref" href="#src-S114" data-tip="Sony Music：Stray Kids 公演先行受理">S114</a>、<a class="ref" href="#src-S116" data-tip="GAME Watch：Switch 2 第 5 回抽选条件">S116</a>、<a class="ref" href="#src-S115" data-tip="e+：抽选付款说明">S115</a></td></tr>
+<tr><td class="lead">A5 美容优惠</td><td>H18</td><td>J17</td><td>我说想试新店，它才给我新客价和第二次的价格</td><td>优惠券分新客与第二次起且随时更换；复访者最看重价格清楚</td><td>"A 店 カット+カラー 新客 ¥6,600，第二次起 ¥9,900……要订哪家？"</td><td>试过之后替你约第二次吗？</td><td>0</td><td>MVP，通用能力跑通</td><td><a class="ref" href="#src-S94" data-tip="ホットペッパービューティーアカデミー：美容サロン顧客満足調査 2023">S94</a></td></tr>
+<tr><td class="lead">A5 夜间娱乐电话预约</td><td>H19</td><td>J18</td><td>这种电话它替我打，价格也先问清了</td><td>不想自己开口；警方提醒敲竹杠被害增加、应事先确认价格</td><td>"已确认今晚 21:00 两位：60 分钟 ¥5,000，指名 ¥2,000，税与服务费 30%，需出示证件"</td><td>—</td><td>4</td><td>MVP，通用能力跑通，有条件</td><td><a class="ref" href="#src-S117" data-tip="警视厅新宿署：安心饮酒提醒">S117</a></td></tr>
+<tr><td class="lead">B1 婚恋网站资料代填</td><td>H20</td><td>J21</td><td>写一次资料，几个大站都填好，我看过再提交</td><td>通过交友 app 开始交往的人 76.9% 同时用多个 app；本人确认须自己完成</td><td>"Pairs、with、Omiai 预览已生成，差异 3 处；本人确认需你在 app 内完成"</td><td>—</td><td>4</td><td>MVP，通用能力跑通</td><td><a class="ref" href="#src-S119" data-tip="財経新聞：交友 app 使用调查">S119</a>、<a class="ref" href="#src-S120" data-tip="Impress Watch：Pairs 本人确认方式（2025-12）">S120</a></td></tr></tbody>
+</table></div></figure>
+<p>首发阶段的 Aha 只依赖登录、通知、转发、日历、邮箱、云端电脑、支付限额与 AI 电话，不依赖任何平台 API；邮箱以 Gmail 受限权限审核通过为上线前提（<a class="ref" href="#src-U22" data-tip="战略讨论 2026-10-19 — 不做免登录，用户以 Google、Apple 或 LINE 登录；公开上线等 Gmail 受限权限审核通过；跨境游客同样经 Gmail；限额钱包设默认额度，用户可调整">U22</a>）；这也是 <a class="xref" href="#s8-1">&#167;8.1</a> 一票否决项的依据。</p>
+<h3 id="s5-2"><span class="hn">5.2</span>A1 餐饮·跨境游客（第二梯队末位）</h3>
+<ul>
+<li><strong>定位</strong>：执行增量与可核验都高，但 agent 属性不成立，完整接入排第二梯队末位，理由见 <a class="xref" href="#s4-3">&#167;4.3</a>。因为故事好讲、传播性强，先以勾子形态进 MVP：通用能力跑通电话代订、回电接听与拍菜单点单，经合作酒店免安装触达（<a class="ref" href="#src-U20" data-tip="战略讨论 2026-10-19 — 跨境游客餐饮也进 MVP：故事好讲，是好的勾子">U20</a>）；免安装指不装 App，游客仍以 Google 账号登录并经 Gmail，没有 Google 账号的游客不在勾子覆盖范围内（<a class="ref" href="#src-U22" data-tip="战略讨论 2026-10-19 — 不做免登录，用户以 Google、Apple 或 LINE 登录；公开上线等 Gmail 受限权限审核通过；跨境游客同样经 Gmail；限额钱包设默认额度，用户可调整">U22</a>）。完整接入在机酒通过 <a class="xref" href="#s8-3">&#167;8.3</a> 用户价值门槛后进行：电话与名店接入复用预約困難店，商户铺码，新增中国渠道、微信通知、PIPL 合规与国区 App 的生成式 AI 备案（<a class="ref" href="#src-D04" data-tip="Iris 日本能力储备与前置审批清单（2026-10-15）">D04</a> 2.3）。做全球旅游市场时再重评（<a class="ref" href="#src-U15" data-tip="战略讨论 2026-10-19 — 旅游是公认的低频需求，除非做全球旅游市场；只做日本时跨境游客的长期记忆、主动性与本地渠道价值都不高；跨境餐饮保留第二梯队，排末位">U15</a>）。</li>
+<li><strong>客群与任务</strong>：访日游客，语言不通。三条任务分开做：J01 订到店（含接听店家回电），J02 到店点对菜，J03 人气店订不到时给同档替代。访日游客 2026 年 7 月约 344 万人，为历年同月最高（<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>、<a class="ref" href="#src-S44" data-tip="JNTO：访日外客统计">S44</a>）。</li>
+<li><strong>来源国顺序</strong>（完整接入时）：中国游客优先，其次韩国与欧美。中国游客没有 Gmail 与 WhatsApp，行程在携程与微信里，语言痛点最强，且 one2x 作为大陆主体可承接微信通知渠道与合规；韩国、欧美入口后做（<a class="ref" href="#src-D04" data-tip="Iris 日本能力储备与前置审批清单（2026-10-15）">D04</a>）。</li>
+<li><strong>Aha</strong>：MVP 上线 H13 日语电话与回电接听、H14 拍菜单点单与过敏确认，完整接入后点单改为商户扫码；落地行程与紧急求助由通用能力承接，不设计专门 Aha。</li>
+<li><strong>替代对象</strong>：AutoReserve（AI 电话代订，已在游客中有规模：台湾、香港注册用户各超 10 万，<a class="ref" href="#src-S53" data-tip="ASCII：AutoReserve 台湾、香港注册用户各超 10 万（2025-06-09）">S53</a>；未见面向游客的多语言店内点餐，Hello 推出过面向商户的 Mobile Order，<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>）；Google Maps 加人工翻译。</li>
+<li><strong>差异化</strong>：AutoReserve 已覆盖游客的电话代订，Iris 在这一段没有先发；差异在其后两段：店家回电由 Iris 接听转述，游客不必接日语电话；到店后扫码得到本语言菜单并完成点餐，店员端看到日文订单。预约、回电、点餐三段都替用户执行，而不是只给推荐。</li>
+<li><strong>执行路径</strong>：AI 电话、官方深链、合作商户直接接入；名店走 TableCheck 或 OMAKASE 接入与官网直连，顶级介绍制店（如次郎类）不承诺，改为推荐可订的同档替代（<a class="ref" href="#src-P07" data-tip="日本预订网站清单（2026-10-14）">P07</a>）。</li>
+<li><strong>变现与伙伴权益</strong>：商户接入与运营费；Agent 渠道专属优惠或礼品带来的转化分成（<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>）；酒店 B2B2C 分发作获客渠道（<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>）。</li>
+<li><strong>传播点</strong>：店内跨语言点餐是最显性的传播点，同时服务本场景的获客。</li>
+<li><strong>待验证假设</strong>：游客愿意行前或抵日后安装并授权；商户接受 AI 电话与扫码点餐；电话成功率与人工兜底成本。</li>
+<li><strong>风险</strong>：商户对 AI 来电的接受度（AutoReserve 曾有商家争议报道，<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>）；来电号码的信任度（<a class="ref" href="#src-D01" data-tip="Iris 日本 AI 电话方案（2026-10-13）">D01</a>）。</li>
+<li><strong>MVP 指标</strong>：经合作酒店分发小规模投放：预约成立率与每任务人工分钟、首次对话内出现 H13 或 H14 的比例、传播与获客成本；旅程内的再次委托作参考，不考核跨旅程留存。<strong>完整接入后指标</strong>：扫码点餐在 3 家以上商户部署，经酒店分发的真实任务 10–20 个。</li>
+</ul>
+<h3 id="s5-3"><span class="hn">5.3</span>A1 餐饮·在日居民（两个小切口，P0 主线）</h3>
+<ul>
+<li><strong>定位</strong>：与机酒并列为 P0 主线（<a class="ref" href="#src-U25" data-tip="产品决定 2026-10-21 — 在日居民餐饮（预約困難店盯位与抽选、多人聚餐协调）升为 P0 主线，与机酒并列；投入深度不变（轻量接入）；跨境游客餐饮仍为勾子。理由：餐饮高频，是记忆与常设规则最能发挥的场景；原判断保留为 &#167;8.4 的切换条件">U25</a>，<a class="xref" href="#s4-3">&#167;4.3</a>），投入深度为轻量接入。一两个人订一家店，本地人自己一两分钟能完成，agent 无增量，由通用能力承接；只在两处做针对性投入：J03 预約困難店的盯位与抽选，J04 幹事式的多人聚餐协调。两者与跨境餐饮共用电话与名店接入，90 天内与机酒并行小规模试点。</li>
+<li><strong>客群与任务</strong>：在日居民。J03：想去的店要反复打、盯取消放位或参加抽选；J04：当幹事，收集人数、空闲、忌口、预算，来回确认后订位。J05 改约取消与截止提醒、J06 常去店与同行者记忆作配套，随任何预约任务出现。</li>
+<li><strong>替代对象</strong>：J03 对 OMAKASE 这类预約困難店专门平台（<a class="ref" href="#src-S54" data-tip="HERP：GMO OMAKASE 公司介绍">S54</a>），以及用户自己反复打电话；J04 对 ぐるなび Sync Vibes 的多人协商选店（<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>），以及幹事自己在 LINE 群里来回问。</li>
+<li><strong>差异化</strong>：J03 跨平台，电话、TableCheck、OMAKASE、FC 抽选都走，用用户自己的会员身份，拿不到时给同档替代；J04 在用户自己的 LINE 群里完成收集与投票，直接订位并同步给所有人，而不是只在单一平台内推荐。</li>
+<li><strong>Aha</strong>：首发 H7 名店位子替你订到、H8 没订到也给替代（J03）；H9 拉进群一次订好、H10 有人退出在截止前改好（J04）；配套 H15 照上次再订一次。普通预约由通用能力承接，不设计专门 Aha。</li>
+<li><strong>执行路径</strong>：AI 电话、TableCheck 或 OMAKASE 接入、FC 与票务平台抽选代填、LINE 群 bot、平台深链。</li>
+<li><strong>变现与伙伴权益</strong>：J03 用户按任务付费的意愿最强，单独测试；J04 走订阅与商户渠道权益。</li>
+<li><strong>待验证假设</strong>：预約困難店在用户想去的店里占多少；幹事任务的再委托率是否明显高于普通预约；用户是否愿意把 Iris 拉进群；TableCheck 伙伴接口能否在 90 天内取得。</li>
+<li><strong>风险</strong>：抽选与单账号规则；群隐私与成员同意（E6）；与 Sync Vibes 正面竞争。</li>
+<li><strong>90 天指标</strong>：两个小切口各 10–15 个真实任务；J03 的成立率与每任务人工分钟；J04 的来回次数下降与再委托比例。</li>
+</ul>
+<h3 id="s5-4"><span class="hn">5.4</span>A2 机票酒店比价与盯价（价值证明）</h3>
+<ul>
+<li><strong>定位</strong>：P0 唯一的主线：执行增量与可核验全高、上下文高的唯一场景（<a class="xref" href="#s4-3">&#167;4.3</a>）；盯价是 agent 原生的持续责任。两个短板：可控，即自动下单的赔付与旅行业法，首次必须确认，先做免费取消价位；频次，出行年数次，无法单独养成习惯，高频入口由发现页主线与 <a class="xref" href="#s8-2">&#167;8.2</a> 的邮箱观察项补位。</li>
+<li><strong>客群与任务</strong>：在日居民。五条任务：J07 一次比价后一张卡片确认，J08 持续盯价到价自动锁单，J09 已订降价后取消重订，J10 经 Iris 订拿到渠道优惠或礼品（与餐饮共用），J31 订完之后的航班变动、改签退款、值机与积分到期跟进（竞品已验证，<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>）。</li>
+<li><strong>替代对象</strong>：OTA 与比价站的一次性比价；订后盯价已有个人开发的 Tra-bell（<a class="ref" href="#src-S69" data-tip="リベシティ：订后降价与 Tra-bell（用户自述）">S69</a>）。</li>
+<li><strong>差异化</strong>：比价卡片把总价、取消条款、付款方式放在一处，一次确认（<a class="ref" href="#src-U07" data-tip="战略讨论补充 2026-10-16 — 关键场景清单：餐饮按跨境（替代 AutoReserve）与本地（筛选，替代食べログ）分开，店内二维码点餐；机酒以比价筛选加持续盯价自动锁单为主，机酒餐饮经 Agent 渠道给优惠或礼品；电商做推荐与比价，社媒调研按 Instagram、X、TikTok 顺序，YouTube 需用户登录态；线下店铺筛选无增量、店内 SKU 推荐；抽选搜索代填并经邮箱通知下一轮；美容与夜间娱乐走独立站或电话；婚恋大站填表，不做站内信跟踪。JTBD 按一行一条任务拆分">U07</a>）；用户设定条件后持续盯价，到价自动下单锁定并通知（<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>）；已订房间降价时，在免费取消期内自动取消重订，差价以日元展示（<a class="ref" href="#src-U04" data-tip="战略讨论补充 2026-10-16 — 用户心智为省钱省时间；前后对照清晰的任务更早成立；按结果收费含成交抽佣与节省分成；收费按短期订阅、短中期按结果、长期商户抽佣三阶段演进">U04</a>）；渠道优惠或礼品在回执中标明。</li>
+<li><strong>Aha</strong>：首发 H1 比价卡片、H2 降价时替你订到、H4 航班出事先处理好；主线跑通后 H3 降价重订。渠道礼遇不单列 Aha，伙伴权益登记后在回执中标明。</li>
+<li><strong>执行路径</strong>：OTA 深链与 API（如有合作）；温泉旅馆与酒店官网自带空室检索与预订，由云端电脑直连（<a class="ref" href="#src-P07" data-tip="日本预订网站清单（2026-10-14）">P07</a>）；自动下单前取得支付授权并确认取消规则。</li>
+<li><strong>变现与伙伴权益</strong>：短期订阅；短中期成交抽佣或节省分成；Agent 渠道专属优惠或礼品（<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>）；酒店 B2B2C 分发（<a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a>）；联盟受限（<a class="ref" href="#src-S02" data-tip="楽天 Affiliate 规则">S02</a>）。</li>
+<li><strong>获客勾子</strong>："帮我盯着，到价自动锁"。</li>
+<li><strong>待验证假设</strong>：用户愿意授权自动下单的金额上限；可免费取消的价位占比与取消重订的实际差价；伙伴能否提供渠道专属权益。</li>
+<li><strong>风险</strong>：自动下单错误的赔付；价格监测接口稳定性；取消重订与给 Iris 渠道优惠的酒店存在利益冲突，两类合作须分开谈。</li>
+<li><strong>90 天指标</strong>：盯价任务 15–20 个；授权自动下单比例；锁单后取消率；行程变动提醒的采纳率。</li>
+</ul>
+<h3 id="s5-5"><span class="hn">5.5</span>A3 线上购物（品牌独立站）</h3>
+<ul>
+<li><strong>客群与任务</strong>：在日居民，购买家电、美妆等有品牌独立站的品类。三条任务：J11 不知道选哪款时的选型推荐，J12 平台与品牌官网之间的比价，J13 社媒口碑调研。</li>
+<li><strong>替代对象</strong>：価格.com 比价（<a class="ref" href="#src-S43" data-tip="価格.com 家电">S43</a>）与用户自行刷社媒。</li>
+<li><strong>差异化</strong>：选型推荐、比价与社媒口碑三段连起来（<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>、<a class="ref" href="#src-U07" data-tip="战略讨论补充 2026-10-16 — 关键场景清单：餐饮按跨境（替代 AutoReserve）与本地（筛选，替代食べログ）分开，店内二维码点餐；机酒以比价筛选加持续盯价自动锁单为主，机酒餐饮经 Agent 渠道给优惠或礼品；电商做推荐与比价，社媒调研按 Instagram、X、TikTok 顺序，YouTube 需用户登录态；线下店铺筛选无增量、店内 SKU 推荐；抽选搜索代填并经邮箱通知下一轮；美容与夜间娱乐走独立站或电话；婚恋大站填表，不做站内信跟踪。JTBD 按一行一条任务拆分">U07</a>）。社媒按 Instagram、X、TikTok 顺序接入；YouTube 需用户提供登录态，技术成本高，后做。</li>
+<li><strong>Aha</strong>：H12 买之前一次看清到手价与真实吐槽。</li>
+<li><strong>变现</strong>：品牌直接合同；联盟受限（<a class="ref" href="#src-S02" data-tip="楽天 Affiliate 规则">S02</a>）。</li>
+<li><strong>待验证假设</strong>：社媒调研的推荐是否比平台评分更被采纳；品牌是否愿为 Agent 渠道付费。</li>
+<li><strong>启动条件</strong>：机酒通过 <a class="xref" href="#s8-3">&#167;8.3</a> 的用户价值门槛，且美容复约已接入后（<a class="xref" href="#s4-3">&#167;4.3</a> 第二梯队按新增投入排序）。</li>
+</ul>
+<h3 id="s5-6"><span class="hn">5.6</span>A4 线下购物</h3>
+<ul>
+<li><strong>任务</strong>：J14 店铺筛选由通用能力操作 Google Maps 完成，尚无比 Google Maps 更多的增量，不做针对性优化（<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>、<a class="ref" href="#src-U05" data-tip="战略讨论补充 2026-10-16 — 通用 Agent 能力是底座，分层只表示针对性投入级别；P0／P1／P2 标签；Aha 设计归战略文档；场景任务按 JTBD 润色">U05</a>）；J15 店内推荐面向合作门店，用户扫码或拍货架后按偏好推荐店内商品。</li>
+<li><strong>载体</strong>：与跨境餐饮共用扫码载体（<a class="ref" href="#src-D04" data-tip="Iris 日本能力储备与前置审批清单（2026-10-15）">D04</a> 的 A7），哪一个先接入就先建。</li>
+<li><strong>变现</strong>：门店付费；百货官网是首批接洽对象（<a class="ref" href="#src-P03" data-tip="官网合作企业候选清单（2026-10-13）.md)">P03</a>、<a class="ref" href="#src-P07" data-tip="日本预订网站清单（2026-10-14）">P07</a>）。</li>
+<li><strong>Aha</strong>：H16 货架选品。</li>
+<li><strong>注意</strong>：游客免税自 2026-11-01 起改为出境时退税，且只针对非居住者（<a class="ref" href="#src-S104" data-tip="観光庁：免税制度改为退税方式">S104</a>）。</li>
+</ul>
+<h3 id="s5-7"><span class="hn">5.7</span>A5 美容沙龙预约与复约</h3>
+<ul>
+<li><strong>任务</strong>：J16 独立站或电话代订与到期复约（<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>）；J17 免费体验与优惠信息的聚合，是获客勾子，随 MVP 上线，由通用能力跑通，不做针对性优化。</li>
+<li><strong>变现</strong>：商户接入费；美妆候选名单（<a class="ref" href="#src-P03" data-tip="官网合作企业候选清单（2026-10-13）.md)">P03</a>）支持商务接洽。</li>
+<li><strong>边界</strong>：普通美容与美容医疗分开，后者属 D1。</li>
+<li><strong>Aha</strong>：H11 到期约上上次那位；H18 新客价（须用户开启）。</li>
+<li><strong>待验证</strong>：复约改约是否有付费方；优惠信息的获客效率。</li>
+</ul>
+<h3 id="s5-8"><span class="hn">5.8</span>C1 闲置订阅发现与解约（勾子，兼作观察项）</h3>
+<ul>
+<li><strong>定位</strong>：勾子，兼作邮箱持续跟进观察项的第一个具体任务（<a class="xref" href="#s4-3">&#167;4.3</a>）。C1 的针对性投入放在这里，而不是通信与电力套餐优化：后者在伙伴清单里的原意是账单提醒与异常涨价预警（<a class="ref" href="#src-P06" data-tip="四市场场景清单（2026-10-13）.md)">P06</a>），切换一年最多一次，还要运营商与电力代理店合同（<a class="ref" href="#src-U13" data-tip="战略讨论 2026-10-19 — 场景并非越多越好；依据竞品已验证场景增补或调整，标准是对产品设计与市场推广有真实价值；通信与电力套餐优化、退税与保险理赔须说明来源，不能按变现模式倒推">U13</a>）。</li>
+<li><strong>客群与任务</strong>：在日居民。J24 从邮箱收据、续费通知与用户转发的信用卡明细找出闲置订阅和定期购入，列出每月金额，确认后替用户解约。J23 账单与订单提醒作配套。</li>
+<li><strong>依据</strong>：订阅契约者中 50.5% 遇到过首月免费后被自动扣费，19.1% 现在就有几乎不用却忘了取消的订阅；估算浪费多在每月 500 至 1,000 日元（<a class="ref" href="#src-S64" data-tip="オカネコ：订阅&quot;积少成多浪费&quot;实态调查（2025-12 调查，2026-04 发布）">S64</a>）。竞品中有取消自动订购、电话沟通取消保险的案例（<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>）。</li>
+<li><strong>替代对象</strong>：マネーフォワード ME 等记账应用（<a class="ref" href="#src-S66" data-tip="AppBank：マネーフォワード ME（2025-10-02）">S66</a>），以及用户自己翻信用卡明细。</li>
+<li><strong>差异化</strong>：不只列出来，而是替用户解约并给回执；只能电话解约的用 AI 电话完成。</li>
+<li><strong>执行路径</strong>：邮箱与转发明细的授权读取；官网解约由云端电脑操作；只接电话的走 AI 电话。</li>
+<li><strong>变现</strong>：不单独收费，作获客与留存勾子；省下的金额计入每月的前后对照。</li>
+<li><strong>边界</strong>：解约不可逆，每次本人确认；只转达解约意思，不代为交涉退款或违约金，涉及交涉的交还用户（<a class="ref" href="#src-S45" data-tip="e-Gov：弁護士法">S45</a>）。</li>
+<li><strong>Aha</strong>：H6 找出白付的订阅并替你退掉；同属观察项的还有 H5。</li>
+<li><strong>90 天指标</strong>：连接邮箱的用户中发现闲置订阅的比例；确认解约的比例；只能电话解约的占比。</li>
+</ul>
+<h3 id="s5-9"><span class="hn">5.9</span>A6 演唱会与限量品抽选（二次元获客勾子）</h3>
+<ul>
+<li><strong>定位</strong>：勾子，展示"跨平台代填＋主动通知"，不计营收；随 MVP 上线，由通用能力跑通，不做针对性优化。</li>
+<li><strong>客群与任务</strong>：参与演唱会与限量品多轮抽选的二次元用户。J19 搜到相关抽选，用用户自己的会员身份代填；J20 盯当落，进入下一轮或中签时通知并提醒付款。</li>
+<li><strong>做法</strong>：当落结果都走邮件，转发或连接邮箱即可，不需要平台接口（<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>、<a class="ref" href="#src-U07" data-tip="战略讨论补充 2026-10-16 — 关键场景清单：餐饮按跨境（替代 AutoReserve）与本地（筛选，替代食べログ）分开，店内二维码点餐；机酒以比价筛选加持续盯价自动锁单为主，机酒餐饮经 Agent 渠道给优惠或礼品；电商做推荐与比价，社媒调研按 Instagram、X、TikTok 顺序，YouTube 需用户登录态；线下店铺筛选无增量、店内 SKU 推荐；抽选搜索代填并经邮箱通知下一轮；美容与夜间娱乐走独立站或电话；婚恋大站填表，不做站内信跟踪。JTBD 按一行一条任务拆分">U07</a>、<a class="ref" href="#src-P07" data-tip="日本预订网站清单（2026-10-14）">P07</a>）。门票抽选须用户自己的 FC 会员号；限量品抽选常附応募条件（如游玩时长），不绕过条件；先着順的一般购票不做针对性投入。</li>
+<li><strong>Aha</strong>：H17 每一轮都替你报上、当选提醒付款。</li>
+<li><strong>风险</strong>：各平台单账号规则与代填授权边界。</li>
+<li><strong>90 天指标</strong>：单位获客成本；进入主线任务的转化率。</li>
+</ul>
+<h3 id="s5-10"><span class="hn">5.10</span>A5 夜间娱乐（电话能力获客勾子）</h3>
+<ul>
+<li><strong>定位</strong>：勾子，宣传 Iris 能打电话，不计营收；随 MVP 上线，由通用能力跑通，不做针对性优化。</li>
+<li><strong>任务</strong>：J18 独立站或电话预约（<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>）。</li>
+<li><strong>边界</strong><span class="tag">本文建议</span>：限定在風営法接待饮食类夜间营业（<a class="ref" href="#src-S41" data-tip="e-Gov：風俗営業等の規制及び業務の適正化等に関する法律">S41</a>）；ガールズバー一般只做酒类提供申报、不提供接待，不属于此类（<a class="ref" href="#src-S118" data-tip="ben54：ガールズバーの営業区分">S118</a>）；排除性風俗関連特殊営業，否则触发应用商店下架政策（<a class="ref" href="#src-S42" data-tip="Apple App Store Review Guidelines">S42</a>）与品牌风险；启用前完成年龄验证（<a class="xref" href="#s7-2">&#167;7.2</a>）。</li>
+<li><strong>待双方拍板</strong>：伙伴清单列出的夜间娱乐站点均属性風俗関連特殊営業，高級店为电话或介绍制，派遣型多带在线预约（<a class="ref" href="#src-P07" data-tip="日本预订网站清单（2026-10-14）">P07</a>）；它们在本边界之外，是否纳入由 one2x 与 WorldX 共同决定，不由产品侧单方决定。</li>
+<li><strong>Aha</strong>：H19 这种电话替你打，价格先问清。</li>
+<li><strong>待验证</strong>：商户接受度与传播效果是否值得品牌风险。</li>
+</ul>
+<h3 id="s5-11"><span class="hn">5.11</span>B1 婚恋辅助（获客勾子）</h3>
+<ul>
+<li><strong>定位</strong>：勾子，展示代填；随 MVP 上线，由通用能力跑通，不做针对性优化。</li>
+<li><strong>任务</strong>：J21 在大型婚恋平台代填资料与初筛（<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>）；婚介所官网的资料请求同属此类（<a class="ref" href="#src-P07" data-tip="日本预订网站清单（2026-10-14）">P07</a>）。</li>
+<li><strong>不做</strong>：站内信与 IM 的主动监控与自动回复。持续轮询投入过大（<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>），平台安全政策也不授权代运营（<a class="ref" href="#src-S24" data-tip="Pairs 安全措施">S24</a>）；用户主动发起的单次操作仍由通用能力承接。</li>
+<li><strong>前置</strong>：年龄与本人验证（<a class="xref" href="#s7-2">&#167;7.2</a>）。</li>
+<li><strong>Aha</strong>：H20 写一次资料，几个大站都填好。</li>
+</ul>
+<h3 id="s5-12"><span class="hn">5.12</span>配套与 P2 场景的处理</h3>
+<ul>
+<li><strong>配套</strong>：优惠券、积分、送礼触发、物流、账单提醒、店内推荐在主线任务中以环节出现，不单独立项、不单独计收入。</li>
+<li><strong>P2</strong>：由通用能力承接，不进入 90 天验证指标，不设计专门 Aha；出现具体买方或伙伴时升为 P1。<ul>
+<li>健诊：需有福利或健诊运营主体的采购责任人（MRSO 法人预约费率 6%、个人 6% 或 10% 为该平台历史模式，<a class="ref" href="#src-S18" data-tip="MRSO 2025 年度决算说明">S18</a>；健保流程样本见 <a class="ref" href="#src-S19" data-tip="住商連合健保 KENKOBOX">S19</a>）。</li>
+<li>搬家：需有搬家商合同（<a class="ref" href="#src-S26" data-tip="数字厅：搬家一站式服务">S26</a>）。</li>
+<li>車検：需有车检网络（<a class="ref" href="#src-S20" data-tip="楽天Car 車検">S20</a>）。</li>
+<li>退税与报销（C3）：一年一次，受税理士法约束，法务确认前不能收费，也没有伙伴；用户提出时汇总收据并预填官方入口，本人提交（<a class="ref" href="#src-S23" data-tip="国税厅 No.9204">S23</a>）。保险理赔不在范围内，没有任何输入来源（<a class="ref" href="#src-U13" data-tip="战略讨论 2026-10-19 — 场景并非越多越好；依据竞品已验证场景增补或调整，标准是对产品设计与市场推广有真实价值；通信与电力套餐优化、退税与保险理赔须说明来源，不能按变现模式倒推">U13</a>）。</li>
+</ul>
+</li>
+</ul>
+</section><section class="chapter"><h2 id="s6"><span class="hn">6</span>商业模式与单位经济</h2>
+<h3 id="s6-1"><span class="hn">6.1</span>谁付钱：按阶段演进</h3>
+<p class="leadin"><span class="leadin-tag">先说结论</span>收费分三个阶段。短期靠用户订阅，因为商户权益与结果归因都还没建立；短中期加入按结果收费，用可见的差价或成交向用户或商户收取；长期只向商户抽佣，用户免费。每个阶段的切换由可核验的条件触发，不按日历推进。</p>
+<figure class="tbl" id="t6-1"><figcaption><span class="tn">表 6-1</span>收费阶段</figcaption><div class="tw"><table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>主要收入</th>
+<th>为什么是它</th>
+<th>进入下一阶段的条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>短期：首发到首批伙伴签约</td>
+<td>低价用户订阅；不向商户收费；接受可控补贴，单用户月补贴设上限（<a class="ref" href="#src-U21" data-tip="战略讨论 2026-10-19 — 短期不可能向商户收钱，只收低价用户订阅；前期补贴可以接受，只要不离谱">U21</a>）</td>
+<td>商户合同与结果归因尚未建立，商户不会为未验证的渠道付费；只有用户能为节省的时间付一点钱；日本存在消费者订阅先例（<a class="ref" href="#src-S09" data-tip="Money Forward ME 高级服务">S09</a>）</td>
+<td>至少一条主线的结果可核验，且有商户愿意按结果付费</td>
+</tr>
+<tr>
+<td>短中期：主线跑通后</td>
+<td>按结果收费：成交抽佣（向商户或平台）与节省分成（向用户）；订阅保留为低频任务的选项</td>
+<td>结果可见的任务让用户愿意为结果而非为工具付费；商户按单付费比预付接入费更易接受</td>
+<td>商户抽佣能覆盖单位成本（<a class="xref" href="#s6-2">&#167;6.2</a>），用户侧收入占比持续下降</td>
+</tr>
+<tr>
+<td>长期：商户网络形成后</td>
+<td>仅向商户抽佣；用户免费</td>
+<td>用户规模是向商户议价的筹码，免费降低获客阻力；收入与商户履约绑定，和"替用户执行"的心智一致</td>
+<td>持续：抽佣不得改变推荐排序（<a class="xref" href="#s7-4">&#167;7.4</a>）</td>
+</tr>
+</tbody>
+</table></div></figure>
+<p>各模式的证据与冲突：</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>模式</th>
+<th>有效证据</th>
+<th>核心冲突</th>
+<th>阶段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用户订阅／按任务服务费</td>
+<td>真实支付与续费（<a class="ref" href="#src-S09" data-tip="Money Forward ME 高级服务">S09</a>）</td>
+<td>与免费平台比较；低频任务不适合月订阅</td>
+<td>短期主力，短中期保留</td>
+</tr>
+<tr>
+<td>商户接入与持续运营费</td>
+<td>接入验收、监测、异常处理的合同与付款</td>
+<td>单店实施成本；收费与推荐的利益冲突；渠道价值未验证前商户不付费</td>
+<td>短中期起：餐饮、美容、线下门店</td>
+</tr>
+<tr>
+<td>按结果收费：成交抽佣</td>
+<td>用户经 Iris 成交，商户或平台按单付费；Agent 渠道专属权益的归因</td>
+<td>既有需求未必增量；联盟媒介限制（<a class="ref" href="#src-S02" data-tip="楽天 Affiliate 规则">S02</a>）须以直接合同绕开</td>
+<td>短中期：餐饮、机酒；长期唯一模式</td>
+</tr>
+<tr>
+<td>按结果收费：节省分成</td>
+<td>用户看到的日元差额按比例收取</td>
+<td>节省须可归因、可核验；与伙伴权益冲突</td>
+<td>短中期：机酒取消重订</td>
+</tr>
+<tr>
+<td>机构采购</td>
+<td>采购责任人、付费试点</td>
+<td>销售与实施成本</td>
+<td>健诊，有机构买方后</td>
+</tr>
+<tr>
+<td>联盟</td>
+<td>无；<a class="ref" href="#src-S02" data-tip="楽天 Affiliate 规则">S02</a>、<a class="ref" href="#src-S30" data-tip="Recruit HOT PEPPER Web 服务指南">S30</a> 排斥私密媒介</td>
+<td>不可用</td>
+<td>否</td>
+</tr>
+</tbody>
+</table></div>
+<p>按结果收费与效果可度量互为条件：只有用户能看见前后对照的任务才能按结果定价，按结果定价又要求产品把差额算清并留痕（<a class="ref" href="#src-U04" data-tip="战略讨论补充 2026-10-16 — 用户心智为省钱省时间；前后对照清晰的任务更早成立；按结果收费含成交抽佣与节省分成；收费按短期订阅、短中期按结果、长期商户抽佣三阶段演进">U04</a>）。</p>
+<p>伙伴材料把合作分为支付、零售服务、场景合作三层（<a class="ref" href="#src-P02" data-tip="伙伴介绍 Deck 英文版（2026-10-13）">P02</a>）；每层须落到具体权益：可触达人群、品牌使用、商品／时段数据、执行与售后入口、资金流程与责任分工。引荐、Logo 展示或备忘录不足以支持收入预测。</p>
+<h3 id="s6-2"><span class="hn">6.2</span>任务贡献</h3>
+<p>按所有发起任务核算，不只看成功订单：</p>
+<p><code class="formula">任务贡献 = q × F − c − h × k − ℓ − p</code></p>
+<p>q 为可收款比例（失败、取消、无法归因进分母），F 为每可收款任务净收入，c 为模型、工具、电话等变动成本，h × k 为人工分钟 × 人工单价，ℓ 为期望净异常损失，p 为分摊保障费用。</p>
+<p>量级约束（假设算例，非费率）：q=70%、c=¥50、k=¥50/分钟时，F=¥300 的任务只允许约 3 分钟人工，F=¥1,000 允许约 13 分钟。电话通话成本远低于人工成本（<a class="ref" href="#src-D01" data-tip="Iris 日本 AI 电话方案（2026-10-13）">D01</a>），人工兜底才是主要变量。<strong>结论：</strong>主线必须以自动完成为目标，人工只做异常兜底；获客勾子不以此公式评价。异常可能成批发生，另列单日最大暴露与退款资金需求。</p>
+<h3 id="s6-3"><span class="hn">6.3</span>市场规模</h3>
+<p>不做自上而下 TAM。METI 2024 年 BtoC 电商 26.1 万亿日元、餐饮服务 9,692 亿日元、旅行服务 3.5249 万亿日元（<a class="ref" href="#src-S01" data-tip="METI：2024 年电子商务市场调查，2025-08-26">S01</a>，<span class="tag">官方</span>）只说明产业基础。可得收入按下式自下而上计算：</p>
+<p><code class="formula">年度可得收入 = 可触达人数 N × 激活率 a × 年任务数 t × q × F</code></p>
+<p>量级算例：N=10,000、a=20%、t=6、q=60%、F=¥300 时年收入 ¥216 万；同条件下年收入 ¥1 亿需约 46 万可触达用户。伙伴确认能触达多少人，是首轮商务的数字交付物。跨境客群的分母是合作酒店与渠道能分发到的游客数，不是全部访日人数。</p>
+</section><section class="chapter"><h2 id="s7"><span class="hn">7</span>取胜需要的能力</h2>
+<p class="leadin"><span class="leadin-tag">先说结论</span>四项能力是主线的前提，缺一项主线就退化为推荐工具。</p>
+<h3 id="s7-1"><span class="hn">7.1</span>执行层：通用能力底座与三条执行路径</h3>
+<p>通用 Agent 能力是底座：云端电脑可在任何品牌、商户、航司与 OTA 的官方站上按用户授权操作，AI 电话可联系任何只接电话的商户；两者让 P2 场景无需针对性投入即可完成（<a class="ref" href="#src-U05" data-tip="战略讨论补充 2026-10-16 — 通用 Agent 能力是底座，分层只表示针对性投入级别；P0／P1／P2 标签；Aha 设计归战略文档；场景任务按 JTBD 润色">U05</a>）。在此之上，执行按商户的真实库存位置选路：有结构化接口走 API 或台账系统，封闭平台走官方深链，电话长尾走 AI 电话；专用接入只为 P0、P1 场景建设。电话是日本特有的必要能力，技术方案已具备（<a class="ref" href="#src-D01" data-tip="Iris 日本 AI 电话方案（2026-10-13）">D01</a>），商户接受度与来电信任是待验证项。不绕开平台禁止自动化的规则。</p>
+<h3 id="s7-2"><span class="hn">7.2</span>年龄与身份风险管理</h3>
+<p>产品必须掌握用户年龄；夜间娱乐、婚恋等 18 岁以上场景启用前做身份验证；跨境游客以护照信息判断。目的是把年龄相关的法律责任留在可控范围内，而不是留给事后处理（<a class="ref" href="#src-S41" data-tip="e-Gov：風俗営業等の規制及び業務の適正化等に関する法律">S41</a>、<a class="ref" href="#src-S24" data-tip="Pairs 安全措施">S24</a>、<a class="ref" href="#src-U03" data-tip="战略讨论 2026-10-16 — &#167;5 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控">U03</a>）。身份验证只用于门槛判断，不作画像。不做免登录：用户先以 Google、Apple 或 LINE 登录，出生日期在注册时采集（<a class="ref" href="#src-U22" data-tip="战略讨论 2026-10-19 — 不做免登录，用户以 Google、Apple 或 LINE 登录；公开上线等 Gmail 受限权限审核通过；跨境游客同样经 Gmail；限额钱包设默认额度，用户可调整">U22</a>），这与 <a class="ref" href="#src-D03" data-tip="日本市场 C 端 Personal AI Agent 与 Onboarding 深度研究（2026-10-15）">D03</a> 的"价值先于账号"不同，以本文为准；年龄采集与身份验证的实现见 <a class="ref" href="#src-D04" data-tip="Iris 日本能力储备与前置审批清单（2026-10-15）">D04</a> 的 A6。</p>
+<h3 id="s7-3"><span class="hn">7.3</span>授权与责任</h3>
+<p>授权按"金额 × 可逆性 × 首次／重复"分层（<a class="ref" href="#src-P05" data-tip="Iris 产品挑战与建议（2026-10-13）.md)">P05</a>）：首次高金额必须确认，连续同意后同类操作转自动；常设规则下的自动执行与限额内自动同等对待，首次须确认，只订可免费取消的，责任与损失预算规则同样适用（<a class="xref" href="#s5-1">&#167;5.1</a> 原则 6）；多人任务不因发起人授权而获得其他人的资料。向商家透露信息分两档：本人基本信息（预约名、电话）随任务授权，审批卡上列明即可；他人信息与健康类信息（同行者忌口、过敏）首次向某商家透露前单独确认，只在当次任务内使用，写入记忆前另问（<a class="ref" href="#src-U26" data-tip="产品决定 2026-10-26 — 产品由对话、发现、agent 设置三块组成，发现页由观察项升为与对话并列的主线模块，引发交办与推测被否定的比例设门槛；写入日历与出发提醒、跟到当天、盯到免费取消截止、下月核验等需要新权限或持续盯守的后续动作，首次在回执里给选项、之后同类自动，不默认做；向商家透露本人基本信息随任务授权，他人信息与健康类信息单独确认、不自动入记忆">U26</a>）。责任做成有限服务承诺＋统一受理＋损失预算：错订、重复下单、未执行取消由 Iris 承担合同责任；商户拒绝履约由 Iris 协调并按协议追偿；专业结果不纳入承诺。承诺范围与预算在对外宣传前落实，并进入 <a class="xref" href="#s6-2">&#167;6.2</a> 的 ℓ 与 p；广泛风险保障须与保险主体确认是否构成保险业务（<a class="ref" href="#src-S37" data-tip="金融厅：保险业适用性 Q&amp;A">S37</a>）。</p>
+<h3 id="s7-4"><span class="hn">7.4</span>商户标准与金融分工</h3>
+<p class="minihead">商户标准</p>
+<ul>
+<li>AI-ready 是 Iris 的私有商户验收标识，覆盖主体与范围、数据与供给、用户授权、成交确认、变更退款、责任响应、数据治理、标识维护八项；不得让消费者误以为是政府或行业认证（<a class="ref" href="#src-S38" data-tip="消费者厅：优良误认表示">S38</a>）。</li>
+<li>获得第二家独立伙伴采用且实施成本下降后，再投资公共品牌。</li>
+</ul>
+<p class="minihead">支付</p>
+<ul>
+<li><strong>原则</strong>：Iris 只做 agent，不经手任何资金：不收付用户的购物款、不垫钱、不持卡、不预收余额。额度、审批、日志与撤销由 Iris 管；钱由用户的支付方式直接付给商家，或由持牌机构处理（<a class="ref" href="#src-U24" data-tip="战略讨论 2026-10-20 — Iris 不做任何资金处理，取代 U11 中由 Iris 持卡、先付后收的限额钱包；现在 agent 用用户已存的支付方式下单或交还用户（深链跳转或接管云端浏览器，接管时模型暂停）；第二步找持牌伙伴做预付钱包与一次性卡；长期接入卡组织 agent 令牌或 Link；NETSTARS 不做钱包、无发卡资质，调研授权 SDK 用于 StarPay 加盟店付款">U24</a>）。Iris 自己的订阅费按普通商户收款，与替用户付款无关。</li>
+<li><strong>目标</strong>：agent 在额度内尽量自己完成购买，且不需要逐个商户接入（<a class="ref" href="#src-U10" data-tip="战略讨论补充 2026-10-19 — 让每个商户授权或接入是长期工程；现阶段只用覆盖面广、不需要商户确认的支付方案：平台内结账、Iris 限额虚拟卡代付、卡组织 agent 令牌；经 NETSTARS 向商户付款不进现阶段">U10</a>、<a class="ref" href="#src-U11" data-tip="战略讨论补充 2026-10-19 — 支付以“agent 有限额钱包、能自己付完”为目标：限额钱包（Link 做法的日本版）为 P0，卡组织 agent 令牌是钱包的第二种付款端，交还用户自己购买只作兜底">U11</a>）；做不到时把购买办到付款前一步，由用户一键完成。</li>
+<li><strong>现在</strong>：能用用户在平台账户里已存的支付方式下单的，agent 直接下单；遇到发卡行验证或不能代付时交还用户，优先深链跳转商家页面，不支持时由用户接管云端浏览器付款，接管期间模型暂停、不截屏，云端浏览器按 PCI DSS 范围管理。StarPay 加盟店经 NETSTARS 的授权 SDK 付款：用户的卡信息只交给 NETSTARS，agent 经 API 发起，NETSTARS 付给加盟店（NETSTARS 内部调研中，<a class="ref" href="#src-U24" data-tip="战略讨论 2026-10-20 — Iris 不做任何资金处理，取代 U11 中由 Iris 持卡、先付后收的限额钱包；现在 agent 用用户已存的支付方式下单或交还用户（深链跳转或接管云端浏览器，接管时模型暂停）；第二步找持牌伙伴做预付钱包与一次性卡；长期接入卡组织 agent 令牌或 Link；NETSTARS 不做钱包、无发卡资质，调研授权 SDK 用于 StarPay 加盟店付款">U24</a>）。</li>
+<li><strong>第二步</strong>：找持牌伙伴做预付钱包加一次性卡。用户先充值或按固定规则自动充值，伙伴按任务发用户名下的一次性限额卡，agent 在额度内用卡付任何收卡的官方站。充值不能按每笔从用户的卡实时扣，那属于 Visa 禁止的 Card Fronting（Visa Core Rules 2026-04）。</li>
+<li><strong>长期</strong>：卡组织 agent 令牌，资金从用户的卡直接付给商家（Mastercard Agent Pay 2026-05 已在日本完成首笔生产交易，未一般开放；Visa 在日本处于发卡行就绪测试，<a class="ref" href="#src-S46" data-tip="Mastercard Japan：日本首笔 Agent Pay 生产交易（2026-05-20）">S46</a>）；或 Stripe Link 进入日本后直接接入，Iris 的角色与 Muse 相同（目前仅限美国、加拿大账户，<a class="ref" href="#src-S47" data-tip="Link：Agent wallet FAQ">S47</a>、<a class="ref" href="#src-S48" data-tip="Stripe：Issuing 可用地区">S48</a>）。两条路都不需要 Iris 经手资金，哪条先到先接哪条。</li>
+<li><strong>不采用 Iris 名下虚拟卡、先付后收</strong>：Iris 要垫钱、收钱，违背不经手资金的原则（<a class="ref" href="#src-U24" data-tip="战略讨论 2026-10-20 — Iris 不做任何资金处理，取代 U11 中由 Iris 持卡、先付后收的限额钱包；现在 agent 用用户已存的支付方式下单或交还用户（深链跳转或接管云端浏览器，接管时模型暂停）；第二步找持牌伙伴做预付钱包与一次性卡；长期接入卡组织 agent 令牌或 Link；NETSTARS 不做钱包、无发卡资质，调研授权 SDK 用于 StarPay 加盟店付款">U24</a> 取代 <a class="ref" href="#src-U11" data-tip="战略讨论补充 2026-10-19 — 支付以“agent 有限额钱包、能自己付完”为目标：限额钱包（Link 做法的日本版）为 P0，卡组织 agent 令牌是钱包的第二种付款端，交还用户自己购买只作兜底">U11</a> 中的这一做法）。</li>
+<li><strong>NETSTARS</strong>：不做钱包、没有发卡资质，与 Visa、Mastercard 的合作是长期方向；短期合作是授权 SDK 用于 StarPay 加盟店付款，以及 Iris 订阅费的收款；其资金移动业注册证明其自身能力，牌照不转移给 Iris（<a class="ref" href="#src-S35" data-tip="NETSTARS 资金移动业注册公告">S35</a>）。</li>
+<li><strong>现阶段不做</strong>：需要商户逐一签约或接入的路线（结账协议、商户合同）是长期工程。</li>
+<li><strong>合规</strong>：Iris 不经手资金，不涉及資金決済法的登记；代订机酒收取服务费是否触发旅行业法、云端浏览器接管的 PCI DSS 范围，由法律意见与审核机构确认。</li>
+</ul>
+</section><section class="chapter"><h2 id="s8"><span class="hn">8</span>管理系统：90 天验证与切换条件</h2>
+<h3 id="s8-1"><span class="hn">8.1</span>一票否决项（第 1–15 天）</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>顺序</th>
+<th>问题</th>
+<th>获取方式</th>
+<th>未通过时</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>餐饮与机酒伙伴能提供什么具体权益：触达人群、执行入口、Agent 渠道优惠</td>
+<td>商务逐项登记</td>
+<td>对应场景退为用户价值验证，不建收入模型</td>
+</tr>
+<tr>
+<td>2</td>
+<td>AI 电话能力能否按时可用，商户是否接受</td>
+<td>5–10 家商户试呼</td>
+<td>预約困難店与订阅解约改走线上渠道加人工电话兜底，跨境餐饮同样处理，夜间娱乐电话勾子延后</td>
+</tr>
+<tr>
+<td>3</td>
+<td>盯价自动下单的支付授权与取消规则能否在至少一家供给上实现</td>
+<td>技术与法务核验</td>
+<td>机酒退为比价＋手动确认</td>
+</tr>
+<tr>
+<td>4</td>
+<td>年龄与身份验证方案可用</td>
+<td>产品与法务</td>
+<td>年龄敏感勾子不上线</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="s8-2"><span class="hn">8.2</span>里程碑</h3>
+<p>公开上线以 Gmail 受限权限（含 CASA 安全评估）审核通过为前提（<a class="ref" href="#src-U22" data-tip="战略讨论 2026-10-19 — 不做免登录，用户以 Google、Apple 或 LINE 登录；公开上线等 Gmail 受限权限审核通过；跨境游客同样经 Gmail；限额钱包设默认额度，用户可调整">U22</a>）。待定：审核期间是否用不超过 100 名测试用户先跑第 16–45 天的试点。</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>做什么</th>
+<th>验收</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第 1–15 天</td>
+<td>完成 8.1；固定成功定义、停止规则、成本上限</td>
+<td>权益登记表、试点方案、年龄与身份方案</td>
+</tr>
+<tr>
+<td>第 16–45 天</td>
+<td>机酒 15–20 个盯价任务，含行程变动跟进；预約困難店与多人聚餐协调各 10–15 个任务；观察项：连接邮箱的用户中，订单、账单、订阅与预约确认的提醒被采纳与主动追问的比例，以及闲置订阅的解约确认率；发现页主线：引发交办的比例、每周打开率与推测被否定的比例，按 <a class="xref" href="#s8-3">&#167;8.3</a> 门槛判定；勾子随 MVP 上线，抽选、美容优惠、跨境游客餐饮（经合作酒店分发）等各做一轮小规模投放，只看获客成本与传播效果</td>
+<td>任务日志含失败与取消；人工分钟与电话成本；邮箱观察项的采纳率与发现页交办比例；勾子获客成本</td>
+</tr>
+<tr>
+<td>第 46–90 天</td>
+<td>核对结算、异常成本、自然再次委托；验证第二家独立伙伴能否复用接入协议</td>
+<td>两个已结算 cohort；第二伙伴实施工时</td>
+</tr>
+</tbody>
+</table></div>
+<p>样本量是预算可控的试验设计，不是统计功效计算。30 次成功 27 次的 Wilson 95% 区间约为 74%–97%（<a class="ref" href="#src-S34" data-tip="NIST：比例的置信区间">S34</a>），小样本不能支撑"稳定达到 90%"的对外承诺。</p>
+<h3 id="s8-3"><span class="hn">8.3</span>判定门槛</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>门槛</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>权限</td>
+<td>每个执行渠道具备与操作和收费一致的依据</td>
+</tr>
+<tr>
+<td>首次价值</td>
+<td>登录后首次对话 120 秒内出现第一个 Aha（在日居民 H1 机酒比价卡片；跨境游客 H13 日语电话；起算点待定）；首次会话成功率</td>
+</tr>
+<tr>
+<td>用户价值</td>
+<td>中位用户投入时间较原流程下降至少 30%；误订、超预算为零</td>
+</tr>
+<tr>
+<td>完成质量</td>
+<td>限定范围内完成率至少 90%，展示区间</td>
+</tr>
+<tr>
+<td>经济性</td>
+<td>短期允许任务贡献为负，但单用户月补贴不超过上限（上限待定，<a class="ref" href="#src-U21" data-tip="战略讨论 2026-10-19 — 短期不可能向商户收钱，只收低价用户订阅；前期补贴可以接受，只要不离谱">U21</a>）；进入按结果收费前，按所有发起任务核算贡献须转正，并通过收入下调 30%、人工上调 50% 的压力情景</td>
+</tr>
+<tr>
+<td>可见结果</td>
+<td>每个完成任务向用户展示节省金额或节省分钟；按结果收费的任务差额可核验</td>
+</tr>
+<tr>
+<td>复用</td>
+<td>有再次机会的用户中记录主动再委托比例</td>
+</tr>
+<tr>
+<td>发现页</td>
+<td>引发交办的比例与每周打开率达到门槛，推测被否定的比例不超过上限；数值待定（<a class="ref" href="#src-U26" data-tip="产品决定 2026-10-26 — 产品由对话、发现、agent 设置三块组成，发现页由观察项升为与对话并列的主线模块，引发交办与推测被否定的比例设门槛；写入日历与出发提醒、跟到当天、盯到免费取消截止、下月核验等需要新权限或持续盯守的后续动作，首次在回执里给选项、之后同类自动，不默认做；向商家透露本人基本信息随任务授权，他人信息与健康类信息单独确认、不自动入记忆">U26</a>）</td>
+</tr>
+<tr>
+<td>勾子</td>
+<td>单位获客成本与进入主线任务的转化率，不看营收</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="s8-4"><span class="hn">8.4</span>切换条件</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>新获得的事实</th>
+<th>策略</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>伙伴只有品牌展示，无执行或触达权益</td>
+<td>对应场景退为用户价值验证；不计收入</td>
+</tr>
+<tr>
+<td>商户普遍拒绝 AI 电话</td>
+<td>跨境餐饮与预約困難店改线上＋人工电话兜底；夜间娱乐勾子取消</td>
+</tr>
+<tr>
+<td>邮箱持续跟进观察项采纳率高，用户主动追问</td>
+<td>升为 P1 候选入口，下一轮做针对性投入</td>
+</tr>
+<tr>
+<td>发现页过 <a class="xref" href="#s8-3">&#167;8.3</a> 门槛</td>
+<td>开放基于泛兴趣的信息与想法，设占比上限</td>
+</tr>
+<tr>
+<td>发现页多被否定或少有人打开</td>
+<td>只保留新手引导类卡片，停用推测类卡片</td>
+</tr>
+<tr>
+<td>两个餐饮小切口的再委托率不高于普通预约</td>
+<td>餐饮全部退为通用覆盖，只留跨境</td>
+</tr>
+<tr>
+<td>用户节省明显但无可得成交收入</td>
+<td>延长订阅阶段；若用户也不付费，不免费规模化</td>
+</tr>
+<tr>
+<td>主线结果可核验且商户愿按单付费</td>
+<td>进入按结果收费，订阅降为低频任务选项</td>
+</tr>
+<tr>
+<td>商户抽佣已覆盖单位成本</td>
+<td>用户侧转免费，收入只向商户收取</td>
+</tr>
+<tr>
+<td>盯价锁单授权率低</td>
+<td>机酒退为比价＋一键确认</td>
+</tr>
+<tr>
+<td>勾子带来用户但不进入主线任务</td>
+<td>勾子预算封顶，按品牌投入评价</td>
+</tr>
+<tr>
+<td>第二家伙伴无法复用接入协议</td>
+<td>按集成服务业务核算，降低平台投入</td>
+</tr>
+<tr>
+<td>异常赔付使贡献为负</td>
+<td>收窄承诺范围或重新定价</td>
+</tr>
+<tr>
+<td>出现愿付费的健诊机构买方</td>
+<td>单独核算，走机构路径</td>
+</tr>
+<tr>
+<td>伙伴要求独家、白标或独占数据</td>
+<td>以保底收入、期限、退出与可迁移条件核算交换价值；不放弃直接用户关系</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="chapter"><h2 id="s9"><span class="hn">9</span>反对意见与风险</h2>
+<h3 id="s9-1"><span class="hn">9.1</span>反对意见与回应</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>反对意见</th>
+<th>哪里说得对</th>
+<th>我们怎么做</th>
+<th>证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>跨境游客与在日居民两个客群放在一个产品里，获客与品牌会分裂</td>
+<td>对，渠道完全不同；而且游客端的频次、上下文与渠道资产都发挥不出 agent 的优势</td>
+<td>共用执行层与商户网络，获客与入口分开：在日居民走 App 与 LINE，游客经酒店与微信免安装触达；游客端以勾子形态进 MVP、完整接入排第二梯队末位，独立统计；做全球旅游市场时重评</td>
+<td><a class="ref" href="#src-U14" data-tip="战略讨论 2026-10-19 — 场景评估先拆 agent 做这件事的优劣势；跨境游客的常驻平台在国内且不在意合规，本土渠道优势发挥不出；旅游对单个用户低频，只做日本时主动性与长期记忆无回报">U14</a>、<a class="ref" href="#src-U09" data-tip="战略讨论 2026-10-19 — 跨境游客餐饮重要，只是到不了 P0；它的需求在在日居民餐饮的技术基建上较容易满足，不应作勾子">U09</a>、<a class="ref" href="#src-U15" data-tip="战略讨论 2026-10-19 — 旅游是公认的低频需求，除非做全球旅游市场；只做日本时跨境游客的长期记忆、主动性与本地渠道价值都不高；跨境餐饮保留第二梯队，排末位">U15</a>、<a class="ref" href="#src-U20" data-tip="战略讨论 2026-10-19 — 跨境游客餐饮也进 MVP：故事好讲，是好的勾子">U20</a></td>
+</tr>
+<tr>
+<td>AutoReserve 已有电话能力和商户网络，Iris 没有先发优势</td>
+<td>对，<a class="ref" href="#src-U01" data-tip="团队输入 2026-10-15 — 本地渠道、企业背书、本土合规为优势；开发与先发不是">U01</a> 也承认无先发</td>
+<td>差异在个人上下文与持续责任（盯价、改约、复约）；电话只是必要条件，跨语言点餐是传播点</td>
+<td><a class="ref" href="#src-D02" data-tip="日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）">D02</a></td>
+</tr>
+<tr>
+<td>盯价自动下单的责任太重，用户不会授权</td>
+<td>可能，授权率未测</td>
+<td>先做免费取消价位；首次必须确认</td>
+<td><span class="chip c-e0">E0</span></td>
+</tr>
+<tr>
+<td>夜间娱乐勾子的品牌风险高于传播收益</td>
+<td>对，这是最脆弱的一条；伙伴清单的站点全是性風俗类</td>
+<td>限定接待饮食类，排除性風俗，年龄验证前置；是否纳入性風俗站点由双方拍板；传播效果不佳即取消</td>
+<td><a class="ref" href="#src-S41" data-tip="e-Gov：風俗営業等の規制及び業務の適正化等に関する法律">S41</a>、<a class="ref" href="#src-S42" data-tip="Apple App Store Review Guidelines">S42</a>、<a class="ref" href="#src-P07" data-tip="日本预订网站清单（2026-10-14）">P07</a></td>
+</tr>
+<tr>
+<td>P0 只剩机酒一条线，频次低，养不成习惯</td>
+<td>对，机酒频次只有中</td>
+<td>不用低增量的餐饮预约硬补高频；邮箱持续跟进作 90 天观察项，采纳率高再补位；发现页为主线模块，按 <a class="xref" href="#s8-3">&#167;8.3</a> 门槛判定（<a class="ref" href="#src-U26" data-tip="产品决定 2026-10-26 — 产品由对话、发现、agent 设置三块组成，发现页由观察项升为与对话并列的主线模块，引发交办与推测被否定的比例设门槛；写入日历与出发提醒、跟到当天、盯到免费取消截止、下月核验等需要新权限或持续盯守的后续动作，首次在回执里给选项、之后同类自动，不默认做；向商家透露本人基本信息随任务授权，他人信息与健康类信息单独确认、不自动入记忆">U26</a>）</td>
+<td><a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a>、<a class="ref" href="#src-U12" data-tip="战略讨论 2026-10-19 — 对本地人，电话预约和网约成本都不高，餐饮预约的增量价值低，不该作 P0；只保留预約困難店盯位抽选与多人聚餐协调两个小切口；机酒作 P0 价值证明；邮箱订单与账单持续跟进作 90 天观察项">U12</a>、<a class="ref" href="#src-U23" data-tip="战略讨论 2026-10-20 — Iris 的增量是按偏好推测任务意图并完成，不是推荐；发现页回答&quot;猜你想做、猜你需要&quot;，呈现新手规则卡、信息、想法与备好的任务，用户自己打开、不推送；用户可把同类任务设为常设规则，之后由 Iris 直接办、事后通知">U23</a>、<a class="ref" href="#src-U26" data-tip="产品决定 2026-10-26 — 产品由对话、发现、agent 设置三块组成，发现页由观察项升为与对话并列的主线模块，引发交办与推测被否定的比例设门槛；写入日历与出发提醒、跟到当天、盯到免费取消截止、下月核验等需要新权限或持续盯守的后续动作，首次在回执里给选项、之后同类自动，不默认做；向商家透露本人基本信息随任务授权，他人信息与健康类信息单独确认、不自动入记忆">U26</a></td>
+</tr>
+<tr>
+<td>发现页是不是又在做推荐层</td>
+<td>对，推荐与种草已被 Google Maps、Instagram、UMAME! 占住</td>
+<td>只做基于私人上下文的推测，每张卡写明依据、能接回对话交办；泛兴趣内容推后，并设占比上限</td>
+<td><a class="ref" href="#src-S122" data-tip="DIME：Z 世代的飲食店探し（Utakata 调查）">S122</a>、<a class="ref" href="#src-S123" data-tip="ケータイ Watch：UMAME! 正式版（2026-01）">S123</a>、<a class="ref" href="#src-D05" data-tip="Personal Agent 用户需求与竞品研究报告（2026-10-16）">D05</a></td>
+</tr>
+<tr>
+<td>没有用户数据就定场景，仍是桌面研究</td>
+<td>对</td>
+<td>直接用第 16–45 天的真实任务检验需求；本报告支持试点而非规模投入</td>
+<td><span class="chip c-e0">E0</span></td>
+</tr>
+<tr>
+<td>平台与巨头也能建立本地合作，本土身份不是壁垒</td>
+<td>对</td>
+<td>可防守的是获准接入且稳定履约的商户网络、可复制的责任协议、用户反复采用的任务关系</td>
+<td>本文判断</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>本文最脆弱的一条：</strong> 夜间娱乐作为电话能力勾子。它的传播价值依赖"Iris 敢打这类电话"的新奇感，而法规边界、商店政策与品牌联想都可能让收益为负。法务或伙伴反对即取消，不影响主线。</p>
+<h3 id="s9-2"><span class="hn">9.2</span>风险</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>风险</th>
+<th>会怎样</th>
+<th>怎么发现</th>
+<th>用什么治</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>商户不接 AI 电话</td>
+<td>预約困難店与跨境餐饮执行率低；已有店主公开抱怨 AI 订位电话反复来电（<a class="ref" href="#src-S88" data-tip="サカナス商店（X，2026-10-18）">S88</a>、<a class="ref" href="#src-S121" data-tip="ITmedia：AutoReserve 来电与店家反应（2023-05）">S121</a>）</td>
+<td>试呼成功率</td>
+<td>开场表明身份、窗口内拨打与重拨上限、店方拒绝后不再拨打、商户 opt-in（<a class="ref" href="#src-D01" data-tip="Iris 日本 AI 电话方案（2026-10-13）">D01</a>、<a class="xref" href="#s5-1">&#167;5.1</a> 原则 11）</td>
+</tr>
+<tr>
+<td>伙伴权益停留在 Logo</td>
+<td>收入模型失效</td>
+<td>第 15 天权益登记表</td>
+<td>退为用户价值验证</td>
+</tr>
+<tr>
+<td>自动下单错误</td>
+<td>赔付与信任损失</td>
+<td>异常日志</td>
+<td>首次确认、免费取消价位、损失预算</td>
+</tr>
+<tr>
+<td>年龄或身份漏洞</td>
+<td>法律责任</td>
+<td>法务审查</td>
+<td><a class="xref" href="#s7-2">&#167;7.2</a></td>
+</tr>
+<tr>
+<td>联盟式变现被误用</td>
+<td>账号封禁</td>
+<td>渠道规则核对</td>
+<td>只走直接合同</td>
+</tr>
+<tr>
+<td>发现页的推测不准，变成噪音</td>
+<td>用户不再打开，高频入口落空</td>
+<td>推测被否定的比例</td>
+<td>写明依据、可以纠正、限制泛兴趣内容占比（原则 9）</td>
+</tr>
+<tr>
+<td>项目变成伙伴的定制供应商</td>
+<td>失去用户关系，不能按 Agent 平台估值</td>
+<td>第二伙伴复用率、用户授权是否归 Iris</td>
+<td>非独家、可复制的接入安排（<a class="xref" href="#s8-4">&#167;8.4</a>）</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="chapter"><h2 id="appendix-a"><span class="hn">附A</span>方法与证据</h2>
+<h3 id="appendix-a-1"><span class="hn">A.1</span>决策方法</h3>
+<p>本报告按"赢的目标、在哪里竞争、如何取胜、需要什么能力、什么管理系统"五问组织（<a class="xref" href="#s1">&#167;1</a>）。分支筛选用双闸门：只保留"对首发影响大"且"Iris 能改变"的分支。医疗抽佣禁令、联盟媒介限制这类影响大但改不了的写成约束（<a class="xref" href="#s2">&#167;2</a>），不写成建议。</p>
+<h3 id="appendix-a-2"><span class="hn">A.2</span>方法选型</h3>
+<p class="leadin"><span class="leadin-tag">先说结论</span>方法的重量与证据量匹配。当前没有用户任务数据，因此采用七个有区分度的维度做定性判断，并逐格注明依据。</p>
+<p>具体做法：用 JTBD 定义场景单元并按 MECE 组织（<a class="xref" href="#s3">&#167;3</a>）；用七个维度先评 agent 做这件事的优劣势、再分层并标注来源（<a class="xref" href="#s4">&#167;4</a>、<a class="xref" href="#appendix-a-3">A.3</a>）；竞争分析聚焦替代品、买方、供应商三股有张力的力（<a class="xref" href="#s2-2">&#167;2.2</a>）；市场规模只做自下而上的量级约束（<a class="xref" href="#s6-3">&#167;6.3</a>）。用户频次、可服务规模与佣金率需要任务日志或合同才能量化，留待 90 天验证产出（<a class="xref" href="#s8">&#167;8</a>）。</p>
+<h3 id="appendix-a-3"><span class="hn">A.3</span>评估维度</h3>
+<p>七个维度的定义、高低锚点与分层规则见表 4-1 与 <a class="xref" href="#s4-1">&#167;4.1</a>，不在此重复。设计原则：先判断 agent 相对现成工具的优势（执行增量、频次与持续责任、上下文可得与积累、Iris 资产兑现）能否在该场景发挥，再看信任与收入（结果可核验、变现与商户关系），最后用可控与风险作门槛。三档序数，不加权求和；每格的依据与来源见表 4-2。</p>
+<h3 id="appendix-a-4"><span class="hn">A.4</span>证据分级</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>等级</th>
+<th>含义</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="chip c-e0">E0</span> 未验证</td>
+<td>缺直接适用的证据，不等于证明不存在</td>
+<td>用户委托意愿、Iris 的分成与回款</td>
+</tr>
+<tr>
+<td>E1 外部依据</td>
+<td>官方规则、平台流程或类似商业模式支持某个局部判断</td>
+<td>预约系统存在、平台向商户收费</td>
+</tr>
+<tr>
+<td>E2 Iris 直接验证</td>
+<td>书面许可、真实任务、有分母的受控实验</td>
+<td>指定渠道允许指定操作</td>
+</tr>
+<tr>
+<td>E3 持续复现</td>
+<td>在独立用户、任务与结算周期中重复成立</td>
+<td>退款后仍有贡献、自然复用</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源类型：<span class="tag">官方</span>法规、官方统计、上市公司披露；<span class="tag">厂商</span>公司自己的产品页与公告；<span class="tag">内部</span>团队输入与内部研究；<span class="tag">本文判断</span>本文推断；<span class="tag">需复核</span>未回到一手条文的条目。</p>
+<h3 id="appendix-a-5"><span class="hn">A.5</span>框架盲区</h3>
+<p>七维评估看不见：用户真实委托意愿（需真实任务验证）；各伙伴能兑现的具体权益（需商务）；频次与上下文积累是否真的转化为再委托（需试点的 cohort 数据）；频次、上下文的判断假设只做日本，若覆盖多国，跨境游客的评估会改变。约束分析看不见约束何时松动（表 2-1 末列）。竞争格局表基于公开材料，未见的能力不等于不存在。</p>
+</section><section class="chapter"><h2 id="refs"><span class="hn">源</span>参考资料</h2>
+<p>查阅日期 2026-10-15 至 10-20。官方统计按统计期使用，产品规则在接入前再次核对。</p>
+<p class="minihead">官方与法规</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>编号</th>
+<th>来源</th>
+<th>支持什么</th>
+</tr>
+</thead>
+<tbody>
+<tr id="src-S01"><td>S01</td>
+<td><a href="https://www.meti.go.jp/english/press/2025/0826_003.html" target="_blank" rel="noopener">METI：2024 年电子商务市场调查，2025-08-26</a></td>
+<td>产业基线，不是可得市场</td>
+</tr>
+<tr id="src-S08"><td>S08</td>
+<td><a href="https://www.fsa.go.jp/common/shinsei/dendai/index.html" target="_blank" rel="noopener">金融厅：電子決済等代行業</a></td>
+<td>资金执行注册要求</td>
+</tr>
+<tr id="src-S11"><td>S11</td>
+<td><a href="https://www.mhlw.go.jp/web/t_doc_keyword?dataId=84035000&amp;dataType=0&amp;keyword=%E4%BF%9D%E9%99%BA%E5%8C%BB%E7%99%82%E6%A9%9F%E9%96%A2%E5%8F%8A%E3%81%B3%E4%BF%9D%E9%99%BA%E5%8C%BB%E7%99%82%E9%A4%8A%E6%8B%85%E5%BD%93%E8%A6%8F%E5%89%87&amp;mode=0&amp;pageNo=1" target="_blank" rel="noopener">厚劳省：保険医療機関及び保険医療養担当規則</a></td>
+<td>第 2 条之 4 之 2 第 2 款，患者介绍对价限制</td>
+</tr>
+<tr id="src-S23"><td>S23</td>
+<td><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/osirase/9204.htm" target="_blank" rel="noopener">国税厅 No.9204</a></td>
+<td>税理士业务边界</td>
+</tr>
+<tr id="src-S26"><td>S26</td>
+<td><a href="https://www.digital.go.jp/policies/moving_onestop_service" target="_blank" rel="noopener">数字厅：搬家一站式服务</a></td>
+<td>迁入仍需到场</td>
+</tr>
+<tr id="src-S27"><td>S27</td>
+<td><a href="https://www.fsa.go.jp/policy/marketentry/guidebook/02.html" target="_blank" rel="noopener">金融厅：金融业务注册指南</a></td>
+<td>投资业务资格</td>
+</tr>
+<tr id="src-S34"><td>S34</td>
+<td><a href="https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm" target="_blank" rel="noopener">NIST：比例的置信区间</a></td>
+<td>Wilson 区间</td>
+</tr>
+<tr id="src-S36"><td>S36</td>
+<td><a href="https://www.ppc.go.jp/personalinfo/legal/guidelines_offshore/" target="_blank" rel="noopener">PPC：外国第三方提供指南</a></td>
+<td>跨境路径</td>
+</tr>
+<tr id="src-S37"><td>S37</td>
+<td><a href="https://www.fsa.go.jp/access/r5/245.html" target="_blank" rel="noopener">金融厅：保险业适用性 Q&amp;A</a></td>
+<td>赔付结构是否构成保险</td>
+</tr>
+<tr id="src-S38"><td>S38</td>
+<td><a href="https://www.caa.go.jp/policies/policy/representation/fair_labeling/representation_regulation/misleading_representation/" target="_blank" rel="noopener">消费者厅：优良误认表示</a></td>
+<td>认证宣传须有依据</td>
+</tr>
+<tr id="src-S41"><td>S41</td>
+<td><a href="https://elaws.e-gov.go.jp/document?lawid=323AC0000000122" target="_blank" rel="noopener">e-Gov：風俗営業等の規制及び業務の適正化等に関する法律</a></td>
+<td>夜间营业分类与年龄限制<span class="tag">需复核具体条文</span></td>
+</tr>
+<tr id="src-S42"><td>S42</td>
+<td><a href="https://developer.apple.com/app-store/review/guidelines/" target="_blank" rel="noopener">Apple App Store Review Guidelines</a></td>
+<td>对成人与促成性服务应用的限制<span class="tag">需复核具体条款</span></td>
+</tr>
+<tr id="src-S64"><td>S64</td>
+<td><a href="https://okane-kenko.jp/media/survey_2512-2/" target="_blank" rel="noopener">オカネコ：订阅"积少成多浪费"实态调查（2025-12 调查，2026-04 发布）</a></td>
+<td>n=330；订阅契约者中 50.5% 遇到首月免费后自动扣费，19.1% 有几乎不用却忘了取消的订阅，估算浪费以每月 500 至 1,000 日元最多<span class="tag">调查</span></td>
+</tr>
+<tr id="src-S45"><td>S45</td>
+<td><a href="https://elaws.e-gov.go.jp/document?lawid=324AC0000000205" target="_blank" rel="noopener">e-Gov：弁護士法</a></td>
+<td>第 72 条非弁行为：理赔交涉等法律事务的有偿代理限制<span class="tag">需复核具体条文</span></td>
+</tr>
+<tr id="src-S44"><td>S44</td>
+<td><a href="https://www.jnto.go.jp/statistics/data/visitor-trends/" target="_blank" rel="noopener">JNTO：访日外客统计</a></td>
+<td>访日人数官方月度统计</td>
+</tr>
+<tr id="src-S49"><td>S49</td>
+<td><a href="https://netshop.impress.co.jp/node/12342" target="_blank" rel="noopener">ネットショップ担当者フォーラム：クレジットカード・セキュリティガイドライン 5.0 版</a></td>
+<td>2025-03 末前原则全 EC 加盟店导入 EMV 3-D セキュア</td>
+</tr>
+<tr id="src-S50"><td>S50</td>
+<td><a href="https://infcurion.com/xard/function/" target="_blank" rel="noopener">Infcurion：Xard 機能</a></td>
+<td>API 实时发行法人虚拟卡，可设上限、按商户业种限制、实时授权</td>
+</tr>
+</tbody>
+</table></div>
+<p class="minihead">厂商与平台</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>编号</th>
+<th>来源</th>
+<th>支持什么</th>
+</tr>
+</thead>
+<tbody>
+<tr id="src-S02"><td>S02</td>
+<td><a href="https://affiliate.rakuten.co.jp/guideline/rule/" target="_blank" rel="noopener">楽天 Affiliate 规则</a></td>
+<td>禁止私密消息、自动工具</td>
+</tr>
+<tr id="src-S03"><td>S03</td>
+<td><a href="https://owner.tabelog.com/home/net_reservation/" target="_blank" rel="noopener">食べログ商户网络预约</a></td>
+<td>按到店人数收费，自有渠道免费</td>
+</tr>
+<tr id="src-S04"><td>S04</td>
+<td><a href="https://www.hotpepper.jp/yoyaku/guide/request/" target="_blank" rel="noopener">HOT PEPPER 请求预约指南</a></td>
+<td>请求需餐厅接受</td>
+</tr>
+<tr id="src-S05"><td>S05</td>
+<td><a href="https://beauty.hotpepper.jp/doc/smartpayment/smartpayment.html" target="_blank" rel="noopener">HOT PEPPER Beauty：Smart Payment</a></td>
+<td>美容预约支付与取消流程</td>
+</tr>
+<tr id="src-S07"><td>S07</td>
+<td><a href="https://paypay.ne.jp/help/c0109/" target="_blank" rel="noopener">PayPay 账单支付</a></td>
+<td>现有工具足够</td>
+</tr>
+<tr id="src-S09"><td>S09</td>
+<td><a href="https://moneyforward.com/pages/premium_features" target="_blank" rel="noopener">Money Forward ME 高级服务</a></td>
+<td>消费者订阅模式存在</td>
+</tr>
+<tr id="src-S18"><td>S18</td>
+<td><a href="https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260213/20260212558783.pdf" target="_blank" rel="noopener">MRSO 2025 年度决算说明</a></td>
+<td>健诊平台法人预约费率 6%，个人 6% 或 10%<span class="tag">公司披露</span></td>
+</tr>
+<tr id="src-S19"><td>S19</td>
+<td><a href="https://www.sumirenken.jp/medical_examination/10/" target="_blank" rel="noopener">住商連合健保 KENKOBOX</a></td>
+<td>仮预约后邮件确认</td>
+</tr>
+<tr id="src-S20"><td>S20</td>
+<td><a href="https://car.rakuten.co.jp/shaken/guide/" target="_blank" rel="noopener">楽天Car 車検</a></td>
+<td>估价与到店两步</td>
+</tr>
+<tr id="src-S24"><td>S24</td>
+<td><a href="https://pairs.lv/static/safety/activity/works_on_safety" target="_blank" rel="noopener">Pairs 安全措施</a></td>
+<td>年龄与本人确认；不授权代运营</td>
+</tr>
+<tr id="src-S30"><td>S30</td>
+<td><a href="https://webservice.recruit.co.jp/doc/hotpepper/guideline.html" target="_blank" rel="noopener">Recruit HOT PEPPER Web 服务指南</a></td>
+<td>限制向餐厅收取对价的网站</td>
+</tr>
+<tr id="src-S31"><td>S31</td>
+<td><a href="https://webservicestr.hotpepper.jp/doc/hotpepper/reference.html" target="_blank" rel="noopener">HOT PEPPER API 参考</a></td>
+<td>仅查询与主数据</td>
+</tr>
+<tr id="src-S35"><td>S35</td>
+<td><a href="https://www.netstars.co.jp/notification/8212/" target="_blank" rel="noopener">NETSTARS 资金移动业注册公告</a></td>
+<td>持牌主体自身能力</td>
+</tr>
+<tr id="src-S43"><td>S43</td>
+<td><a href="https://kakaku.com/kaden/" target="_blank" rel="noopener">価格.com 家电</a></td>
+<td>比价替代对象</td>
+</tr>
+<tr id="src-S65"><td>S65</td>
+<td><a href="https://thebridge.jp/2025/11/timetree-closes-series-f-total-32-billion-yen" target="_blank" rel="noopener">THE BRIDGE：TimeTree 完成 F 轮融资（2025-11）</a></td>
+<td>全球注册用户超 6,700 万<span class="tag">厂商</span></td>
+</tr>
+<tr id="src-S66"><td>S66</td>
+<td><a href="https://www.appbank.net/2025/10/02/iphone-news/2837373.php" target="_blank" rel="noopener">AppBank：マネーフォワード ME（2025-10-02）</a></td>
+<td>用户 1,730 万<span class="tag">厂商</span></td>
+</tr>
+<tr id="src-S51"><td>S51</td>
+<td><a href="https://dime.jp/genre/2062489/" target="_blank" rel="noopener">DIME：MMD 研究所在线旅行预约服务利用调查（2025-11）</a></td>
+<td>在线订旅行者中楽天トラベル 64.9%、じゃらんnet 41.3%、Yahoo!トラベル 25.3%；n=247；同一调查中 57.2% 觉得订的过程不方便、最常见是信息太多难比较（44.1%），45.6% 希望 AI 帮忙预测价格<span class="tag">调查</span></td>
+</tr>
+<tr id="src-S52"><td>S52</td>
+<td><a href="https://ascii.jp/elem/000/004/225/4225957/" target="_blank" rel="noopener">ASCII：AutoReserve 注册用户覆盖 100 国（2024-10-04）</a></td>
+<td>可订店 225 万家以上；不含日本的注册用户中香港 31.97%、台湾 23.48%；日本用户数未披露<span class="tag">厂商</span></td>
+</tr>
+<tr id="src-S53"><td>S53</td>
+<td><a href="https://ascii.jp/elem/000/004/280/4280451/" target="_blank" rel="noopener">ASCII：AutoReserve 台湾、香港注册用户各超 10 万（2025-06-09）</a></td>
+<td>"访日前应该装的服务"的定位<span class="tag">厂商</span></td>
+</tr>
+<tr id="src-S54"><td>S54</td>
+<td><a href="https://herp.careers/careers/companies/omakase" target="_blank" rel="noopener">HERP：GMO OMAKASE 公司介绍</a></td>
+<td>导入约 1,000 家；米其林东京 2025 三星 12 家中 9 家使用<span class="tag">厂商</span></td>
+</tr>
+<tr id="src-S55"><td>S55</td>
+<td><a href="https://saas.imitsu.jp/cate-scheduling-tool/service/4484" target="_blank" rel="noopener">アイミツ SaaS：調整さん</a></td>
+<td>月均约 800 万人使用（2024-08）<span class="tag">厂商口径</span></td>
+</tr>
+<tr id="src-S56"><td>S56</td>
+<td><a href="https://squareup.com/jp/ja/townsquare/advantages-of-hotpepper-beauty" target="_blank" rel="noopener">Square：ホットペッパービューティー的优势（2026-03 更新）</a></td>
+<td>2025-04 时点发廊 6.4 万家、放松与美容沙龙 10.1 万家，年网约 1.8 亿件以上<span class="tag">二手</span></td>
+</tr>
+<tr id="src-S58"><td>S58</td>
+<td><a href="https://kakaku.com/shopentry/" target="_blank" rel="noopener">価格.com：店铺入驻说明</a></td>
+<td>月访问 5,000 万人以上（Adobe，2024-06）<span class="tag">厂商</span></td>
+</tr>
+<tr id="src-S60"><td>S60</td>
+<td><a href="https://gamebiz.jp/news/425872" target="_blank" rel="noopener">gamebiz：ぴあ 2026 年 3 月期决算（2026-05-14）</a></td>
+<td>营业利润 43 亿日元创新高，取扱高超 3,000 亿日元<span class="tag">厂商</span></td>
+</tr>
+<tr id="src-S61"><td>S61</td>
+<td><a href="https://www.commercepick.com/?p=59291" target="_blank" rel="noopener">コマースピック：@cosme 规模（2024-12）</a></td>
+<td>月访问约 1,780 万人，累计口碑 2,080 万件（2024-06）<span class="tag">厂商</span></td>
+</tr>
+<tr id="src-S62"><td>S62</td>
+<td><a href="https://employment.en-japan.com/desc_925856/" target="_blank" rel="noopener">en 转职：ポケパラ运营公司介绍</a></td>
+<td>找店与求职两端的夜间娱乐信息站；规模未披露</td>
+</tr>
+<tr id="src-S63"><td>S63</td>
+<td><a href="https://webtan.impress.co.jp/n/2025/10/20/50245" target="_blank" rel="noopener">Web 担当者 Forum：MMD 研究所 2025 婚恋 App 调查（2025-10-20）</a></td>
+<td>用过婚恋 App 者中 Pairs 42.8%、with 27.7%、タップル 22.7%；n=30,000<span class="tag">调查</span></td>
+</tr>
+<tr id="src-S46"><td>S46</td>
+<td><a href="https://www.mastercard.com/jp/ja/news-and-trends/stories-japan/2026/may/mastercard-completes-first-agentic-transaction-in-japan.html" target="_blank" rel="noopener">Mastercard Japan：日本首笔 Agent Pay 生产交易（2026-05-20）</a></td>
+<td>卡组织 agent 令牌在日本可用，三菱UFJニコス等发卡</td>
+</tr>
+<tr id="src-S47"><td>S47</td>
+<td><a href="https://support.link.com/questions/link-agent-wallet-faq" target="_blank" rel="noopener">Link：Agent wallet FAQ</a></td>
+<td>代理钱包仅限美国、加拿大创建的账户；每笔需生物识别批准；额度按日重置</td>
+</tr>
+<tr id="src-S48"><td>S48</td>
+<td><a href="https://docs.stripe.com/issuing" target="_blank" rel="noopener">Stripe：Issuing 可用地区</a></td>
+<td>商业发卡仅美、英、欧经济区，日本不可用</td>
+</tr>
+</tbody>
+</table></div>
+<p class="minihead">Aha 依据：官方规则、调查、媒体与用户自述</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>编号</th>
+<th>来源</th>
+<th>支持什么</th>
+</tr>
+</thead>
+<tbody>
+<tr id="src-S67"><td>S67</td>
+<td><a href="https://library.libecity.com/articles/01M1BTD4K22W67703QZYXJ45T3" target="_blank" rel="noopener">リベシティ：楽天トラベルと旅館公式の価格差（用户自述）</a></td>
+<td>同一旅馆楽天价 ¥58,823，官网早订加事前付款 ¥47,020，用户偶然才发现<span class="tag">用户自述</span></td>
+</tr>
+<tr id="src-S68"><td>S68</td>
+<td><a href="https://www.moneypost.jp/1196059" target="_blank" rel="noopener">マネーポスト：LCC 订错日期取消收 100%</a></td>
+<td>订完马上取消仍收全额，三人约 16 万日元<span class="tag">新闻</span></td>
+</tr>
+<tr id="src-S69"><td>S69</td>
+<td><a href="https://library.libecity.com/articles/01KRQYQXETEQ203WZ1MME2BT9H" target="_blank" rel="noopener">リベシティ：订后降价与 Tra-bell（用户自述）</a></td>
+<td>同一订单几天后从 ¥83,476 降到 ¥71,669；作者开发了订后自动盯价的 Tra-bell〔用户自述，本地竞品〕</td>
+</tr>
+<tr id="src-S70"><td>S70</td>
+<td><a href="https://travel.rakuten.co.jp/HOTEL/147671/CUSTOM/GW147671170802163559.html" target="_blank" rel="noopener">楽天トラベル：某酒店取消规定</a></td>
+<td>22 天前免费，21 天前起收 30%，改日期按取消收费<span class="tag">官方</span></td>
+</tr>
+<tr id="src-S71"><td>S71</td>
+<td><a href="https://www.ana.co.jp/ja/jp/guide/reservation/refund/domestic/weather/nocharge-guide.html" target="_blank" rel="noopener">ANA：天候等影响时免手续费变更</a></td>
+<td>航班被标为可能受影响后才免手续费变更，须在出发前办理<span class="tag">官方</span></td>
+</tr>
+<tr id="src-S72"><td>S72</td>
+<td><a href="https://www.hokkaido-np.co.jp/focus-select/20190116" target="_blank" rel="noopener">北海道新闻：新千歳大雪改签（2019-01）</a></td>
+<td>大雪停飞时改签最早只能排到数天后<span class="tag">新闻</span></td>
+</tr>
+<tr id="src-S73"><td>S73</td>
+<td><a href="https://www.princehotels.co.jp/rsv_information/cancel.html" target="_blank" rel="noopener">Prince Hotels：取消规定</a></td>
+<td>未联系且当天 20:00 仍未到，视为取消<span class="tag">官方</span></td>
+</tr>
+<tr id="src-S75"><td>S75</td>
+<td><a href="https://www.kobe-np.co.jp/rentoku/omoshiro/202203/sp/0015105093.shtml?pg=amp" target="_blank" rel="noopener">神戸新聞：里程失效调查（2021，n=1,236）</a></td>
+<td>46.9% 有过里程失效，平均损失约 ¥5,081 等值<span class="tag">调查</span></td>
+</tr>
+<tr id="src-S76"><td>S76</td>
+<td><a href="https://www.kokusen.go.jp/news/data/n-20260428_1.html" target="_blank" rel="noopener">国民生活センター：定期购入注意喚起（2026-04-28）</a></td>
+<td>结账追加提案带进定期购入、首次解约要求补差价；建议截图保存条件与邮件<span class="tag">官方</span></td>
+</tr>
+<tr id="src-S77"><td>S77</td>
+<td><a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12286476012" target="_blank" rel="noopener">Yahoo!知恵袋：只能电话解约、需提前 10 天</a></td>
+<td>第 8 天才打通，商家拒绝解约<span class="tag">用户自述</span></td>
+</tr>
+<tr id="src-S78"><td>S78</td>
+<td><a href="https://kumanichi.com/articles/2026755" target="_blank" rel="noopener">熊本日日新聞：服装订阅相关咨询</a></td>
+<td>约 1,600 件咨询；有人收到解约完成邮件后仍被扣款<span class="tag">新闻</span></td>
+</tr>
+<tr id="src-S83"><td>S83</td>
+<td><a href="https://k-tai.watch.impress.co.jp/docs/news/2143339.html" target="_blank" rel="noopener">ケータイ Watch：docomo 旧方案月费调整（2026-09）</a></td>
+<td>12/1 起旧方案每月加 110 至 550 日元，自动适用于现有合约<span class="tag">新闻</span></td>
+</tr>
+<tr id="src-S85"><td>S85</td>
+<td><a href="https://sushiwalker.com/en/feature/8098" target="_blank" rel="noopener">Sushi Walker：予約困難店预约指南</a></td>
+<td>名店按固定日时开放、SNS 公布取消空位、电话宜在午后 2 至 5 点<span class="tag">媒体</span></td>
+</tr>
+<tr id="src-S86"><td>S86</td>
+<td><a href="https://agora-web.jp/?p=324039" target="_blank" rel="noopener">アゴラ：名店预约体验（2022-05）</a></td>
+<td>开放后几乎瞬间约满，靠助理打电话才订到<span class="tag">用户自述</span></td>
+</tr>
+<tr id="src-S87"><td>S87</td>
+<td><a href="https://support-diners.tablecheck.com/hc/ja/articles/58873126586649" target="_blank" rel="noopener">TableCheck：キャンセル待ち说明</a></td>
+<td>候补只发邮件通知、不自动确定，先操作者得位<span class="tag">官方</span></td>
+</tr>
+<tr id="src-S88"><td>S88</td>
+<td><a href="https://x.com/sakanasu_akiba/status/2111689871178031485" target="_blank" rel="noopener">サカナス商店（X，2026-10-18）</a></td>
+<td>店主公开抱怨 AI 订位电话说了别打仍反复来电<span class="tag">店方自述</span></td>
+</tr>
+<tr id="src-S89"><td>S89</td>
+<td><a href="https://forbesjapan.com/articles/detail/86140" target="_blank" rel="noopener">Forbes JAPAN：幹事调查（2025-12，n=310）</a></td>
+<td>幹事最头疼的是选店与调日程；人数不定就订不了位<span class="tag">调查</span></td>
+</tr>
+<tr id="src-S90"><td>S90</td>
+<td><a href="https://ecnomikata.com/pr/3833/" target="_blank" rel="noopener">ECのミカタ：ホットペッパーグルメ幹事调查（2014）</a></td>
+<td>约四分之三不愿当幹事，最讨厌选店订位，其次是会费计算与收取<span class="tag">调查</span></td>
+</tr>
+<tr id="src-S91"><td>S91</td>
+<td><a href="https://forbesjapan.com/articles/detail/71221" target="_blank" rel="noopener">Forbes JAPAN：食物过敏与会食（2024-12）</a></td>
+<td>过敏会让一顿饭泡汤，蛋、荞麦、甲壳类最常见<span class="tag">媒体</span></td>
+</tr>
+<tr id="src-S92"><td>S92</td>
+<td><a href="https://support-diners.tablecheck.com/hc/ja/articles/900000872923" target="_blank" rel="noopener">TableCheck：预约变更说明</a></td>
+<td>部分店不能在线改人数，需先取消再重订<span class="tag">官方</span></td>
+</tr>
+<tr id="src-S93"><td>S93</td>
+<td><a href="https://www.moneypost.jp/560969" target="_blank" rel="noopener">マネーポスト：No-show 损失（2019）</a></td>
+<td>无故不到每年约 2000 亿日元损失<span class="tag">新闻</span></td>
+</tr>
+<tr id="src-S94"><td>S94</td>
+<td><a href="https://hba.beauty.hotpepper.jp/wp/wp-content/uploads/2023/09/20230907_PR2.pdf" target="_blank" rel="noopener">ホットペッパービューティーアカデミー：美容サロン顧客満足調査 2023</a></td>
+<td>复访意向者最看重能网约、价格清楚<span class="tag">调查</span></td>
+</tr>
+<tr id="src-S95"><td>S95</td>
+<td><a href="https://note.com/tks0503/n/n610ee6e2abe3" target="_blank" rel="noopener">note：美容师自述（2021）</a></td>
+<td>热门时段早早约满，客人常说约不上，建议离店时订下次<span class="tag">用户自述</span></td>
+</tr>
+<tr id="src-S96"><td>S96</td>
+<td><a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11324080961" target="_blank" rel="noopener">Yahoo!知恵袋：店家要求下次改电话预约（2026-01）</a></td>
+<td>常客被要求改用电话预约，本人怕打电话<span class="tag">用户自述</span></td>
+</tr>
+<tr id="src-S98"><td>S98</td>
+<td><a href="https://event.rakuten.co.jp/campaign/point-up/everyday/point/" target="_blank" rel="noopener">楽天市場：SPU 规则</a></td>
+<td>各项加成有月上限，期間限定积分次月底失效<span class="tag">官方</span></td>
+</tr>
+<tr id="src-S99"><td>S99</td>
+<td><a href="https://shopping.yahoo.co.jp/promotion/campaign/5day/" target="_blank" rel="noopener">Yahoo!ショッピング：5のつく日</a></td>
+<td>须当天报名并用 PayPay 系支付，奖励有上限<span class="tag">官方</span></td>
+</tr>
+<tr id="src-S102"><td>S102</td>
+<td><a href="https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/" target="_blank" rel="noopener">消費者庁：ステルスマーケティング规制</a></td>
+<td>2023-10 起隐瞒广告身份受景表法规制<span class="tag">官方</span></td>
+</tr>
+<tr id="src-S103"><td>S103</td>
+<td><a href="https://ecnomikata.com/ecnews/51034/" target="_blank" rel="noopener">ECのミカタ：化妆品购买调查（2026-06，n=1,014）</a></td>
+<td>SNS 与杂志话题护肤品买后不合肤的比例 59.8%<span class="tag">调查</span></td>
+</tr>
+<tr id="src-S104"><td>S104</td>
+<td><a href="https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00019.html" target="_blank" rel="noopener">観光庁：免税制度改为退税方式</a></td>
+<td>2026-11-01 起先付含税价、出境时海关确认后退税；只针对非居住者<span class="tag">官方</span></td>
+</tr>
+<tr id="src-S106"><td>S106</td>
+<td><a href="https://wanderlog.com/place/details/401244" target="_blank" rel="noopener">Wanderlog：东京老店店铺页</a></td>
+<td>只接本地电话预约<span class="tag">店铺信息</span></td>
+</tr>
+<tr id="src-S107"><td>S107</td>
+<td><a href="https://www.nippon.com/en/japan-data/h01707/" target="_blank" rel="noopener">nippon.com：访日客的餐厅预约方式</a></td>
+<td>直接打电话订位的只有 10.5%，36.7% 不预约直接去<span class="tag">调查</span></td>
+</tr>
+<tr id="src-S108"><td>S108</td>
+<td><a href="https://www.tripzilla.com/why-a-japanese-phone-number-makes-travel-in-japan-easier/25487" target="_blank" rel="noopener">TripZilla：日本号码与餐厅回电</a></td>
+<td>店家回电联系不上，预约可能作废<span class="tag">媒体</span></td>
+</tr>
+<tr id="src-S112"><td>S112</td>
+<td><a href="https://www.travelvoice.jp/20180530-107976/print" target="_blank" rel="noopener">トラベルボイス：観光庁访日客困扰调查（2018）</a></td>
+<td>沟通困难最多发生在餐厅（28.5%），其中点菜时占 65.8%<span class="tag">调查</span></td>
+</tr>
+<tr id="src-S113"><td>S113</td>
+<td><a href="https://allergyfacts.org.au/story/translated-chef-cards-in-japan/" target="_blank" rel="noopener">Allergy &amp; Anaphylaxis Australia：在日本点餐的过敏卡</a></td>
+<td>家长自述在日本很难把孩子的过敏原讲全讲对<span class="tag">用户自述</span></td>
+</tr>
+<tr id="src-S114"><td>S114</td>
+<td><a href="https://www.sonymusic.co.jp/artist/StrayKids/info/560787" target="_blank" rel="noopener">Sony Music：Stray Kids 公演先行受理</a></td>
+<td>按会员层级分轮受理；同行者须为会员，提交后不可更改<span class="tag">官方</span></td>
+</tr>
+<tr id="src-S115"><td>S115</td>
+<td><a href="https://eplus.jp/matsui_onsen/" target="_blank" rel="noopener">e+：抽选付款说明</a></td>
+<td>过付款期限申请无效；邮件未到应查申请记录<span class="tag">官方</span></td>
+</tr>
+<tr id="src-S116"><td>S116</td>
+<td><a href="https://game.watch.impress.co.jp/docs/news/2025824.html" target="_blank" rel="noopener">GAME Watch：Switch 2 第 5 回抽选条件</a></td>
+<td>每轮条件变化且须重新申请，之前的申请不沿用<span class="tag">新闻</span></td>
+</tr>
+<tr id="src-S117"><td>S117</td>
+<td><a href="https://www.keishicho.metro.tokyo.lg.jp/about_mpd/shokai/ichiran/kankatsu/shinjuku/about_ps/safe_drinking.html" target="_blank" rel="noopener">警视厅新宿署：安心饮酒提醒</a></td>
+<td>敲竹杠被害增加，提醒事先确认价格<span class="tag">官方</span></td>
+</tr>
+<tr id="src-S118"><td>S118</td>
+<td><a href="https://www.ben54.jp/news/40" target="_blank" rel="noopener">ben54：ガールズバーの営業区分</a></td>
+<td>ガールズバー一般只做酒类提供申报，不能提供接待<span class="tag">解说</span></td>
+</tr>
+<tr id="src-S119"><td>S119</td>
+<td><a href="https://zaikei.co.jp/releases/2174519/" target="_blank" rel="noopener">財経新聞：交友 app 使用调查</a></td>
+<td>通过交友 app 开始交往的人中 76.9% 同时用多个 app<span class="tag">调查</span></td>
+</tr>
+<tr id="src-S120"><td>S120</td>
+<td><a href="https://www.watch.impress.co.jp/docs/news/2066754.html" target="_blank" rel="noopener">Impress Watch：Pairs 本人确认方式（2025-12）</a></td>
+<td>只接受 My Number 卡 IC 读取或自拍加证件<span class="tag">新闻</span></td>
+</tr>
+<tr id="src-S121"><td>S121</td>
+<td><a href="https://www.itmedia.co.jp/business/spv/2305/18/news165.html" target="_blank" rel="noopener">ITmedia：AutoReserve 来电与店家反应（2023-05）</a></td>
+<td>AI 连续来电引起店家不满<span class="tag">新闻</span></td>
+</tr>
+<tr id="src-S122"><td>S122</td>
+<td><a href="https://dime.jp/genre/1814348/" target="_blank" rel="noopener">DIME：Z 世代的飲食店探し（Utakata 调查）</a></td>
+<td>Z 世代查饮食店最常用 Instagram 38.9%、Google マップ 23.6%、食べログ 22.3%；n=157<span class="tag">调查</span></td>
+</tr>
+<tr id="src-S123"><td>S123</td>
+<td><a href="https://k-tai.watch.impress.co.jp/docs/news/2079272.html" target="_blank" rel="noopener">ケータイ Watch：UMAME! 正式版（2026-01）</a></td>
+<td>ぐるなび 的 AI 找店 App，按时间、地点与用户偏好推荐一家店，收录约 59 万家，免费<span class="tag">厂商</span></td>
+</tr>
+<tr id="src-S124"><td>S124</td>
+<td><a href="https://futurism.com/artificial-intelligence/meta-muse-ai-agent-creepy" target="_blank" rel="noopener">Futurism：Muse 评测汇总</a></td>
+<td>评测者认为 Muse 的个性化建议不断引导用户连接银行账户、扫描邮箱等，像在收集数据<span class="tag">媒体</span></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>内部材料</strong>（读本文不需要先读它们）</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>编号</th>
+<th>来源</th>
+<th>本文引用了什么</th>
+</tr>
+</thead>
+<tbody>
+<tr id="src-D01"><td>D01</td>
+<td><a href="../../sources/%E6%9D%90%E6%96%99%E5%BC%95%E7%94%A8%E7%BC%BA%E5%A4%B1%E8%AF%B4%E6%98%8E.html#ref-a554aba4d2"><small data-package-missing="true" style="font-size:11px;color:#963e2a;margin-right:5px">[原附件缺失]</small>Iris 日本 AI 电话方案（2026-10-13）</a></td>
+<td>选型、号码申请、成本、风险</td>
+</tr>
+<tr id="src-D02"><td>D02</td>
+<td><a href="../../sources/%E6%9D%90%E6%96%99%E5%BC%95%E7%94%A8%E7%BC%BA%E5%A4%B1%E8%AF%B4%E6%98%8E.html#ref-cc46e8a6c5"><small data-package-missing="true" style="font-size:11px;color:#963e2a;margin-right:5px">[原附件缺失]</small>日本 Personal AI Agent 市场深度调研：餐饮与酒店预约（2026-10-13）</a></td>
+<td>AutoReserve、UMAME!、TableCheck、ぐるなび API、Rakuten AI、Agent i、TripGenie 的能力与缺口；酒店 B2B2C；执行层定位；访日游客月度数据</td>
+</tr>
+<tr id="src-D04"><td>D04</td>
+<td><a href="../../sources/%E6%9D%90%E6%96%99%E5%BC%95%E7%94%A8%E7%BC%BA%E5%A4%B1%E8%AF%B4%E6%98%8E.html#ref-6f2eaabf47"><small data-package-missing="true" style="font-size:11px;color:#963e2a;margin-right:5px">[原附件缺失]</small>Iris 日本能力储备与前置审批清单（2026-10-15）</a></td>
+<td>能力编号与技术现实、Aha 到能力的映射、各场景的执行路径与基准站点（2.4 节）、中国游客入口与合规；本文的执行细节均在该文档；WorldX 侧的审批与签约待办见《WorldX-Iris 日本能力申请与准备清单》</td>
+</tr>
+<tr id="src-D05"><td>D05</td>
+<td><a href="../../sources/%E6%9D%90%E6%96%99%E5%BC%95%E7%94%A8%E7%BC%BA%E5%A4%B1%E8%AF%B4%E6%98%8E.html#ref-25d8548f69"><small data-package-missing="true" style="font-size:11px;color:#963e2a;margin-right:5px">[原附件缺失]</small>Personal Agent 用户需求与竞品研究报告（2026-10-16）</a></td>
+<td>竞品用户声音：完成定义不清、频繁审批与越权发送、同类任务在不同商户结果不同、好评不等于留存；只作 <a class="xref" href="#s5-1">&#167;5.1</a> Aha 设计原则的参考，不作为关键素材</td>
+</tr>
+<tr id="src-D03"><td>D03</td>
+<td><a href="../../sources/%E6%9D%90%E6%96%99%E5%BC%95%E7%94%A8%E7%BC%BA%E5%A4%B1%E8%AF%B4%E6%98%8E.html#ref-75c8084a05"><small data-package-missing="true" style="font-size:11px;color:#963e2a;margin-right:5px">[原附件缺失]</small>日本市场 C 端 Personal AI Agent 与 Onboarding 深度研究（2026-10-15）</a></td>
+<td>价值先于账号、多登录方式</td>
+</tr>
+<tr id="src-P02"><td>P02</td>
+<td><a href="../../sources/%E6%9D%90%E6%96%99%E5%BC%95%E7%94%A8%E7%BC%BA%E5%A4%B1%E8%AF%B4%E6%98%8E.html#ref-e28ef8e4e1"><small data-package-missing="true" style="font-size:11px;color:#963e2a;margin-right:5px">[原附件缺失]</small>伙伴介绍 Deck 英文版（2026-10-13）</a></td>
+<td>第 21–22 页合作分层与候选伙伴；非已签约</td>
+</tr>
+<tr id="src-P03"><td>P03</td>
+<td><a href="../../sources/%E6%9D%90%E6%96%99%E5%BC%95%E7%94%A8%E7%BC%BA%E5%A4%B1%E8%AF%B4%E6%98%8E.html#ref-fcd0e7433c"><small data-package-missing="true" style="font-size:11px;color:#963e2a;margin-right:5px">[原附件缺失]</small>官网合作企业候选清单（2026-10-13）</a></td>
+<td>零售与美妆候选方向；非已确认合作</td>
+</tr>
+<tr id="src-P05"><td>P05</td>
+<td><a href="../../sources/%E6%9D%90%E6%96%99%E5%BC%95%E7%94%A8%E7%BC%BA%E5%A4%B1%E8%AF%B4%E6%98%8E.html#ref-b16849d8b6"><small data-package-missing="true" style="font-size:11px;color:#963e2a;margin-right:5px">[原附件缺失]</small>Iris 产品挑战与建议（2026-10-13）</a></td>
+<td>授权分层与放权曲线</td>
+</tr>
+<tr id="src-P07"><td>P07</td>
+<td><a href="../../sources/%E6%9D%90%E6%96%99%E5%BC%95%E7%94%A8%E7%BC%BA%E5%A4%B1%E8%AF%B4%E6%98%8E.html#ref-5b39e5f008"><small data-package-missing="true" style="font-size:11px;color:#963e2a;margin-right:5px">[原附件缺失]</small>日本预订网站清单（2026-10-14）</a></td>
+<td>各场景的聚合平台与独立站名单；名店集中在 TableCheck 与 OMAKASE；抽选的会员墙与机会型流程；夜间娱乐站点均属性風俗。站点规模数字为伙伴整理，未核实</td>
+</tr>
+<tr id="src-P06"><td>P06</td>
+<td><a href="../../sources/%E6%9D%90%E6%96%99%E5%BC%95%E7%94%A8%E7%BC%BA%E5%A4%B1%E8%AF%B4%E6%98%8E.html#ref-6bd07d3ebd"><small data-package-missing="true" style="font-size:11px;color:#963e2a;margin-right:5px">[原附件缺失]</small>四市场场景清单（2026-10-13）</a></td>
+<td>日本 30 个候选场景，表 3-1 的归并对象</td>
+</tr>
+<tr id="src-U01"><td>U01</td>
+<td>团队输入 2026-10-15</td>
+<td>本地渠道、企业背书、本土合规为优势；开发与先发不是</td>
+</tr>
+<tr id="src-U02"><td>U02</td>
+<td>团队输入 2026-10-15</td>
+<td>餐饮可触达，伙伴在谈</td>
+</tr>
+<tr id="src-U03"><td>U03</td>
+<td>战略讨论 2026-10-16</td>
+<td><a class="xref" href="#s5">&#167;5</a> 产品定义、年龄与身份要求、线下筛选不做针对性优化、婚恋不做 IM 主动监控</td>
+</tr>
+<tr id="src-U06"><td>U06</td>
+<td>战略讨论补充 2026-10-16</td>
+<td>支付先走 PSP 存卡与限额模型，同步与持牌本地机构（如 NETSTARS）合作做直接扣卡；Google Maps 等通用能力可直接操作的站点不作为前置申请</td>
+</tr>
+<tr id="src-U08"><td>U08</td>
+<td>战略讨论补充 2026-10-19</td>
+<td>支付路线去 Stripe Link 依赖：代理钱包仅美加账户、Issuing 不覆盖日本；补卡组织 agent 令牌路线（Mastercard Agent Pay 先行，Visa 跟进）；3D Secure 只在绑卡时做一次；NETSTARS 定位为资金流承接与商户网络，不是消费者侧代扣，官方站结账靠 agent 令牌</td>
+</tr>
+<tr id="src-U05"><td>U05</td>
+<td>战略讨论补充 2026-10-16</td>
+<td>通用 Agent 能力是底座，分层只表示针对性投入级别；P0／P1／P2 标签；Aha 设计归战略文档；场景任务按 JTBD 润色</td>
+</tr>
+<tr id="src-U12"><td>U12</td>
+<td>战略讨论 2026-10-19</td>
+<td>对本地人，电话预约和网约成本都不高，餐饮预约的增量价值低，不该作 P0；只保留预約困難店盯位抽选与多人聚餐协调两个小切口；机酒作 P0 价值证明；邮箱订单与账单持续跟进作 90 天观察项</td>
+</tr>
+<tr id="src-U21"><td>U21</td>
+<td>战略讨论 2026-10-19</td>
+<td>短期不可能向商户收钱，只收低价用户订阅；前期补贴可以接受，只要不离谱</td>
+</tr>
+<tr id="src-U22"><td>U22</td>
+<td>战略讨论 2026-10-19</td>
+<td>不做免登录，用户以 Google、Apple 或 LINE 登录；公开上线等 Gmail 受限权限审核通过；跨境游客同样经 Gmail；限额钱包设默认额度，用户可调整</td>
+</tr>
+<tr id="src-U20"><td>U20</td>
+<td>战略讨论 2026-10-19</td>
+<td>跨境游客餐饮也进 MVP：故事好讲，是好的勾子</td>
+</tr>
+<tr id="src-U19"><td>U19</td>
+<td>战略讨论 2026-10-19</td>
+<td>美容保持 P1；MVP 为 P0 加若干 P1，餐饮必做；勾子随 MVP 上线，由通用能力（browser use、computer use）跑通即可，不作重点优化；AI 电话基本确定要做，风险备注即可</td>
+</tr>
+<tr id="src-U18"><td>U18</td>
+<td>战略讨论 2026-10-19</td>
+<td>Aha 在精不在多；这里设计的是 Aha，不是 agent 评测 golden set</td>
+</tr>
+<tr id="src-U16"><td>U16</td>
+<td>战略讨论 2026-10-19</td>
+<td>基于定稿场景 review Aha：去冗余、补遗漏、按建设顺序排列，对 agent 与产品设计验证都有价值</td>
+</tr>
+<tr id="src-U15"><td>U15</td>
+<td>战略讨论 2026-10-19</td>
+<td>旅游是公认的低频需求，除非做全球旅游市场；只做日本时跨境游客的长期记忆、主动性与本地渠道价值都不高；跨境餐饮保留第二梯队，排末位</td>
+</tr>
+<tr id="src-U13"><td>U13</td>
+<td>战略讨论 2026-10-19</td>
+<td>场景并非越多越好；依据竞品已验证场景增补或调整，标准是对产品设计与市场推广有真实价值；通信与电力套餐优化、退税与保险理赔须说明来源，不能按变现模式倒推</td>
+</tr>
+<tr id="src-U09"><td>U09</td>
+<td>战略讨论 2026-10-19</td>
+<td>跨境游客餐饮重要，只是到不了 P0；它的需求在在日居民餐饮的技术基建上较容易满足，不应作勾子</td>
+</tr>
+<tr id="src-U10"><td>U10</td>
+<td>战略讨论补充 2026-10-19</td>
+<td>让每个商户授权或接入是长期工程；现阶段只用覆盖面广、不需要商户确认的支付方案：平台内结账、Iris 限额虚拟卡代付、卡组织 agent 令牌；经 NETSTARS 向商户付款不进现阶段</td>
+</tr>
+<tr id="src-U11"><td>U11</td>
+<td>战略讨论补充 2026-10-19</td>
+<td>支付以“agent 有限额钱包、能自己付完”为目标：限额钱包（Link 做法的日本版）为 P0，卡组织 agent 令牌是钱包的第二种付款端，交还用户自己购买只作兜底</td>
+</tr>
+<tr id="src-U14"><td>U14</td>
+<td>战略讨论 2026-10-19</td>
+<td>场景评估先拆 agent 做这件事的优劣势；跨境游客的常驻平台在国内且不在意合规，本土渠道优势发挥不出；旅游对单个用户低频，只做日本时主动性与长期记忆无回报</td>
+</tr>
+<tr id="src-U07"><td>U07</td>
+<td>战略讨论补充 2026-10-16</td>
+<td>关键场景清单：餐饮按跨境（替代 AutoReserve）与本地（筛选，替代食べログ）分开，店内二维码点餐；机酒以比价筛选加持续盯价自动锁单为主，机酒餐饮经 Agent 渠道给优惠或礼品；电商做推荐与比价，社媒调研按 Instagram、X、TikTok 顺序，YouTube 需用户登录态；线下店铺筛选无增量、店内 SKU 推荐；抽选搜索代填并经邮箱通知下一轮；美容与夜间娱乐走独立站或电话；婚恋大站填表，不做站内信跟踪。JTBD 按一行一条任务拆分</td>
+</tr>
+<tr id="src-U23"><td>U23</td>
+<td>战略讨论 2026-10-20</td>
+<td>Iris 的增量是按偏好推测任务意图并完成，不是推荐；发现页回答"猜你想做、猜你需要"，呈现新手规则卡、信息、想法与备好的任务，用户自己打开、不推送；用户可把同类任务设为常设规则，之后由 Iris 直接办、事后通知</td>
+</tr>
+<tr id="src-U25"><td>U25</td>
+<td>产品决定 2026-10-21</td>
+<td>在日居民餐饮（预約困難店盯位与抽选、多人聚餐协调）升为 P0 主线，与机酒并列；投入深度不变（轻量接入）；跨境游客餐饮仍为勾子。理由：餐饮高频，是记忆与常设规则最能发挥的场景；原判断保留为 <a class="xref" href="#s8-4">&#167;8.4</a> 的切换条件</td>
+</tr>
+<tr id="src-U24"><td>U24</td>
+<td>战略讨论 2026-10-20</td>
+<td>Iris 不做任何资金处理，取代 <a class="ref" href="#src-U11" data-tip="战略讨论补充 2026-10-19 — 支付以“agent 有限额钱包、能自己付完”为目标：限额钱包（Link 做法的日本版）为 P0，卡组织 agent 令牌是钱包的第二种付款端，交还用户自己购买只作兜底">U11</a> 中由 Iris 持卡、先付后收的限额钱包；现在 agent 用用户已存的支付方式下单或交还用户（深链跳转或接管云端浏览器，接管时模型暂停）；第二步找持牌伙伴做预付钱包与一次性卡；长期接入卡组织 agent 令牌或 Link；NETSTARS 不做钱包、无发卡资质，调研授权 SDK 用于 StarPay 加盟店付款</td>
+</tr>
+<tr id="src-U26"><td>U26</td>
+<td>产品决定 2026-10-26</td>
+<td>产品由对话、发现、agent 设置三块组成，发现页由观察项升为与对话并列的主线模块，引发交办与推测被否定的比例设门槛；写入日历与出发提醒、跟到当天、盯到免费取消截止、下月核验等需要新权限或持续盯守的后续动作，首次在回执里给选项、之后同类自动，不默认做；向商家透露本人基本信息随任务授权，他人信息与健康类信息单独确认、不自动入记忆</td>
+</tr>
+<tr id="src-U27"><td>U27</td>
+<td>产品决定 2026-10-27</td>
+<td>首次进入不请求位置与 Gmail，除登录外只问名字（含フリガナ）、出生日期、称呼与生活圈（家与公司附近的车站，可跳过），一页一问；位置在用户提到附近、现在、末班车时于任务内请求，默认使用期间加大致位置，被拒后改问车站；Gmail 在第一个需要邮件的任务里请求，不用 Gmail 的用户经每人一个转发地址覆盖。理由：本地生活任务靠生活圈即可定出发地与区域，日本用户对给出位置的抵触高（Iris 日本本地生活的 onboarding 与界面侧重研究，2026-10-27）</td>
+</tr>
+<tr id="src-U04"><td>U04</td>
+<td>战略讨论补充 2026-10-16</td>
+<td>用户心智为省钱省时间；前后对照清晰的任务更早成立；按结果收费含成交抽佣与节省分成；收费按短期订阅、短中期按结果、长期商户抽佣三阶段演进</td>
+</tr>
+</tbody>
+</table></div>
+<p>局限性声明：本报告没有任何 Iris 用户或商户的直接数据，所有场景判断都可能被第一轮试点推翻。</p></section>
+    <footer>日本 Personal Agent 场景深度战略研究 · 2026-10-16</footer>
+  </div>
+</main>
+<button class="top" type="button" aria-label="回到顶部">↑</button>
+<div class="tip" role="tooltip"></div>
+<script>
+(function(){
+const links=[...document.querySelectorAll('.nav-item')];
+const heads=links.map(a=>document.getElementById(a.getAttribute('href').slice(1)));
+let tops=[],dirty=true;
+function measure(){tops=heads.map(h=>h.getBoundingClientRect().top+scrollY);dirty=false}
+addEventListener('resize',()=>dirty=true);
+const bar=document.querySelector('.progress i'),topBtn=document.querySelector('.top');
+let ticking=false;
+function update(){ticking=false;if(dirty)measure();
+ const y=scrollY+80;let lo=0,hi=tops.length-1,idx=0;
+ while(lo<=hi){const m=(lo+hi)>>1;if(tops[m]<=y){idx=m;lo=m+1}else hi=m-1}
+ links.forEach((a,i)=>a.classList.toggle('active',i===idx));
+ const act=links[idx];if(act){const n=act.parentElement,r=act.offsetTop-n.clientHeight/2;if(Math.abs(n.scrollTop-r)>n.clientHeight/2)n.scrollTop=r}
+ const h=document.documentElement.scrollHeight-innerHeight;bar.style.width=(h>0?scrollY/h*100:0)+'%';
+ topBtn.classList.toggle('on',scrollY>900)}
+addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(update)}},{passive:true});
+addEventListener('load',()=>{dirty=true;update()});update();
+topBtn.onclick=()=>scrollTo({top:0});
+// mobile nav
+const body=document.body;
+document.querySelector('.menu-btn').onclick=()=>body.classList.add('nav-open');
+document.querySelector('.backdrop').onclick=()=>body.classList.remove('nav-open');
+links.forEach(a=>a.addEventListener('click',()=>body.classList.remove('nav-open')));
+// theme
+const root=document.documentElement,tb=document.getElementById('theme');
+function setTheme(t){if(t)root.dataset.theme=t;else delete root.dataset.theme;try{t?localStorage.setItem('jp-strategy-theme',t):localStorage.removeItem('jp-strategy-theme')}catch(e){}}
+try{const s=localStorage.getItem('jp-strategy-theme');if(s)root.dataset.theme=s}catch(e){}
+tb.onclick=()=>{const dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;setTheme(dark?'light':'dark');dirty=true};
+document.getElementById('print').onclick=()=>print();
+// tooltip
+const tip=document.querySelector('.tip');let timer;
+document.addEventListener('pointerover',e=>{const a=e.target.closest('[data-tip]');if(!a)return;
+ clearTimeout(timer);timer=setTimeout(()=>{tip.textContent=a.dataset.tip;const r=a.getBoundingClientRect();
+ tip.classList.add('on');const w=tip.offsetWidth,hh=tip.offsetHeight;
+ let x=Math.min(Math.max(8,r.left),innerWidth-w-8),yy=r.bottom+8;if(yy+hh>innerHeight-8)yy=r.top-hh-8;
+ tip.style.left=x+'px';tip.style.top=yy+'px'},tip.classList.contains('on')?0:180)});
+document.addEventListener('pointerout',e=>{if(e.target.closest('[data-tip]')){clearTimeout(timer);tip.classList.remove('on')}});
+addEventListener('scroll',()=>tip.classList.remove('on'),{passive:true});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iris Japan V5 · 今日は、お願いしていい？</title>
+<style>
+:root{--paper:#f6f3ec;--paper2:#ece7db;--ink:#24292b;--muted:#6c716d;--line:#d9d2c3;--warm:#c0674f;--chat:#e9f3e4;--me:#d8ecc9;
+--serif:"Hiragino Mincho ProN","Yu Mincho","Songti SC",serif;--sans:"Hiragino Sans","PingFang SC","Noto Sans CJK SC",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.8 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:#2f5b78}
+.wrap{max-width:1040px;margin:0 auto;padding:0 26px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;margin:0;letter-spacing:.02em}
+h2{font-size:28px;line-height:1.35}h3{font-size:20px}
+.eyebrow{font-size:12px;letter-spacing:.18em;color:var(--muted)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+.lead{font-size:17px;max-width:800px;color:#3a4042}
+.muted{color:var(--muted)}.small{font-size:13px}
+.ja{font-family:var(--serif);font-size:17px}.zh{color:var(--muted);font-size:14px}
+body.hide-zh .zh{display:none}
+nav{position:sticky;top:0;z-index:10;background:rgba(246,243,236,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:18px;align-items:center;height:50px;overflow-x:auto;white-space:nowrap}
+nav a{color:var(--ink);text-decoration:none;font-size:13px;opacity:.72}nav b{font-family:var(--serif);margin-right:auto}
+nav button{border:1px solid var(--line);background:#fff;border-radius:99px;padding:3px 12px;font-size:12px;cursor:pointer}
+.hero{border:0;padding:70px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.hero h1{font-size:50px;line-height:1.25}
+.hero .sub{font-size:18px;margin-top:14px}
+.claim{margin-top:26px;padding:16px 20px;background:#fff;border-left:4px solid var(--warm);border-radius:0 10px 10px 0}
+.claim .ja{font-size:22px}
+.hero-img{border-radius:14px;overflow:hidden;aspect-ratio:16/10;box-shadow:0 20px 44px -24px rgba(0,0,0,.4)}
+.hero-img img{width:100%;height:100%;object-fit:cover;display:block}
+.brief{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 22px}
+.card .k{font-size:12px;color:var(--muted);letter-spacing:.12em}
+.card p{margin:6px 0 0}
+.arc{display:grid;grid-template-columns:1fr 50px 1fr;margin-top:24px;align-items:center}
+.arc .to{text-align:center;font-size:22px;color:var(--warm)}
+.arc .card{text-align:center}
+.tl{display:flex;height:42px;border-radius:9px;overflow:hidden;margin:26px 0 6px;border:1px solid var(--line)}
+.tl a{display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;text-decoration:none;border-right:1px solid rgba(255,255,255,.35)}
+.shot{display:grid;grid-template-columns:300px 1fr;gap:30px;padding:32px 0;border-bottom:1px solid var(--line)}
+.shot:last-child{border-bottom:0}
+.tc{font-family:var(--serif);font-size:13px;color:var(--muted);letter-spacing:.08em}
+.shot h3{margin:2px 0 10px;font-size:22px}
+.vis{border-radius:12px;padding:16px;min-height:170px;display:flex;flex-direction:column;justify-content:center;gap:8px;color:#fff;font-family:var(--serif);font-size:15px;line-height:1.6}
+.vis .lbl{font-family:var(--sans);font-size:11px;opacity:.75;letter-spacing:.1em}
+.phone{background:#fff;color:var(--ink);border-radius:18px;padding:12px;font-family:var(--sans);font-size:12.5px;border:6px solid #2b3134;box-shadow:0 12px 28px -18px rgba(0,0,0,.5)}
+.phone .hd{font-size:11px;color:var(--muted);text-align:center;margin-bottom:8px;border-bottom:1px solid #eee;padding-bottom:6px}
+.b{padding:7px 11px;border-radius:14px;margin:5px 0;max-width:86%;line-height:1.5}
+.b.o{background:#f0f0ee}.b.m{background:var(--me);margin-left:auto}
+.b del{color:#b5483b}
+.b .rd{display:block;font-size:10px;color:var(--muted);text-align:right}
+.photo{height:70px;border-radius:10px;background:linear-gradient(135deg,#f2d6a8,#b8875a);display:flex;align-items:flex-end;padding:6px 8px;color:#fff;font-size:10px;margin:5px 0;max-width:86%}
+.iris{display:flex;gap:8px;align-items:center;background:#f1f3f7;border-radius:12px;padding:8px 10px;margin:5px 0}
+.iris i{display:inline-block;width:3px;height:14px;background:#2F4A7A;border-radius:2px;margin-right:2px}
+dl{margin:0;display:grid;grid-template-columns:54px 1fr;gap:4px 10px;font-size:14px}
+dt{color:var(--muted);font-size:12px;padding-top:3px}dd{margin:0}
+.lines{margin:12px 0 0;padding:12px 16px;background:#fff;border-left:3px solid var(--ink);border-radius:0 8px 8px 0}
+.lines p{margin:2px 0}.lines .who{font-size:12px;color:var(--muted);margin-top:8px}.lines .who:first-child{margin-top:0}
+.tag{display:inline-block;font-size:12px;border-radius:6px;padding:3px 9px;margin:10px 8px 0 0;background:var(--paper2)}
+.tag.r{background:rgba(192,103,79,.13);color:#8b3f2c}.tag.x{background:rgba(47,74,122,.1);color:#2F4A7A}
+.refs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+.ref ul{padding-left:18px;margin:8px 0 0}
+.badge{display:inline-block;font-size:11px;border-radius:99px;padding:1px 9px;margin-right:6px;background:rgba(196,140,40,.15);color:#8a5e10}
+.badge.ok{background:rgba(49,91,76,.12);color:#315b4c}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14px;margin-top:22px}
+th,td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:var(--paper2);font-size:13px}
+tr:last-child td{border-bottom:0}
+footer{padding:44px 0 70px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+@media(max-width:860px){.hero-grid,.brief,.refs{grid-template-columns:1fr}.shot{grid-template-columns:1fr}.hero h1{font-size:36px}.arc{grid-template-columns:1fr}.arc .to{transform:rotate(90deg)}}
+@media print{nav{display:none}.shot,.card{break-inside:avoid}body{background:#fff}}
+</style>
+<link data-one2x-material="true" rel="stylesheet" href="../../../one2x-material.css"></head>
+<body class="one2x-editorial-material"><nav id="one2x-material-nav" aria-label="五片制作报告导航"><a class="one2x-brand" href="../../../index.html"><img src="../../../assets/one2x-wordmark.svg" alt="One2X"><span class="one2x-material-label">工作材料快照 · 供制作讨论</span></a><a class="one2x-back" href="../../../index.html">返回五片总览</a></nav>
+<nav><div class="wrap"><b>Iris Japan V5</b><a href="#idea">广告思路</a><a href="#story">60 秒分镜</a><a href="#refs">参考片</a><a href="#prod">制作与确认</a><button id="zt" type="button">隐藏中文</button></div></nav>
+
+<header class="hero"><div class="wrap hero-grid">
+  <div>
+    <div class="eyebrow">IRIS · JAPAN BRAND FILM · 60s · V5 日本本土共情版</div>
+    <h1>今日は、<br>お願いしていい？</h1>
+    <p class="sub">今天，可以拜托你吗？</p>
+    <div class="claim"><div class="k small muted">广告主张</div><div class="ja">頼っていいことが、増えていく。</div><div class="zh">可以放心拜托的事，一点点多起来。</div></div>
+    <p class="small muted" style="margin-top:18px">本版是根据用户最新方向提出的新创意，尚未经用户逐项确认。人物为拟拍设定，不代表所有日本家庭。V3、V4 旧稿均保留。</p>
+  </div>
+  <div class="hero-img"><img src="../../iris%20Japan%20V2/assets/iris-brand/salon-source-frame.jpg" alt="原片美甲店进店帧（沿用素材）"></div>
+</div></header>
+
+<section id="idea"><div class="wrap">
+  <div class="eyebrow">01 · 广告思路</div>
+  <h2>难的不是事多，是“拜托”说不出口</h2>
+  <p class="lead">这位拟拍女主有个个人习惯：拜托家人时总会补一句「無理なら大丈夫」（不行也没关系），先替对方把退路铺好。她自己的需要常被藏起来，想做的事一推再推，都成了「また今度」（下次吧）。</p>
+  <div class="brief">
+    <div class="card"><div class="k">目标观众</div><p>东京近郊双职工家庭里，孩子在上保育园、自己也在上班的 30 多岁成年人。每天在接送、工作、家务间来回调度，自己的事总排在最后。</p></div>
+    <div class="card"><div class="k">可拍的开场</div><p>7:20 玄关，园包和电脑包并排。她填连絡帳，笔停在「お迎え」栏。打开家族群，打出「無理なら大丈夫！」，<b>又删掉</b>，改成「お願いしていい？」。不用旁白，一个删字动作就让观众认识她。</p></div>
+    <div class="card"><div class="k">家人的回应（不是 Iris）</div><p>上午家人已简短确认接送。17:35，园门口孩子比 V 的照片，配一句「今夜も、あのカレー」（今晚还是那锅咖喱），把答应的事落实，也回收早上昨晚剩菜的伏笔。理解与分担完全来自家人。</p></div>
+    <div class="card"><div class="k">Iris 为何必要</div><p>人气店的空位随时出、随时没，她要上班，也要安排接送与家务，不可能一直刷。她只说了一次「空いたら教えて」，Iris 就记着。<b>Iris 只提醒，由她本人确认</b>，预约服务返回“完成”。Iris 不联系家人，不自动预约。</p></div>
+  </div>
+  <div class="arc">
+    <div class="card"><div class="ja">無理なら大丈夫！</div><div class="zh">不行也没关系！</div><div class="ja" style="margin-top:8px">ネイルは、また今度か。</div><div class="zh">美甲，还是下次吧。</div></div>
+    <div class="to">→</div>
+    <div class="card"><div class="ja">お願いしていい？</div><div class="zh">可以拜托你吗？</div><div class="ja" style="margin-top:8px">ママのつめ、さくらいろ！</div><div class="zh">妈妈的指甲，樱花色！</div></div>
+  </div>
+</div></section>
+
+<section id="story"><div class="wrap">
+  <div class="eyebrow">02 · 60 秒分镜与日中脚本</div>
+  <h2>11 段分镜</h2>
+  <p class="small muted">时间分配：开场与个人愿望 15 秒｜早餐与提醒委托 9 秒｜工作 5 秒｜家庭落实 8 秒｜空位提醒与本人确认 6 秒｜赴约 6 秒｜回到家族群 8 秒｜落版 3 秒（共 60 秒）。</p>
+  <p class="small muted">左侧为画面 / 屏幕示意，不是成片截图。家庭聊天使用通用聊天界面，不使用 LINE 商标或 UI。</p>
+  <div class="tl" id="tl"></div>
+  <div class="small muted">■ 开场　■ Iris 日常帮助　■ 家人的回应　■ 提醒与赴约　■ 回到家族群 · 落版</div>
+  <div id="shots"></div>
+</div></section>
+
+<section id="refs"><div class="wrap">
+  <div class="eyebrow">03 · 参考片与借鉴</div>
+  <h2>两支 LINE 家庭片：只借结构，不借剧情</h2>
+  <p class="lead">两支片的官方说明（PR TIMES）已经读取。<b>Claude 没有播放过这两支视频</b>，下面的借鉴点依据官方文字说明，不描述具体镜头或时间码。</p>
+  <div class="refs">
+    <div class="card ref"><h3>LINE《家族のLINEがしんどいw》</h3>
+      <div class="small" style="margin:6px 0"><span class="badge ok">官方说明已读</span><span class="badge">视频未播放</span>2020 ·「今日も、LINEからつながる」第 2 部</div>
+      <a href="https://youtu.be/pluchCCPHwA" target="_blank" rel="noopener">官方片源（YouTube）</a> · <a href="https://www.bilibili.com/video/BV1J94y1u7oC/" target="_blank" rel="noopener">B 站入口</a>（本轮抓取返回 412，当前能否播放未确认） · <a href="https://prtimes.jp/main/html/rd/p/000002795.000001594.html" target="_blank" rel="noopener">官方说明</a>
+      <ul><li><b>官方说明：</b>一家四口的普通家族群聊，父亲长消息、母亲打错字等小习惯先建立熟悉感；女儿一次告白之后，一家人关系更紧密。</li>
+      <li><b>借鉴什么：</b>先让观众认出家人的小习惯，再用一次回应让人重新理解这个人。</li>
+      <li><b>在哪兑现：</b>02 镜咖喱锅（伏笔）→ 07 镜「今夜も、あのカレー」→ 10 镜「カレー、残しといてね」。</li>
+      <li><b>不照搬：</b>告白剧情、四口人群像。</li></ul></div>
+    <div class="card ref"><h3>LINE《母のLINEが変な件》</h3>
+      <div class="small" style="margin:6px 0"><span class="badge ok">官方说明已读</span><span class="badge">视频未播放</span>2018-04-27 · 母亲节</div>
+      <a href="https://youtu.be/xWHxFxmePjk" target="_blank" rel="noopener">官方片源（YouTube）</a> · <a href="https://prtimes.jp/main/html/rd/p/000001068.000001594.html" target="_blank" rel="noopener">官方说明</a>
+      <ul><li><b>官方说明：</b>女高中生小夏收到刚学用 LINE 的妈妈发来的错字、长消息，觉得有爱但有点麻烦；妈妈总能在恰当的时候发来鼓励，让她重新振作。</li>
+      <li><b>借鉴什么：</b>同一种日常消息，在前后有不同情绪含义；“有人记得我”靠一句消息的时机表现。</li>
+      <li><b>在哪兑现：</b>02 镜（同一个群里，她删掉客气话的犹豫）↔ 10 镜（孩子的「さくらいろ」）。</li>
+      <li><b>不照搬：</b>母女人物、错字梗。</li></ul></div>
+  </div>
+</div></section>
+
+<section id="prod"><div class="wrap">
+  <div class="eyebrow">04 · 制作与待确认</div>
+  <h2>相比 V4 改了什么</h2>
+  <table>
+    <tr><th style="width:22%">项目</th><th>V5 处理</th></tr>
+    <tr><td>创意中心</td><td>从“Iris 的视觉系统”改为“一个说不出口的『お願い』”。泳道、任务钉、虚线环、时间轴叠层全部去掉。</td></tr>
+    <tr><td>MOSS-Live</td><td>只保留两处：04 镜她开口时的一次声波，08 镜的一次空位提醒。</td></tr>
+    <tr><td>家庭线</td><td>从“任务状态被收回”改为有前因的人际回应：上午确认、傍晚接送落实、昨晚剩的咖喱、家里贴图与孩子的话。</td></tr>
+    <tr><td>开场</td><td>压力由具体动作交代：连絡帳停住的笔、园包和电脑包、删掉的一句客气话。</td></tr>
+    <tr><td>餐厅快闪</td><td>本 60 秒正片删去，10 镜保留 8 秒情绪回收。如需餐厅场景，另做独立短版或其他时长版本，重新分配时间，不叠加到本版。</td></tr>
+    <tr><td>工作</td><td>仍是 5 秒（06 镜）。</td></tr>
+  </table>
+  <h3 style="margin-top:34px">素材</h3>
+  <table>
+    <tr><td style="width:22%">沿用原片</td><td>晨起、出门、手机换屏底板、取餐、短办公、楼外看手机与点击、进店、logo</td></tr>
+    <tr><td>小规模新拍</td><td>玄关园包与连絡帳约 3 秒；咖喱锅 0.8 秒；确认点击 0.8 秒；选色与完成手部约 4.5 秒；家族群换屏与回复手部。孩子只以画外声和家族群照片出现。</td></tr>
+    <tr><td>声音重点</td><td>02 镜退格声、07 镜那一下笑声、10 镜的安静</td></tr>
+  </table>
+  <h3 style="margin-top:34px">待确认</h3>
+  <table>
+    <tr><td style="width:6%">1</td><td>Iris 是否支持语音对话（04、08 镜）。不支持的话改为文字，时长不变。</td></tr>
+    <tr><td>2</td><td>Iris 的熟人口吻（「これでいい？」「空いたよ」）是否符合品牌调性。</td></tr>
+    <tr><td>3</td><td>家庭设定（伴侣 + 4 岁孩子）是否与原片人物关系一致。</td></tr>
+    <tr><td>4</td><td>日语母语审校，尤其「お願いしていい？」「今夜も、あのカレー」「さくらいろ」。</td></tr>
+    <tr><td>5</td><td>预约服务店铺、价格、菜单使用真实数据；落版品类小字按真实定位确认。</td></tr>
+  </table>
+</div></section>
+
+<footer><div class="wrap">Iris Japan V5 · 日本本土共情版 · Claude · 2026-11-04 ｜ 文字稿 Iris-Japan-V5-Complete-Script.txt ｜ 录音稿 Iris-Japan-V5-Japanese-Voice-Script.txt ｜ 图片相对引用 ../../iris Japan V2/，移动文件时请保持目录结构。</div></footer>
+
+<script>
+const ME=(t,rd)=>`<div class="b m">${t}${rd?`<span class="rd">${rd}</span>`:''}</div>`, OT=t=>`<div class="b o">${t}</div>`;
+const S=[
+{t:'00:00–00:05',s:0,e:5,c:'#8a7358',h:'连絡帳，停住的笔',
+ vis:`<div class="vis" style="background:linear-gradient(135deg,#cdb592,#7d6750)"><span class="lbl">7:20 · 玄関</span>园包（名字布贴「そうた」）＋电脑包＋水壶<br>连絡帳「お迎え」栏，笔停住</div>`,
+ pic:'地上并排放着保育园的园包和她的电脑包。她单膝跪着填连絡帳，笔停在「お迎え」栏，没写下去。里屋传来孩子找袜子的声音。',src:'新拍（玄关置物 + 连絡帳手部）；可接原 4.4–6.5s 晨起',snd:'早晨房间声、孩子脚步声，不放音乐。',
+ L:[['孩子（画外）','ママー、くつした、ないー！','妈妈——袜子找不到！'],['ユイ','あるよー、引き出しの上！','有的——在抽屉上面！']],tags:[]},
+{t:'00:05–00:11',s:5,e:11,c:'#8a7358',h:'删掉一句客气话',
+ vis:`<div class="phone"><div class="hd">おうち（3）</div>${ME('今日のお迎え、行ける？<del>無理なら大丈夫！</del>')}${ME('今日のお迎え、お願いしていい？','送信済み')}</div>`,
+ pic:'她在家族群打出「…無理なら大丈夫！」，手指停一下，逐字删掉，改成「お願いしていい？」发送，没有出现「既読」。镜头带过灶台上的一大锅咖喱（便签「昨日の」）。',src:'新拍手机手部 + 换屏；咖喱锅插镜 0.8s',snd:'退格声要清楚；发送后安静 0.5 秒。',
+ L:[['家族群（画面文字）','今日のお迎え、行ける？無理なら大丈夫！ → 今日のお迎え、お願いしていい？','今天接孩子你能去吗？不行也没关系！→ 今天接孩子，可以拜托你吗？']],tags:[['r','参考：《母のLINEが変な件》同一个群的“犹豫”那一端']]},
+{t:'00:11–00:15',s:11,e:15,c:'#8a7358',h:'「また今度」',
+ vis:`<div class="phone"><div class="hd">ネイルサロン · 本日</div>19:00 ×　19:30 ×　20:00 ×<div class="photo">保存済み：さくらいろ</div></div>`,
+ pic:'她翻到相册里收藏的樱色美甲，再点开那家店的预约页：今天 19 点以后全是 ×。锁屏，拿包。',src:'原 26–28s 正面手机换屏',snd:'门锁声，音乐低频进入。',
+ L:[['ユイ（小声）','…ネイルは、また今度か。','……美甲，还是下次吧。']],tags:[]},
+{t:'00:15–00:21',s:15,e:21,c:'#2F4A7A',h:'「あ、朝ごはん」',
+ vis:`<div class="phone"><div class="hd">Iris</div><div class="iris"><span><i></i><i></i><i></i><i></i></span>聞いています…</div>${OT('8:40に受け取れます。これでいい？')}${ME('注文する')}</div>`,
+ pic:'车站前想起没吃早饭，对手机说话。Iris 出现一次声波（全片唯一一次对话状态），用文字给出 8:40 可取的选择。她亲手点“注文する”，接取餐。',src:'原 6.5–10s 出门 + 19–21.7s 换屏 + 21.7–25s 取餐；新增 0.8s 确认点击',snd:'车站环境声；取餐时店内人声。',
+ L:[['ユイ','あ、朝ごはん。…Iris、駅で受け取れるの、ある？','啊，早饭……Iris，车站这儿有能取的吗？'],['Iris（画面文字）','8:40に受け取れます。これでいい？','8:40 可以取。这个行吗？']],tags:[['x','MOSS 视觉仅此一处：对话声波'],['','语音对话须按 Iris 真实能力确认；否则改为文字']]},
+{t:'00:21–00:24',s:21,e:24,c:'#2F4A7A',h:'随口交代一个愿望',
+ vis:`<div class="phone"><div class="hd">Iris</div>${ME('19時以降、空いたら教えて。')}${OT('空いたら知らせるね。')}</div>`,
+ pic:'月台上拿着咖啡，想起刚才的 ×，打开那家店，对 Iris 说一句。',src:'原 29–31s 手机换屏（场景可改为月台）',snd:'电车进站声。',
+ L:[['ユイ','19時以降、空いたら教えて。','19 点以后有空位，告诉我。'],['Iris（画面文字）','空いたら知らせるね。','有空位就告诉你。']],tags:[['','只是设了提醒，没有预约，也没有占位']]},
+{t:'00:24–00:29',s:24,e:29,c:'#2F4A7A',h:'工作 5 秒',
+ vis:`<div class="vis" style="background:linear-gradient(135deg,#c9cdc8,#6f7772)"><span class="lbl">办公桌 · 日内光线推进</span>「この資料、要点だけお願い。」<br>→ 三行要点 → 改一个词，发出</div>`,
+ pic:'上午办公镜头开始，桌角锁屏极短露出已有消息「08:10 家族｜今日のお迎え、行けるよ。」（今天接孩子我能去），不另起镜头。她输入请求，Iris 给出三行要点，她核对、改词。光线推进到傍晚，她起身。',src:'原 32–35s 办公短镜头',snd:'短键盘声；告别声接到室外。',
+ L:[['ユイ','お先に失礼します。','我先走了。'],['同事（画外）','お疲れさまでーす。','辛苦啦。']],tags:[['','不出现加班夜景']]},
+{t:'00:29–00:37',s:29,e:37,c:'#c0674f',h:'今晚还是那锅咖喱',
+ vis:`<div class="phone"><div class="hd">おうち · 17:35</div><div class="photo">园门口 · 孩子比 V · 伴侣的手</div>${OT('お迎え完了。今夜も、あのカレー。')}${ME('🍛（家里的咖喱锅贴图）ありがと','既読')}</div>`,
+ pic:'楼外，手机震动。家族群里先是一张园门口的照片，孩子比 V，旁边露出伴侣的手和园包；接着一行字。她笑出来，笑点是 02 镜那锅咖喱。她回了一个家里常用的咖喱锅贴图，再补一句「ありがと」。肩膀松下来，抬头看天。<b>这一镜没有 Iris。</b>',src:'原 37.5–38.5s 楼外看手机；新增家族群换屏与回复手部',snd:'一声消息提示；她鼻音“噗”地笑一下；留 1 秒安静。',
+ L:[['伴侣（画面文字）','お迎え完了。今夜も、あのカレー。','接到了。今晚还是那锅咖喱。'],['ユイ（画面文字）','（贴图）ありがと。','（贴图）谢啦。']],tags:[['r','参考：《家族のLINEがしんどいw》家人的小习惯 → 一次回应'],['','上午已答应接送，17:35 照片是落实；理解来自家人']]},
+{t:'00:37–00:43',s:37,e:43,c:'#c0674f',h:'空位，来了',
+ vis:`<div class="phone"><div class="hd">17:45</div><div class="iris">● Iris　19:00 空きが出ました</div><div class="b o" style="background:#eee">予約サービス｜本日 19:00 ネイル<br><b>予約を確定する</b>（本人点击）</div><div class="b o" style="background:#eee">予約が完了しました</div></div>`,
+ pic:'她还在笑的时候，Iris 提醒出现（全片唯一一次提醒）。她停半拍，点开预约服务，看了时间和项目，亲手按“确定”。预约服务返回完成页。',src:'原 37–38s 点击 + 新提醒、确认、成功 UI',snd:'一声柔和提示；确认声晚于点击。',
+ L:[['Iris（短语音）','ユイ、19時、空いたよ。','Yui，19 点有空位了。'],['ユイ（对自己）','…行こ。','……去吧。']],tags:[['x','MOSS 视觉仅此一处：一次提醒'],['','提醒 ≠ 预约；完成页由预约服务出，不用 Iris 配色']]},
+{t:'00:43–00:49',s:43,e:49,c:'#c0674f',h:'今天，就这个颜色',img:1,
+ pic:'19:00 推门进店，店员迎接。她在色板前指向开场相册里那一色。手部特写：施作中 → 完成，她把手举到灯下看。',src:'原 39–40.3s 进店 + 新增约 4.5s 选色与完成手部',snd:'样甲片、工具轻响；选色后留半拍。',
+ L:[['店员','いらっしゃいませ。','欢迎光临。'],['ユイ','この色で。','就这个颜色。']],tags:[]},
+{t:'00:49–00:57',s:49,e:57,c:'#5d4c40',h:'回到同一个家族群',
+ vis:`<div class="phone"><div class="hd">おうち · 20:10</div><div class="photo" style="margin-left:auto;background:linear-gradient(135deg,#f3c9c9,#c98b8b)">新指甲的照片</div><div style="text-align:right;font-size:10px;color:#888">既読 2</div><div class="photo">孩子嘴边沾着咖喱，指着屏幕</div>${OT('そうたが「ママのつめ、さくらいろ！」だって。')}${ME('カレー、残しといてね。')}</div>`,
+ pic:'回家的电车上，她拍下指甲发到「おうち」群，马上「既読」。伴侣回了一张孩子嘴边沾着咖喱、指着屏幕的照片和一句话。她看着手机笑，回一句话。',src:'新增手机换屏与手部；孩子照片为家族群手机照片质感',snd:'电车行驶声，留安静。',
+ L:[['伴侣（画面文字）','そうたが「ママのつめ、さくらいろ！」だって。','そうた说“妈妈的指甲，樱花色！”'],['ユイ（画面文字）','カレー、残しといてね。','咖喱给我留点哦。']],tags:[['r','参考：《母のLINEが変な件》同一个群，早上犹豫 → 晚上分享']]},
+{t:'00:57–01:00',s:57,e:60,c:'#24292b',h:'落版',logo:1,
+ pic:'纸色或柔白底，Iris logo。',src:'原 47–48.7s logo，重做高清落版',snd:'旋律收住。',
+ L:[['字幕 / 旁白（女声，轻）','頼っていいことが、増えていく。Iris。','可以放心拜托的事，一点点多起来。Iris。'],['小字（待确认）','日々の用事を支えるAIアシスタント','支持日常事务的 AI 助手']],tags:[]},
+];
+const tl=document.getElementById('tl'),box=document.getElementById('shots');
+S.forEach((x,i)=>{const n=String(i+1).padStart(2,'0');
+ const a=document.createElement('a');a.href='#s'+n;a.style.flex=x.e-x.s;a.style.background=x.c;a.textContent=n;a.title=x.h;tl.appendChild(a);
+ let v=x.vis||'';
+ if(x.img)v=`<div style="border-radius:12px;overflow:hidden;aspect-ratio:16/10"><img src="../../iris%20Japan%20V2/assets/iris-brand/salon-source-frame.jpg" style="width:100%;height:100%;object-fit:cover" alt="原片进店帧"></div>`;
+ if(x.logo)v=`<div class="vis" style="background:#111;align-items:center;text-align:center"><img src="../../iris%20Japan%20V2/assets/iris-brand/logo.png" style="width:120px" alt="Iris logo"><span>頼っていいことが、増えていく。</span></div>`;
+ const L=x.L.map(l=>`<p class="who">${l[0]}</p><p class="ja">${l[1]}</p><p class="zh">${l[2]}</p>`).join('');
+ const T=x.tags.map(t=>`<span class="tag ${t[0]}">${t[1]}</span>`).join('');
+ const el=document.createElement('article');el.className='shot';el.id='s'+n;
+ el.innerHTML=`<div>${v}</div><div><div class="tc">${n} · ${x.t}</div><h3>${x.h}</h3><dl><dt>画面</dt><dd>${x.pic}</dd><dt>素材</dt><dd>${x.src}</dd><dt>声音</dt><dd>${x.snd}</dd></dl><div class="lines">${L}</div>${T}</div>`;
+ box.appendChild(el)});
+const zt=document.getElementById('zt');zt.onclick=()=>{document.body.classList.toggle('hide-zh');zt.textContent=document.body.classList.contains('hide-zh')?'显示中文':'隐藏中文'};
+</script>
+</body>
+</html>

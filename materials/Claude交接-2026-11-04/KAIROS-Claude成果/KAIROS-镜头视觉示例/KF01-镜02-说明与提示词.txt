@@ -1,0 +1,30 @@
+KF01｜镜02｜00:03–00:08
+四个岗位，各自卡住的一瞬
+
+必须看懂的信息
+真实商品有光泽，静态照片却表达不出来——企业需要能用于商业的影像。
+
+画面、光线与材质
+日本桥本町的普通品牌企划室。近景拍两位同事的手：一人把无字护肤瓶举到窗光下，另一人将包装上的限定贴纸对齐；显示器只留一块可后期换成静态商品图的灰色屏幕。视线在实物与屏幕之间形成明确对照。50mm中近景，冷灰晨光、自然肤质、纸张纤维和玻璃高光；不做夸张失落表情。
+
+镜头运动
+手部与物件近景快剪，四个镜头视线方向一致；第三张字卡后，一个光标在黑场中闪动，引出需求行。
+
+参考片质感转译
+LINE WORKS《現場が動き出す・店舗篇》；LINE仅作生活质感辅助
+把问题放在具体工作器物和半途停住的手势上，保留真实办公室的空间尺度；动作轻、表情少。
+
+拟用日文／英文屏幕文案与中文解释
+03.4秒起为企划对白字幕；06.8–08.0秒另有三张痛点字卡。
+JA：作れない。待てない。任せられない。
+EN：Can't make it. Can't wait. Can't hand it over.
+中文解释：做不出来。等不起。不敢托付。
+
+样张信息叠加文案
+JA：写真だと、この艶が…
+EN：In photos, this shine just…
+
+生成英文提示词
+A premium Japanese commercial film still. A modest cosmetics planning office in Tokyo on a cool winter morning. Tight 50mm medium close-up across a real desk: one Japanese coworker holds a clear cylindrical serum bottle against window light, another aligns a small blank sticker on an ivory gift box. Pale champagne liquid, matte ivory cap, narrow blank cream label. An angled desktop monitor at the side has a plain gray screen for later compositing. Focus on the glass highlight and careful hands; restrained faces, natural skin texture, paper fibers, softly worn office objects. Cool daylight with gentle practical fill, controlled highlights, subtle film grain, believable lived-in proportions. No legible lettering, logos, HUD or fantasy office. --ar 16:9 --v 8.1 --raw --stylize 60 --hd
+
+样张为概念美术，用于镜头与视觉沟通；真实UI、文字与正式logo后期叠加，正式品质证明采用KAIROS实际输出。

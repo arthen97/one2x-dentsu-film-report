@@ -1,0 +1,25 @@
+KAIROS 旧稿诊断（KAIROS-60s-动效参考-大图完成版.html + sources/kairos-function-script.json）
+2026-11-05 · Claude
+
+一、旧稿不通的 5 处
+1. 预演不是预演：12 镜 × 3 格全是同一黑矩形+一句大字（state-frame），没有画面、UI、光标、方向，看不出镜间接力。
+2. 主线断裂：02 选 Perfume Ad Reveal（香水），03 却改输入"冬のギフト"商品+一句日语 prompt，05 又是瓶身液体——模板要求的素材（原料/香水图/logo）没出现，商品前后不是同一件。
+3. 流程用了网站没有的交互：03"一句日语需求→提交"、04"需求展开四格分镜"是按通用 AI 视频产品假设的；公开模板页真实流程是「选模板 → 按模板字段补素材 → AI 出片」，字段是结构化的。
+4. 08/09 把未核验功能拍成现成功能：品牌规范审阅、担当者确认、一键多用途/批量输出，网站证据里均未出现。
+5. 宣言段重复、功能段过挤：01/11/12 三次宣言，各 3–5 秒；功能③④⑤ 每镜 5–6 秒内要塞 3 个状态，成片结果几乎没有观看时间。另外 01 隐含"日本企业都需要…"的泛化判断。
+
+二、过去属于假设的功能
+- 日语一句话 prompt 驱动制作（未见输入框证据）
+- 自动分镜展开 / 选中一镜放大（未见）
+- 日语配音+字幕+音乐轨合成预览（未见编辑器）
+- 按意图修改+前后对照（未见修改入口）
+- 品牌规范/表达风险提示/担当者审阅（未见）
+- 多尺寸/多用途批量导出（未见）
+
+三、按网站证据补齐（site-audit-2026-11-05/01-explore-dom.txt + 01-explore.png + 旧官网实拍）
+- 模板库：标题"Template library"、三步引导 Pick a template → Add your materials → Let AI make the video、分类 All/Ads/Car/Animation/Manifestation、Search Templates。
+- 每张模板卡有 "Materials needed" 结构化字段、部分有片长（4/8/15/25 sec）与预计 credits（≈25/≈50/≈100）、"Use this template"。
+- 字段类型实证：Perfume Ad Reveal = ingredient + 香水产品图 + brand logo；Home Appliance Showcase = 4 商品 × (图/品类/interaction beat)；Hotel Girls Trip / Seven Color Burst = 多个 digital human 选择；Pop Art Product J = accent color + closing slogan；Retro Tokusatsu Promo = brand name + core pain point。
+- 侧栏：New creation / Template library / Creations / Drive / Recents；登录后（主代理口述）Creations 出现"对话成片""视频剪辑""无限画布"三类作品与网盘——待最新截图落盘后再引用，未落盘前只作"待核验"。
+→ 新主线：同一支香水（Perfume Ad Reveal）贯穿：宣言 → 模板库搜索/分类 → 读懂素材字段与片长/credits → 按字段填入原料/香水/logo → 对照其它模板字段（多商品/数字人/品牌色标语）展示广度 → 作品进入 Creations/Drive → 实际观看结果 → 宣言与落版。
+  未核验功能只在旁白之外以"待实机确认"标注，不入画为现成按钮。

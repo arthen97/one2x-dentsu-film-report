@@ -1,0 +1,274 @@
+{
+  "compiled": "2026-11-05",
+  "videosReused": [
+    {
+      "id": "tencent-hy4",
+      "bytes": 20989886,
+      "sha256": "166b7c9dd6d67f86196450fed25da58013c6409ae01e9e209352d1d6e2c99490",
+      "sourceSeconds": 40.042667,
+      "target": "../../../references/videos/tencent-hy4.mp4"
+    },
+    {
+      "id": "kimi-3d-make",
+      "bytes": 28508984,
+      "sha256": "63ca48fa3099860890f56c46a2dd5cafed11964bb081ab46a4cd477ef12a7704",
+      "sourceSeconds": 74.261333,
+      "target": "../../../references/videos/kimi-3d-make.mp4"
+    },
+    {
+      "id": "krea-ad-studio",
+      "bytes": 4549817,
+      "sha256": "abc83f47046889dcb995a5816bf6e240a46e19a759f45508f9616410c5f205c6",
+      "sourceSeconds": 34.752,
+      "target": "../../../references/videos/krea-ad-studio.mp4"
+    },
+    {
+      "id": "runway-app-studio",
+      "bytes": 20858600,
+      "sha256": "6b8843efb2cea3de6ab36de0b65354c06f7b829d3cca3ca7409f1ba8246ff3fa",
+      "sourceSeconds": 56.597333,
+      "target": "../../../references/videos/runway-app-studio.mp4"
+    },
+    {
+      "id": "pause-video-editing",
+      "bytes": 10236004,
+      "sha256": "59d681ba580d39e3719ad7c0aa80a60c196ce04c28ec8094a4d4c17931938eca",
+      "sourceSeconds": 32.853333,
+      "target": "../../../references/videos/pause-video-editing.mp4"
+    },
+    {
+      "id": "kimi-teaser",
+      "bytes": 24972820,
+      "sha256": "0e7b184354715efb5304a56b38e49bee0c6f9f860fcf3d8330926ab1d17101e2",
+      "sourceSeconds": 24.085333,
+      "target": "../../../references/videos/kimi-teaser.mp4"
+    },
+    {
+      "id": "kimi-k31-pro",
+      "bytes": 58437336,
+      "sha256": "8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423",
+      "sourceSeconds": 93.738667,
+      "target": "../../../references/videos/kimi-k31-pro.mp4"
+    },
+    {
+      "id": "framer-mcp",
+      "bytes": 3978880,
+      "sha256": "eca787581b854ca6b432bdb2ca7793c557d2e719a63e80ca1bf57a5d708fede3",
+      "sourceSeconds": 48.861,
+      "target": "../../../references/videos/framer-mcp.mp4"
+    },
+    {
+      "id": "eleven-chimera",
+      "bytes": 7619330,
+      "sha256": "a1aadeb4f943dc9bd8c54a552e60847b6a902d2ee2a19cd8139ad5edd1315253",
+      "sourceSeconds": 49.941,
+      "target": "../../../references/videos/eleven-chimera.mp4"
+    },
+    {
+      "id": "claude-duet",
+      "bytes": 10902801,
+      "sha256": "c66484b7e3ee58279cb5f7e622e853c5ff54837f6db283502e7ed6477138f717",
+      "sourceSeconds": 98.941,
+      "target": "../../../references/videos/claude-duet.mp4"
+    },
+    {
+      "id": "minimax-space-bunny",
+      "bytes": 1337316,
+      "sha256": "a9deaae58736fc4854b11c518a39d43a0179f7e07b014a0b163183580f553204",
+      "sourceSeconds": 24.832,
+      "target": "../../../references/videos/minimax-space-bunny.mp4"
+    },
+    {
+      "id": "ant-ling",
+      "bytes": 39576984,
+      "sha256": "2ce5806e096e01086f1fce81f6e5535509e5d151fb2197842b1922b384d7b47d",
+      "sourceSeconds": 102.934059,
+      "target": "../../../references/videos/ant-ling.mp4"
+    },
+    {
+      "id": "claude-motion",
+      "bytes": 6700580,
+      "sha256": "902cd32d0635126ebac483e3fefd4d639662e14116ab9537372673e0e9a415e5",
+      "sourceSeconds": 81.621,
+      "target": "../../../references/videos/claude-motion.mp4"
+    },
+    {
+      "id": "gpt6-intelligent-ui",
+      "bytes": 34680688,
+      "sha256": "e1a498dff7f8d22f92354b8f11a01e6b4389070d9ba98f170749d54bf1b25c4a",
+      "sourceSeconds": 70.165333,
+      "target": "../../../references/videos/gpt6-intelligent-ui.mp4"
+    },
+    {
+      "id": "comfy-agent",
+      "bytes": 14602416,
+      "sha256": "40a8cd2635b048a106605610f8667cffe7d7ddd27d878ed5984cccb1c7f736a8",
+      "sourceSeconds": 45.141333,
+      "target": "../../../references/videos/comfy-agent.mp4"
+    },
+    {
+      "id": "gemini-skills",
+      "bytes": 21777146,
+      "sha256": "d36400047581cadbc441c65a4d67a9bbe300db7a2e61d5a8adf8031e10a6c419",
+      "sourceSeconds": 47.402667,
+      "target": "../../../references/videos/gemini-skills.mp4"
+    },
+    {
+      "id": "chatgpt-space",
+      "bytes": 11935451,
+      "sha256": "7e7a2772039fcdfccd9417349ef656fb999d3eb3f4c8dca7aa6433e1fcd2256e",
+      "sourceSeconds": 60,
+      "target": "../../../references/videos/chatgpt-space.mp4"
+    },
+    {
+      "id": "openai-dots",
+      "bytes": 49942532,
+      "sha256": "9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e",
+      "sourceSeconds": 147.861333,
+      "target": "../../../references/videos/openai-dots.mp4"
+    },
+    {
+      "id": "copilot-new",
+      "bytes": 6174091,
+      "sha256": "10da578caebb1a64ec83619810c73a4c1331509330a98c7a4d7a7070236f43cb",
+      "sourceSeconds": 93.061,
+      "target": "../../../references/videos/copilot-new.mp4"
+    },
+    {
+      "id": "higgsfield-motion",
+      "bytes": 27297872,
+      "sha256": "9361aae09b371b1fc7b9a70953db7c80958927cb153acc20e8aaf7eec14a7a3c",
+      "sourceSeconds": 82.026667,
+      "target": "../../../references/videos/higgsfield-motion.mp4"
+    },
+    {
+      "id": "jp-bakuraku",
+      "bytes": 6296770,
+      "sha256": "b46b708a87529bfdda03e54fc28fd3a38df01e4295ce574b62dabd5fd8147a9d",
+      "sourceSeconds": 60.101,
+      "target": "../../../references/videos/jp-bakuraku.mp4"
+    },
+    {
+      "id": "jp-notta-memo",
+      "bytes": 9481281,
+      "sha256": "09d912f96883e216e115e360a36cb246f42a99fd0a6127c91809e63c4c186425",
+      "sourceSeconds": 30.061,
+      "target": "../../../references/videos/jp-notta-memo.mp4"
+    },
+    {
+      "id": "jp-robon-sorosoro",
+      "bytes": 1895207,
+      "sha256": "d8a1ae11180b89b94efb02b261d12200b102968ba3c8b4ce0d167befce8feb8b",
+      "sourceSeconds": 15.041,
+      "target": "../../../references/videos/jp-robon-sorosoro.mp4"
+    },
+    {
+      "id": "jp-robon-aizuchi",
+      "bytes": 905840,
+      "sha256": "3b95a0106332abed83c04d61cc0ff661a066e0911b8931baedaf9ad9b74f3e93",
+      "sourceSeconds": 15.041,
+      "target": "../../../references/videos/jp-robon-aizuchi.mp4"
+    },
+    {
+      "id": "jp-notepm",
+      "bytes": 8498827,
+      "sha256": "94cfa9f7a8c389e02b492d68c800314e9d2e69caed98922dffedc9eba60a5b38",
+      "sourceSeconds": 30.061,
+      "target": "../../../references/videos/jp-notepm.mp4"
+    },
+    {
+      "id": "jp-kaonavi-kti",
+      "bytes": 6219544,
+      "sha256": "537566a22f405ad52cdbc1ce8850673fe420f59b37cbcc1422c264b2bb49bb5a",
+      "sourceSeconds": 60.101,
+      "target": "../../../references/videos/jp-kaonavi-kti.mp4"
+    },
+    {
+      "id": "jp-peoplex-interview",
+      "bytes": 5524810,
+      "sha256": "b1806cd254735cd8cf5b1f449f41476d7076c99bae5db3d2d9067a3ead9a0385",
+      "sourceSeconds": 15.041,
+      "target": "../../../references/videos/jp-peoplex-interview.mp4"
+    },
+    {
+      "id": "jp-usonar-un",
+      "bytes": 13503513,
+      "sha256": "46904df4854ee44aa585e76728fd33db3cc543d333fbb9e96edee1a9141e620e",
+      "sourceSeconds": 30.03,
+      "target": "../../../references/videos/jp-usonar-un.mp4"
+    }
+  ],
+  "newVideos": [],
+  "newVideoBytes": 0,
+  "addedNonVideoBytes": 10074521,
+  "frames": 84,
+  "shots": [
+    {
+      "number": "01",
+      "start": 0,
+      "end": 5,
+      "title": "宣言｜伝えたいことは、ある。"
+    },
+    {
+      "number": "02",
+      "start": 5,
+      "end": 10,
+      "title": "模板库｜从想做的影片开始"
+    },
+    {
+      "number": "03",
+      "start": 10,
+      "end": 16,
+      "title": "读懂模板｜素材、片长、积分"
+    },
+    {
+      "number": "04",
+      "start": 16,
+      "end": 23,
+      "title": "填入素材｜原料、瓶身、标志"
+    },
+    {
+      "number": "05",
+      "start": 23,
+      "end": 28.5,
+      "title": "AI 出片｜给结果留出观看时间"
+    },
+    {
+      "number": "06",
+      "start": 28.5,
+      "end": 34,
+      "title": "模板广度｜每个模板有自己的字段"
+    },
+    {
+      "number": "07",
+      "start": 34,
+      "end": 40,
+      "title": "新建作品｜三种做法"
+    },
+    {
+      "number": "08",
+      "start": 40,
+      "end": 46,
+      "title": "无限画布｜文字 → 图片 → 视频"
+    },
+    {
+      "number": "09",
+      "start": 46,
+      "end": 52,
+      "title": "日本本土化｜日本的香，日本的话"
+    },
+    {
+      "number": "10",
+      "start": 52,
+      "end": 56.5,
+      "title": "宣言再起｜企業の想いを、伝わる映像に。"
+    },
+    {
+      "number": "11",
+      "start": 56.5,
+      "end": 60,
+      "title": "品牌落版｜商業のための、映像制作AI。"
+    }
+  ],
+  "officialCoverAssets": 12
+}

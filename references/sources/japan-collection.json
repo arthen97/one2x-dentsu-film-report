@@ -1,0 +1,556 @@
+{
+  "title": "日本 AI 与 SaaS 产品宣传片专题",
+  "dateRange": {
+    "from": "2026-09-04",
+    "to": "2026-11-04"
+  },
+  "collectedOn": "2026-11-04",
+  "note": "产品差异化为广告主主张；视频公开日、上传日及电视开播日分开记录。专题不是对所有日本广告的概括。",
+  "films": [
+    {
+      "id": "jp-bakuraku",
+      "brand": "LayerX_バクラク",
+      "title": "バックオフィスに、自動運転を。",
+      "date": "2026-09-30",
+      "dateBasis": "YouTube 提取元数据的 upload_date；另保留广告公开/开播日期",
+      "duration": "1:00",
+      "original": "https://www.youtube.com/watch?v=pBl12zKK3yE",
+      "evidence": "https://prtimes.jp/main/html/rd/p/000000565.000010550.html",
+      "extraEvidence": "https://bakuraku.jp/news/20261001/",
+      "region": "日本",
+      "category": "真人与品牌角色",
+      "productClaim": "从经费报销等单项操作延伸到后台业务全流程，主张 AI 把工作完成。",
+      "expression": "CFO 与官方角色バクくん同场；角色吃掉浪费和手续，拍照上传收据、提交考勤等动作触发工作持续推进。",
+      "takeaway": "让品牌角色承担功能解释，用持续执行的动作表现自动化。",
+      "visualEvidence": "已核对本地6格抽帧；产品定位与叙事动机另据官方新闻/制作说明。未逐帧观看全片。",
+      "tags": [
+        "品牌角色",
+        "职场",
+        "自动化"
+      ],
+      "campaignDate": "2026-09-28",
+      "campaignDateBasis": "电视广告开播日；YouTube 上传日待下载元数据",
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/LayerX_バクラク/2026-09-30__jp-bakuraku.mp4",
+      "contactSheet": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/03_抽帧核对/jp-bakuraku.jpg",
+      "download": {
+        "id": "jp-bakuraku",
+        "group": "02_日本专题",
+        "brand": "LayerX_バクラク",
+        "title": "バックオフィスに、自動運転を。",
+        "original": "https://www.youtube.com/watch?v=pBl12zKK3yE",
+        "status": "downloaded",
+        "expectedDuration": "1:00",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/LayerX_バクラク/2026-09-30__jp-bakuraku.mp4",
+        "downloadSource": "https://www.youtube.com/watch?v=pBl12zKK3yE",
+        "uploadDate": "20260930",
+        "uploader": "バクラク",
+        "channel": "バクラク",
+        "sourceTitle": "バックオフィスに、自動運転を。｜バクラク 60秒",
+        "sourceId": "pBl12zKK3yE",
+        "sourceWebpage": "https://www.youtube.com/watch?v=pBl12zKK3yE",
+        "durationSeconds": 60.101,
+        "bytes": 6296770,
+        "video": {
+          "codec_name": "av1",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "opus"
+        ],
+        "sha256": "b46b708a87529bfdda03e54fc28fd3a38df01e4295ce574b62dabd5fd8147a9d",
+        "priorAttempts": [
+          {
+            "url": "https://prtimes.jp/main/html/rd/p/000000565.000010550.html",
+            "error": "No unambiguous primary MP4 found on this page"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jp-notta-memo",
+      "brand": "Notta",
+      "title": "Notta Memo Pro「メモ卒業式」30秒",
+      "date": "2026-09-28",
+      "dateBasis": "YouTube 提取元数据的 upload_date；另保留广告公开/开播日期",
+      "duration": "0:30",
+      "original": "https://www.youtube.com/watch?v=DsYB1Ht2lTo",
+      "evidence": "https://prtimes.jp/main/html/rd/p/000000076.000106830.html",
+      "extraEvidence": "https://antscr.co.jp/works/926952/",
+      "dateEvidence": "https://db.bitstar.tokyo/youtube/UCLcc5s8xxJGMoxgPBtYLmKw?content=posts",
+      "region": "日本",
+      "category": "仪式隐喻",
+      "productClaim": "本30秒片突出从会议手写笔记中解放、把注意力还给对话；提案书、幻灯片和报告能力属于官方产品定位，片内主要展示录音转写。",
+      "expression": "把穿西装的社会人放入体育馆毕业典礼，举起笔记本，宣告从手写备忘录毕业。",
+      "takeaway": "以告别旧习惯解释工作方式改变，减少逐项列功能。",
+      "visualEvidence": "已核对本地6格抽帧；产品定位与叙事动机另据官方新闻/制作说明。未逐帧观看全片。",
+      "tags": [
+        "毕业仪式",
+        "职场",
+        "行为改变"
+      ],
+      "campaignDate": "2026-09-28",
+      "campaignDateBasis": "视频索引上传日；广告主新闻称9月18日公开，两者需保留区别",
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/Notta/2026-09-28__jp-notta-memo.mp4",
+      "contactSheet": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/03_抽帧核对/jp-notta-memo.jpg",
+      "download": {
+        "id": "jp-notta-memo",
+        "group": "02_日本专题",
+        "brand": "Notta",
+        "title": "Notta Memo Pro「メモ卒業式」30秒",
+        "original": "https://www.youtube.com/watch?v=DsYB1Ht2lTo",
+        "status": "downloaded",
+        "expectedDuration": "0:30",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/Notta/2026-09-28__jp-notta-memo.mp4",
+        "downloadSource": "https://www.youtube.com/watch?v=DsYB1Ht2lTo",
+        "uploadDate": "20260928",
+        "uploader": "Notta Japan",
+        "channel": "Notta Japan",
+        "sourceTitle": "Notta Memo Pro｜「メモ卒業式」篇",
+        "sourceId": "DsYB1Ht2lTo",
+        "sourceWebpage": "https://www.youtube.com/watch?v=DsYB1Ht2lTo",
+        "durationSeconds": 30.061,
+        "bytes": 9481281,
+        "video": {
+          "codec_name": "vp9",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "opus"
+        ],
+        "sha256": "09d912f96883e216e115e360a36cb246f42a99fd0a6127c91809e63c4c186425",
+        "priorAttempts": [
+          {
+            "url": "https://prtimes.jp/main/html/rd/p/000000076.000106830.html",
+            "error": "No unambiguous primary MP4 found on this page"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jp-robon-sorosoro",
+      "brand": "ROBON",
+      "title": "AI決算ロボット「そろそろAI」篇",
+      "date": "2026-10-18",
+      "dateBasis": "YouTube 提取元数据的 upload_date；另保留广告公开/开播日期",
+      "duration": "0:15",
+      "original": "https://www.youtube.com/watch?v=gEUygquJe8c",
+      "evidence": "https://www.smbc-digitalmarketing.co.jp/news/details/2026101901.html",
+      "region": "日本",
+      "category": "职场对话",
+      "productClaim": "针对法人税申报表制作这一项具体决算工作提供自动化。",
+      "expression": "忙于决算的税理士与工作人员对话，以是不是该用 AI 了这一采用契机组织短剧情境。",
+      "takeaway": "在15秒里明确买家是谁、做什么工作、为什么开始采用。",
+      "visualEvidence": "已核对本地6格抽帧；产品定位与叙事动机另据官方新闻/制作说明。未逐帧观看全片。",
+      "tags": [
+        "垂直B2B",
+        "15秒",
+        "对话"
+      ],
+      "campaignDate": "2026-10-19",
+      "campaignDateBasis": "电视广告开播日；YouTube 上传日待下载元数据",
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/ROBON/2026-10-18__jp-robon-sorosoro.mp4",
+      "contactSheet": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/03_抽帧核对/jp-robon-sorosoro.jpg",
+      "download": {
+        "id": "jp-robon-sorosoro",
+        "group": "02_日本专题",
+        "brand": "ROBON",
+        "title": "AI決算ロボット「そろそろAI」篇",
+        "original": "https://www.youtube.com/watch?v=gEUygquJe8c",
+        "status": "downloaded",
+        "expectedDuration": "0:15",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/ROBON/2026-10-18__jp-robon-sorosoro.mp4",
+        "downloadSource": "https://www.youtube.com/watch?v=gEUygquJe8c",
+        "uploadDate": "20261018",
+        "uploader": "株式会社ROBON",
+        "channel": "株式会社ROBON",
+        "sourceTitle": "AI決算ロボット「そろそろAI」篇",
+        "sourceId": "gEUygquJe8c",
+        "sourceWebpage": "https://www.youtube.com/watch?v=gEUygquJe8c",
+        "durationSeconds": 15.041,
+        "bytes": 1895207,
+        "video": {
+          "codec_name": "av1",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "opus"
+        ],
+        "sha256": "d8a1ae11180b89b94efb02b261d12200b102968ba3c8b4ce0d167befce8feb8b",
+        "priorAttempts": [
+          {
+            "url": "https://www.smbc-digitalmarketing.co.jp/news/details/2026101901.html",
+            "error": "No unambiguous primary MP4 found on this page"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jp-robon-aizuchi",
+      "brand": "ROBON",
+      "title": "AI決算ロボット「相槌」篇",
+      "date": "2026-10-18",
+      "dateBasis": "YouTube 提取元数据的 upload_date；另保留广告公开/开播日期",
+      "duration": "0:15",
+      "original": "https://www.youtube.com/watch?v=38rL-L0t-sE",
+      "evidence": "https://www.smbc-digitalmarketing.co.jp/news/details/2026101901.html",
+      "region": "日本",
+      "category": "职场对话",
+      "productClaim": "围绕同一税务任务，以使用后的工作感受强化采用理由。",
+      "expression": "税理士赞叹 AI 工作表现，工作人员不断附和，形成重复的会话笑点。",
+      "takeaway": "固定角色做系列：一条讲采用契机，一条讲使用后感受。",
+      "visualEvidence": "已核对本地6格抽帧；产品定位与叙事动机另据官方新闻/制作说明。未逐帧观看全片。",
+      "tags": [
+        "系列广告",
+        "15秒",
+        "幽默"
+      ],
+      "campaignDate": "2026-10-19",
+      "campaignDateBasis": "电视广告开播日；YouTube 上传日待下载元数据",
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/ROBON/2026-10-18__jp-robon-aizuchi.mp4",
+      "contactSheet": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/03_抽帧核对/jp-robon-aizuchi.jpg",
+      "download": {
+        "id": "jp-robon-aizuchi",
+        "group": "02_日本专题",
+        "brand": "ROBON",
+        "title": "AI決算ロボット「相槌」篇",
+        "original": "https://www.youtube.com/watch?v=38rL-L0t-sE",
+        "status": "downloaded",
+        "expectedDuration": "0:15",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/ROBON/2026-10-18__jp-robon-aizuchi.mp4",
+        "downloadSource": "https://www.youtube.com/watch?v=38rL-L0t-sE",
+        "uploadDate": "20261018",
+        "uploader": "株式会社ROBON",
+        "channel": "株式会社ROBON",
+        "sourceTitle": "AI決算ロボット「相槌」篇",
+        "sourceId": "38rL-L0t-sE",
+        "sourceWebpage": "https://www.youtube.com/watch?v=38rL-L0t-sE",
+        "durationSeconds": 15.041,
+        "bytes": 905840,
+        "video": {
+          "codec_name": "av1",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "opus"
+        ],
+        "sha256": "3b95a0106332abed83c04d61cc0ff661a066e0911b8931baedaf9ad9b74f3e93",
+        "priorAttempts": [
+          {
+            "url": "https://www.smbc-digitalmarketing.co.jp/news/details/2026101901.html",
+            "error": "No unambiguous primary MP4 found on this page"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jp-flyle-nihonham",
+      "brand": "Flyle",
+      "title": "日本ハム 導入事例 30秒",
+      "date": "2026-10-06",
+      "dateBasis": "YouTube 提取元数据的 upload_date；另保留广告公开/开播日期",
+      "duration": "0:30",
+      "original": "https://www.youtube.com/watch?v=jBQhFFUKDqU",
+      "evidence": "https://prtimes.jp/main/html/rd/p/000000048.000076399.html",
+      "alternateOriginal": "https://www.youtube.com/watch?v=19uf4L4PXZk",
+      "alternateNote": "备用为120秒完整案例；不能视为30秒原片的同版本",
+      "region": "日本",
+      "category": "客户证言",
+      "productClaim": "理解细腻日语表达背后的意图，将 VOC 分析转为 CX 改善。",
+      "expression": "采用企业负责人坐在柔和几何布景前出镜，字幕呈现她对人员、耗时与报告质量变化的自述，几乎不依赖产品UI演示。",
+      "takeaway": "用买方自己的业务证据说明产品价值，适合B2B信任建立。",
+      "visualEvidence": "已核对本地6格抽帧；产品定位与叙事动机另据官方新闻/制作说明。未逐帧观看全片。",
+      "tags": [
+        "客户证言",
+        "VOC",
+        "业务证据"
+      ],
+      "campaignDate": "2026-10-07",
+      "campaignDateBasis": "官方明确视频公开日；出租车广告10月12日开始",
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/05_其他参考_采访/Flyle/2026-10-06__jp-flyle-nihonham.mp4",
+      "contactSheet": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/03_抽帧核对/jp-flyle-nihonham.jpg",
+      "download": {
+        "id": "jp-flyle-nihonham",
+        "group": "02_日本专题",
+        "brand": "Flyle",
+        "title": "日本ハム 導入事例 30秒",
+        "original": "https://www.youtube.com/watch?v=jBQhFFUKDqU",
+        "status": "downloaded",
+        "expectedDuration": "0:30",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/05_其他参考_采访/Flyle/2026-10-06__jp-flyle-nihonham.mp4",
+        "downloadSource": "https://www.youtube.com/watch?v=jBQhFFUKDqU",
+        "uploadDate": "20261006",
+        "uploader": "株式会社フライル",
+        "channel": "株式会社フライル",
+        "sourceTitle": "Flyle(フライル)顧客事例動画｜日本ハム株式会社編（30秒）",
+        "sourceId": "jBQhFFUKDqU",
+        "sourceWebpage": "https://www.youtube.com/watch?v=jBQhFFUKDqU",
+        "durationSeconds": 30.061,
+        "bytes": 4837537,
+        "video": {
+          "codec_name": "vp9",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "opus"
+        ],
+        "sha256": "9ede6f52c018b037660fcc92fac5f4bdf5d17b6fd413bbde5c0c1204c7908797",
+        "priorAttempts": [
+          {
+            "url": "https://prtimes.jp/main/html/rd/p/000000048.000076399.html",
+            "error": "No unambiguous primary MP4 found on this page"
+          }
+        ]
+      },
+      "excludedFromMain": true,
+      "exclusionReason": "真实客户采访/证言，不参与产品宣传片同类比较。"
+    },
+    {
+      "id": "jp-notepm",
+      "brand": "NotePM",
+      "title": "埋蔵ナレッジ〜進まない現場〜篇",
+      "date": "2026-10-05",
+      "dateBasis": "YouTube 提取元数据的 upload_date；另保留广告公开/开播日期",
+      "duration": "0:30",
+      "original": "https://www.youtube.com/watch?v=sjsLCJHCVaI",
+      "evidence": "https://www.toyokumo.co.jp/2026/10/06/notepm-new-cm-asahi-nao-san",
+      "extraEvidence": "https://prtimes.jp/main/html/rd/p/000000263.000032205.html",
+      "region": "日本",
+      "category": "职场喜剧与隐喻",
+      "productClaim": "面向普通员工，通过回答 AI 的问题生成手册，降低从空白开始写提示词和文档的门槛。",
+      "expression": "矿洞式发掘场景与写不出来的空白手册界面并置，把被埋没的公司知识具象化，再切入NotePM界面和办公室品牌落版。",
+      "takeaway": "先表现用户写不出来的具体尴尬，再以单一隐喻解释知识管理。",
+      "visualEvidence": "已核对本地6格抽帧；产品定位与叙事动机另据官方新闻/制作说明。未逐帧观看全片。",
+      "tags": [
+        "知识管理",
+        "单一隐喻",
+        "幽默"
+      ],
+      "campaignDate": "2026-10-05",
+      "campaignDateBasis": "官方正文明确10月5日影片公开；新闻发布日期为10月6日",
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/NotePM/2026-10-05__jp-notepm.mp4",
+      "contactSheet": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/03_抽帧核对/jp-notepm.jpg",
+      "download": {
+        "id": "jp-notepm",
+        "group": "02_日本专题",
+        "brand": "NotePM",
+        "title": "埋蔵ナレッジ〜進まない現場〜篇",
+        "original": "https://www.youtube.com/watch?v=sjsLCJHCVaI",
+        "status": "downloaded",
+        "expectedDuration": "0:30",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/NotePM/2026-10-05__jp-notepm.mp4",
+        "downloadSource": "https://www.youtube.com/watch?v=sjsLCJHCVaI",
+        "uploadDate": "20261005",
+        "uploader": "NotePM",
+        "channel": "NotePM",
+        "sourceTitle": "NotePM CM「埋蔵ナレッジ～進まない現場～」篇 30秒バージョン 朝日奈央さん出演",
+        "sourceId": "sjsLCJHCVaI",
+        "sourceWebpage": "https://www.youtube.com/watch?v=sjsLCJHCVaI",
+        "durationSeconds": 30.061,
+        "bytes": 8498827,
+        "video": {
+          "codec_name": "vp9",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "opus"
+        ],
+        "sha256": "94cfa9f7a8c389e02b492d68c800314e9d2e69caed98922dffedc9eba60a5b38",
+        "priorAttempts": [
+          {
+            "url": "https://www.toyokumo.co.jp/2026/10/06/notepm-new-cm-asahi-nao-san",
+            "error": "No unambiguous primary MP4 found on this page"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jp-kaonavi-kti",
+      "brand": "Kaonavi_KTi",
+      "title": "カオナビはタレントインテリジェンスへ",
+      "date": "2026-10-01",
+      "dateBasis": "YouTube 提取元数据的 upload_date；另保留广告公开/开播日期",
+      "duration": "1:00",
+      "original": "https://www.youtube.com/watch?v=_Q6tUxpTwkY",
+      "evidence": "https://prtimes.jp/main/html/rd/p/000000377.000030113.html",
+      "extraEvidence": "https://note.com/kaonavi/n/nc062e381a6da",
+      "region": "日本",
+      "category": "拟人AI与实物道具",
+      "productClaim": "基于企业自身人才数据支持决策，AI 通过提问协助人思考，强调你公司的答案。",
+      "expression": "香取慎吾饰演 AI 相棒，穿黄蓝品牌配色；透明五色实体积木随思路清晰而组合。",
+      "takeaway": "用稳定角色及真实道具的组合过程，解释从数据到洞察。",
+      "visualEvidence": "已核对本地6格抽帧；产品定位与叙事动机另据官方新闻/制作说明。未逐帧观看全片。",
+      "tags": [
+        "拟人AI",
+        "实物积木",
+        "决策支持"
+      ],
+      "campaignDate": "2026-10-01",
+      "campaignDateBasis": "官方新闻确认10月1日已公开；电视10月3日开播，精确上传日待元数据",
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/Kaonavi_KTi/2026-10-01__jp-kaonavi-kti.mp4",
+      "contactSheet": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/03_抽帧核对/jp-kaonavi-kti.jpg",
+      "download": {
+        "id": "jp-kaonavi-kti",
+        "group": "02_日本专题",
+        "brand": "Kaonavi_KTi",
+        "title": "カオナビはタレントインテリジェンスへ",
+        "original": "https://www.youtube.com/watch?v=_Q6tUxpTwkY",
+        "status": "downloaded",
+        "expectedDuration": "1:00",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/Kaonavi_KTi/2026-10-01__jp-kaonavi-kti.mp4",
+        "downloadSource": "https://www.youtube.com/watch?v=_Q6tUxpTwkY",
+        "uploadDate": "20261001",
+        "uploader": "kaonavi, inc.",
+        "channel": "kaonavi, inc.",
+        "sourceTitle": "【香取慎吾さん出演】カオナビ新CM「カオナビはタレントインテリジェンスへ」篇",
+        "sourceId": "_Q6tUxpTwkY",
+        "sourceWebpage": "https://www.youtube.com/watch?v=_Q6tUxpTwkY",
+        "durationSeconds": 60.101,
+        "bytes": 6219544,
+        "video": {
+          "codec_name": "av1",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "opus"
+        ],
+        "sha256": "537566a22f405ad52cdbc1ce8850673fe420f59b37cbcc1422c264b2bb49bb5a",
+        "priorAttempts": [
+          {
+            "url": "https://prtimes.jp/main/html/rd/p/000000377.000030113.html",
+            "error": "No unambiguous primary MP4 found on this page"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jp-peoplex-interview",
+      "brand": "PeopleX",
+      "title": "PeopleX AI面接「面接で見てくれよ」篇",
+      "date": "2026-10-07",
+      "dateBasis": "YouTube 提取元数据的 upload_date；另保留广告公开/开播日期",
+      "duration": "0:15",
+      "original": "https://www.youtube.com/watch?v=GtnSTrQkQvk",
+      "evidence": "https://prtimes.jp/main/html/rd/p/000000305.000139786.html",
+      "region": "日本",
+      "category": "真人与视觉特效/3D角色",
+      "productClaim": "从书面筛选、时间冲突、面试评价不一致等具体招聘困扰切入对话式 AI 面试。",
+      "expression": "履历纸遮住人的脸，成排复制的人群铺满紫色空间，再出现3D AI面试官；用视觉特效放大书面筛选与认识真人之间的障碍。",
+      "takeaway": "每支片只承担一个痛点，以系列覆盖不同采用理由。",
+      "visualEvidence": "已核对本地6格抽帧；产品定位与叙事动机另据官方新闻/制作说明。未逐帧观看全片。",
+      "tags": [
+        "履历遮脸",
+        "规模化视觉特效",
+        "3D面试官"
+      ],
+      "campaignDate": "2026-10-09",
+      "campaignDateBasis": "10月8日官方新闻预告10月9日起公开/放映；上传日待元数据",
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/PeopleX/2026-10-07__jp-peoplex-interview.mp4",
+      "contactSheet": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/03_抽帧核对/jp-peoplex-interview.jpg",
+      "download": {
+        "id": "jp-peoplex-interview",
+        "group": "02_日本专题",
+        "brand": "PeopleX",
+        "title": "PeopleX AI面接「面接で見てくれよ」篇",
+        "original": "https://www.youtube.com/watch?v=GtnSTrQkQvk",
+        "status": "downloaded",
+        "expectedDuration": null,
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/PeopleX/2026-10-07__jp-peoplex-interview.mp4",
+        "downloadSource": "https://www.youtube.com/watch?v=GtnSTrQkQvk",
+        "uploadDate": "20261007",
+        "uploader": "株式会社PeopleX",
+        "channel": "株式会社PeopleX",
+        "sourceTitle": "PeopleX AI面接CM①「面接で見てくれよ」篇",
+        "sourceId": "GtnSTrQkQvk",
+        "sourceWebpage": "https://www.youtube.com/watch?v=GtnSTrQkQvk",
+        "durationSeconds": 15.041,
+        "bytes": 5524810,
+        "video": {
+          "codec_name": "vp9",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "opus"
+        ],
+        "sha256": "b1806cd254735cd8cf5b1f449f41476d7076c99bae5db3d2d9067a3ead9a0385",
+        "priorAttempts": [
+          {
+            "url": "https://prtimes.jp/main/html/rd/p/000000305.000139786.html",
+            "error": "No unambiguous primary MP4 found on this page"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jp-usonar-un",
+      "brand": "uSonar",
+      "title": "Do you know, u脳? 30秒",
+      "date": "2026-10-21",
+      "dateBasis": "广告主官方CM公开/电视开播日；非上传日期",
+      "campaignDate": "2026-10-21",
+      "campaignDateBasis": "广告主官方CM公开/电视开播日",
+      "duration": "0:30",
+      "original": "https://origin.usonar.co.jp/ad_movie/cm_UN_30s_260929.mp4",
+      "evidence": "https://origin.usonar.co.jp/cm-movie.html",
+      "extraEvidence": "https://prtimes.jp/main/html/rd/p/000000174.000005101.html",
+      "region": "日本",
+      "category": "真人演绎与CG功能可视化",
+      "productClaim": "把销售辅助AI定位为销售的第二个大脑，将企业数据分析连接到具体行动建议。",
+      "expression": "诊察室介绍另一个大脑；镜头穿入眼瞳进入CG脑内，用名片、企业数据和行动建议说明产品价值。",
+      "takeaway": "让一个CG空间同时承担品牌隐喻和产品功能解释；可与CG发布片、UI流程片对照。",
+      "visualEvidence": "官方企划说明；下载后抽帧复核",
+      "tags": [
+        "CG脑内",
+        "销售AI",
+        "功能可视化"
+      ],
+      "recommended": true,
+      "download": {
+        "id": "jp-usonar-un",
+        "group": "02_日本专题",
+        "brand": "uSonar",
+        "title": "Do you know, u脳? 30秒",
+        "original": "https://origin.usonar.co.jp/ad_movie/cm_UN_30s_260929.mp4",
+        "status": "downloaded",
+        "expectedDuration": "0:30",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/uSonar/2026-10-21__jp-usonar-un.mp4",
+        "downloadSource": "https://origin.usonar.co.jp/ad_movie/cm_UN_30s_260929.mp4",
+        "durationSeconds": 30.03,
+        "bytes": 13503513,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "aac"
+        ],
+        "sha256": "46904df4854ee44aa585e76728fd33db3cc543d333fbb9e96edee1a9141e620e"
+      },
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/02_日本专题/uSonar/2026-10-21__jp-usonar-un.mp4",
+      "contactSheet": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/03_抽帧核对/jp-usonar-un.jpg"
+    }
+  ],
+  "downloadSummary": {
+    "downloaded": 9,
+    "mainLibrary": 8,
+    "archived": 1
+  },
+  "analysisScope": "对本次8条日本样片与前批Copilot/Kimi等已抽帧样片的比较，不能推广为全部日本广告的固定风格。产品差异化为广告主定位，视觉判断结合官方说明和本地抽帧。"
+}

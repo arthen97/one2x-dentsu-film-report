@@ -1,0 +1,387 @@
+- complementary:
+  - generic: KAIROS
+  - button "New creation":
+    - generic: New creation
+  - navigation:
+    - link "Template library":
+      - /url: /explore
+      - generic: Template library
+    - link "Creations":
+      - /url: /projects
+      - generic: Creations
+    - link "Drive":
+      - /url: /drive
+      - generic: Drive
+  - navigation:
+    - generic: Recents
+  - button "Log in":
+    - generic: Log in
+- main:
+  - heading "Template library" [level=1]
+  - paragraph: Choose a template → Add materials → Let AI create your video
+  - region "Make your first video in 3 steps":
+    - heading "Make your first video in 3 steps" [level=2]:
+      - generic: Make your first video in 3 steps
+    - list:
+      - generic: "1"
+      - generic: Pick a template
+      - generic: "2"
+      - generic: Add your materials
+      - generic: "3"
+      - generic: Let AI make the video
+    - button "Close":
+  - button "All":
+    - generic: All
+  - button "Ads":
+    - generic: Ads
+  - button "Car":
+    - generic: Car
+  - button "Animation":
+    - generic: Animation
+  - button "Manifestation":
+    - generic: Manifestation
+  - search:
+    - searchbox "Search Templates"
+  - article:
+    - img "Retro Beach TVC"
+    - generic: Template
+    - 'generic "Materials needed: Upload product image"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Retro Beach TVC" [level=2]
+  - article:
+    - img "Perfume Ad Reveal"
+    - generic: Template
+    - 'generic "Materials needed: write your ingredient、Upload perfume product、write brand logo"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Perfume Ad Reveal" [level=2]
+  - article:
+    - img "Clean Demo UGC"
+    - generic: Template
+    - 'generic "Materials needed: Upload product photo"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Clean Demo UGC" [level=2]
+  - article:
+    - img "Awakening the Beast"
+    - generic: Template
+    - img "≈100 estimated credits":
+      - generic: ≈100
+    - generic: 15 sec
+    - 'generic "Materials needed: Upload a car imgae、Upload a car logo imgae、Upload a picture of a small item"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Awakening the Beast" [level=2]
+  - article:
+    - img "Clock Of Bags"
+    - generic: Template
+    - img "≈25 estimated credits":
+      - generic: ≈25
+    - generic: 8 sec
+    - 'generic "Materials needed: Upload handbag photo 1 (12 o''clock position)、Upload handbag photo 2 (2 o''clock position)、Upload handbag photo 3 (4 o''clock position)、Upload handbag photo 4 (6 o''clock position)、Upload handbag photo 5 (8 o''clock position)、Upload handbag photo 6 (10 o''clock position)"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Clock Of Bags" [level=2]
+  - article:
+    - img "Flavor Diorama Ad"
+    - generic: Template
+    - img "≈50 estimated credits":
+      - generic: ≈50
+    - generic: 25 sec
+    - 'generic "Materials needed: Upload product photo、Input product type、Input flavor ingredients、Upload mascot character"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Flavor Diorama Ad" [level=2]
+  - article:
+    - img "Home Appliance Showcase"
+    - generic: Template
+    - 'generic "Materials needed: Upload product 1 image、Input product 1 category、Input product 1 interaction beat、Upload product 2 image、Input product 2 category、Input product 2 interaction beat、Upload product 3 image、Input product 3 category、Input product 3 interaction beat、Upload product 4 image、Input product 4 category、Input product 4 interaction beat"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Home Appliance Showcase" [level=2]
+  - article:
+    - img "Idol Snack Ad"
+    - generic: Template
+    - 'generic "Materials needed: Upload your product image"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Idol Snack Ad" [level=2]
+  - article:
+    - img "Sports Advertising"
+    - generic: Template
+    - 'generic "Materials needed: Write your brand name、Write a theme of concept for your brand"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Sports Advertising" [level=2]
+  - article:
+    - img "Product Display"
+    - generic: Template
+    - 'generic "Materials needed: Uploading the product reference image"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Product Display" [level=2]
+  - article:
+    - img "Sport Anime Athlete"
+    - generic: Template
+    - 'generic "Materials needed: Input sport type"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Sport Anime Athlete" [level=2]
+  - article:
+    - img "Storyboard Animation"
+    - generic: Template
+    - 'generic "Materials needed: Upload the battles Character 1、Upload the battles Character 2、Wrtite a battle scene"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Storyboard Animation" [level=2]
+  - article:
+    - img "Pop Art Product J"
+    - generic: Template
+    - 'generic "Materials needed: Upload product image、Input accent color、Input closing slogan"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Pop Art Product J" [level=2]
+  - article:
+    - img "Product Bullet Time J"
+    - generic: Template
+    - 'generic "Materials needed: Input product name and category、Input product appearance description、Input price or promotional slogan、Input selling-point tagline"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Product Bullet Time J" [level=2]
+  - article:
+    - img "Slow-motion fall J"
+    - generic: Template
+    - 'generic "Materials needed: Upload protagonist reference photo"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Slow-motion fall J" [level=2]
+  - article:
+    - img "Click To Dress J"
+    - generic: Template
+    - 'generic "Materials needed: Upload upper-body garment、Upload lower-body garment、Upload footwear、Upload accessory"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Click To Dress J" [level=2]
+  - article:
+    - img "ASMR Unboxing Reel"
+    - generic: Template
+    - 'generic "Materials needed: Input product name"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "ASMR Unboxing Reel" [level=2]
+  - article:
+    - img "Street Cup Vibes"
+    - generic: Template
+    - 'generic "Materials needed: Upload product image、Upload product logo"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Street Cup Vibes" [level=2]
+  - article:
+    - img "Skyfall Product Ad J"
+    - generic: Template
+    - 'generic "Materials needed: Upload product reference image、Upload brand logo"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Skyfall Product Ad J" [level=2]
+  - article:
+    - img "Shoe Hat Runway"
+    - generic: Template
+    - 'generic "Materials needed: Upload small animal photo、Upload shoe product image、Upload brand logo"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Shoe Hat Runway" [level=2]
+  - article:
+    - img "Luxury Cut Reveal"
+    - generic: Template
+    - 'generic "Materials needed: Upload product image、Input global color tone"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Luxury Cut Reveal" [level=2]
+  - article:
+    - img "La Dolce Vita Ad"
+    - generic: Template
+    - 'generic "Materials needed: Upload product image、Input typography text、Upload brand logo"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "La Dolce Vita Ad" [level=2]
+  - article:
+    - img "Heart Glow Reveal"
+    - generic: Template
+    - 'generic "Materials needed: Upload product 1 image、Upload product 2 image、Upload product 3 image、Input brand name"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Heart Glow Reveal" [level=2]
+  - article:
+    - img "Dolce Vita Sip"
+    - generic: Template
+    - 'generic "Materials needed: Upload Product 1 image、Upload Product 2 image、Upload Brand Logo image"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Dolce Vita Sip" [level=2]
+  - article:
+    - img "Cream Factory Ad"
+    - generic: Template
+    - 'generic "Materials needed: Upload product photo、Upload brand logo、Input fruit type"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Cream Factory Ad" [level=2]
+  - article:
+    - img "Studio Session MV J"
+    - generic: Template
+    - 'generic "Materials needed: Upload product one image、Upload product two image、Input brand logo text"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Studio Session MV J" [level=2]
+  - article:
+    - img "Beauty Haul React J"
+    - generic: Template
+    - 'generic "Materials needed: Upload lip makeup product image、Upload lotion or pump dispenser product image、Upload spray product image、Upload brand logo"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Beauty Haul React J" [level=2]
+  - article:
+    - img "Enchanted Product Ad J"
+    - generic: Template
+    - 'generic "Materials needed: Upload your product image、Upload your brand logo"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Enchanted Product Ad J" [level=2]
+  - article:
+    - img "Speed Glam Montage J"
+    - generic: Template
+    - 'generic "Materials needed: describe top garment、describe bottom garment、describe shoes、describe hand accessory、brand logo"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Speed Glam Montage J" [level=2]
+  - article:
+    - img "Invisible Force J"
+    - generic: Template
+    - 'generic "Materials needed: Upload a photo of the scene"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Invisible Force J" [level=2]
+  - article:
+    - img "Billboard Skate Chase"
+    - generic: Template
+    - 'generic "Materials needed: Upload top garment、Upload bottom garment、Upload footwear、Upload brand logo"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Billboard Skate Chase" [level=2]
+  - article:
+    - img "Billionaire Shopping Spree J"
+    - generic: Template
+    - 'generic "Materials needed: Input brand or app name"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Billionaire Shopping Spree J" [level=2]
+  - article:
+    - img "Sunnies Summer Film"
+    - generic: Template
+    - 'generic "Materials needed: Upload eyeglasses product 1 image、Upload eyeglasses product 2 image、Upload eyeglasses product 3 image、Upload brand logo image"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Sunnies Summer Film" [level=2]
+  - article:
+    - img "Moonlit Night MV"
+    - generic: Template
+    - generic: 4 sec
+    - 'generic "Materials needed: Upload an image of your first lead character、Upload an image of your second lead character、Enter your brand name、Upload the photo of your product"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Moonlit Night MV" [level=2]
+  - article:
+    - img "Golden Hour Family"
+    - generic: Template
+    - generic: 4 sec
+    - 'generic "Materials needed: Input brand name and signature item、Upload your brand logo、Upload the photo of your product"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Golden Hour Family" [level=2]
+  - article:
+    - img "Hotel Girls Trip"
+    - generic: Template
+    - generic: 4 sec
+    - 'generic "Materials needed: Input hotel brand name、Select your digital human 1、Select your digital human 2、Select your digital human 3、Select your hotel staff"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Hotel Girls Trip" [level=2]
+  - article:
+    - img "Red Float Head"
+    - generic: Template
+    - generic: 4 sec
+    - 'generic "Materials needed: Input brand name、Upload the image of your product、Input brand slogan、Choose digital human A、Choose digital human B"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Red Float Head" [level=2]
+  - article:
+    - img "Vintage Fragrance Reel"
+    - generic: Template
+    - generic: 4 sec
+    - 'generic "Materials needed: Enter your brand name、UUpload your perfume product image"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Vintage Fragrance Reel" [level=2]
+  - article:
+    - img "Retro Tokusatsu Promo"
+    - generic: Template
+    - generic: 4 sec
+    - 'generic "Materials needed: Input brand name、Upload product reference image、Input core pain point"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Retro Tokusatsu Promo" [level=2]
+  - article:
+    - img "Seven Color Burst"
+    - generic: Template
+    - generic: 4 sec
+    - 'generic "Materials needed: Input your brand name、Upload your product photo、Choose digital human one、Choose digital human two、Choose digital human three、Input product element details、Choose digital human four、Choose digital human five"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Seven Color Burst" [level=2]
+  - article:
+    - img "Retro Store Campaign"
+    - generic: Template
+    - generic: 4 sec
+    - 'generic "Materials needed: Enter your brand name、Upload your brand logo"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Retro Store Campaign" [level=2]
+  - article:
+    - img "Retro Anime Advert"
+    - generic: Template
+    - generic: 4 sec
+    - 'generic "Materials needed: Input product information、Upload your product photo"'
+    - button "Use this template":
+      - generic: Use this template
+    - heading "Retro Anime Advert" [level=2]
+  - generic: No more templates
+  - generic "Brand and copyright":
+    - strong: KAIROS
+    - paragraph: Turn every communication into video, with ease. From product URLs, manuals, and brand assets to business-grade video—securely orchestrated and continuously improved.
+    - paragraph: © 2026 WorldX. All rights reserved.
+    - heading "Product Overview" [level=3]
+    - link "URL to Video":
+      - /url: https://kairosai.top/
+    - link "Image to Video":
+      - /url: https://kairosai.top/
+    - link "Image to Image AI":
+      - /url: https://kairosai.top/
+    - link "Text to Video":
+      - /url: https://kairosai.top/
+    - link "AI Image Generator":
+      - /url: https://kairosai.top/
+    - heading "Legal" [level=3]
+    - link "Privacy Policy":
+      - /url: https://kairosai.top/privacy
+    - link "Terms of Service":
+      - /url: https://kairosai.top/terms
+    - heading "Social" [level=3]
+    - link "YouTube":
+      - /url: https://www.youtube.com/@Kairosaivideo
+    - link "X":
+      - /url: https://x.com/kairosaivideo
+    - heading "Company" [level=3]
+    - link "About":
+      - /url: https://www.worldx.co.jp/
+- iframe [id="intercom-frame"]
+- button "Open Intercom Messenger":

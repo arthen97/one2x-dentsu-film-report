@@ -1,0 +1,49 @@
+{
+  "compiled_on": "2026-11-04",
+  "research_policy": "沿用已保存素材与原任务核对记录，本轮未补搜参考。",
+  "mood_images": {
+    "files": [
+      "iris-pet",
+      "iris-convention",
+      "iris-couple",
+      "iris-flight",
+      "iris-hotel",
+      "iris-rain"
+    ],
+    "format": [
+      "jpg",
+      "png"
+    ],
+    "kind": "AI生成的拟拍气氛示意；非实拍、非上线产品UI",
+    "prompts": "../气氛图-prompts.json"
+  },
+  "motion_references": {
+    "source_page": "https://www.magnific.com/blog/meet-magnific-move/",
+    "source_page_title": "Meet Magnific Move: motion graphics you can talk to",
+    "published_on": "2026-10-28",
+    "date_basis": "既有任务于2026-11-04访问官方页，页面DOM显示 Published October 28, 2026；该日期是集合发布页日期，未逐条推断片段首发日。",
+    "verified_at_utc": "2026-11-05T03:30:56.079Z",
+    "existing_log": "/Users/arthen01/.codex/sessions/2026/11/04/rollout-2026-11-04T05-51-25-01a1a6d4-181a-7f80-9ab2-a98af0568eb4.jsonl",
+    "files": [
+      {
+        "local": "../assets/move-product.mp4",
+        "title": "Product ad",
+        "source": "https://www.magnific.com/blog/content/media/2026/10/move-snivo-ion-ad.mp4"
+      },
+      {
+        "local": "../assets/move-mosaic.mp4",
+        "title": "Milestone mosaic",
+        "source": "https://www.magnific.com/blog/content/media/2026/10/move-mosaic-100k.mp4"
+      },
+      {
+        "local": "../assets/move-transit.mp4",
+        "title": "Workflow / transit map",
+        "source": "https://www.magnific.com/blog/content/media/2026/10/move-transit-map-workflow.mp4"
+      }
+    ]
+  },
+  "original_proposals": [
+    "../../IRIS-Claude成果/Iris-Japan-60s-完整正式提案-未套用skill.html",
+    "../../KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-未套用skill.html"
+  ]
+}

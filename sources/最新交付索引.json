@@ -1,0 +1,36 @@
+{
+  "ClaudeDesktopProjects": {
+    "KAIROS": "https://claude.ai/cowork/project/01a1a8b4-02bf-74fd-9fa9-49e01600f7a2",
+    "Iris": "https://claude.ai/cowork/project/01a1a8b4-ac41-754b-8907-762bbd69d6cb"
+  },
+  "projectContext": "Each private project contains its complete project TXT bundle and is pinned.",
+  "formatSkill": "hollywood-html-template-v3/SKILL.md; latest white-paper annotated production draft; original component preservation",
+  "formattedDeliverables": [
+    "KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+    "IRIS-Claude成果/Iris-Japan-60s-完整正式提案-hollywood-v3.html"
+  ],
+  "MerouterImageStatus": "Not completed. Model mj-fast-imagine-v8.1 appears in Marketplace and model catalog; authenticated global and scoped Responses requests return 404 No route available. No image files returned. No replacement model used.",
+  "previousFormatSkill": "hollywood-html-template/SKILL.md; downloaded from the user-selected Claude skill Hollywood html template v2",
+  "previousFormattedDeliverables": [
+    "KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood.html",
+    "IRIS-Claude成果/Iris-Japan-60s-完整正式提案-hollywood.html"
+  ],
+  "preSkillDeliverables": [
+    "KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-未套用skill.html",
+    "IRIS-Claude成果/Iris-Japan-60s-完整正式提案-未套用skill.html"
+  ],
+  "HTMLReviewOriginals": {
+    "status": "uploaded",
+    "format": "未套用 skill 原版",
+    "links": {
+      "KAIROS": "https://html.play.one2x.ai/r/cxphHbRKTkm8",
+      "Iris": "https://html.play.one2x.ai/r/Nsezv3nzsCvv"
+    },
+    "verified": {
+      "shotSegmentsEach": 12,
+      "kairosLoadedImages": 5,
+      "irisLoadedImages": 6,
+      "originalStylesAndScriptsPreserved": true
+    }
+  }
+}

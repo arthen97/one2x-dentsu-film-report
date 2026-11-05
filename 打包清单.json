@@ -1,0 +1,971 @@
+{
+  "snapshotLabel": "原始看板自标 2026-11-05；本包整理于 2026-11-04（用户本地日期）",
+  "sourceRoot": "/Users/arthen01/Jdoe/kairos&iris 电通",
+  "entryFiles": [
+    {
+      "title": "KAIROS-60s-正式提案-产品理念详解版-hollywood-v3",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "original": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html"
+    },
+    {
+      "title": "Iris-Japan-60s-完整正式提案-hollywood-v3",
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-hollywood-v3.html",
+      "original": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-hollywood-v3.html"
+    },
+    {
+      "title": "KAIROS-60s-正式提案-产品理念详解版-未套用skill",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-未套用skill.html",
+      "original": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-未套用skill.html"
+    },
+    {
+      "title": "Iris-Japan-60s-完整正式提案-未套用skill",
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-未套用skill.html",
+      "original": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-未套用skill.html"
+    },
+    {
+      "title": "KAIROS-60s-需求整合与本土细节版",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-需求整合与本土细节版.html",
+      "original": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-需求整合与本土细节版.html"
+    },
+    {
+      "title": "KAIROS-60s-日本本土共情版-Brief与分镜",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-日本本土共情版-Brief与分镜.html",
+      "original": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-日本本土共情版-Brief与分镜.html"
+    },
+    {
+      "title": "Iris-Japan-V6-需求整合与本土细节版",
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-V6-需求整合与本土细节版.html",
+      "original": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-V6-需求整合与本土细节版.html"
+    },
+    {
+      "title": "Iris-Japan-V5-日本本土共情版",
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-V5-日本本土共情版.html",
+      "original": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-V5-日本本土共情版.html"
+    },
+    {
+      "title": "index",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/index.html",
+      "original": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/index.html"
+    },
+    {
+      "title": "KAIROS-60s-正式提案-产品理念详解版",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版.html",
+      "original": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版.html"
+    },
+    {
+      "title": "KAIROS-60s-群像版-Brief与分镜",
+      "path": "materials/KAIROS-60s-分镜表/KAIROS-60s-群像版-Brief与分镜.html",
+      "original": "/Users/arthen01/Jdoe/kairos&iris 电通/KAIROS-60s-分镜表/KAIROS-60s-群像版-Brief与分镜.html"
+    },
+    {
+      "title": "日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13",
+      "path": "materials/iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "original": "/Users/arthen01/Jdoe/kairos&iris 电通/iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html"
+    },
+    {
+      "title": "Iris · H5 原型（主要页面、组件与卡片、二级页面、代表性流程）-v12",
+      "path": "materials/iris资料/Iris · H5 原型（主要页面、组件与卡片、二级页面、代表性流程）-v12.html",
+      "original": "/Users/arthen01/Jdoe/kairos&iris 电通/iris资料/Iris · H5 原型（主要页面、组件与卡片、二级页面、代表性流程）-v12.html"
+    }
+  ],
+  "copiedDependencies": [
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/KAIROS-60s-分镜表/官网实拍/assets/kairos-logo.png",
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/assets/kairos-logo.png",
+      "bytes": 2540969
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/KAIROS-60s-分镜表/官网实拍/01-template-library.jpg",
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/01-template-library.jpg",
+      "bytes": 107952
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/KAIROS-60s-分镜表/官网实拍/02-ads-filter.jpg",
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/02-ads-filter.jpg",
+      "bytes": 106415
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/KAIROS-60s-分镜表/官网实拍/assets/Perfume-Ad-Reveal.jpg",
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/assets/Perfume-Ad-Reveal.jpg",
+      "bytes": 50788
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/KAIROS-60s-分镜表/官网实拍/assets/Street-Cup-Vibes.jpg",
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/assets/Street-Cup-Vibes.jpg",
+      "bytes": 41269
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "bytes": 3888885
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/iris Japan V2/assets/iris-brand/logo.png",
+      "path": "materials/iris Japan V2/assets/iris-brand/logo.png",
+      "bytes": 16180
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/iris Japan V2/assets/iris-brand/salon-source-frame.jpg",
+      "path": "materials/iris Japan V2/assets/iris-brand/salon-source-frame.jpg",
+      "bytes": 87173
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/IRIS-Claude成果/assets/iris-prototype/top-idle.webp",
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/assets/iris-prototype/top-idle.webp",
+      "bytes": 2830
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/IRIS-Claude成果/assets/iris-prototype/top-wait.webp",
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/assets/iris-prototype/top-wait.webp",
+      "bytes": 3690
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/iris资料/Iris · H5 原型（主要页面、组件与卡片、二级页面、代表性流程）-v12.html",
+      "path": "materials/iris资料/Iris · H5 原型（主要页面、组件与卡片、二级页面、代表性流程）-v12.html",
+      "bytes": 5320431
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "path": "materials/iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "bytes": 249649
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-hollywood-v3.html",
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-hollywood-v3.html",
+      "bytes": 244557
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-未套用skill.html",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-未套用skill.html",
+      "bytes": 65476
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-未套用skill.html",
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-未套用skill.html",
+      "bytes": 58851
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/KAIROS-60s-分镜表/官网实拍/assets/Flavor-Diorama-Ad.jpg",
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/assets/Flavor-Diorama-Ad.jpg",
+      "bytes": 117184
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/KAIROS-60s-分镜表/官网实拍/assets/Beauty-Haul-React-J.jpg",
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/assets/Beauty-Haul-React-J.jpg",
+      "bytes": 58538
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/KAIROS-60s-分镜表/官网实拍/assets/Awakening-the-Beast.jpg",
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/assets/Awakening-the-Beast.jpg",
+      "bytes": 16226
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-需求整合与本土细节版.html",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-需求整合与本土细节版.html",
+      "bytes": 32226
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/KAIROS-60s-分镜表/官网实拍/assets/Product-Display.jpg",
+      "path": "materials/KAIROS-60s-分镜表/官网实拍/assets/Product-Display.jpg",
+      "bytes": 6459
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-日本本土共情版-Brief与分镜.html",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-日本本土共情版-Brief与分镜.html",
+      "bytes": 33787
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/iris Japan V2/imagegen/01-Opening-Family-Pressure-V3.png",
+      "path": "materials/iris Japan V2/imagegen/01-Opening-Family-Pressure-V3.png",
+      "bytes": 1938403
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/iris Japan V2/imagegen/04-Family-Callback-V3.png",
+      "path": "materials/iris Japan V2/imagegen/04-Family-Callback-V3.png",
+      "bytes": 2005609
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/iris Japan V2/imagegen/02-Nail-Booking-Loop.png",
+      "path": "materials/iris Japan V2/imagegen/02-Nail-Booking-Loop.png",
+      "bytes": 2017925
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/iris Japan V2/imagegen/03-Work-Restaurant-Ending.png",
+      "path": "materials/iris Japan V2/imagegen/03-Work-Restaurant-Ending.png",
+      "bytes": 1986732
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-V6-需求整合与本土细节版.html",
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-V6-需求整合与本土细节版.html",
+      "bytes": 21955
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-V5-日本本土共情版.html",
+      "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-V5-日本本土共情版.html",
+      "bytes": 26953
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版.html",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版.html",
+      "bytes": 65476
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/镜头视觉示例-说明与提示词.txt",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/镜头视觉示例-说明与提示词.txt",
+      "bytes": 16069
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF01-镜02-说明与提示词.txt",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF01-镜02-说明与提示词.txt",
+      "bytes": 2331
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF02-镜04-说明与提示词.txt",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF02-镜04-说明与提示词.txt",
+      "bytes": 2276
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF03-镜05-说明与提示词.txt",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF03-镜05-说明与提示词.txt",
+      "bytes": 2414
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF04-镜07-说明与提示词.txt",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF04-镜07-说明与提示词.txt",
+      "bytes": 2618
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF05-镜08-说明与提示词.txt",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF05-镜08-说明与提示词.txt",
+      "bytes": 2616
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF06-镜09-说明与提示词.txt",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/KF06-镜09-说明与提示词.txt",
+      "bytes": 2575
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/index.html",
+      "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/index.html",
+      "bytes": 42090
+    },
+    {
+      "source": "/Users/arthen01/Jdoe/kairos&iris 电通/KAIROS-60s-分镜表/KAIROS-60s-群像版-Brief与分镜.html",
+      "path": "materials/KAIROS-60s-分镜表/KAIROS-60s-群像版-Brief与分镜.html",
+      "bytes": 3551766
+    }
+  ],
+  "missingReferences": [
+    {
+      "id": "ref-a554aba4d2",
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "originalReference": "../03-技术与能力/AI电话/2026-10-13-Iris-日本AI电话方案.md",
+      "resolvedSourcePath": "/Users/arthen01/Jdoe/kairos&iris 电通/03-技术与能力/AI电话/2026-10-13-Iris-日本AI电话方案.md",
+      "resolution": "源目录未提供；打包副本指向缺失说明页，未补造材料。"
+    },
+    {
+      "id": "ref-cc46e8a6c5",
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "originalReference": "../../shared/%E6%97%A5%E6%9C%AC/%E5%B8%82%E5%9C%BA%E4%B8%8E%E5%9C%BA%E6%99%AF/%E6%97%A5%E6%9C%AC%20Personal%20AI%20Agent%20%E5%B8%82%E5%9C%BA%E6%B7%B1%E5%BA%A6%E8%B0%83%E7%A0%94-%E9%A4%90%E9%A5%AE%E4%B8%8E%E9%85%92%E5%BA%97%E9%A2%84%E7%BA%A6.md",
+      "resolvedSourcePath": "/Users/arthen01/Jdoe/shared/日本/市场与场景/日本 Personal AI Agent 市场深度调研-餐饮与酒店预约.md",
+      "resolution": "源目录未提供；打包副本指向缺失说明页，未补造材料。"
+    },
+    {
+      "id": "ref-6f2eaabf47",
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "originalReference": "../03-技术与能力/能力与前置审批/2026-10-15-Iris-日本能力储备与前置审批清单.md",
+      "resolvedSourcePath": "/Users/arthen01/Jdoe/kairos&iris 电通/03-技术与能力/能力与前置审批/2026-10-15-Iris-日本能力储备与前置审批清单.md",
+      "resolution": "源目录未提供；打包副本指向缺失说明页，未补造材料。"
+    },
+    {
+      "id": "ref-25d8548f69",
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "originalReference": "../04-研究/用户与竞品研究/Personal_Agent_研究报告_20261016.html",
+      "resolvedSourcePath": "/Users/arthen01/Jdoe/kairos&iris 电通/04-研究/用户与竞品研究/Personal_Agent_研究报告_20261016.html",
+      "resolution": "源目录未提供；打包副本指向缺失说明页，未补造材料。"
+    },
+    {
+      "id": "ref-75c8084a05",
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "originalReference": "../04-%E7%A0%94%E7%A9%B6/%E4%B8%BB%E5%8A%A8%E5%BC%95%E5%AF%BC/%E6%97%A5%E6%9C%AC%E5%B8%82%E5%9C%BA%20C%20%E7%AB%AF%20Personal%20AI%20Agent%20%E4%B8%8E%20Onboarding%20%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6.md",
+      "resolvedSourcePath": "/Users/arthen01/Jdoe/kairos&iris 电通/04-研究/主动引导/日本市场 C 端 Personal AI Agent 与 Onboarding 深度研究.md",
+      "resolution": "源目录未提供；打包副本指向缺失说明页，未补造材料。"
+    },
+    {
+      "id": "ref-e28ef8e4e1",
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "originalReference": "../05-合作伙伴/收到的资料/2026-10-13-WorldX-Iris合作伙伴介绍Deck-英文版.pdf",
+      "resolvedSourcePath": "/Users/arthen01/Jdoe/kairos&iris 电通/05-合作伙伴/收到的资料/2026-10-13-WorldX-Iris合作伙伴介绍Deck-英文版.pdf",
+      "resolution": "源目录未提供；打包副本指向缺失说明页，未补造材料。"
+    },
+    {
+      "id": "ref-fcd0e7433c",
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "originalReference": "../05-合作伙伴/收到的资料/2026-10-13-WorldX-Iris官网合作企业候选清单(1).md",
+      "resolvedSourcePath": "/Users/arthen01/Jdoe/kairos&iris 电通/05-合作伙伴/收到的资料/2026-10-13-WorldX-Iris官网合作企业候选清单(1).md",
+      "resolution": "源目录未提供；打包副本指向缺失说明页，未补造材料。"
+    },
+    {
+      "id": "ref-b16849d8b6",
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "originalReference": "../05-合作伙伴/收到的资料/2026-10-13-WorldX-Iris产品挑战与建议(1).md",
+      "resolvedSourcePath": "/Users/arthen01/Jdoe/kairos&iris 电通/05-合作伙伴/收到的资料/2026-10-13-WorldX-Iris产品挑战与建议(1).md",
+      "resolution": "源目录未提供；打包副本指向缺失说明页，未补造材料。"
+    },
+    {
+      "id": "ref-5b39e5f008",
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "originalReference": "../05-合作伙伴/收到的资料/2026-10-14-WorldX-Iris日本预订网站清单.md",
+      "resolvedSourcePath": "/Users/arthen01/Jdoe/kairos&iris 电通/05-合作伙伴/收到的资料/2026-10-14-WorldX-Iris日本预订网站清单.md",
+      "resolution": "源目录未提供；打包副本指向缺失说明页，未补造材料。"
+    },
+    {
+      "id": "ref-6bd07d3ebd",
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "originalReference": "../05-合作伙伴/收到的资料/2026-10-13-WorldX-Iris四市场场景清单(1).md",
+      "resolvedSourcePath": "/Users/arthen01/Jdoe/kairos&iris 电通/05-合作伙伴/收到的资料/2026-10-13-WorldX-Iris四市场场景清单(1).md",
+      "resolution": "源目录未提供；打包副本指向缺失说明页，未补造材料。"
+    }
+  ],
+  "externalResources": [
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://www.youtube.com/watch?v=RGSN4S5jn4o"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://www.isabellacaruso.com/work/adobephotoshop"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://www.youtube.com/watch?v=NOXK4EVFmJY"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://smugglersite.com/europe/commercial/directors/ivan-zacharias-us-only/apple-data-auction/"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://shots.net/news/view/apples-analytical-auction-house"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://newsroom.squarespace.com/blog/a-tale-as-old-as-websites-squarespace-and-barry-keoghan-2025-super-bowl-campaign"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://www.youtube.com/watch?v=xoba3MabuCM"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://www.youtube.com/watch?v=Bf-dbS9CcRU"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://www.bilibili.com/video/BV1J94y1u7oC/"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://youtu.be/pluchCCPHwA"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://prtimes.jp/main/html/rd/p/000002795.000001594.html"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://youtu.be/xWHxFxmePjk"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://prtimes.jp/main/html/rd/p/000001068.000001594.html"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://youtu.be/v3xbyhXc6tM"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+      "url": "https://line-works.com/pr/20201124/"
+    },
+    {
+      "source": "Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-hollywood-v3.html",
+      "url": "https://www.bilibili.com/video/BV1iG4y1b7bc/"
+    },
+    {
+      "source": "Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-hollywood-v3.html",
+      "url": "https://news.radiko.jp/article/edit/44351/amp/"
+    },
+    {
+      "source": "Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-hollywood-v3.html",
+      "url": "https://www.bilibili.com/video/BV1ca4y1H7Zt/"
+    },
+    {
+      "source": "Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-hollywood-v3.html",
+      "url": "https://www.aoi-pro.com/jp/work/20160601/24681/"
+    },
+    {
+      "source": "Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-hollywood-v3.html",
+      "url": "https://www.moss.cn/models/moss-live"
+    },
+    {
+      "source": "Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-hollywood-v3.html",
+      "url": "https://html.play.one2x.ai/r/hlKDXzOfXag5"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.meti.go.jp/english/press/2025/0826_003.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.fsa.go.jp/common/shinsei/dendai/index.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.mhlw.go.jp/web/t_doc_keyword?dataId=84035000&dataType=0&keyword=%E4%BF%9D%E9%99%BA%E5%8C%BB%E7%99%82%E6%A9%9F%E9%96%A2%E5%8F%8A%E3%81%B3%E4%BF%9D%E9%99%BA%E5%8C%BB%E7%99%82%E9%A4%8A%E6%8B%85%E5%BD%93%E8%A6%8F%E5%89%87&mode=0&pageNo=1"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/osirase/9204.htm"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.digital.go.jp/policies/moving_onestop_service"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.fsa.go.jp/policy/marketentry/guidebook/02.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.ppc.go.jp/personalinfo/legal/guidelines_offshore/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.fsa.go.jp/access/r5/245.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/representation_regulation/misleading_representation/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://elaws.e-gov.go.jp/document?lawid=323AC0000000122"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://developer.apple.com/app-store/review/guidelines/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://okane-kenko.jp/media/survey_2512-2/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://elaws.e-gov.go.jp/document?lawid=324AC0000000205"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.jnto.go.jp/statistics/data/visitor-trends/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://netshop.impress.co.jp/node/12342"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://infcurion.com/xard/function/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://affiliate.rakuten.co.jp/guideline/rule/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://owner.tabelog.com/home/net_reservation/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.hotpepper.jp/yoyaku/guide/request/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://beauty.hotpepper.jp/doc/smartpayment/smartpayment.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://paypay.ne.jp/help/c0109/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://moneyforward.com/pages/premium_features"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260213/20260212558783.pdf"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.sumirenken.jp/medical_examination/10/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://car.rakuten.co.jp/shaken/guide/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://pairs.lv/static/safety/activity/works_on_safety"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://webservice.recruit.co.jp/doc/hotpepper/guideline.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://webservicestr.hotpepper.jp/doc/hotpepper/reference.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.netstars.co.jp/notification/8212/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://kakaku.com/kaden/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://thebridge.jp/2025/11/timetree-closes-series-f-total-32-billion-yen"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.appbank.net/2025/10/02/iphone-news/2837373.php"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://dime.jp/genre/2062489/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://ascii.jp/elem/000/004/225/4225957/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://ascii.jp/elem/000/004/280/4280451/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://herp.careers/careers/companies/omakase"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://saas.imitsu.jp/cate-scheduling-tool/service/4484"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://squareup.com/jp/ja/townsquare/advantages-of-hotpepper-beauty"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://kakaku.com/shopentry/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://gamebiz.jp/news/425872"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.commercepick.com/?p=59291"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://employment.en-japan.com/desc_925856/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://webtan.impress.co.jp/n/2025/10/20/50245"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.mastercard.com/jp/ja/news-and-trends/stories-japan/2026/may/mastercard-completes-first-agentic-transaction-in-japan.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://support.link.com/questions/link-agent-wallet-faq"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://docs.stripe.com/issuing"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://library.libecity.com/articles/01M1BTD4K22W67703QZYXJ45T3"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.moneypost.jp/1196059"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://library.libecity.com/articles/01KRQYQXETEQ203WZ1MME2BT9H"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://travel.rakuten.co.jp/HOTEL/147671/CUSTOM/GW147671170802163559.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.ana.co.jp/ja/jp/guide/reservation/refund/domestic/weather/nocharge-guide.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.hokkaido-np.co.jp/focus-select/20190116"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.princehotels.co.jp/rsv_information/cancel.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.kobe-np.co.jp/rentoku/omoshiro/202203/sp/0015105093.shtml?pg=amp"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.kokusen.go.jp/news/data/n-20260428_1.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12286476012"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://kumanichi.com/articles/2026755"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://k-tai.watch.impress.co.jp/docs/news/2143339.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://sushiwalker.com/en/feature/8098"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://agora-web.jp/?p=324039"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://support-diners.tablecheck.com/hc/ja/articles/58873126586649"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://x.com/sakanasu_akiba/status/2111689871178031485"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://forbesjapan.com/articles/detail/86140"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://ecnomikata.com/pr/3833/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://forbesjapan.com/articles/detail/71221"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://support-diners.tablecheck.com/hc/ja/articles/900000872923"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.moneypost.jp/560969"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://hba.beauty.hotpepper.jp/wp/wp-content/uploads/2023/09/20230907_PR2.pdf"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://note.com/tks0503/n/n610ee6e2abe3"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11324080961"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://event.rakuten.co.jp/campaign/point-up/everyday/point/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://shopping.yahoo.co.jp/promotion/campaign/5day/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://ecnomikata.com/ecnews/51034/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00019.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://wanderlog.com/place/details/401244"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.nippon.com/en/japan-data/h01707/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.tripzilla.com/why-a-japanese-phone-number-makes-travel-in-japan-easier/25487"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.travelvoice.jp/20180530-107976/print"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://allergyfacts.org.au/story/translated-chef-cards-in-japan/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.sonymusic.co.jp/artist/StrayKids/info/560787"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://eplus.jp/matsui_onsen/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://game.watch.impress.co.jp/docs/news/2025824.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.keishicho.metro.tokyo.lg.jp/about_mpd/shokai/ichiran/kankatsu/shinjuku/about_ps/safe_drinking.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.ben54.jp/news/40"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://zaikei.co.jp/releases/2174519/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.watch.impress.co.jp/docs/news/2066754.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://www.itmedia.co.jp/business/spv/2305/18/news165.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://dime.jp/genre/1814348/"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://k-tai.watch.impress.co.jp/docs/news/2079272.html"
+    },
+    {
+      "source": "iris资料/日本 Personal Agent 场景深度战略研究｜35 场景评分与战略建议-v13.html",
+      "url": "https://futurism.com/artificial-intelligence/meta-muse-ai-agent-creepy"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/index.html",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/index.html",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/31894244298125-Aspect-Ratio"
+    },
+    {
+      "source": "Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-镜头视觉示例/index.html",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/32196176868109-Stylize"
+    },
+    {
+      "source": "KAIROS-60s-分镜表/KAIROS-60s-群像版-Brief与分镜.html",
+      "url": "https://www.youtube.com/watch?v=LC5V4aIoWes"
+    }
+  ],
+  "notes": [
+    "原始文件未修改，所有增强和链接调整仅发生在打包副本。",
+    "原始看板状态仅供溯源；当前汇报状态以总览首页口径为准。",
+    "正式提案属于工作材料快照，不代表成片验收。"
+  ],
+  "summary": {
+    "entryHtmlCount": 13,
+    "materialFileCount": 37,
+    "missingReferenceCount": 10,
+    "externalReferenceCount": 118
+  },
+  "verification": {
+    "allMaterialHtmlReturnLinks": 13,
+    "inlineScriptsPreserved": true,
+    "brokenLocalReferences": [],
+    "checksScope": "全部材料页实际src/href/poster；外部网站链接保留原地址。"
+  },
+  "report_delivery": {
+    "version": "One2X企业风格·KAIROS实机11镜更新版",
+    "compiled_date": "2026-11-04",
+    "main": "index.html",
+    "active_proposals": {
+      "KAIROS": "materials/Claude交接-2026-11-04/视觉提案-v2/KAIROS-Claude完善版.html",
+      "IRIS": "materials/Claude交接-2026-11-04/视觉提案-v2/Iris-60s-群像叙事-大图更新版.html"
+    },
+    "proposal_content": "KAIROS实机功能11镜/60秒动态预演；IRIS五组人物12镜群像方案。",
+    "references": {
+      "entry": "references.html",
+      "total": 29,
+      "promotional": 28,
+      "original_list": 20,
+      "japan_promotional": 8,
+      "testimonials": 1,
+      "playback": "本地文件；兼容副本与规范原片分开保留"
+    },
+    "dates": {
+      "draft": "2026-11-15",
+      "final": "2026-11-22"
+    },
+    "state_notes": [
+      "三支演示任务已确定，制作推进中。",
+      "两主提案为制作讨论稿，气氛图与参考片不等于实拍、实际产品输出或成片。",
+      "IRIS更新为五组人物同一天，旧单人方案仅供历史对照。"
+    ],
+    "verification": {
+      "html_checked": 20,
+      "local_refs_checked": 1105,
+      "broken_local_files": 0,
+      "broken_local_anchors": 0,
+      "browser_widths": [
+        1440,
+        390
+      ],
+      "main_script_errors": 0,
+      "proposal_shots_each": 12,
+      "proposal_broken_images": 0,
+      "active_hollywood_links": 0,
+      "offline_video_decode_passed": 29,
+      "offline_video_decode_total": 29,
+      "filters": {
+        "all": 29,
+        "original": 20,
+        "japan": 8,
+        "other": 1
+      },
+      "reference_script_errors": 0,
+      "updated_proposals_each_12_shots": true,
+      "updated_proposals_broken_images": 0,
+      "updated_proposals_script_errors": 0,
+      "kairos_local_videos_passed": 3,
+      "local_html_checked": 23
+    },
+    "homepage_chapters": [
+      "项目任务",
+      "差异化参考",
+      "影片范围",
+      "宣传片方案",
+      "本土化要求",
+      "制作周期",
+      "演示片安排",
+      "材料进度",
+      "项目资料"
+    ],
+    "homepage_revision": {
+      "paragraph_size": "17px",
+      "body_size": "18px",
+      "large_project_images": 2,
+      "reference_after": "项目任务"
+    }
+  },
+  "corporateVisualUpdate": {
+    "sharedCss": "one2x-material.css",
+    "brandEvidence": "sources/品牌依据.txt",
+    "assets": [
+      {
+        "path": "assets/one2x-wordmark.svg",
+        "source": "/Users/arthen01/output/one2x-postproduction/brand-v4/one2x-wordmark.svg",
+        "sha256": "b7927afc3ad9329657854c7eaf4599b83e89a802c4bca357ce362aaed79e4814",
+        "copiedExactly": true
+      },
+      {
+        "path": "assets/Manrope.ttf",
+        "source": "/Users/arthen01/output/one2x-postproduction/brand-v4/Manrope.ttf",
+        "sha256": "19afea11dcd998fe76e48b7bf989a8184ca9913dea7e8f306d98fe2ada1678e5",
+        "copiedExactly": true
+      },
+      {
+        "path": "assets/Manrope-SemiBold.ttf",
+        "source": "/Users/arthen01/output/one2x-postproduction/brand-v4/Manrope-SemiBold.ttf",
+        "sha256": "e6acbf89a2dc8876352f50eb6f40fd0fdcc3d976eb94c5abb5cb43d6c9f04a64",
+        "copiedExactly": true
+      }
+    ],
+    "mainProposalPaths": [
+      "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-未套用skill.html",
+      "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-未套用skill.html"
+    ],
+    "historicalFormatPages": [
+      {
+        "path": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-hollywood-v3.html",
+        "historicalLabelPresent": true
+      },
+      {
+        "path": "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-hollywood-v3.html",
+        "historicalLabelPresent": true
+      }
+    ],
+    "textAttachments": [
+      "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版.txt",
+      "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案.txt",
+      "materials/Claude交接-2026-11-04/IRIS-Claude成果/完整日语录音稿.txt"
+    ],
+    "scriptPreservation": "All inline scripts equal original source scripts.",
+    "changesScope": "Corporate navigation and CSS only; original story and product content preserved. Added links to supplied text artifacts; original Iris recording promise retained."
+  },
+  "updated_proposals_files": [
+    {
+      "file": "materials/Claude交接-2026-11-04/视觉提案-v2/Iris-60s-群像叙事-大图更新版.html",
+      "sha256": "1eb5590333fb09e504b611d4c880602a135c26f9224f876d1d5452d4293f2880",
+      "bytes": 21896
+    },
+    {
+      "file": "materials/Claude交接-2026-11-04/视觉提案-v2/index.html",
+      "sha256": "a943969954d2d3c1ed3ca194146ec1407056edbf7962f4ffa8bfd9ef5cbe18e4",
+      "bytes": 3116
+    },
+    {
+      "file": "materials/Claude交接-2026-11-04/视觉提案-v2/Iris-60s-群像叙事-文字稿.txt",
+      "sha256": "8776cba5fd8b5e5d1162614caff943dd8473bee6883695f4dd1b2342cd5db781",
+      "bytes": 15067
+    },
+    {
+      "file": "materials/Claude交接-2026-11-04/视觉提案-v2/Iris-60s-群像叙事-日语录音稿.txt",
+      "sha256": "8cdba8954097f4dba1ae65a159ddb27ea41347a0259bc5112b076db557636da0",
+      "bytes": 3506
+    },
+    {
+      "file": "materials/Claude交接-2026-11-04/视觉提案-v2/KAIROS-60s-动效参考-大图更新版.html",
+      "sha256": "63d2c964865cb6f9ede2a9a46acf658004acaeb97649ab655adecdbe0fec3bf5",
+      "bytes": 92845
+    },
+    {
+      "file": "materials/Claude交接-2026-11-04/视觉提案-v2/KAIROS-60s-动效参考-完整文字稿.txt",
+      "sha256": "443a10a4b1d86502786d46b4949ff1fc6c1cca4223e0701d319c763d9883c99e",
+      "bytes": 50734
+    }
+  ]
+}

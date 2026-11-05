@@ -1,0 +1,45 @@
+{
+  "version": "One2X企业风格·KAIROS实机11镜更新版",
+  "compiled_date": "2026-11-04",
+  "main": "index.html",
+  "active_proposals": {
+    "KAIROS": "materials/Claude交接-2026-11-04/视觉提案-v2/KAIROS-Claude完善版.html",
+    "IRIS": "materials/Claude交接-2026-11-04/视觉提案-v2/Iris-60s-群像叙事-大图更新版.html"
+  },
+  "proposal_content": "KAIROS实机功能11镜/60秒动态预演；IRIS五组人物12镜群像方案。",
+  "references": {
+    "entry": "references.html",
+    "total": 29,
+    "promotional": 28,
+    "original_list": 20,
+    "japan_promotional": 8,
+    "testimonials": 1,
+    "playback": "本地文件；兼容副本与规范原片分开保留"
+  },
+  "dates": {
+    "draft": "2026-11-15",
+    "final": "2026-11-22"
+  },
+  "state_notes": [
+    "三支演示任务已确定，制作推进中。",
+    "两主提案为制作讨论稿，气氛图与参考片不等于实拍、实际产品输出或成片。",
+    "IRIS更新为五组人物同一天，旧单人方案仅供历史对照。"
+  ],
+  "homepage_chapters": [
+    "项目任务",
+    "差异化参考",
+    "影片范围",
+    "宣传片方案",
+    "本土化要求",
+    "制作周期",
+    "演示片安排",
+    "材料进度",
+    "项目资料"
+  ],
+  "homepage_revision": {
+    "paragraph_size": "17px",
+    "body_size": "18px",
+    "large_project_images": 2,
+    "reference_after": "项目任务"
+  }
+}

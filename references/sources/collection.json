@@ -1,0 +1,1068 @@
+{
+  "title": "AI 产品动效片参考库",
+  "dateRange": {
+    "from": "2026-09-04",
+    "to": "2026-11-04"
+  },
+  "collectedOn": "2026-11-04",
+  "dateBasis": "原帖或视频索引所示发布日期；未统一换算时区。",
+  "verificationNote": "20条均已本地下载，并核对视频流、片长、尺寸、文件大小和SHA-256。3条已抽帧核对，其余视觉说明保留各自来源口径。",
+  "summary": {
+    "total": 20,
+    "domestic": 6,
+    "withSceneRecords": 6
+  },
+  "films": [
+    {
+      "id": "tencent-hy4",
+      "brand": "腾讯混元",
+      "title": "4 Real Productivity",
+      "date": "2026-11-03",
+      "duration": "0:40",
+      "region": "国内",
+      "category": "品牌预热",
+      "original": "https://x.com/TencentHunyuan/status/2117591591666016487",
+      "evidence": "https://whatships.com/videos/4-real-productivity/",
+      "extraEvidence": "https://inews.hket.com/article/4219325/",
+      "tags": [
+        "生产力",
+        "品牌",
+        "概念表达"
+      ],
+      "note": "画面记录中的笔记本列出 see / create / work / research。可看四个能力词如何组成品牌短片。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": false,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/腾讯混元/2026-11-03__tencent-hy4.mp4",
+      "download": {
+        "id": "tencent-hy4",
+        "group": "01_原20条",
+        "brand": "腾讯混元",
+        "title": "4 Real Productivity",
+        "original": "https://x.com/TencentHunyuan/status/2117591591666016487",
+        "status": "downloaded",
+        "expectedDuration": "0:40",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/腾讯混元/2026-11-03__tencent-hy4.mp4",
+        "downloadSource": "https://video.twimg.com/amplify_video/2117591346752172033/vid/avc1/1920x1080/LoktOvPKbmjBtlNV.mp4",
+        "resolvedFrom": "https://whatships.com/videos/4-real-productivity/",
+        "playerTitle": "4 Real Productivity — from Hunyuan",
+        "playerOriginal": "https://x.com/TencentHunyuan/status/2117591591666016487",
+        "playerPublishedAt": "2026-11-03T12:15:53.000Z",
+        "playerDuration": 40,
+        "durationSeconds": 40.043,
+        "bytes": 20989886,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "aac"
+        ],
+        "sha256": "166b7c9dd6d67f86196450fed25da58013c6409ae01e9e209352d1d6e2c99490"
+      }
+    },
+    {
+      "id": "kimi-3d-make",
+      "brand": "Kimi",
+      "title": "Introducing 3D Make in Kimi",
+      "date": "2026-10-30",
+      "duration": "1:14",
+      "region": "国内",
+      "category": "功能发布",
+      "original": "https://x.com/Kimi_Moonshot/status/2116005725814280570",
+      "evidence": "https://www.launchvideo.com/directory/moonshot-ai-2",
+      "tags": [
+        "3D",
+        "Blender",
+        "工作流"
+      ],
+      "note": "连接 Blender 与 CAD，展示模型、场景和游戏产出。是功能发布片；具体镜头调度待观看。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": false,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Kimi/2026-10-30__kimi-3d-make.mp4",
+      "download": {
+        "id": "kimi-3d-make",
+        "group": "01_原20条",
+        "brand": "Kimi",
+        "title": "Introducing 3D Make in Kimi",
+        "original": "https://x.com/Kimi_Moonshot/status/2116005725814280570",
+        "status": "downloaded",
+        "expectedDuration": "1:14",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Kimi/2026-10-30__kimi-3d-make.mp4",
+        "downloadSource": "https://x.com/Kimi_Moonshot/status/2116005725814280570",
+        "uploadDate": "20261030",
+        "uploader": "Kimi.ai",
+        "channel": null,
+        "sourceTitle": "Kimi.ai - Introducing 3D Make in Kimi.  Kimi connects to tools like Blender and...",
+        "sourceId": "2116003610509377536",
+        "sourceWebpage": "https://x.com/Kimi_Moonshot/status/2116005725814280570",
+        "durationSeconds": 74.261,
+        "bytes": 28508984,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "aac"
+        ],
+        "sha256": "63ca48fa3099860890f56c46a2dd5cafed11964bb081ab46a4cd477ef12a7704",
+        "priorAttempts": [
+          {
+            "url": "https://www.launchvideo.com/directory/moonshot-ai-2",
+            "error": "No unambiguous primary MP4 found on this page"
+          }
+        ]
+      }
+    },
+    {
+      "id": "krea-ad-studio",
+      "brand": "Krea",
+      "title": "Ad Studio — ads from a brand link",
+      "date": "2026-10-29",
+      "duration": "0:35",
+      "region": "海外",
+      "category": "创意工具",
+      "original": "https://x.com/krea_ai/status/2115881363413008611",
+      "evidence": "https://whatships.com/videos/krea-ad-studio/",
+      "tags": [
+        "品牌",
+        "广告",
+        "工作流"
+      ],
+      "note": "输入品牌链接，展示品牌一致的广告产出。可对照其他 AI 广告工具的功能发布片；尚未核验具体动效技法。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": false,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Krea/2026-10-29__krea-ad-studio.mp4",
+      "download": {
+        "id": "krea-ad-studio",
+        "group": "01_原20条",
+        "brand": "Krea",
+        "title": "Ad Studio — ads from a brand link",
+        "original": "https://x.com/krea_ai/status/2115881363413008611",
+        "status": "downloaded",
+        "expectedDuration": "0:35",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Krea/2026-10-29__krea-ad-studio.mp4",
+        "downloadSource": "https://video.twimg.com/amplify_video/2115880181533700096/vid/avc1/1280x720/jfDoICSZDOA4HjyB.mp4",
+        "resolvedFrom": "https://whatships.com/videos/krea-ad-studio/",
+        "playerTitle": "Ad Studio — ads from a brand link",
+        "playerOriginal": "https://x.com/krea_ai/status/2115881363413008611",
+        "playerPublishedAt": "2026-10-29T19:00:02.000Z",
+        "playerDuration": 35,
+        "durationSeconds": 34.752,
+        "bytes": 4549817,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720
+        },
+        "audio": [
+          "aac"
+        ],
+        "sha256": "abc83f47046889dcb995a5816bf6e240a46e19a759f45508f9616410c5f205c6"
+      }
+    },
+    {
+      "id": "runway-app-studio",
+      "brand": "Runway",
+      "title": "Runway App Studio — apps from a prompt",
+      "date": "2026-10-26",
+      "duration": "0:57",
+      "region": "海外",
+      "category": "创意工具",
+      "original": "https://x.com/runwayml/status/2114805465658036425",
+      "evidence": "https://whatships.com/videos/runway-app-studio/",
+      "tags": [
+        "创意应用",
+        "工作流",
+        "功能演示"
+      ],
+      "note": "从描述到创意应用，串联图像、视频、音频与 Brand Kits。适合看复杂工具如何压缩成一分钟内的发布片；具体动效待观看。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": false,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Runway/2026-10-26__runway-app-studio.mp4",
+      "download": {
+        "id": "runway-app-studio",
+        "group": "01_原20条",
+        "brand": "Runway",
+        "title": "Runway App Studio — apps from a prompt",
+        "original": "https://x.com/runwayml/status/2114805465658036425",
+        "status": "downloaded",
+        "expectedDuration": "0:57",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Runway/2026-10-26__runway-app-studio.mp4",
+        "downloadSource": "https://video.twimg.com/amplify_video/2114804967898763264/vid/avc1/1920x1080/BdNS9S-mmkMg4qVA.mp4",
+        "resolvedFrom": "https://whatships.com/videos/runway-app-studio/",
+        "playerTitle": "Runway App Studio — apps from a prompt",
+        "playerOriginal": "https://x.com/runwayml/status/2114805465658036425",
+        "playerPublishedAt": "2026-10-26T19:44:48.000Z",
+        "playerDuration": 57,
+        "durationSeconds": 56.597,
+        "bytes": 20858600,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "aac"
+        ],
+        "sha256": "6b8843efb2cea3de6ab36de0b65354c06f7b829d3cca3ca7409f1ba8246ff3fa"
+      }
+    },
+    {
+      "id": "pause-video-editing",
+      "brand": "Pause",
+      "title": "Claude for Video Editing",
+      "date": "2026-10-26",
+      "duration": "0:33",
+      "region": "海外",
+      "category": "创意工具",
+      "original": "https://x.com/pausevfx/status/2114851138596134952",
+      "evidence": "https://whatships.com/videos/claude-for-video-editing/",
+      "tags": [
+        "剪辑",
+        "字幕",
+        "功能演示"
+      ],
+      "note": "用游戏原片说明自动剪辑、面部画中画、缩放、音效和字幕能力。这里是目录记录的产品内容，尚未核验发布片本身的转场。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": false,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Pause/2026-10-26__pause-video-editing.mp4",
+      "download": {
+        "id": "pause-video-editing",
+        "group": "01_原20条",
+        "brand": "Pause",
+        "title": "Claude for Video Editing",
+        "original": "https://x.com/pausevfx/status/2114851138596134952",
+        "status": "downloaded",
+        "expectedDuration": "0:33",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Pause/2026-10-26__pause-video-editing.mp4",
+        "downloadSource": "https://video.twimg.com/amplify_video/2114850473132126208/vid/avc1/1920x1080/zZ9b6LOViB87APV1.mp4",
+        "resolvedFrom": "https://whatships.com/videos/claude-for-video-editing/",
+        "playerTitle": "Claude for video editing — by Pause",
+        "playerOriginal": "https://x.com/pausevfx/status/2114851138596134952",
+        "playerPublishedAt": "2026-10-26T22:46:18.000Z",
+        "playerDuration": 33,
+        "durationSeconds": 32.853,
+        "bytes": 10236004,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "aac"
+        ],
+        "sha256": "59d681ba580d39e3719ad7c0aa80a60c196ce04c28ec8094a4d4c17931938eca"
+      }
+    },
+    {
+      "id": "kimi-teaser",
+      "brand": "Kimi",
+      "title": "Kimi K3.1 — 24 秒 teaser",
+      "date": "2026-10-23",
+      "duration": "0:24",
+      "region": "国内",
+      "category": "品牌预热",
+      "original": "https://x.com/Kimi_Moonshot/status/2113445757185606062",
+      "evidence": "https://www.tokrace.com/en/guides/kimi-k3-1",
+      "extraEvidence": "https://pc.watch.impress.co.jp/docs/news/2150672.html",
+      "sceneEvidence": "https://www.tokrace.com/en/guides/kimi-k3-1",
+      "tags": [
+        "3D",
+        "快切",
+        "CRT",
+        "终端"
+      ],
+      "note": "本地抽帧可见CRT终端、代码编辑窗口与复杂3D渲染成果，最后以KIMI品牌落版；可参考如何把代码能力转成可见成果。",
+      "scene": "抽帧可见CRT终端、月球、复杂几何、代码窗口、透明彩色鱼和KIMI落版；旧索引的精确时码未按原片确认，已撤下。",
+      "verification": "已下载，视频格式/片长/校验值通过；已核对6格抽帧，未逐帧观看全片",
+      "recommended": true,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Kimi/2026-10-23__kimi-teaser.mp4",
+      "download": {
+        "id": "kimi-teaser",
+        "group": "01_原20条",
+        "brand": "Kimi",
+        "title": "Kimi K3.1 — 24 秒 teaser",
+        "original": "https://x.com/Kimi_Moonshot/status/2113445757185606062",
+        "status": "downloaded",
+        "expectedDuration": "0:24",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Kimi/2026-10-23__kimi-teaser.mp4",
+        "downloadSource": "https://www.tokrace.com/articles/kimi-k3-1-teaser/kimi-k3-1-official-teaser.mp4",
+        "resolvedFrom": "https://www.tokrace.com/en/guides/kimi-k3-1",
+        "sourceKind": "page video element",
+        "durationSeconds": 24.085,
+        "bytes": 24972820,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "aac"
+        ],
+        "sha256": "0e7b184354715efb5304a56b38e49bee0c6f9f860fcf3d8330926ab1d17101e2"
+      },
+      "contactSheet": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/03_抽帧核对/kimi-teaser.jpg"
+    },
+    {
+      "id": "kimi-k31-pro",
+      "brand": "Kimi",
+      "title": "Meet Kimi K3.1 Pro",
+      "date": "2026-10-23",
+      "duration": "1:34",
+      "region": "国内",
+      "category": "功能发布",
+      "original": "https://x.com/Kimi_Moonshot/status/2113681863109939271",
+      "evidence": "https://www.launchvideo.com/directory/kimi-k3-1-pro",
+      "tags": [
+        "编程",
+        "Agent",
+        "模型发布"
+      ],
+      "note": "正式发布长版，与 24 秒 teaser 是两条独立视频。来源目录标为 Cinematic / Product launch；镜头语言待观看。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": false,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Kimi/2026-10-23__kimi-k31-pro.mp4",
+      "download": {
+        "id": "kimi-k31-pro",
+        "group": "01_原20条",
+        "brand": "Kimi",
+        "title": "Meet Kimi K3.1 Pro",
+        "original": "https://x.com/Kimi_Moonshot/status/2113681863109939271",
+        "status": "downloaded",
+        "expectedDuration": "1:34",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Kimi/2026-10-23__kimi-k31-pro.mp4",
+        "downloadSource": "https://x.com/Kimi_Moonshot/status/2113681863109939271",
+        "uploadDate": "20261023",
+        "uploader": "Kimi.ai",
+        "channel": null,
+        "sourceTitle": "Kimi.ai - Meet Kimi K3.1 Pro, our most capable 3T-class model.",
+        "sourceId": "2113681249936285696",
+        "sourceWebpage": "https://x.com/Kimi_Moonshot/status/2113681863109939271",
+        "durationSeconds": 93.739,
+        "bytes": 58437336,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "aac"
+        ],
+        "sha256": "8d2deb7cb0babe67c18e7b3e00c7f6c2003fe3e0221dcb2fafadf860f36ec423",
+        "priorAttempts": [
+          {
+            "url": "https://www.launchvideo.com/directory/kimi-k3-1-pro",
+            "error": "No unambiguous primary MP4 found on this page"
+          }
+        ]
+      }
+    },
+    {
+      "id": "framer-mcp",
+      "brand": "Framer",
+      "title": "Introducing the Framer MCP",
+      "date": "2026-10-22",
+      "duration": "0:48",
+      "region": "海外",
+      "category": "实拍与动效",
+      "original": "https://www.youtube.com/watch?v=34IKkFYMSvM",
+      "evidence": "https://www.canadabuilt-org.alinmat.com/insights/ux/publisher/framer/",
+      "extraEvidence": "https://www.framer.com/updates",
+      "sceneEvidence": "https://launchscene.app/v/framer-framer-mcp",
+      "tags": [
+        "字体",
+        "字形遮罩",
+        "UI",
+        "真人叙事"
+      ],
+      "note": "深夜被消息叫醒的设计师把网页更新交给 AI，真人段落与手机、桌面、网页片段交替。可参考叙事如何接入极简字体与 UI。",
+      "scene": "00:11–00:16 消息界面放大并向下平移；00:40–00:43 白色文字放大占满画面，蓝色桌面从字形内部显露。来自 Launchscene 的 AI-reviewed 场景索引。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": true,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Framer/2026-10-22__framer-mcp.mp4",
+      "download": {
+        "id": "framer-mcp",
+        "group": "01_原20条",
+        "brand": "Framer",
+        "title": "Introducing the Framer MCP",
+        "original": "https://www.youtube.com/watch?v=34IKkFYMSvM",
+        "status": "downloaded",
+        "expectedDuration": "0:48",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Framer/2026-10-22__framer-mcp.mp4",
+        "downloadSource": "https://www.youtube.com/watch?v=34IKkFYMSvM",
+        "uploadDate": "20261022",
+        "uploader": "Framer",
+        "channel": "Framer",
+        "sourceTitle": "Introducing the Framer MCP: Connect your favorite AI tools to Framer",
+        "sourceId": "34IKkFYMSvM",
+        "sourceWebpage": "https://www.youtube.com/watch?v=34IKkFYMSvM",
+        "durationSeconds": 48.861,
+        "bytes": 3978880,
+        "video": {
+          "codec_name": "av1",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "opus"
+        ],
+        "sha256": "eca787581b854ca6b432bdb2ca7793c557d2e719a63e80ca1bf57a5d708fede3",
+        "priorAttempts": [
+          {
+            "url": "https://www.canadabuilt-org.alinmat.com/insights/ux/publisher/framer/",
+            "error": "curl: (60) SSL certificate problem: certificate has expired\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above."
+          }
+        ]
+      }
+    },
+    {
+      "id": "eleven-chimera",
+      "brand": "ElevenLabs",
+      "title": "Introducing Chimera",
+      "date": "2026-10-21",
+      "duration": "0:49",
+      "region": "海外",
+      "category": "实拍与动效",
+      "original": "https://www.youtube.com/watch?v=InsqQFUWyXI",
+      "evidence": "https://socialcounts.org/youtube-video-analytics/InsqQFUWyXI/growth",
+      "sceneEvidence": "https://launchscene.app/v/elevenlabs-chimera",
+      "tags": [
+        "圆形合并",
+        "情绪球",
+        "波形",
+        "像素显影"
+      ],
+      "note": "人像与声音圆形合并，情绪球和波形承接功能讲解，再与生成角色示例交替。可参考如何把多模型组合解释成一个简洁的视觉动作。",
+      "scene": "00:17–00:21 人像圆与声音圆并列后合并；00:25–00:28 情绪球与标签切换；00:32–00:36 视频预览从像素状态显影，配合音频波形。来自 Launchscene 的 AI-reviewed 场景索引。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": true,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/ElevenLabs/2026-10-21__eleven-chimera.mp4",
+      "download": {
+        "id": "eleven-chimera",
+        "group": "01_原20条",
+        "brand": "ElevenLabs",
+        "title": "Introducing Chimera",
+        "original": "https://www.youtube.com/watch?v=InsqQFUWyXI",
+        "status": "downloaded",
+        "expectedDuration": "0:49",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/ElevenLabs/2026-10-21__eleven-chimera.mp4",
+        "downloadSource": "https://www.youtube.com/watch?v=InsqQFUWyXI",
+        "uploadDate": "20261021",
+        "uploader": "ElevenLabs",
+        "channel": "ElevenLabs",
+        "sourceTitle": "Introducing Chimera",
+        "sourceId": "InsqQFUWyXI",
+        "sourceWebpage": "https://www.youtube.com/watch?v=InsqQFUWyXI",
+        "durationSeconds": 49.941,
+        "bytes": 7619330,
+        "video": {
+          "codec_name": "av1",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "opus"
+        ],
+        "sha256": "a1aadeb4f943dc9bd8c54a552e60847b6a902d2ee2a19cd8139ad5edd1315253",
+        "priorAttempts": [
+          {
+            "url": "https://socialcounts.org/youtube-video-analytics/InsqQFUWyXI/growth",
+            "error": "curl: (56) The requested URL returned error: 403"
+          }
+        ]
+      }
+    },
+    {
+      "id": "claude-duet",
+      "brand": "Anthropic / Claude",
+      "title": "Introducing Claude Duet",
+      "date": "2026-10-21",
+      "duration": "1:39",
+      "region": "海外",
+      "category": "功能发布",
+      "original": "https://www.youtube.com/watch?v=Fb-68zqcSVs",
+      "alternateOriginal": "https://x.com/claudeai/status/2112984664256241837",
+      "evidence": "https://ai.lounge.ai/learn/v/e92c8ad0-97f6-4253-a316-ab7200b095a6",
+      "extraEvidence": "https://claude.com/resources/articles/claude-duet",
+      "tags": [
+        "Agent",
+        "移动产品",
+        "产品发布"
+      ],
+      "note": "移动 Agent 的产品发布片。采用视频发布索引和官方文章一致的 10 月 21 日；另有聚合站列为 10 月 22 日。具体动效待观看。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": false,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Anthropic _ Claude/2026-10-21__claude-duet.mp4",
+      "download": {
+        "id": "claude-duet",
+        "group": "01_原20条",
+        "brand": "Anthropic / Claude",
+        "title": "Introducing Claude Duet",
+        "original": "https://www.youtube.com/watch?v=Fb-68zqcSVs",
+        "status": "downloaded",
+        "expectedDuration": "1:39",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Anthropic _ Claude/2026-10-21__claude-duet.mp4",
+        "downloadSource": "https://www.youtube.com/watch?v=Fb-68zqcSVs",
+        "uploadDate": "20261021",
+        "uploader": "Claude",
+        "channel": "Claude",
+        "sourceTitle": "Introducing Claude Duet",
+        "sourceId": "Fb-68zqcSVs",
+        "sourceWebpage": "https://www.youtube.com/watch?v=Fb-68zqcSVs",
+        "durationSeconds": 98.941,
+        "bytes": 10902801,
+        "video": {
+          "codec_name": "av1",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "opus"
+        ],
+        "sha256": "c66484b7e3ee58279cb5f7e622e853c5ff54837f6db283502e7ed6477138f717",
+        "priorAttempts": [
+          {
+            "url": "https://ai.lounge.ai/learn/v/e92c8ad0-97f6-4253-a316-ab7200b095a6",
+            "error": "curl: (56) The requested URL returned error: 429"
+          }
+        ]
+      }
+    },
+    {
+      "id": "minimax-space-bunny",
+      "brand": "MiniMax",
+      "title": "M3.1 Flash — Welcome back. Space Bunny.",
+      "date": "2026-10-19",
+      "duration": "0:25",
+      "region": "国内",
+      "category": "品牌预热",
+      "original": "https://x.com/MiniMax_AI/status/2112111925975032241",
+      "evidence": "https://www.advanceintelligence.ai/2026-10-19/all",
+      "sceneEvidence": "https://www.advanceintelligence.ai/2026-10-19/all",
+      "tags": [
+        "3D",
+        "视觉隐喻",
+        "Logo落版"
+      ],
+      "note": "画面记录为胡萝卜火箭升空、穿云入轨、分离，最后落模型标识。适合看模型代号怎样转成短叙事。",
+      "scene": "见来源页第 17 条 MiniMax；场景描述来自当日视频画面记录。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": true,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/MiniMax/2026-10-19__minimax-space-bunny.mp4",
+      "download": {
+        "id": "minimax-space-bunny",
+        "group": "01_原20条",
+        "brand": "MiniMax",
+        "title": "M3.1 Flash — Welcome back. Space Bunny.",
+        "original": "https://x.com/MiniMax_AI/status/2112111925975032241",
+        "status": "downloaded",
+        "expectedDuration": "0:25",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/MiniMax/2026-10-19__minimax-space-bunny.mp4",
+        "downloadSource": "https://x.com/MiniMax_AI/status/2112111925975032241",
+        "uploadDate": "20261019",
+        "uploader": "MiniMax (official)",
+        "channel": null,
+        "sourceTitle": "MiniMax (official) - Welcome back. Space Bunny. 🚀 MiniMax-M3.1-Flash is coming.",
+        "sourceId": "2112111363917258752",
+        "sourceWebpage": "https://x.com/MiniMax_AI/status/2112111925975032241",
+        "durationSeconds": 24.832,
+        "bytes": 1337316,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 720,
+          "height": 720
+        },
+        "audio": [
+          "aac"
+        ],
+        "sha256": "a9deaae58736fc4854b11c518a39d43a0179f7e07b014a0b163183580f553204",
+        "priorAttempts": [
+          {
+            "url": "https://www.advanceintelligence.ai/2026-10-19/all",
+            "error": "No unambiguous primary MP4 found on this page"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ant-ling",
+      "brand": "Ant Ling",
+      "title": "Ling-3.1-flash",
+      "date": "2026-10-14",
+      "duration": "1:43",
+      "region": "国内",
+      "category": "功能发布",
+      "original": "https://x.com/AntLingAGI/status/2110390124743970952",
+      "evidence": "https://www.launchvideo.com/directory/ant-ling",
+      "tags": [
+        "UI",
+        "原型",
+        "功能演示"
+      ],
+      "note": "从粗略 brief 到网页、移动 UI 和交互原型。可作国内界面能力发布片补充，尚未核验具体动效风格。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": false,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Ant Ling/2026-10-14__ant-ling.mp4",
+      "download": {
+        "id": "ant-ling",
+        "group": "01_原20条",
+        "brand": "Ant Ling",
+        "title": "Ling-3.1-flash",
+        "original": "https://x.com/AntLingAGI/status/2110390124743970952",
+        "status": "downloaded",
+        "expectedDuration": "1:43",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Ant Ling/2026-10-14__ant-ling.mp4",
+        "downloadSource": "https://x.com/AntLingAGI/status/2110390124743970952",
+        "uploadDate": "20261014",
+        "uploader": "Ant Ling",
+        "channel": null,
+        "sourceTitle": "Ant Ling - Ling-3.1-flash is now open source: ~560B total parameters, ~25B activ...",
+        "sourceId": "2110388643684876288",
+        "sourceWebpage": "https://x.com/AntLingAGI/status/2110390124743970952",
+        "durationSeconds": 102.934,
+        "bytes": 39576984,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "aac"
+        ],
+        "sha256": "2ce5806e096e01086f1fce81f6e5535509e5d151fb2197842b1922b384d7b47d",
+        "priorAttempts": [
+          {
+            "url": "https://www.launchvideo.com/directory/ant-ling",
+            "error": "No unambiguous primary MP4 found on this page"
+          }
+        ]
+      }
+    },
+    {
+      "id": "claude-motion",
+      "brand": "Anthropic / Claude",
+      "title": "Introducing Claude Dashboards and Claude Motion",
+      "date": "2026-10-08",
+      "duration": "1:22",
+      "region": "海外",
+      "category": "UI动效",
+      "original": "https://www.youtube.com/watch?v=en0GuyhieQk",
+      "evidence": "https://postcutoff.com/v/claude-introducing-dashboards-and-motion/",
+      "tags": [
+        "UI",
+        "二维地图",
+        "视频批注",
+        "文本编辑"
+      ],
+      "note": "本地抽帧可见视频批注、数据仪表盘、二维站点地图、树木插画和文本编辑界面，围绕同一工作流展示修改与输出。",
+      "scene": "6格抽帧可见：视频与评论叠层、仪表盘、二维地图、对话批注、文字选区。前次第三方索引的3D镜头及精确时码与本地原片不完全对应，已撤下该描述。",
+      "verification": "已下载，视频格式/片长/校验值通过；已核对6格抽帧，未逐帧观看全片",
+      "recommended": true,
+      "legacySceneEvidence": "https://www.youtube.com/watch?v=en0GuyhieQk",
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Anthropic _ Claude/2026-10-08__claude-motion.mp4",
+      "download": {
+        "id": "claude-motion",
+        "group": "01_原20条",
+        "brand": "Anthropic / Claude",
+        "title": "Introducing Claude Dashboards and Claude Motion",
+        "original": "https://www.youtube.com/watch?v=en0GuyhieQk",
+        "status": "downloaded",
+        "expectedDuration": "1:22",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Anthropic _ Claude/2026-10-08__claude-motion.mp4",
+        "downloadSource": "https://www.youtube.com/watch?v=en0GuyhieQk",
+        "uploadDate": "20261008",
+        "uploader": "Claude",
+        "channel": "Claude",
+        "sourceTitle": "Introducing Claude Dashboards and Claude Motion",
+        "sourceId": "en0GuyhieQk",
+        "sourceWebpage": "https://www.youtube.com/watch?v=en0GuyhieQk",
+        "durationSeconds": 81.621,
+        "bytes": 6700580,
+        "video": {
+          "codec_name": "av1",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "opus"
+        ],
+        "sha256": "902cd32d0635126ebac483e3fefd4d639662e14116ab9537372673e0e9a415e5",
+        "priorAttempts": [
+          {
+            "url": "https://postcutoff.com/v/claude-introducing-dashboards-and-motion/",
+            "error": "No unambiguous primary MP4 found on this page"
+          }
+        ]
+      },
+      "contactSheet": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/03_抽帧核对/claude-motion.jpg",
+      "sceneEvidence": "https://www.youtube.com/watch?v=en0GuyhieQk"
+    },
+    {
+      "id": "gpt6-intelligent-ui",
+      "brand": "OpenAI",
+      "title": "GPT-6 and Intelligent UI",
+      "date": "2026-10-07",
+      "duration": "1:10",
+      "region": "海外",
+      "category": "功能发布",
+      "original": "https://x.com/OpenAI/status/2107894997538525580",
+      "alternateOriginal": "https://www.youtube.com/watch?v=IsL4dVezs18",
+      "evidence": "https://whatships.com/videos/gpt-6/",
+      "extraEvidence": "https://openai.com/index/gpt-6-for-everyone/",
+      "tags": [
+        "产品界面",
+        "交互可视化",
+        "功能发布"
+      ],
+      "note": "以交互式产品界面为主题。这里按 X 版本记录 1:10；备用官方 YouTube 版本为 1:11。具体动画包装尚待看片。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": false,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/OpenAI/2026-10-07__gpt6-intelligent-ui.mp4",
+      "download": {
+        "id": "gpt6-intelligent-ui",
+        "group": "01_原20条",
+        "brand": "OpenAI",
+        "title": "GPT-6 and Intelligent UI",
+        "original": "https://x.com/OpenAI/status/2107894997538525580",
+        "status": "downloaded",
+        "expectedDuration": "1:10",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/OpenAI/2026-10-07__gpt6-intelligent-ui.mp4",
+        "downloadSource": "https://video.twimg.com/amplify_video/2107893961461473280/vid/avc1/1920x1080/7gMw9Wtm-zDxFZET.mp4",
+        "resolvedFrom": "https://whatships.com/videos/gpt-6/",
+        "playerTitle": "GPT-6 and Intelligent UI",
+        "playerOriginal": "https://x.com/OpenAI/status/2107894997538525580",
+        "playerPublishedAt": "2026-10-07T18:05:04.000Z",
+        "playerDuration": 70,
+        "durationSeconds": 70.165,
+        "bytes": 34680688,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "aac"
+        ],
+        "sha256": "e1a498dff7f8d22f92354b8f11a01e6b4389070d9ba98f170749d54bf1b25c4a"
+      }
+    },
+    {
+      "id": "comfy-agent",
+      "brand": "ComfyUI",
+      "title": "Comfy Agent in Comfy Cloud",
+      "date": "2026-10-01",
+      "duration": "0:45",
+      "region": "海外",
+      "category": "创意工具",
+      "original": "https://x.com/ComfyUI/status/2105697121190178891",
+      "evidence": "https://whatships.com/videos/comfy-agent/",
+      "tags": [
+        "节点画布",
+        "Agent",
+        "功能演示"
+      ],
+      "note": "在画布中规划、搭建和修复 ComfyUI 工作流。适合与对话式 AI 工具的叙事做对照；具体运动语言待看片。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": false,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/ComfyUI/2026-10-01__comfy-agent.mp4",
+      "download": {
+        "id": "comfy-agent",
+        "group": "01_原20条",
+        "brand": "ComfyUI",
+        "title": "Comfy Agent in Comfy Cloud",
+        "original": "https://x.com/ComfyUI/status/2105697121190178891",
+        "status": "downloaded",
+        "expectedDuration": "0:45",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/ComfyUI/2026-10-01__comfy-agent.mp4",
+        "downloadSource": "https://video.twimg.com/amplify_video/2105696786711212034/vid/avc1/1920x1080/fl51ey9xMFgzxsfQ.mp4",
+        "resolvedFrom": "https://whatships.com/videos/comfy-agent/",
+        "playerTitle": "Comfy Agent is now available in Comfy Cloud",
+        "playerOriginal": "https://x.com/ComfyUI/status/2105697121190178891",
+        "playerPublishedAt": "2026-10-01T16:31:30.000Z",
+        "playerDuration": 45,
+        "durationSeconds": 45.141,
+        "bytes": 14602416,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "aac"
+        ],
+        "sha256": "40a8cd2635b048a106605610f8667cffe7d7ddd27d878ed5984cccb1c7f736a8"
+      }
+    },
+    {
+      "id": "gemini-skills",
+      "brand": "Google",
+      "title": "Introducing skills in the Gemini app",
+      "date": "2026-09-30",
+      "duration": "0:47",
+      "region": "海外",
+      "category": "功能发布",
+      "original": "https://x.com/Google/status/2105331451294314809",
+      "evidence": "https://whatships.com/videos/gemini-skills/",
+      "extraEvidence": "https://workspaceupdates.googleblog.com/2026/09/skills-gemini-app-workspace.html",
+      "tags": [
+        "产品界面",
+        "快捷指令",
+        "功能发布"
+      ],
+      "note": "Gemini skills 的 47 秒功能发布片，可与其他短界面宣传片对照。原帖读取受限，具体动效技法待观看。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": false,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Google/2026-09-30__gemini-skills.mp4",
+      "download": {
+        "id": "gemini-skills",
+        "group": "01_原20条",
+        "brand": "Google",
+        "title": "Introducing skills in the Gemini app",
+        "original": "https://x.com/Google/status/2105331451294314809",
+        "status": "downloaded",
+        "expectedDuration": "0:47",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Google/2026-09-30__gemini-skills.mp4",
+        "downloadSource": "https://video.twimg.com/amplify_video/2105327461248466944/vid/avc1/1920x1920/q-BKeSFZwYVSr7Pn.mp4",
+        "resolvedFrom": "https://whatships.com/videos/gemini-skills/",
+        "playerTitle": "Introducing skills in the Gemini app",
+        "playerOriginal": "https://x.com/Google/status/2105331451294314809",
+        "playerPublishedAt": "2026-09-30T16:18:27.000Z",
+        "playerDuration": 47,
+        "durationSeconds": 47.403,
+        "bytes": 21777146,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1920
+        },
+        "audio": [
+          "aac"
+        ],
+        "sha256": "d36400047581cadbc441c65a4d67a9bbe300db7a2e61d5a8adf8031e10a6c419"
+      }
+    },
+    {
+      "id": "chatgpt-space",
+      "brand": "OpenAI",
+      "title": "Introducing ChatGPT Space",
+      "date": "2026-09-29",
+      "duration": "1:00",
+      "region": "海外",
+      "category": "功能发布",
+      "original": "https://x.com/ChatGPT/status/2104986841145602351",
+      "evidence": "https://whatships.com/videos/chatgpt-space/",
+      "extraEvidence": "https://chatgpt.com/features/space/",
+      "tags": [
+        "协作文档",
+        "产品界面",
+        "功能发布"
+      ],
+      "note": "协作产品 Space 的官方发布片，适合补充文档与界面产品的宣传参考。原帖读取受限，具体动效待看片。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": false,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/OpenAI/2026-09-29__chatgpt-space.mp4",
+      "download": {
+        "id": "chatgpt-space",
+        "group": "01_原20条",
+        "brand": "OpenAI",
+        "title": "Introducing ChatGPT Space",
+        "original": "https://x.com/ChatGPT/status/2104986841145602351",
+        "status": "downloaded",
+        "expectedDuration": "1:00",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/OpenAI/2026-09-29__chatgpt-space.mp4",
+        "downloadSource": "https://video.twimg.com/amplify_video/2104986456280399872/vid/avc1/1080x1080/hk7TCrFkfWzfa1vp.mp4",
+        "resolvedFrom": "https://whatships.com/videos/chatgpt-space/",
+        "playerTitle": "Introducing ChatGPT Space",
+        "playerOriginal": "https://x.com/ChatGPT/status/2104986841145602351",
+        "playerPublishedAt": "2026-09-29T17:29:06.000Z",
+        "playerDuration": 60,
+        "durationSeconds": 60.0,
+        "bytes": 11935451,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1080,
+          "height": 1080
+        },
+        "audio": [],
+        "sha256": "7e7a2772039fcdfccd9417349ef656fb999d3eb3f4c8dca7aa6433e1fcd2256e",
+        "audioStatus": "原帖提供无音轨版本；已核对平台格式清单，无独立音频格式，HLS格式均标记acodec=none",
+        "audioEvidence": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/.metadata/chatgpt-space-extractor.info.json"
+      }
+    },
+    {
+      "id": "openai-dots",
+      "brand": "OpenAI",
+      "title": "Introducing dots, powered by GPT-6 Astra",
+      "date": "2026-09-29",
+      "duration": "2:28",
+      "region": "海外",
+      "category": "品牌发布",
+      "original": "https://x.com/OpenAI/status/2104984504133918973",
+      "evidence": "https://whatships.com/videos/dots-astra/",
+      "extraEvidence": "https://openai.com/index/introducing-dots/",
+      "tags": [
+        "Agent",
+        "品牌发布片",
+        "产品愿景"
+      ],
+      "note": "官方页面明确标为 Live from the Lab launch film。按 X 索引版本记录 2:28；官方页面嵌入版本显示 2:26，两版时长不同。具体镜头语言待观看。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": false,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/OpenAI/2026-09-29__openai-dots.mp4",
+      "download": {
+        "id": "openai-dots",
+        "group": "01_原20条",
+        "brand": "OpenAI",
+        "title": "Introducing dots, powered by GPT-6 Astra",
+        "original": "https://x.com/OpenAI/status/2104984504133918973",
+        "status": "downloaded",
+        "expectedDuration": "2:28",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/OpenAI/2026-09-29__openai-dots.mp4",
+        "downloadSource": "https://video.twimg.com/amplify_video/2104984413113393152/vid/avc1/1920x1080/9gGn_oekezTJaPRZ.mp4",
+        "resolvedFrom": "https://whatships.com/videos/dots-astra/",
+        "playerTitle": "Introducing dots, powered by GPT-6 Astra",
+        "playerOriginal": "https://x.com/OpenAI/status/2104984504133918973",
+        "playerPublishedAt": "2026-09-29T17:19:49.000Z",
+        "playerDuration": 148,
+        "durationSeconds": 147.861,
+        "bytes": 49942532,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "aac"
+        ],
+        "sha256": "9729229688c1cc3a6b2dca063ef7865d7236620027527bdccbee9574708b4d1e"
+      }
+    },
+    {
+      "id": "copilot-new",
+      "brand": "Microsoft Copilot",
+      "title": "The new Copilot: where AI-powered work comes together",
+      "date": "2026-09-25",
+      "duration": "1:33",
+      "region": "海外",
+      "category": "UI动效",
+      "original": "https://www.youtube.com/watch?v=OgInADh5Tcs",
+      "evidence": "https://postcutoff.com/v/microsoft-new-copilot-2026/",
+      "sceneEvidence": "https://launchscene.app/v/microsoft-the-new-microsoft-copilot",
+      "tags": [
+        "UI",
+        "字体",
+        "形变",
+        "镜头平移"
+      ],
+      "note": "围绕 Home、Code、Autopilot 三章展开，以输入框、文档、仪表盘和通知卡的连续变化串联流程。可参考同一套 UI 语言怎样承担章节切换。",
+      "scene": "00:02–00:07 Chat/Cowork 控件汇为 Home；00:32–00:37 跨应用画布平移；00:55–00:58 指标卡构建后拉远成仪表盘。时码与技法来自 Launchscene 的 AI 场景索引。",
+      "verification": "已下载，视频格式/片长/校验值通过；已核对6格抽帧，未逐帧观看全片",
+      "recommended": true,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Microsoft Copilot/2026-09-25__copilot-new.mp4",
+      "download": {
+        "id": "copilot-new",
+        "group": "01_原20条",
+        "brand": "Microsoft Copilot",
+        "title": "The new Copilot: where AI-powered work comes together",
+        "original": "https://www.youtube.com/watch?v=OgInADh5Tcs",
+        "status": "downloaded",
+        "expectedDuration": "1:33",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Microsoft Copilot/2026-09-25__copilot-new.mp4",
+        "downloadSource": "https://www.youtube.com/watch?v=OgInADh5Tcs",
+        "uploadDate": "20260925",
+        "uploader": "Microsoft Copilot",
+        "channel": "Microsoft Copilot",
+        "sourceTitle": "The new Copilot: where work comes together",
+        "sourceId": "OgInADh5Tcs",
+        "sourceWebpage": "https://www.youtube.com/watch?v=OgInADh5Tcs",
+        "durationSeconds": 93.061,
+        "bytes": 6174091,
+        "video": {
+          "codec_name": "av1",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "opus"
+        ],
+        "sha256": "10da578caebb1a64ec83619810c73a4c1331509330a98c7a4d7a7070236f43cb",
+        "priorAttempts": [
+          {
+            "url": "https://postcutoff.com/v/microsoft-new-copilot-2026/",
+            "error": "No unambiguous primary MP4 found on this page"
+          }
+        ]
+      },
+      "contactSheet": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/03_抽帧核对/copilot-new.jpg"
+    },
+    {
+      "id": "higgsfield-motion",
+      "brand": "Higgsfield",
+      "title": "AI Motion Designer for After Effects",
+      "date": "2026-09-11",
+      "duration": "1:22",
+      "region": "海外",
+      "category": "创意工具",
+      "original": "https://x.com/higgsfield/status/2098409362041753708",
+      "evidence": "https://doomers.ai/launches/higgsfield-ai-motion",
+      "tags": [
+        "AE",
+        "工作流",
+        "动效工具"
+      ],
+      "note": "以 ChatGPT 在 After Effects 中制作动画为卖点。适合补充动效工具的产品叙事参考；具体镜头尚待观看。",
+      "verification": "已下载，视频格式/片长/校验值通过；动效说明沿用标明的来源记录",
+      "recommended": false,
+      "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Higgsfield/2026-09-11__higgsfield-motion.mp4",
+      "download": {
+        "id": "higgsfield-motion",
+        "group": "01_原20条",
+        "brand": "Higgsfield",
+        "title": "AI Motion Designer for After Effects",
+        "original": "https://x.com/higgsfield/status/2098409362041753708",
+        "status": "downloaded",
+        "expectedDuration": "1:22",
+        "localPath": "/Users/arthen01/Movies/AI-Product-Motion-2026-09-04_to_2026-11-04/01_原20条/Higgsfield/2026-09-11__higgsfield-motion.mp4",
+        "downloadSource": "https://video.twimg.com/amplify_video/2098407971227398144/vid/avc1/1920x1080/jFycYXjVGgAwzmzi.mp4?tag=29",
+        "durationSeconds": 82.027,
+        "bytes": 27297872,
+        "video": {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        "audio": [
+          "aac"
+        ],
+        "sha256": "9361aae09b371b1fc7b9a70953db7c80958927cb153acc20e8aaf7eec14a7a3c"
+      }
+    }
+  ],
+  "downloadSummary": {
+    "downloaded": 20,
+    "failed": 0,
+    "bytes": 405079534
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "page_and_proposal": {
+    "main": {
+      "title": "电通大会｜五片制作总览与导览报告",
+      "overflow": false,
+      "hasHollywoodLinks": 0,
+      "linkCount": 15,
+      "mobileOverflow": false
+    },
+    "proposals": [
+      {
+        "url": "materials/Claude交接-2026-11-04/KAIROS-Claude成果/KAIROS-60s-正式提案-产品理念详解版-未套用skill.html",
+        "title": "KAIROS｜日本市场发布会影片提案｜产品理念详解版｜Refer Cases・Brief・创意构思・60秒脚本",
+        "shotCount": 12,
+        "overflow": false,
+        "brokenImages": [],
+        "bodyBackground": "rgb(255, 255, 255)",
+        "navCount": 1,
+        "mobileOverflow": false
+      },
+      {
+        "url": "materials/Claude交接-2026-11-04/IRIS-Claude成果/Iris-Japan-60s-完整正式提案-未套用skill.html",
+        "title": "Iris｜「また今度」を、今日に。— 60秒品牌愿景片 完整正式提案",
+        "shotCount": 12,
+        "overflow": false,
+        "brokenImages": [],
+        "bodyBackground": "rgb(255, 255, 255)",
+        "navCount": 1,
+        "mobileOverflow": false
+      }
+    ],
+    "references": {
+      "title": "产品影片参考库｜电通大会五片制作",
+      "videos": 29,
+      "overflow": false,
+      "mobileOverflow": false
+    },
+    "errors": []
+  },
+  "offline_media": {
+    "filters": {
+      "all": 29,
+      "original": 20,
+      "japan": 8,
+      "other": 1
+    },
+    "searchCount": 1,
+    "playbackPassed": 29,
+    "playbackTotal": 29,
+    "playbackFailures": [],
+    "errors": [],
+    "countText": "29 条已收录参考\n20 条原清单\n8 支日本宣传参考\n1 条客户证言另列"
+  },
+  "static_links": {
+    "html": 23,
+    "local_refs": 1105,
+    "broken_files": 0,
+    "broken_anchors": 0
+  },
+  "homepage_revision": {
+    "desktop": {
+      "overflow": false,
+      "h1": "电通大会\n影片制作报告",
+      "chapters": [
+        {
+          "id": "priorities",
+          "title": "项目任务",
+          "num": "01"
+        },
+        {
+          "id": "references",
+          "title": "差异化参考",
+          "num": "02"
+        },
+        {
+          "id": "scope",
+          "title": "影片范围",
+          "num": "03"
+        },
+        {
+          "id": "concept",
+          "title": "宣传片方案",
+          "num": "04"
+        },
+        {
+          "id": "realism",
+          "title": "本土化要求",
+          "num": "05"
+        },
+        {
+          "id": "schedule",
+          "title": "制作周期",
+          "num": "06"
+        },
+        {
+          "id": "demos",
+          "title": "演示片安排",
+          "num": "07"
+        },
+        {
+          "id": "status",
+          "title": "材料进度",
+          "num": "08"
+        },
+        {
+          "id": "resources",
+          "title": "项目资料",
+          "num": "09"
+        }
+      ],
+      "bodySize": "18px",
+      "paragraphSize": "17px",
+      "heroImages": [
+        {
+          "width": 647.984375,
+          "complete": true
+        },
+        {
+          "width": 648,
+          "complete": true
+        }
+      ]
+    },
+    "mobile": {
+      "overflow": false,
+      "h2Size": "29px",
+      "brokenImages": []
+    },
+    "filterCount": 3,
+    "offline": true,
+    "errors": []
+  },
+  "updated_proposals": {
+    "main": {
+      "urls": [
+        "http://127.0.0.1:8848/materials/Claude%E4%BA%A4%E6%8E%A5-2026-11-04/%E8%A7%86%E8%A7%89%E6%8F%90%E6%A1%88-v2/KAIROS-60s-%E5%8A%A8%E6%95%88%E5%8F%82%E8%80%83-%E5%A4%A7%E5%9B%BE%E6%9B%B4%E6%96%B0%E7%89%88.html",
+        "http://127.0.0.1:8848/materials/Claude%E4%BA%A4%E6%8E%A5-2026-11-04/%E8%A7%86%E8%A7%89%E6%8F%90%E6%A1%88-v2/Iris-60s-%E7%BE%A4%E5%83%8F%E5%8F%99%E4%BA%8B-%E5%A4%A7%E5%9B%BE%E6%9B%B4%E6%96%B0%E7%89%88.html"
+      ],
+      "overflow": false,
+      "oldSingleStory": false
+    },
+    "pages": [
+      {
+        "title": "KAIROS 日本发布会宣传片 · 制作讨论稿 | One2X",
+        "overflow": false,
+        "images": [],
+        "videoCount": 3,
+        "shots": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "hasReturn": true,
+        "playback": [
+          true,
+          true,
+          true
+        ],
+        "mobileOverflow": false
+      },
+      {
+        "title": "Iris｜群像叙事60秒｜大图提案",
+        "overflow": false,
+        "images": [],
+        "videoCount": 0,
+        "shots": 12,
+        "hasReturn": true,
+        "mobileOverflow": false
+      }
+    ],
+    "errors": []
+  }
+}

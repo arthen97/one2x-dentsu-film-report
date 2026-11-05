@@ -1,0 +1,30 @@
+KF02｜镜04｜00:14–00:19
+成片完整亮相：给作品真正的观看时间
+
+必须看懂的信息
+让成片本身证明日系审美、高品质与低AI感。
+
+画面、光线与材质
+同一只玻璃护肤瓶的成熟商品广告画面，瓶身落在左中部，右侧三分之一干净留白。一只自然的手从画外轻托瓶身；窄窗形高光沿玻璃曲线掠过，台面有一滴精华的细微涟漪。85–100mm产品特写，浅景深但瓶口与握持关系清楚；柔和侧光、真实折射、可见皮肤纹理，暖白与浅香槟色。
+
+镜头运动
+全程只有一次缓推，无转场特效；停住的瓶身高光切到工坊工件上的金属反光。
+
+参考片质感转译
+Adobe《The World Is Your Canvas》的“结果直接成为画面”；日本审美以本片原设定执行
+从工具展示切到作品占满画面，给材质和构图完整观看时间；使用克制留白与可触摸的真实表面，不照搬原片超现实城市。
+
+拟用日文／英文屏幕文案与中文解释
+16.5–18.5秒为审美旁白字幕；18.0–19.0秒出现低AI感主张。
+JA：AIらしさを、感じさせない。
+EN：No AI look. Just the work.
+中文解释：看不出AI的痕迹。
+
+样张信息叠加文案
+JA：日本の美意識で、磨く。
+EN：Refined by a Japanese sense of beauty.
+
+生成英文提示词
+A refined Japanese cosmetics commercial, one exquisite material-focused product shot. A clear cylindrical serum bottle with pale champagne liquid, matte ivory cap and narrow blank cream label, left of center on pale limestone. A natural hand gently supports the bottle; accurate fingers, delicate skin texture. One long soft window reflection defines the glass curve; believable refraction, a tiny serum ripple. 100mm macro product photography, controlled shallow focus keeping bottle and fingers crisp, soft lateral daylight, warm ivory and champagne palette, subtle fine grain, beautiful quiet negative space across the right third. Understated luxury, physically credible surfaces. No words, logo, interface, flowers or magical glow. --ar 16:9 --v 8.1 --raw --stylize 80 --hd
+
+样张为概念美术，用于镜头与视觉沟通；真实UI、文字与正式logo后期叠加，正式品质证明采用KAIROS实际输出。
